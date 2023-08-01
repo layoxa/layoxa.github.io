@@ -72,7 +72,7 @@ transform: translateY(-.8rem);
 .second--detail {
   display: flex;
   flex-direction: row;
-  gap: .8rem;
+  gap: 1.2rem;
   margin-right: 6rem;
   font-size: 24px;
 }
