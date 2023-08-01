@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Aref+Ruqaa&family=Comforter+Brush&family=Dancing+Script:wght@400;600&family=Inter:wght@100&family=Lalezar&family=Lobster&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@500;800&family=Noto+Sans+Indic+Siyaq+Numbers&family=Rubik:wght@500&family=Sigmar&family=Silkscreen&family=Tilt+Prism&family=Vina+Sans&family=Yeseva+One&display=swap');
+
+:root {
+  --blue-color : #26b5ca;
+
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style: none;
+    border: none;
   }
 
   
@@ -13,8 +22,71 @@
   
 
 .back--nav {
-    background-color: aqua;
+    background-color: transparent;
     width: 100vw;
     height: 6rem;
- 
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-top: 2.5rem;
+ text-transform: uppercase;
+ font-family: 'Abril Fatface', cursive;
+ font-family: 'Alumni Sans Collegiate One', sans-serif;
+ font-family: 'Aref Ruqaa', serif;
+ font-family: 'Comforter Brush', cursive;
+ font-family: 'Dancing Script', cursive;
+ font-family: 'Inter', sans-serif;
+ font-family: 'Lalezar', cursive;
+ font-family: 'Lobster', cursive;
+ font-family: 'Noto Naskh Arabic', serif;
+ font-family: 'Noto Sans Arabic', sans-serif;
+ font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;
+ font-family: 'Rubik', sans-serif;
+ font-family: 'Sigmar', cursive;
+ font-family: 'Silkscreen', cursive;
+ font-family: 'Tilt Prism', cursive;
+ font-family: 'Vina Sans', cursive;
+ font-family: 'Yeseva One', cursive;
+}
+
+.first--detail {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+
+}
+
+.first--detail p {
+  color: #D7D7D7 ;
+}
+
+.first--detail img{
+width: 105px;
+height: 39px;
+object-fit: contain;
+margin-left: 6rem;
+transform: translateY(-.8rem);
+}
+
+
+.second--detail {
+  display: flex;
+  flex-direction: row;
+  gap: .8rem;
+  margin-right: 6rem;
+  font-size: 24px;
+}
+
+.second--detail a button {
+ width: 215px;
+ height: 3.2rem;
+ font-size: 17px;
+ font-weight: 800;
+ transform: translateY(-.8rem);
+ background-color: var(--blue-color);
+ border-radius: 15px;
+ color: #FFFFFF;
+}
+.second--detail i {
+  color: var(--blue-color);
 }
