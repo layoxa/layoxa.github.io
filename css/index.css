@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Aref+Ruqaa&family=Comforter+Brush&family=Dancing+Script:wght@400;600&family=Inter:wght@100&family=Lalezar&family=Lobster&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@500;800&family=Noto+Sans+Indic+Siyaq+Numbers&family=Rubik:wght@500&family=Sigmar&family=Silkscreen&family=Tilt+Prism&family=Vina+Sans&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 :root {
   --blue-color : #26b5ca;
@@ -12,6 +13,7 @@
     margin: 0;
     list-style: none;
     border: none;
+    font-family: 'Inter', sans-serif;
   }
 
   
@@ -30,23 +32,8 @@
  justify-content: space-between;
  padding-top: 2.5rem;
  text-transform: uppercase;
- font-family: 'Abril Fatface', cursive;
- font-family: 'Alumni Sans Collegiate One', sans-serif;
- font-family: 'Aref Ruqaa', serif;
- font-family: 'Comforter Brush', cursive;
- font-family: 'Dancing Script', cursive;
  font-family: 'Inter', sans-serif;
- font-family: 'Lalezar', cursive;
- font-family: 'Lobster', cursive;
- font-family: 'Noto Naskh Arabic', serif;
- font-family: 'Noto Sans Arabic', sans-serif;
- font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;
- font-family: 'Rubik', sans-serif;
- font-family: 'Sigmar', cursive;
- font-family: 'Silkscreen', cursive;
- font-family: 'Tilt Prism', cursive;
- font-family: 'Vina Sans', cursive;
- font-family: 'Yeseva One', cursive;
+
 }
 
 .first--detail {
@@ -78,9 +65,9 @@ transform: translateY(-.8rem);
 }
 
 .second--detail a button {
- width: 215px;
- height: 3.2rem;
- font-size: 17px;
+ width: 213px;
+ height: 3.1rem;
+ font-size: 16px;
  font-weight: 800;
  transform: translateY(-.8rem);
  background-color: var(--blue-color);
@@ -89,4 +76,34 @@ transform: translateY(-.8rem);
 }
 .second--detail i {
   color: var(--blue-color);
+}
+
+.main--div {
+  background: url(../img/mahdis-mousavi-hJ5uMIRNg5k-unsplash\ 1.png);
+  width: 100%;
+  height: 100vh;
+
+}
+
+.center--text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ margin-top: 10rem;
+
+}
+
+.center--text h1 {
+  color: #FFFFFF;
+  font-size: 108px;
+}
+
+.center--text h2 {
+  font-size: 63px;
+  color: var(--blue-color);
+}
+
+.center--text a button {
+
 }
