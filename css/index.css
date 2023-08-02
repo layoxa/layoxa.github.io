@@ -80,9 +80,9 @@ transform: translateY(-.8rem);
 
 .main--div {
   background: url(../img/mahdis-mousavi-hJ5uMIRNg5k-unsplash\ 1.png);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-
+  filter: grayscale(20%);
 }
 
 .center--text {
@@ -90,7 +90,7 @@ transform: translateY(-.8rem);
   display: flex;
   justify-content: center;
   flex-direction: column;
- margin-top: 10rem;
+ margin-top: 18rem;
 
 }
 
@@ -104,6 +104,22 @@ transform: translateY(-.8rem);
   color: var(--blue-color);
 }
 
-.center--text a button {
+.center--text p {
+  font-size: 26px;
+  color: #b8b9bb;
+}
 
+.center--text a button {
+  width: 250px;
+  height: 3.6rem;
+  font-size: 16px;
+
+margin-top: 3rem;
+  background-color: var(--blue-color);
+  border-radius: 15px;
+}
+
+.all--div {
+  display: flex;
+  flex-direction: column;
 }
