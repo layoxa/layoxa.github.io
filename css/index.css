@@ -285,9 +285,16 @@ gap: 1rem;
   background-position: center;
   background-repeat: no-repeat;
  margin-top: 10rem;
- display: flex;
- justify-content: center;
- flex-direction: row;
+
+
+}
+
+.item-marketing {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 9rem;
+  gap: 15rem;
 }
 
 .charm--marketing {
@@ -305,4 +312,17 @@ gap: 1rem;
 
 .p-marketing {
   max-width: 500px;
+}
+
+.adame--img {
+  width: 300px;
+  height: 380;
+}
+
+.all-charm {
+  margin-top: 3rem;
+}
+
+.charm--marketing p {
+  transform: translateY(.5rem);
 }
