@@ -7,3 +7,5 @@ document.querySelectorAll(".item--section3").forEach((el) => {
         clickedElement.classList.add("active");
     });
 });
+
+document.querySelector(".footer-year").textContent = new Date().getFullYear();

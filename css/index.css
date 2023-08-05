@@ -416,3 +416,152 @@ span {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+/* Contact Section */
+
+.contact-section {
+    margin: 0 auto;
+    margin-top: 10rem;
+
+    max-width: 1000px;
+}
+
+.contact-section .contact-divder {
+    display: flex;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+    color: #383838;
+    text-align: center;
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-text svg {
+    width: 1.5rem;
+    fill: #26b5ca;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.contect-textarea {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.contect-textarea textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+    resize: none;
+}
+
+.contact-section .contect-input {
+    display: flex;
+    position: relative;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(56, 56, 56, 0.05);
+}
+
+.contact-section .contect-input svg {
+    fill: #26b5ca;
+    position: absolute;
+    width: 1.6rem;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contect-input input {
+    background: #ffffff;
+    outline: none;
+    padding-left: 2.4rem;
+    width: 100%;
+}
+
+.contact-input--first-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.contact-submit {
+    height: 4rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    background: #26b5ca;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-detail iframe {
+    width: 100%;
+    height: 23rem;
+    border-radius: 1rem;
+}
+
+/* Footer Section */
+.footer-section {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    background: url(/img/footer-bg.png);
+    background-size: cover;
+}
+
+.footer-section svg {
+    fill: white;
+    height: 2rem;
+}
+
+.link-text {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.link-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section p {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.footer-section .footer-year {
+    color: white;
+}
