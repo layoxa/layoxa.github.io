@@ -380,8 +380,6 @@ span {
     transform: translateY(0.5rem);
 }
 
-
-
 .social--div {
     display: flex;
     flex-direction: row;
@@ -392,9 +390,9 @@ span {
 .downtext--social {
     display: flex;
     flex-direction: row;
-align-items: center;
-padding: 0 0 1rem;
-gap: .5rem;
+    align-items: center;
+    padding: 0 0 1rem;
+    gap: 0.5rem;
 }
 
 .downtext--social a {
@@ -402,9 +400,9 @@ gap: .5rem;
 }
 
 .detail--social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .h1--social {
@@ -418,4 +416,3 @@ gap: .5rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
