@@ -3,6 +3,9 @@
 :root {
     --blue-color: #26b5ca;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -269,6 +272,7 @@ span {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .img--section3 {
@@ -675,6 +679,9 @@ span {
 
 .slider-text h1 {
     font-size: 2.4rem;
+    display: flex;
+    gap: 0.5rem;
+    white-space: nowrap;
 }
 
 .slider-text p {
