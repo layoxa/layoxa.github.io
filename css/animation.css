@@ -1,0 +1,8 @@
+.up--animation:hover {
+   fill: #cccccc;
+    transform: translateY(-10px);
+}
+.up--animation {
+    transition: 0.5s;
+    
+}
