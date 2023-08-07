@@ -261,3 +261,12 @@
         gap: 0.5rem;
     }
 }
+
+
+@media screen and (max-width: 397px) {
+    .swiper {
+        width: 370px;
+        height: 700px;
+    }
+
+}
