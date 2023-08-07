@@ -278,6 +278,7 @@ span {
 .img--section3 {
     width: 620px;
     height: 340px;
+    object-fit: contain;
 }
 
 .firstline--section3 {
