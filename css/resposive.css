@@ -114,6 +114,9 @@
     .back--nav {
         display: none;
     }
+    .mobile-nav {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 840px) {
