@@ -27,3 +27,10 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+document.querySelector(".mobile-nav-ui svg").addEventListener("click", () => {
+    document.querySelector(".mobile-nav-ui").classList.toggle("active");
+});
+document.querySelector(".mobile-nav svg").addEventListener("click", () => {
+    document.querySelector(".mobile-nav-ui").classList.toggle("active");
+});
