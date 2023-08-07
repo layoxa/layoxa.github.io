@@ -6,3 +6,13 @@
     transition: 0.5s;
     
 }
+
+
+.up--animation2:hover {
+    color: #babcbc;
+     transform: translateY(-5px);
+ }
+ .up--animation2 {
+     transition: 0.5s;
+     
+ }
