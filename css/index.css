@@ -27,15 +27,20 @@ a {
 .back--nav {
     background-color: transparent;
     height: 6rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding-top: 2.5rem;
     text-transform: uppercase;
 }
 
 .first--detail {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 5rem;
 }
@@ -45,18 +50,14 @@ a {
 }
 
 .first--detail img {
-    width: 105px;
-    height: 39px;
-    object-fit: contain;
-    margin-left: 6rem;
-    transform: translateY(-0.8rem);
+    height: 2rem;
 }
 
 .second--detail {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 1.2rem;
-    margin-right: 6rem;
     font-size: 24px;
 }
 
@@ -65,10 +66,11 @@ a {
     height: 3.1rem;
     font-size: 16px;
     font-weight: 800;
-    transform: translateY(-0.8rem);
     background-color: var(--blue-color);
     border-radius: 15px;
     color: #ffffff;
+    font-family: "Inter", sans-serf;
+    cursor: pointer;
 }
 .second--detail i {
     color: var(--blue-color);
@@ -88,6 +90,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 .all--div video {
@@ -114,6 +118,7 @@ a {
 .center--text h2 {
     font-size: 63px;
     color: var(--blue-color);
+    margin-bottom: 0.5rem;
 }
 
 .center--text p {
@@ -125,7 +130,9 @@ a {
     width: 250px;
     height: 3.6rem;
     font-size: 16px;
-
+    font-family: "Inter", sans-serf;
+    color: white;
+    font-weight: 700;
     margin-top: 3rem;
     background-color: var(--blue-color);
     border-radius: 15px;
@@ -391,6 +398,7 @@ span {
 
 .p-marketing {
     max-width: 500px;
+    margin-top: 0.5rem;
 }
 
 .adame--img {
@@ -682,6 +690,7 @@ span {
 .slider-text h1 {
     font-size: 2.4rem;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     white-space: nowrap;
 }
@@ -751,4 +760,20 @@ span {
 
 .mobile-nav-ui.active {
     transform: translateX(0%);
+}
+
+.marketing--detail .leyoxa-effect {
+    color: white;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.marketing--detail .leyoxa-effect::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 1rem);
+    left: -0.5rem;
+    height: 2rem;
+    z-index: -1;
+    background: #26b5ca;
 }

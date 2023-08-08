@@ -34,3 +34,25 @@ document.querySelector(".mobile-nav-ui svg").addEventListener("click", () => {
 document.querySelector(".mobile-nav svg").addEventListener("click", () => {
     document.querySelector(".mobile-nav-ui").classList.toggle("active");
 });
+
+AOS.init();
+
+// create a reusable effect that swaps text
+gsap.registerEffect({
+    name: "swapText",
+    effect: (targets, config) => {
+        let tl = gsap.timeline({ delay: config.delay });
+        tl.to(targets, { opacity: 0, duration: config.duration / 2, y: 10 });
+        tl.add(() => (targets[0].innerText = config.text));
+        tl.to(targets, { opacity: 1, duration: config.duration, y: 0 });
+        return tl;
+    },
+    defaults: { duration: 1 },
+    extendTimeline: true,
+});
+
+var tl = gsap.timeline({ repeat: -1 });
+tl.swapText(".subtext", { text: "SEO AND BRANDING", delay: 2 })
+    .swapText(".subtext", { text: "CLOUD SOLUTION", delay: 2 })
+    .swapText(".subtext", { text: "ANALYTICS DASHBOARD", delay: 2 })
+    .swapText(".subtext", { text: "MOBILE APPS", delay: 2 });
