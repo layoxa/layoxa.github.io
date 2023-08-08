@@ -56,3 +56,9 @@ tl.swapText(".subtext", { text: "SEO AND BRANDING", delay: 2 })
     .swapText(".subtext", { text: "CLOUD SOLUTION", delay: 2 })
     .swapText(".subtext", { text: "ANALYTICS DASHBOARD", delay: 2 })
     .swapText(".subtext", { text: "MOBILE APPS", delay: 2 });
+
+const translate = () => {
+    window.location.replace(
+        "https://translate.google.com/translate?sl=en&tl=fa&hl=en&u=leyoxa.com&client=webapp"
+    );
+};
