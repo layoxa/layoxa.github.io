@@ -193,6 +193,10 @@ span {
     overflow: hidden;
 }
 
+.box--whatwedo:hover .boxes {
+    transform: translateY(2rem);
+}
+
 .box--whatwedo .icon {
     position: absolute;
     padding: 2rem;
