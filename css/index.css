@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .back--nav {
@@ -191,10 +192,16 @@ span {
     border: var(--blue-color) 0.1px solid;
     position: relative;
     overflow: hidden;
+   
+}
+
+.boxes {
+    transition: .5s;
 }
 
 .box--whatwedo:hover .boxes {
-    transform: translateY(2rem);
+    transform: translateX(-10px) translateY(-15px);
+   
 }
 
 .box--whatwedo .icon {
@@ -363,7 +370,7 @@ span {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top:9.2%;
+    margin-top:13%;
     gap: 15rem;
 }
 
@@ -770,6 +777,7 @@ span {
     color: white;
     margin-left: 0.5rem;
     position: relative;
+    
 }
 
 .marketing--detail .leyoxa-effect::before {
@@ -780,4 +788,6 @@ span {
     height: 2rem;
     z-index: -1;
     background: #26b5ca;
+    border-radius: 5px;
+
 }
