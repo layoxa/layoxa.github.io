@@ -62,3 +62,13 @@ const translate = () => {
         "https://translate.google.com/translate?sl=en&tl=fa&hl=en&u=leyoxa.com&client=webapp"
     );
 };
+
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector(".back--nav");
+    const threshold = 200;
+    if (window.scrollY > threshold) {
+        nav.classList.add("sticky-nav");
+    } else {
+        nav.classList.remove("sticky-nav");
+    }
+});

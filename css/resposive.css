@@ -260,13 +260,41 @@
     .link-text {
         gap: 0.5rem;
     }
+    .text--whatwedo img {
+        width: 300px;
+    }
+    .smart-parent .smart-circle {
+        height: 150px;
+        width: 150px;
+    }
+    .smart-parent .smart-circle-border[data-idx="1"] {
+        width: 200px;
+        height: 200px;
+    }
+    .smart-parent .smart-circle-border[data-idx="2"] {
+        height: 300px;
+        width: 300px;
+    }
+    .item--section3 {
+        width: 350px;
+    }
+    .img--section3 {
+        width: 320px;
+    }
 }
-
 
 @media screen and (max-width: 397px) {
     .swiper {
-        width: 370px;
+        width: 320px;
         height: 700px;
     }
-
+    .swiper-slide-item {
+        width: fit-content;
+    }
+    .slider-text {
+        padding: 1rem;
+    }
+    .marketing-img .marketing-circle {
+        width: 320px;
+    }
 }
