@@ -713,6 +713,7 @@ span {
 }
 
 .mobile-nav {
+    position: absolute;
     height: 5rem;
     width: 100%;
     align-items: center;
@@ -803,6 +804,18 @@ span {
     right: -2.5rem;
     width: 1rem;
     transform: rotate(15deg);
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    width: 100%;
+    padding: 0% 6%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
 }
 
 .sticky-nav {

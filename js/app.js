@@ -65,11 +65,14 @@ const translate = () => {
 
 window.addEventListener("scroll", () => {
     const nav = document.querySelector(".back--nav");
+    const mobilenav = document.querySelector(".mobile-nav");
     const threshold = 200;
     if (window.scrollY > threshold) {
         nav.classList.add("sticky-nav");
+        mobilenav.classList.add("sticky-nav");
     } else {
         nav.classList.remove("sticky-nav");
+        mobilenav.classList.remove("sticky-nav");
     }
 });
 
