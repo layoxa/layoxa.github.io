@@ -281,6 +281,10 @@
     .img--section3 {
         width: 320px;
     }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 397px) {

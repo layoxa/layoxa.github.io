@@ -66,8 +66,8 @@ const translate = () => {
 window.addEventListener("scroll", () => {
     const nav = document.querySelector(".back--nav");
     const mobilenav = document.querySelector(".mobile-nav");
-    const threshold = 200;
-    if (window.scrollY > threshold) {
+    const secondSection = document.querySelector(".whatwedo--div");
+    if (window.scrollY > secondSection.offsetTop) {
         nav.classList.add("sticky-nav");
         mobilenav.classList.add("sticky-nav");
     } else {

@@ -216,6 +216,11 @@ span {
     z-index: 3;
 }
 
+.box--whatwedo .icon svg {
+    width: 50px;
+    height: 50px;
+}
+
 .box--whatwedo .boxes[data-idx="1"] {
     position: absolute;
     bottom: 3rem;
@@ -813,7 +818,7 @@ span {
     height: 5rem;
     width: 100%;
     padding: 0% 6%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 1);
     backdrop-filter: blur(5px);
     z-index: 9999;
 }
@@ -825,9 +830,13 @@ span {
     height: 5rem;
     width: 100%;
     padding: 0% 6%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     z-index: 9999;
+}
+
+.sticky-nav .first--detail p {
+    color: #383838;
 }
 
 .preloader {
