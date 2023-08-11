@@ -75,12 +75,16 @@ window.addEventListener("scroll", () => {
         mobilenav.classList.remove("sticky-nav");
     }
 });
+document.body.style.overflowY = "hidden"
 
 window.addEventListener("load", () => {
     const preloader = document.querySelector(".preloader");
     preloader.style.display = "none";
+    document.body.style.overflowY = "scroll"
 });
 setTimeout(() => {
     const preloader = document.querySelector(".preloader");
     preloader.style.display = "none";
+    document.body.style.overflowY = "scroll"
+
 }, 5000);
