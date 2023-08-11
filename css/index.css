@@ -1053,3 +1053,8 @@ body::after {
         opacity: 1;
     }
 }
+
+.third-p {
+    margin-top: 12px;
+    font-size: 20px !important;
+}
