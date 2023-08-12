@@ -55,7 +55,9 @@ var tl = gsap.timeline({ repeat: -1 });
 tl.swapText(".subtext", { text: "SEO AND BRANDING", delay: 2 })
     .swapText(".subtext", { text: "CLOUD SOLUTION", delay: 2 })
     .swapText(".subtext", { text: "ANALYTICS DASHBOARD", delay: 2 })
-    .swapText(".subtext", { text: "MOBILE APPS", delay: 2 });
+    .swapText(".subtext", { text: "MOBILE APPS", delay: 2 })
+    .swapText(".subtext", { text: "AI SOLUTION", delay: 2 });
+   
 
 const translate = () => {
     window.location.replace(
