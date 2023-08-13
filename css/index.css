@@ -54,6 +54,7 @@ a {
 }
 
 .first--detail img {
+    content: url("/img/logo_dark.png");
     height: 2rem;
 }
 
@@ -837,6 +838,10 @@ span {
 
 .sticky-nav .first--detail p {
     color: #383838;
+}
+
+.sticky-nav .first--detail img {
+    content: url("/img/logo_light.png");
 }
 
 .preloader {
