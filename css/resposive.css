@@ -308,3 +308,13 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 1201px) {
+    .charm--marketing svg {
+     stroke: #2ab2c6 !important;
+    }
+
+    .leyoxa-effect svg {
+        fill: #2ab2c6  !important;
+    }
+}
