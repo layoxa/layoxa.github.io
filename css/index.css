@@ -1088,3 +1088,39 @@ span {
 .charm--marketing svg {
     stroke: white !important;
    }
+
+   .integration-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .integration-container h2 {
+    color: var(--text-sharp);
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  .integration-container p {
+    color: var(--text-light);
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .integration-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .integration-card {
+    flex-basis: calc(33.333% - 30px);
+    text-align: center;
+  }
+  
+  .integration-card img {
+    max-width: 100%;
+    height: auto;
+  }
