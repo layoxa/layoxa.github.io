@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     --blue-color: #26b5ca;
@@ -1124,3 +1125,81 @@ span {
     max-width: 100%;
     height: auto;
   }
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.logos img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+.compliance {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 300px;
+  margin: 20px;
+  text-align: left;
+}
+
+.feature img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.feature a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.feature a:hover {
+  text-decoration: underline;
+}
