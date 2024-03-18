@@ -1,3 +1,16 @@
+// document.querySelectorAll(".item--section3").forEach((el) => {
+//     el.addEventListener("click", (e) => {
+//         const clickedElement = e.target.closest(".item--section3");
+//         document.querySelectorAll(".item--section3").forEach((rel) => {
+//             rel.classList.remove("active");
+//         });
+
+//         document.querySelector(
+//             ".img--section3"
+//         ).src = `/img/${clickedElement.getAttribute("data-idx")}.png`;
+//         clickedElement.classList.add("active");
+//     });
+// });
 document.querySelectorAll(".item--section3").forEach((el) => {
     el.addEventListener("click", (e) => {
         const clickedElement = e.target.closest(".item--section3");
@@ -5,9 +18,13 @@ document.querySelectorAll(".item--section3").forEach((el) => {
             rel.classList.remove("active");
         });
 
-        document.querySelector(
-            ".img--section3"
-        ).src = `/img/${clickedElement.getAttribute("data-idx")}.png`;
+        // Use the `data-vid` attribute to get the video ID
+        const videoID = clickedElement.getAttribute("data-vid");
+        document.querySelector(".video--section3").src = `https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1`;
+        
+        // Adding 'autoplay=1&mute=1' to the URL to autoplay the video when it's clicked
+        // (Note: Autoplay might not work on some browsers without muting due to autoplay policies)
+        
         clickedElement.classList.add("active");
     });
 });
