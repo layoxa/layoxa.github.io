@@ -95,12 +95,12 @@ window.addEventListener('scroll', function() {
     var div2 = document.getElementById('divPatient');
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   
-    if (scrollPosition > div1.offsetHeight) {
-      div1.style.display = 'none';
-      div2.style.display = 'block';
+    if (scrollPosition > (div1 ? div1.offsetHeight : 0)) {
+      if (div1) div1.style.display = 'none';
+      if (div2) div2.style.display = 'block';
     } else {
-      div1.style.display = 'block';
-      div2.style.display = 'none';
+      if (div1) div1.style.display = 'block';
+      if (div2) div2.style.display = 'none';
     }
-  });
+});
 
