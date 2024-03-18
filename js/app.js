@@ -7,7 +7,7 @@ document.querySelectorAll(".item--section3").forEach((el) => {
 
         document.querySelector(
             ".img--section3"
-        ).src = `https://www.youtube.com/watch?v=kRjm02JgCHI`;
+        ).src = `/img/${clickedElement.getAttribute("data-idx")}.png`;
         clickedElement.classList.add("active");
     });
 });
