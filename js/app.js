@@ -90,3 +90,17 @@ setTimeout(() => {
 
 }, 5000);
 
+window.addEventListener('scroll', function() {
+    var div1 = document.getElementById('divDoctor');
+    var div2 = document.getElementById('divPatient');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+    if (scrollPosition > div1.offsetHeight) {
+      div1.style.display = 'none';
+      div2.style.display = 'block';
+    } else {
+      div1.style.display = 'block';
+      div2.style.display = 'none';
+    }
+  });
+
