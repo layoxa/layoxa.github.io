@@ -89,18 +89,3 @@ setTimeout(() => {
     document.body.style.overflowY = "scroll"
 
 }, 5000);
-
-window.addEventListener('scroll', function() {
-    var div1 = document.getElementById('divDoctor');
-    var div2 = document.getElementById('divPatient');
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  
-    if (scrollPosition > (div1 ? div1.offsetHeight : 0)) {
-      if (div1) div1.style.display = 'none';
-      if (div2) div2.style.display = 'block';
-    } else {
-      if (div1) div1.style.display = 'block';
-      if (div2) div2.style.display = 'none';
-    }
-});
-
