@@ -1,108 +1,108 @@
-// document.querySelectorAll(".item--section3").forEach((el) => {
-//     el.addEventListener("click", (e) => {
-//         const clickedElement = e.target.closest(".item--section3");
-//         document.querySelectorAll(".item--section3").forEach((rel) => {
-//             rel.classList.remove("active");
-//         });
+/* Template Name: Landrick - Saas & Software Landing Page Template
+   Author: Shreethemes
+   E-mail: shreethemes@gmail.com
+   Created: August 2019
+   Version: 2.5
+   Updated: July 2020
+   File Description: Main JS file of the template
+*/
 
-//         document.querySelector(
-//             ".img--section3"
-//         ).src = `/img/${clickedElement.getAttribute("data-idx")}.png`;
-//         clickedElement.classList.add("active");
-//     });
-// });
-document.querySelectorAll(".item--section3").forEach((el) => {
-    el.addEventListener("click", (e) => {
-        const clickedElement = e.target.closest(".item--section3");
-        document.querySelectorAll(".item--section3").forEach((rel) => {
-            rel.classList.remove("active");
+/****************************/
+/*         INDEX            */
+/*===========================
+ *     01.  Loader          *
+ *     02.  Menu            *
+ *     03.  Sticky Menu     *
+ *     03.  Back to top     *
+ ===========================*/
+
+! function($) {
+    "use strict"; 
+    // Loader 
+    $(window).on('load', function() {
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('body').delay(350).css({
+            'overflow': 'visible'
         });
-
-        // Use the `data-vid` attribute to get the video ID
-        const videoID = clickedElement.getAttribute("data-vid");
-        document.querySelector(".video--section3").src = `https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1`;
-        
-        // Adding 'autoplay=1&mute=1' to the URL to autoplay the video when it's clicked
-        // (Note: Autoplay might not work on some browsers without muting due to autoplay policies)
-        
-        clickedElement.classList.add("active");
+    }); 
+    
+    // Menu
+    $('.navbar-toggle').on('click', function (event) {
+        $(this).toggleClass('open');
+        $('#navigation').slideToggle(400);
     });
-});
+    
+    $('.navigation-menu>li').slice(-1).addClass('last-elements');
+    
+    $('.menu-arrow,.submenu-arrow').on('click', function (e) {
+        if ($(window).width() < 992) {
+            e.preventDefault();
+            $(this).parent('li').toggleClass('open').find('.submenu:first').toggleClass('open');
+        }
+    });
+    
+    $(".navigation-menu a").each(function () {
+        if (this.href == window.location.href) {
+            $(this).parent().addClass("active"); 
+            $(this).parent().parent().parent().addClass("active"); 
+            $(this).parent().parent().parent().parent().parent().addClass("active"); 
+        }
+    });
 
-document.querySelector(".footer-year").textContent = new Date().getFullYear();
+    // Clickable Menu
+    $(".has-submenu a").click(function() {
+        if(window.innerWidth < 992){
+            if($(this).parent().hasClass('open')){
+                $(this).siblings('.submenu').removeClass('open');
+                $(this).parent().removeClass('open');
+            } else {
+                $(this).siblings('.submenu').addClass('open');
+                $(this).parent().addClass('open');
+            }
+        }
+    });
 
-const swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true,
-    autoplay: true,
-    pagination: {
-        el: ".swiper-pagination",
-    },
+    $('.mouse-down').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 72
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+    //Sticky
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-document.querySelector(".mobile-nav-ui svg").addEventListener("click", () => {
-    document.querySelector(".mobile-nav-ui").classList.toggle("active");
-});
-document.querySelector(".mobile-nav svg").addEventListener("click", () => {
-    document.querySelector(".mobile-nav-ui").classList.toggle("active");
-});
+        if (scroll >= 50) {
+            $(".sticky").addClass("nav-sticky");
+        } else {
+            $(".sticky").removeClass("nav-sticky");
+        }
+    });
 
-AOS.init();
+    // Back to top
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn();
+        } else {
+            $('.back-to-top').fadeOut();
+        }
+    }); 
+    $('.back-to-top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 3000);
+        return false;
+    }); 
 
-// create a reusable effect that swaps text
-gsap.registerEffect({
-    name: "swapText",
-    effect: (targets, config) => {
-        let tl = gsap.timeline({ delay: config.delay });
-        tl.to(targets, { opacity: 0, duration: config.duration / 2, y: 10 });
-        tl.add(() => (targets[0].innerText = config.text));
-        tl.to(targets, { opacity: 1, duration: config.duration, y: 0 });
-        return tl;
-    },
-    defaults: { duration: 1 },
-    extendTimeline: true,
-});
-
-var tl = gsap.timeline({ repeat: -1 });
-tl.swapText(".subtext", { text: "AI ASSISTANT", delay: 2 })
-    .swapText(".subtext", { text: "AI FRONT DESK", delay: 2 })
-    .swapText(".subtext", { text: "AI ANALYTICS", delay: 2 })
-    .swapText(".subtext", { text: "PATIENT MOBILE APP", delay: 2 })
-   
-
-const translate = () => {
-    window.location.replace(
-        "https://translate.google.com/translate?sl=en&tl=fa&hl=en&u=leyoxa.com&client=webapp"
-    );
-};
-
-window.addEventListener("scroll", () => {
-    const nav = document.querySelector(".back--nav");
-    const mobilenav = document.querySelector(".mobile-nav");
-    const secondSection = document.querySelector(".whatwedo--div");
-    if (window.scrollY > secondSection.offsetTop) {
-        nav.classList.add("sticky-nav");
-        mobilenav.classList.add("sticky-nav");
-    } else {
-        nav.classList.remove("sticky-nav");
-        mobilenav.classList.remove("sticky-nav");
-    }
-});
-document.body.style.overflowY = "hidden"
-
-window.addEventListener("load", () => {
-    const preloader = document.querySelector(".preloader");
-    preloader.style.display = "none";
-    document.body.style.overflowY = "scroll"
-});
-setTimeout(() => {
-    const preloader = document.querySelector(".preloader");
-    preloader.style.display = "none";
-    document.body.style.overflowY = "scroll"
-
-}, 5000);
+    //Tooltip
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    //Popover
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    });
+    //Feather icon
+    feather.replace()
+}(jQuery)
