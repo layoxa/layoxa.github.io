@@ -2293,6 +2293,19 @@ p {
   display: inline-block;
 }
 
+#topnav .contact-button {
+  float: right;
+  line-height: 68px;
+}
+
+#topnav .contact-button .login-btn-primary {
+  display: none;
+}
+
+#topnav .contact-button .login-btn-light {
+  display: inline-block;
+}
+
 #topnav .navbar-toggle.open span {
   position: absolute;
 }
@@ -2657,7 +2670,7 @@ p {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   #topnav {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
