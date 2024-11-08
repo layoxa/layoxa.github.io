@@ -29,6 +29,20 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        <!-- Calendly Badge Widget -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                Calendly.initBadgeWidget({
+                    url: 'https://calendly.com/leyoxa/30min',
+                    text: 'Schedule time with me',
+                    color: '#0069ff',
+                    textColor: '#ffffff'
+                });
+            }
+        </script>
+        <!-- Calendly Badge Widget End -->
 </head>
 
 <body>
@@ -76,9 +90,7 @@
                 <ul class="navigation-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
-                    <li><a href="page-services.html">Services</a></li>
                     <li><a href="page-case-studies.html">Stories</a></li>
-                    <li><a href="page-pricing.html">Pricing</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
                     <li><a href="page-contact.html">Contact</a></li>
                 </ul><!-- End navigation menu -->
@@ -114,7 +126,7 @@
     <section class="section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-5 col-12 d-none d-md-block">
+                <!-- <div class="col-lg-4 col-md-5 col-12 d-none d-md-block">
                     <div class="rounded shadow p-4 sticky-bar">
                         <ul class="list-unstyled mb-0">
                             <li><a href="#tech" class="mouse-down h6 text-dark">Buying Questions</a></li>
@@ -126,11 +138,11 @@
                             </li>
                         </ul>
                     </div>
-                </div><!--end col-->
+                </div>end col -->
 
                 <div class="col-lg-8 col-md-7 col-12">
                     <div class="section-title" id="tech">
-                        <h4>Buying Product</h4>
+                        <h4>Questions</h4>
                     </div>
                     <div class="faq-content mt-4 pt-2">
                         <div class="accordion" id="accordionExampleone">
@@ -138,16 +150,13 @@
                                 <a data-toggle="collapse" href="#collapseone" class="faq position-relative"
                                     aria-expanded="true" aria-controls="collapseone">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingfifone">
-                                        <h6 class="title mb-0"> How our <span class="text-primary">Landrick</span> work
-                                            ? </h6>
+                                        <h6 class="title mb-0">What types of clinics benefit from custom software?</h6>
                                     </div>
                                 </a>
                                 <div id="collapseone" class="collapse show" aria-labelledby="headingfifone"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                        <p class="text-muted mb-0 faq-ans">Dental, beauty, cosmetic, and wellness clinics can all benefit. Each solution is tailored to enhance patient management, scheduling, and operational efficiency.</p>
                                     </div>
                                 </div>
                             </div>
@@ -156,15 +165,13 @@
                                 <a data-toggle="collapse" href="#collapsetwo" class="faq position-relative collapsed"
                                     aria-expanded="false" aria-controls="collapsetwo">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingtwo">
-                                        <h6 class="title mb-0"> What is the main process open account ? </h6>
+                                        <h6 class="title mb-0">I’m starting a new dental clinic. How can Leyoxa help me succeed?</h6>
                                     </div>
                                 </a>
                                 <div id="collapsetwo" class="collapse" aria-labelledby="headingtwo"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                        <p class="text-muted mb-0 faq-ans">Launching a new clinic comes with many challenges—from attracting your first patients to setting up efficient operations. Leyoxa offers end-to-end solutions that include custom software, marketing strategies, and content creation to help you establish a strong foundation, attract patients quickly, and streamline your day-to-day tasks.</p>
                                     </div>
                                 </div>
                             </div>
@@ -173,15 +180,13 @@
                                 <a data-toggle="collapse" href="#collapsethree" class="faq position-relative collapsed"
                                     aria-expanded="false" aria-controls="collapsethree">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingthree">
-                                        <h6 class="title mb-0"> How to make unlimited data entry ? </h6>
+                                        <h6 class="title mb-0">My existing clinic isn’t growing as expected. What can <span class="text-primary">Leyoxa</span> do to help me expand?</h6>
                                     </div>
                                 </a>
                                 <div id="collapsethree" class="collapse" aria-labelledby="headingthree"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                        <p class="text-muted mb-0 faq-ans">Growth hurdles are common due to increasing competition and evolving patient expectations. Leyoxa analyzes your current situation and provides tailored solutions to enhance your online presence, improve patient engagement, and optimize your operations, all aimed at accelerating your clinic’s growth.</p>
                                     </div>
                                 </div>
                             </div>
@@ -190,327 +195,279 @@
                                 <a data-toggle="collapse" href="#collapsefour" class="faq position-relative collapsed"
                                     aria-expanded="false" aria-controls="collapsefour">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingfour">
-                                        <h6 class="title mb-0"> Is <span class="text-primary">Landrick</span> safer to
-                                            use with my account ? </h6>
+                                        <h6 class="title mb-0">How can I attract more patients to my dental practice?</h6>
                                     </div>
                                 </a>
                                 <div id="collapsefour" class="collapse" aria-labelledby="headingfour"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-0 rounded">
-                                <a data-toggle="collapse" href="#collapsefive2" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapsefive2">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingfive2">
-                                        <h6 class="title mb-0"> How can i contact your technical team ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsefive2" class="collapse" aria-labelledby="headingfive2"
-                                    data-parent="#accordionExampleone">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section-title mt-5" id="general">
-                        <h4>General Questions</h4>
-                    </div>
-
-                    <div class="faq-content mt-4 pt-3">
-                        <div class="accordion" id="accordionExampletwo">
-                            <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapsefive" class="faq position-relative"
-                                    aria-expanded="true" aria-controls="collapsefive">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingfive">
-                                        <h6 class="title mb-0"> How our <span class="text-primary">Landrick</span> work
-                                            ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsefive" class="collapse show" aria-labelledby="headingfive"
-                                    data-parent="#accordionExampletwo">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                        <p class="text-muted mb-0 faq-ans">Attracting patients involves more than just being a great dentist. Leyoxa enhances your visibility through targeted marketing campaigns, SEO optimization, and engaging content creation. We make it easier for potential patients to find you and choose your clinic over competitors.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapsesix" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapsesix">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingsix">
-                                        <h6 class="title mb-0"> What is the main process open account ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
-                                    data-parent="#accordionExampletwo">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsefive2" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsefive2">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingfive">
+                                            <h6 class="title mb-0">I’m overwhelmed with administrative tasks. Can Leyoxa simplify my operations?</h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsefive2" class="collapse" aria-labelledby="headingfive"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">Absolutely. We provide custom software that automates scheduling, billing, patient communication, and more. This streamlines your administrative workload, allowing you and your staff to focus more on patient care and less on paperwork.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                           
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapseseven" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapseseven">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingseven">
-                                        <h6 class="title mb-0"> How to make unlimited data entry ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
-                                    data-parent="#accordionExampletwo">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsesix" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsesix">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingsix">
+                                            <h6 class="title mb-0">How can I build trust and a strong reputation in my community?</h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">Building trust starts with effective communication and a professional image. Leyoxa helps you establish a credible online presence through a well-designed website, informative content, and active engagement on social media platforms, positioning your clinic as a trusted provider in the community.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapseeight" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapseeight">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingeight">
-                                        <h6 class="title mb-0"> Is <span class="text-primary">Landrick</span> safer to
-                                            use with my account ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapseeight" class="collapse" aria-labelledby="headingeight"
-                                    data-parent="#accordionExampletwo">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-0 rounded">
-                                <a data-toggle="collapse" href="#collapsenine" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapsenine">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingnine">
-                                        <h6 class="title mb-0"> How can i contact your technical team ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsenine" class="collapse" aria-labelledby="headingnine"
-                                    data-parent="#accordionExampletwo">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapseseven" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapseseven">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingseven">
+                                            <h6 class="title mb-0">I’m concerned about patient retention. How can Leyoxa assist with this?</h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                Patient retention is crucial for sustained growth. Our solutions include personalized patient portals, automated appointment reminders, and follow-up communications that enhance the patient experience, encouraging them to return and refer others.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="section-title mt-5" id="payment">
-                        <h4>Payments Questions</h4>
-                    </div>
-
-                    <div class="faq-content mt-4 pt-3">
-                        <div class="accordion" id="accordionExamplethree">
-                            <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapseten" class="faq position-relative"
-                                    aria-expanded="true" aria-controls="collapseten">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingten">
-                                        <h6 class="title mb-0"> How our <span class="text-primary">Landrick</span> work
-                                            ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapseten" class="collapse show" aria-labelledby="headingten"
-                                    data-parent="#accordionExamplethree">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapseeleven" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapseeleven">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingeleven">
-                                        <h6 class="title mb-0"> What is the main process open account ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapseeleven" class="collapse" aria-labelledby="headingeleven"
-                                    data-parent="#accordionExamplethree">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapseeight" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapseeight">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingeight">
+                                            <h6 class="title mb-0">Data security is important to me. How does Leyoxa protect my patient information?</h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapseeight" class="collapse" aria-labelledby="headingeight"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                We prioritize data security by implementing industry-leading encryption methods and secure authentication protocols. Leyoxa ensures full compliance with healthcare regulations like HIPAA, so your patient information is always protected.     
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapsetwelve" class="faq position-relative collapsed"
-                                    aria-expanded="false" aria-controls="collapsetwelve">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingtwelve">
-                                        <h6 class="title mb-0"> How to make unlimited data entry ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsetwelve" class="collapse" aria-labelledby="headingtwelve"
-                                    data-parent="#accordionExamplethree">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsenine" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsenine">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingnine">
+                                            <h6 class="title mb-0">Can Leyoxa’s solutions integrate with the systems I already use?</h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsenine" class="collapse" aria-labelledby="headingnine"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                Yes, our custom software is designed to seamlessly integrate with your existing systems, such as electronic health records and practice management software, minimizing disruption and maximizing efficiency.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapsethirteen"
-                                    class="faq position-relative collapsed" aria-expanded="false"
-                                    aria-controls="collapsethirteen">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingthirteen">
-                                        <h6 class="title mb-0"> Is <span class="text-primary">Landrick</span> safer to
-                                            use with my account ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsethirteen" class="collapse" aria-labelledby="headingthirteen"
-                                    data-parent="#accordionExamplethree">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-0 rounded">
-                                <a data-toggle="collapse" href="#collapsefourteen"
-                                    class="faq position-relative collapsed" aria-expanded="false"
-                                    aria-controls="collapsefourteen">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingfourteen">
-                                        <h6 class="title mb-0"> How can i contact your technical team ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsefourteen" class="collapse" aria-labelledby="headingfourteen"
-                                    data-parent="#accordionExamplethree">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapseten" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapseten">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingten">
+                                            <h6 class="title mb-0">
+                                                I’m not tech-savvy. Will it be difficult for me and my staff to use your software?
+                                            </h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapseten" class="collapse" aria-labelledby="headingten"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                Not at all. Our software is user-friendly and intuitive. We also provide comprehensive training and ongoing support to ensure you and your team are comfortable and proficient with all the features.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="section-title mt-5" id="support">
-                        <h4>Support Questions</h4>
-                    </div>
-
-                    <div class="faq-content mt-4 pt-3">
-                        <div class="accordion" id="accordionExamplefour">
-                            <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapsefifthenn" class="faq position-relative"
-                                    aria-expanded="true" aria-controls="collapsefifthenn">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingfiftheen">
-                                        <h6 class="title mb-0"> How our <span class="text-primary">Landrick</span> work
-                                            ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsefifthenn" class="collapse show" aria-labelledby="headingfiftheen"
-                                    data-parent="#accordionExamplefour">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapsesixteen"
-                                    class="faq position-relative collapsed" aria-expanded="false"
-                                    aria-controls="collapsesixteen">
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapseeleven" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapseeleven">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingeleven">
+                                            <h6 class="title mb-0">
+                                                What kind of investment is required, and will it fit within my budget?
+                                            </h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapseeleven" class="collapse" aria-labelledby="headingeleven"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                We offer flexible pricing tailored to your specific needs and budget constraints. During our initial consultation, we’ll provide a detailed quote and discuss how our solutions can offer a strong return on investment by boosting your clinic’s efficiency and patient numbers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="card border-0 rounded mb-2">
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsetwelve" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsetwelve">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingtwelve">
+                                            <h6 class="title mb-0">
+                                                How soon can I expect to see results after partnering with Leyoxa?
+                                            </h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsetwelve" class="collapse" aria-labelledby="headingtwelve"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                While timelines can vary, many clients notice improvements in operational efficiency and patient engagement within the first few weeks. Marketing efforts typically start showing increased patient inquiries and appointments shortly after launch.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="card border-0 rounded mb-2">
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsethirteen" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsethirteen">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingthirteen">
+                                            <h6 class="title mb-0">
+                                                How do I know if Leyoxa is the right partner for my clinic?
+                                            </h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsethirteen" class="collapse" aria-labelledby="headingthirteen"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                We understand the importance of trust and alignment. We offer a free consultation to discuss your specific challenges and goals. This allows you to assess how well our services match your needs before making any commitments.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="card border-0 rounded mb-2">
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsefourteen" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsefourteen">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingfourteen">
+                                            <h6 class="title mb-0">
+                                                What is the process for implementing Leyoxa’s end-to-end solution?
+                                            </h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsefourteen" class="collapse" aria-labelledby="headingfourteen"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                We follow a collaborative approach:<br>
+        1.	Consultation: Understand your clinic’s needs.<br>
+        2.	Planning: Develop a customized strategy combining software, marketing, and content.<br>
+        3.	Execution: Design, develop, and deploy the software; launch marketing campaigns; create and distribute content.<br>
+        4.	Support: Offer ongoing assistance to adapt and grow with your clinic.<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="card border-0 rounded mb-2">
+                                <div class="card border-0 rounded">
+                                    <a data-toggle="collapse" href="#collapsefifteen" class="faq position-relative collapsed"
+                                        aria-expanded="false" aria-controls="collapsefifteen">
+                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingfifteen">
+                                            <h6 class="title mb-0">
+                                                What kind of ongoing support does Leyoxa provide?
+                                            </h6>
+                                        </div>
+                                    </a>
+                                    <div id="collapsefifteen" class="collapse" aria-labelledby="headingfifteen"
+                                        data-parent="#accordionExampleone">
+                                        <div class="card-body px-2 py-4">
+                                            <p class="text-muted mb-0 faq-ans">
+                                                We offer continuous support that includes:<br>
+        •	Software Updates: Regular enhancements and new features.<br>
+        •	Marketing Adjustments: Tweaking campaigns for optimal performance.<br>
+        •	Content Refreshes: Keeping your content current and engaging.<br>
+        •	Technical Support: Prompt assistance whenever you need it.<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="card border-0 rounded mb-2">
+                                <div class="card border-0 rounded">
+                                <a data-toggle="collapse" href="#collapsesixteen" class="faq position-relative collapsed"
+                                    aria-expanded="false" aria-controls="collapsesixteen">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingsixteen">
-                                        <h6 class="title mb-0"> What is the main process open account ? </h6>
+                                        <h6 class="title mb-0">
+                                            How do I get started with Leyoxa?
+                                        </h6>
                                     </div>
                                 </a>
                                 <div id="collapsesixteen" class="collapse" aria-labelledby="headingsixteen"
-                                    data-parent="#accordionExamplefour">
+                                    data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
+                                        <p class="text-muted mb-0 faq-ans">
+                                            Starting your journey with us is simple:<br>
+	1.	Schedule a Free Consultation: Contact us to set up a meeting at your convenience.<br>
+	2.	Discuss Your Needs: We’ll listen to your concerns and outline potential solutions.<br>
+	3.	Customized Plan: We’ll develop a tailored strategy focused on achieving your clinic’s goals.<br>
+	4.	Implementation and Support: We’ll work closely with you to implement the solutions and provide ongoing support.<br>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapseseventeen"
-                                    class="faq position-relative collapsed" aria-expanded="false"
-                                    aria-controls="collapseseventeen">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingseventeen">
-                                        <h6 class="title mb-0"> How to make unlimited data entry ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapseseventeen" class="collapse" aria-labelledby="headingseventeen"
-                                    data-parent="#accordionExamplefour">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-0 rounded mb-2">
-                                <a data-toggle="collapse" href="#collapseeigheteen"
-                                    class="faq position-relative collapsed" aria-expanded="false"
-                                    aria-controls="collapseeigheteen">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingeighteen">
-                                        <h6 class="title mb-0"> Is <span class="text-primary">Landrick</span> safer to
-                                            use with my account ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapseeigheteen" class="collapse" aria-labelledby="headingeighteen"
-                                    data-parent="#accordionExamplefour">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-0 rounded">
-                                <a data-toggle="collapse" href="#collapsenineteen"
-                                    class="faq position-relative collapsed" aria-expanded="false"
-                                    aria-controls="collapsenineteen">
-                                    <div class="card-header border-0 bg-light p-3 pr-5" id="headingnineteen">
-                                        <h6 class="title mb-0"> How can i contact your technical team ? </h6>
-                                    </div>
-                                </a>
-                                <div id="collapsenineteen" class="collapse" aria-labelledby="headingnineteen"
-                                    data-parent="#accordionExamplefour">
-                                    <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">There are many variations of passages of
-                                            Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                            
+                            <!--end questions-->
                         </div>
                     </div>
                 </div><!--end col-->
@@ -519,20 +476,6 @@
 
         <div class="container mt-100 mt-60">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="media align-items-center shadow rounded p-4 features">
-                        <div class="icons m-0 rounded h2 text-primary text-center px-3">
-                            <i class="uil uil-envelope-check"></i>
-                        </div>
-                        <div class="content ml-4">
-                            <h5 class="mb-1"><a href="javascript:void(0)" class="text-dark">Get in Touch !</a></h5>
-                            <p class="text-muted mb-0">This is required when, for text is not yet available.</p>
-                            <div class="mt-2">
-                                <a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Submit a Request</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end col-->
 
                 <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <div class="media align-items-center shadow rounded p-4 features">
@@ -543,7 +486,8 @@
                             <h5 class="mb-1"><a href="javascript:void(0)" class="text-dark">Start a Meeting</a></h5>
                             <p class="text-muted mb-0">This is required when, for text is not yet available.</p>
                             <div class="mt-2">
-                                <a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Start Video Chat</a>
+                                <a href="https://calendly.com/leyoxa/30min" target="_blank"
+                                    class="text-primary btn btn-sm btn-soft-primary">Schedule a time</a>
                             </div>
                         </div>
                     </div>
@@ -559,21 +503,17 @@
             <div class="row align-items-center">
                 <div class="col-sm-6">
                     <div class="text-sm-left">
-                        <p class="mb-0">© 2019-20 Landrick. Design with <i class="mdi mdi-heart text-danger"></i> by <a
-                                href="http://www.shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.
+                        <p class="mb-0">© 2019-25 Leyoxa. Design with <i class="mdi mdi-heart text-danger"></i> by <a
+                                href="http://www.24dev.org/" target="_blank" class="text-reset">Us</a>.
                         </p>
                     </div>
                 </div><!--end col-->
 
                 <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <ul class="list-unstyled text-sm-right social-icon social mb-0">
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
-                                    data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                        <li class="list-inline-item"><a href="https://www.instagram.com/leyoxa.tech/" class="rounded"><i
                                     data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
-                                    data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/leyoxa/" class="rounded"><i
                                     data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
                     </ul><!--end icon-->
                 </div><!--end col-->
