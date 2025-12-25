@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="custom clinic software, clinic management solutions, software for healthcare professionals, dental software, beauty clinic software, physiotherapy clinic software, healthcare business software, scale your clinic, clinic software development, patient management solutions, revenue growth for clinics, digital transformation for clinics, medical practice software, healthcare technology, healthcare software development" />
     <meta name="author" content="Leyoxa Development Team" />
-    <meta name="email" content="info@leyoxa.com" />
+    <meta name="email" content="leyoxa.tech@gmail.com" />
     <meta name="website" content="http://www.leyoxa.com" />
     <meta name="Version" content="v2.0.0" />
 
@@ -21,6 +21,12 @@
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Magnific -->
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
     <!-- Slider -->
@@ -29,9 +35,168 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <style>
+        :root {
+            --future-ink: #0b1220;
+            --future-slate: #1c2a3a;
+            --future-mint: #32c6b4;
+            --future-sun: #ff9b5a;
+            --future-ice: #e8f4ff;
+            --future-cream: #f7f4ef;
+            --future-glass: rgba(255, 255, 255, 0.72);
+            --future-stroke: rgba(11, 18, 32, 0.08);
+        }
+
+        body.theme-2026 {
+            font-family: "Manrope", "Segoe UI", sans-serif;
+            background-color: var(--future-cream);
+            color: var(--future-ink);
+        }
+
+        body.theme-2026 .heading,
+        body.theme-2026 .title,
+        body.theme-2026 h1,
+        body.theme-2026 h2,
+        body.theme-2026 h3,
+        body.theme-2026 h4,
+        body.theme-2026 h5 {
+            font-family: "Sora", "Manrope", sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-2026 {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(50, 198, 180, 0.2), transparent 45%),
+                radial-gradient(circle at 80% 10%, rgba(255, 155, 90, 0.18), transparent 48%),
+                linear-gradient(135deg, #f7f4ef 0%, #eef4ff 100%);
+        }
+
+        .hero-2026::before,
+        .hero-2026::after {
+            content: "";
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.35;
+            z-index: 0;
+        }
+
+        .hero-2026::before {
+            background: #32c6b4;
+            top: -140px;
+            right: -160px;
+        }
+
+        .hero-2026::after {
+            background: #ff9b5a;
+            bottom: -180px;
+            left: -120px;
+        }
+
+        .hero-2026 .title-heading,
+        .hero-2026 .home-dashboard {
+            position: relative;
+            z-index: 1;
+        }
+
+        .future-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(11, 18, 32, 0.05);
+            color: var(--future-ink);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 12px;
+        }
+
+        .future-badges {
+            gap: 12px;
+        }
+
+        .future-badge {
+            border-radius: 999px;
+            padding: 8px 14px;
+            background: var(--future-glass);
+            border: 1px solid var(--future-stroke);
+            font-weight: 600;
+            color: var(--future-slate);
+        }
+
+        .voice-agent {
+            position: relative;
+            background:
+                linear-gradient(180deg, #ffffff 0%, #f7f4ef 100%);
+            border-radius: 28px;
+            padding: 48px 0;
+        }
+
+        .voice-card {
+            background: var(--future-glass);
+            border: 1px solid var(--future-stroke);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 24px 60px rgba(11, 18, 32, 0.12);
+        }
+
+        .agent-flow {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .agent-flow div {
+            padding: 14px 16px;
+            border-radius: 14px;
+            background: rgba(50, 198, 180, 0.12);
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .agent-metric {
+            background: #fff;
+            border-radius: 18px;
+            padding: 18px 16px;
+            border: 1px solid var(--future-stroke);
+        }
+
+        .agent-metric span {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--future-ink);
+        }
+
+        .future-reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            animation: futureRise 0.9s ease forwards;
+        }
+
+        @keyframes futureRise {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .agent-flow {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="theme-2026">
     <!-- Loader -->
     <!-- <div id="preloader">
             <div id="status">
@@ -52,7 +217,7 @@
                     <img src="images/logo-dark.png" height="24" alt="Leyoxa Logo">
                 </a>
             </div>
-  
+
 
             <!-- Mobile menu toggle-->
             <div class="menu-extras">
@@ -73,6 +238,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
                     <li><a href="page-services.html">Services</a></li>
+                    <li><a href="#voice-agent">Voice Agent</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
                     <li><a href="page-contact.html">Contact</a></li>
                 </ul><!-- End navigation menu -->
@@ -82,30 +248,37 @@
     <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <section class="bg-home d-flex align-items-center bg-light" style="height: auto;">
+    <section class="bg-home d-flex align-items-center hero-2026" style="height: auto;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center mt-0 mt-md-5 pt-0 pt-md-5">
-                    <div class="title-heading margin-top-100">
-                        <h1 class="heading mb-4">Build Your <span class="text-primary">Online Clinic</span> and Reach
-                            Millions.</h1>
-                        <p class="para-desc mx-auto text-muted">Scale your practice, enhance client experience, and
-                            unlock new revenue streams with Leyoxa's tailored software solutions for modern clinics.</p>
-                        <ul class="mt-4 list-unstyled mb-0 align-items-center" style="flex-grow: 0; text-align: center; padding-left: 0px;">
+                    <div class="title-heading margin-top-100 future-reveal" style="animation-delay: 0.1s;">
+                        <span class="future-pill"> AI-Ready clinic platform</span>
+                        <h1 class="heading mb-4 mt-3">Software + Voice Agents.</h1>
+                        <p class="para-desc mx-auto text-muted">Launch a modern patient experience with AI voice
+                            concierge, unified scheduling, and secure custom workflows. Leyoxa builds the full stack
+                            around your clinic, not a template.</p>
+                        <ul class="mt-4 list-unstyled mb-0 align-items-center"
+                            style="flex-grow: 0; text-align: center; padding-left: 0px;">
                             <li><a href="page-contact.html" class="btn btn-primary">
                                     <i class="mdi mdi-email"></i> Schedule a Free Consultation</a></li>
 
-                                    <li class="list-inline-item text-muted mt-4 mr-2 h6">Or</li>
+                            <li class="list-inline-item text-muted mt-4 mr-2 h6">Or</li>
                             <li class="list-inline-item">
                                 <a href="page-services.html" class="text-primary font-weight-bold">
-                                    Learn More 
+                                    Learn More
                                     <i data-feather="chevron-right" class="fea icon-sm"></i>
                                 </a>
                             </li>
                         </ul>
+                        <div class="future-badges d-flex flex-wrap justify-content-center mt-4">
+                            <span class="future-badge">Lead manager Voice agent</span>
+                            <span class="future-badge">After-hours concierge</span>
+                            <span class="future-badge">HIPAA/PHIPA aligned</span>
+                        </div>
                     </div>
 
-                    <div class="home-dashboard">
+                    <div class="home-dashboard future-reveal" style="animation-delay: 0.35s;">
                         <img src="images/clinic-solutions/hero.png" alt="Leyoxa Software Solutions"
                             class="img-fluid mover">
                     </div>
@@ -125,6 +298,91 @@
 
     <!-- Social Icons , features and testi Start -->
     <section class="section overflow-hidden">
+        <div class="container mt-60" id="voice-agent">
+            <div class="row align-items-center voice-agent">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="section-title pr-lg-4">
+                        <span class="future-pill">Voice Agent Service</span>
+                        <h4 class="title mb-3 mt-3">Answer every call. Book every patient. 24/7.</h4>
+                        <p class="text-muted">Leyoxa Voice Agent handles inbound scheduling, after-hours triage, and
+                            outbound recalls with a calm, human-like voice. It syncs to your PMS/EHR, confirms intent,
+                            and hands off live when needed.</p>
+                        <div class="agent-flow">
+                            <div>Listen</div>
+                            <div>Decide</div>
+                            <div>Act</div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="page-contact.html" class="btn btn-primary">Book a Voice Agent Demo <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="voice-card">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h5 class="mb-1">Live Call Summary</h5>
+                                <p class="text-muted mb-0">Smile Link | Tuesday | 9:30 AM</p>
+                            </div>
+                            <span class="badge badge-soft-primary">Active</span>
+                        </div>
+                        <hr>
+                        <p class="mb-3">"Hi Sarah, I can help you schedule your cleaning. Would you like Friday at 11:00
+                            AM or Monday at 2:30 PM?"</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="agent-metric">
+                                    <span>92%</span>
+                                    First-call resolution
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="agent-metric">
+                                    <span>38%</span>
+                                    More appointments booked
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-muted small">Built-in escalation to your front desk on complex requests.
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row mt-4">
+                <div class="col-md-4 mt-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h6 class="mb-2">Inbound Scheduling</h6>
+                            <p class="text-muted mb-0">Natural language booking, rescheduling, and cancellations with
+                                instant confirmation.</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                <div class="col-md-4 mt-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h6 class="mb-2">Outbound Recall Engine</h6>
+                            <p class="text-muted mb-0">Automated reactivation campaigns tuned to your conversion goals
+                                and availability.</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                <div class="col-md-4 mt-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h6 class="mb-2">Multilingual Empathy</h6>
+                            <p class="text-muted mb-0">Localized voice options with sentiment detection and soft
+                                handoff rules.</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+
+
         <div class="container mt-md-5">
             <div class="row justify-content-center" id="counter">
                 <div class="col-lg-8 col-md-10">
@@ -208,7 +466,7 @@
                                         class="uim uim-check-circle"></i></span>Front Desk Voice/Chat AI Assistant
                             </li>
                         </ul>
-<!--                         <div class="watch-video mt-4 pt-2">
+                        <!--                         <div class="watch-video mt-4 pt-2">
                             <a href="https://www.youtube.com/watch?v=jNTZpfXYJa4"
                                 class="video-play-icon watch text-dark"><i
                                     class="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-circle title-dark text-white position-relative play play-iconbar"></i>
@@ -262,8 +520,9 @@
                                                 <i data-feather="layers" class="fea"></i>
                                             </div>
                                             <h5 class="mt-3 title">Encrypted Chat</h5>
-                                            <p class="text-muted mb-0">Enhance client engagement with seamless, in-app end to end encrypted
-                                             messaging for instant communication.</p>
+                                            <p class="text-muted mb-0">Enhance client engagement with seamless, in-app
+                                                end to end encrypted
+                                                messaging for instant communication.</p>
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -321,7 +580,8 @@
                         <p class="text-primary h2 mb-3"><i class="uil uil-apps"></i></p>
                         <h4 class="title mb-3">HIPAA/PHIPA Compliant Features</h4>
                         <p class="text-muted">Leyoxa's solutions are designed to support clinic growth, simplify
-                            management, and enhance client experiences with powerful, user-friendly and HIPAA compliant tools.</p>
+                            management, and enhance client experiences with powerful, user-friendly and HIPAA compliant
+                            tools.</p>
                         <div class="mt-4">
                             <a href="page-services.html" class="btn btn-primary">See More <i
                                     class="mdi mdi-chevron-right"></i></a>
@@ -347,7 +607,8 @@
                                 Tools</span></h4>
                         <p class="text-muted">Our software integrates smoothly with popular clinic management tools,
                             making it easier for you to manage appointments, patient records, billing, and more—all in
-                            one secure place. We also provide marketing dashboard for you to manage your social media engagement</p>
+                            one secure place. We also provide marketing dashboard for you to manage your social media
+                            engagement</p>
                         <div class="d-inline-block">
                             <div class="pt-3 d-flex align-items-center border-top">
                                 <i data-feather="layers" class="fea icon-md mr-2 text-primary"></i>
@@ -521,7 +782,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-<!--                     <a href="#" class="logo-footer">
+                    <!--                     <a href="#" class="logo-footer">
                         <img src="images/logo-light.png" height="24" alt="Leyoxa Logo">
                     </a> -->
                     <p class="mt-4">Partner with <span class="text-primary font-weight-bold">Leyoxa</span> for custom
@@ -553,7 +814,7 @@
                     </ul>
                 </div><!--end col-->
 
-<!--                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <!--                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <h4 class="text-light footer-head">Newsletter</h4>
                     <p class="mt-4">Sign up to receive the latest insights and updates from Leyoxa.</p>
                     <form>
@@ -582,13 +843,12 @@
             <div class="row align-items-center">
                 <div class="col-sm-6">
                     <div class="text-sm-left">
-                        <p class="mb-0">© 2024 Leyoxa. Built with <i class="mdi mdi-heart text-danger"></i> by <a
-                                href="http://www.leyoxa.com/" target="_blank" class="text-reset">Leyoxa Team</a>.
+                        <p class="mb-0">© 2026 Leyoxa LLC.
                         </p>
                     </div>
                 </div><!--end col-->
 
-<!--                 <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <!--                 <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <ul class="list-unstyled text-sm-right mb-0">
                         <li class="list-inline-item"><a href="javascript:void(0)"><img
                                     src="images/payments/american-ex.png" class="avatar avatar-ex-sm"
@@ -604,7 +864,7 @@
                         <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png"
                                     class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
                     </ul>
-                </div><!--end col--> 
+                </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->
     </footer><!--end footer-->

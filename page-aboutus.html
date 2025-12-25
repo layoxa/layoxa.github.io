@@ -22,6 +22,12 @@
         <!-- Icons -->
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+        <!-- Typography -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
         <!-- Magnific -->
         <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
         <!-- Slider -->
@@ -30,6 +36,56 @@
         <!-- Main Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        <style>
+            :root {
+                --future-ink: #0b1220;
+                --future-slate: #1c2a3a;
+                --future-mint: #32c6b4;
+                --future-sun: #ff9b5a;
+                --future-cream: #f7f4ef;
+                --future-glass: rgba(255, 255, 255, 0.78);
+                --future-stroke: rgba(11, 18, 32, 0.08);
+            }
+
+            body.theme-2026 {
+                font-family: "Manrope", "Segoe UI", sans-serif;
+                background-color: var(--future-cream);
+                color: var(--future-ink);
+            }
+
+            body.theme-2026 .heading,
+            body.theme-2026 .title,
+            body.theme-2026 h1,
+            body.theme-2026 h2,
+            body.theme-2026 h3,
+            body.theme-2026 h4,
+            body.theme-2026 h5 {
+                font-family: "Sora", "Manrope", sans-serif;
+                letter-spacing: -0.02em;
+            }
+
+            .future-pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 16px;
+                border-radius: 999px;
+                background: rgba(11, 18, 32, 0.06);
+                color: var(--future-ink);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                font-size: 12px;
+            }
+
+            .future-card {
+                background: var(--future-glass);
+                border: 1px solid var(--future-stroke);
+                border-radius: 22px;
+                padding: 24px;
+                box-shadow: 0 18px 40px rgba(11, 18, 32, 0.12);
+            }
+        </style>
             <!-- Calendly Badge Widget -->
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -46,7 +102,7 @@
             <!-- Calendly Badge Widget End -->
     </head>
 
-    <body>
+    <body class="theme-2026">
         <!-- Loader -->
         <!-- <div id="preloader">
             <div id="status">
@@ -113,8 +169,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="page-next-level title-heading">
-                            <h1 class="text-white title-dark"> About Us </h1>
-                            <p class="text-white-50 para-desc mb-0 mx-auto">Whether you’re launching a new clinic or expanding an existing practice, Leyoxa is your partner for growth, efficiency, and a superior patient experience.</p>
+                            <span class="future-pill">Built for the patient era</span>
+                            <h1 class="text-white title-dark mt-3">About Leyoxa</h1>
+                            <p class="text-white-50 para-desc mb-0 mx-auto">We design patient-centric platforms that
+                                blend mobile experience, clinic operations, and AI voice into one modern system.</p>
                             <div class="page-next">
                                 <nav aria-label="breadcrumb" class="d-inline-block">
                                     <ul class="breadcrumb bg-white rounded shadow mb-0">
@@ -151,10 +209,40 @@
                                 <span class="h6 align-self-end ml-2">Years <br> Experience</span>
                             </div>
                             <div class="section-title">
-                                <h4 class="title mb-4">Who we are ?</h4>
-                                <p class="text-muted"><span class="text-primary font-weight-bold">Leyoxa</span>'s Mission is to accelerate digital health adoption and provide access to the power of automation without forcing health care providers to adopt to using any specific software. We believe the use of technology should be as natural as how human interact and we are building tools to automate operations of private health sector which will lead to making health care more accessible to people around the world</p>
-                                <a href="page-contact.html" class="btn btn-primary mt-3">Contact us</a>
+                                <h4 class="title mb-4">Who we are</h4>
+                                <p class="text-muted"><span class="text-primary font-weight-bold">Leyoxa</span> builds
+                                    clinics-first software that feels effortless for patients and powerful for staff.
+                                    Our mission is to remove operational friction with AI voice, mobile-first care
+                                    journeys, and dashboards that surface what matters most. We meet clinics where they
+                                    are and integrate into their preferred systems.</p>
+                                <a href="page-contact.html" class="btn btn-primary mt-3">Talk to our team</a>
                             </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-4">
+                <div class="row mt-4">
+                    <div class="col-md-4 mt-3">
+                        <div class="future-card h-100">
+                            <h5 class="mb-2">Smilelink</h5>
+                            <p class="text-muted mb-0">An all-in-one, patient-centric mobile app paired with an office
+                                management dashboard for scheduling, messaging, and retention.</p>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-md-4 mt-3">
+                        <div class="future-card h-100">
+                            <h5 class="mb-2">Emergclinic</h5>
+                            <p class="text-muted mb-0">Emergency booking platform that triages urgency, routes patients
+                                to available providers, and optimizes chair time.</p>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-md-4 mt-3">
+                        <div class="future-card h-100">
+                            <h5 class="mb-2">DDSMarketing Voice Agent</h5>
+                            <p class="text-muted mb-0">AI voice concierge for sales and front desk that captures every
+                                call, qualifies leads, and books appointments.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -194,9 +282,10 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center mb-4 pb-2">
-                            <h6 class="text-primary">Work Process</h6>
-                            <h4 class="title mb-4">How do we works ?</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary font-weight-bold">Leyoxa</span> that can provide everything you need. Contact us to set up a meeting at your convenience.</p>
+                            <h6 class="text-primary">How we build</h6>
+                            <h4 class="title mb-4">Design, integrate, launch</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">We move fast with a clinic-first roadmap,
+                                secure integrations, and measurable growth outcomes.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->

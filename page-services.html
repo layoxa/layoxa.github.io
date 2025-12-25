@@ -21,6 +21,12 @@
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Magnific -->
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
     <!-- Slider -->
@@ -29,6 +35,56 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <style>
+        :root {
+            --future-ink: #0b1220;
+            --future-slate: #1c2a3a;
+            --future-mint: #32c6b4;
+            --future-sun: #ff9b5a;
+            --future-cream: #f7f4ef;
+            --future-glass: rgba(255, 255, 255, 0.78);
+            --future-stroke: rgba(11, 18, 32, 0.08);
+        }
+
+        body.theme-2026 {
+            font-family: "Manrope", "Segoe UI", sans-serif;
+            background-color: var(--future-cream);
+            color: var(--future-ink);
+        }
+
+        body.theme-2026 .heading,
+        body.theme-2026 .title,
+        body.theme-2026 h1,
+        body.theme-2026 h2,
+        body.theme-2026 h3,
+        body.theme-2026 h4,
+        body.theme-2026 h5 {
+            font-family: "Sora", "Manrope", sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .future-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(11, 18, 32, 0.06);
+            color: var(--future-ink);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 12px;
+        }
+
+        .future-card {
+            background: var(--future-glass);
+            border: 1px solid var(--future-stroke);
+            border-radius: 22px;
+            padding: 24px;
+            box-shadow: 0 18px 40px rgba(11, 18, 32, 0.12);
+        }
+    </style>
         <!-- Calendly Badge Widget -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -46,7 +102,7 @@
 </head>
 
 
-    <body>
+    <body class="theme-2026">
         <!-- Loader -->
         <!-- <div id="preloader">
             <div id="status">
@@ -104,7 +160,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="page-next-level">
-                            <h4 class="title"> Services </h4>
+                            <span class="future-pill">2026-ready services</span>
+                            <h4 class="title mt-3">Solutions</h4>
                             <div class="page-next">
                                 <nav aria-label="breadcrumb" class="d-inline-block">
                                     <ul class="breadcrumb bg-white rounded shadow mb-0">
@@ -134,106 +191,114 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            <!-- Chat Feature -->
+            <!-- Voice Agent -->
             <div class="col-md-4 col-12">
                 <div class="features mt-5">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/chat.svg" class="avatar avatar-small" alt="Chat Feature">
+                        <img src="images/icon/chat.svg" class="avatar avatar-small" alt="Voice Agent">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">AI Voice/Chat Feature</h4>
-                        <p class="text-muted mb-0">Real-time communication with your clients to enhance engagement and support. Increase efficiency with our AI voice assistant and transcriber</p>
+                        <h4 class="title-2">DDSMarketing Voice Agent</h4>
+                        <p class="text-muted mb-0">Sales and front-desk voice automation that answers every call, books
+                            appointments, and escalates with context.</p>
                     </div>
                 </div>
             </div><!--end col-->
             
-            <!-- Custom Integration with Practice Management Systems -->
+            <!-- Integrations -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/computer.svg" class="avatar avatar-small" alt="Custom Integration">
+                        <img src="images/icon/computer.svg" class="avatar avatar-small" alt="Clinic Integrations">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Custom Integration</h4>
-                        <p class="text-muted mb-0">Seamlessly integrate with your existing practice management systems to optimize workflows.</p>
+                        <h4 class="title-2">Clinic Integrations</h4>
+                        <p class="text-muted mb-0">Connect with PMS/EHR systems, calendars, billing, and marketing tools
+                            without forcing a platform switch.</p>
                     </div>
                 </div>
             </div><!--end col-->
             
-            <!-- Mobile App with Modern Design -->
+            <!-- Smilelink Mobile App -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/smartphone.svg" class="avatar avatar-small" alt="Mobile App">
+                        <img src="images/icon/smartphone.svg" class="avatar avatar-small" alt="Smilelink Mobile App">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Mobile App</h4>
-                        <p class="text-muted mb-0">A mobile app with modern design to provide a user-friendly experience for your clients and team.</p>
+                        <h4 class="title-2">Smilelink Mobile App</h4>
+                        <p class="text-muted mb-0">Patient-centric app for scheduling, messaging, care reminders, and
+                            digital intake.</p>
                     </div>
                 </div>
             </div><!--end col-->
 
-            <!-- UI/UX Design -->
+            <!-- Management Dashboard -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/vector.svg" class="avatar avatar-small" alt="UI/UX Design">
+                        <img src="images/icon/vector.svg" class="avatar avatar-small" alt="Clinic Dashboard">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">UI/UX Design</h4>
-                        <p class="text-muted mb-0">Beautiful and satisfying UI/UX design for seamless and delightful interactions.</p>
+                        <h4 class="title-2">Management Dashboard</h4>
+                        <p class="text-muted mb-0">Office operations hub with patient status, pipeline analytics, and
+                            team workflows in real time.</p>
                     </div>
                 </div>
             </div><!--end col-->
             
-            <!-- Email, SMS, Push Notification System -->
+            <!-- Patient Comms -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/Email.svg" class="avatar avatar-small" alt="Notification System">
+                        <img src="images/icon/Email.svg" class="avatar avatar-small" alt="Patient Communications">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Notification System</h4>
-                        <p class="text-muted mb-0">Email, SMS, and push notifications to keep clients and team members informed and engaged.</p>
+                        <h4 class="title-2">Patient Communications</h4>
+                        <p class="text-muted mb-0">Email, SMS, and push messaging with automated follow-ups and recall
+                            sequences.</p>
                     </div>
                 </div>
             </div><!--end col-->
             
-            <!-- Payment System with Stripe -->
+            <!-- Payments -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/payment.svg" class="avatar avatar-small" alt="Payment System">
+                        <img src="images/icon/payment.svg" class="avatar avatar-small" alt="Payments">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Payment System</h4>
-                        <p class="text-muted mb-0">Integrate Stripe for secure and reliable payment processing in your app.</p>
+                        <h4 class="title-2">Payments + Financing</h4>
+                        <p class="text-muted mb-0">Collect deposits, recurring payments, and financing options without
+                            leaving the patient experience.</p>
                     </div>
                 </div>
             </div><!--end col-->
 
-            <!-- Booking System -->
+            <!-- Emergency Booking -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/calendar.svg" class="avatar avatar-small" alt="Booking System">
+                        <img src="images/icon/calendar.svg" class="avatar avatar-small" alt="Emergency Booking">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Booking System</h4>
-                        <p class="text-muted mb-0">Customizable booking system that fits your unique business needs and scheduling requirements.</p>
+                        <h4 class="title-2">Emergclinic Booking</h4>
+                        <p class="text-muted mb-0">Emergency scheduling with urgency-aware routing and real-time chair
+                            availability.</p>
                     </div>
                 </div>
             </div><!--end col-->
             
-            <!-- 2-way Messaging System -->
+            <!-- 2-way Messaging -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/chat.svg" class="avatar avatar-small" alt="2-way Messaging">
+                        <img src="images/icon/chat.svg" class="avatar avatar-small" alt="Two Way Messaging">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">2-Way Messaging</h4>
-                        <p class="text-muted mb-0">Engage in direct 2-way communication through SMS for better customer service.</p>
+                        <h4 class="title-2">Two-Way Messaging</h4>
+                        <p class="text-muted mb-0">Secure patient chat that stays linked to conversations, tasks, and
+                            appointment history.</p>
                     </div>
                 </div>
             </div><!--end col-->
@@ -243,8 +308,9 @@
                         <img src="images/icon/marketing.svg" class="avatar avatar-small" alt="Marketing">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Marketing</h4>
-                        <p class="text-muted mb-0">Manage all your social media engagement in one platform</p>
+                        <h4 class="title-2">Growth + Marketing</h4>
+                        <p class="text-muted mb-0">Unified marketing dashboards, referral tracking, and growth
+                            analytics.</p>
                     </div>
                 </div>
             </div><!--end col-->
@@ -259,14 +325,37 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h4 class="title mb-4">Our Latest Projects</h4>
-                    <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary font-weight-bold">Leyoxa</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                    <h4 class="title mb-4">Featured Platforms</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Real products built for clinics that need modern
+                        patient experiences and operational clarity.</p>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
 
         <div class="row">
-            <!-- Project Cards (Existing ones can remain here) -->
+            <div class="col-md-4 mt-3">
+                <div class="future-card h-100">
+                    <h5 class="mb-2">Smilelink</h5>
+                    <p class="text-muted mb-0">Patient-centric mobile app plus office dashboard that unifies scheduling,
+                        messaging, and retention.</p>
+                </div>
+            </div><!--end col-->
+            <div class="col-md-4 mt-3">
+                <div class="future-card h-100">
+                    <h5 class="mb-2">Emergclinic</h5>
+                    <p class="text-muted mb-0">Emergency booking platform that routes urgent care to the right provider
+                        at the right time.</p>
+                </div>
+            </div><!--end col-->
+            <div class="col-md-4 mt-3">
+                <div class="future-card h-100">
+                    <h5 class="mb-2">DDSMarketing Voice Agent</h5>
+                    <p class="text-muted mb-0">Voice AI for sales and front desk that never misses a call.</p>
+                    <a href="https://concierge.ai.ddsmarketing.io/agent" target="_blank"
+                        class="text-primary font-weight-bold d-inline-block mt-3">Open Live Agent <i
+                            class="mdi mdi-open-in-new"></i></a>
+                </div>
+            </div><!--end col-->
         </div><!--end row-->
     </div><!--end container-->
 

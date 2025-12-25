@@ -21,6 +21,12 @@
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Magnific -->
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
     <!-- Slider -->
@@ -29,6 +35,48 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <style>
+        :root {
+            --future-ink: #0b1220;
+            --future-slate: #1c2a3a;
+            --future-mint: #32c6b4;
+            --future-sun: #ff9b5a;
+            --future-cream: #f7f4ef;
+            --future-glass: rgba(255, 255, 255, 0.78);
+            --future-stroke: rgba(11, 18, 32, 0.08);
+        }
+
+        body.theme-2026 {
+            font-family: "Manrope", "Segoe UI", sans-serif;
+            background-color: var(--future-cream);
+            color: var(--future-ink);
+        }
+
+        body.theme-2026 .heading,
+        body.theme-2026 .title,
+        body.theme-2026 h1,
+        body.theme-2026 h2,
+        body.theme-2026 h3,
+        body.theme-2026 h4,
+        body.theme-2026 h5 {
+            font-family: "Sora", "Manrope", sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .future-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(11, 18, 32, 0.06);
+            color: var(--future-ink);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 12px;
+        }
+    </style>
         <!-- Calendly Badge Widget -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -45,7 +93,7 @@
         <!-- Calendly Badge Widget End -->
 </head>
 
-<body>
+<body class="theme-2026">
     <!-- Loader -->
     <!-- <div id="preloader">
             <div id="status">
@@ -105,7 +153,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <div class="page-next-level">
-                        <h4 class="title"> Frequently Asked Questions </h4>
+                        <span class="future-pill">Clear answers</span>
+                        <h4 class="title mt-3">Frequently Asked Questions</h4>
 
                         <div class="page-next">
                             <nav aria-label="breadcrumb" class="d-inline-block">
@@ -150,13 +199,16 @@
                                 <a data-toggle="collapse" href="#collapseone" class="faq position-relative"
                                     aria-expanded="true" aria-controls="collapseone">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingfifone">
-                                        <h6 class="title mb-0">What types of clinics benefit from custom software?</h6>
+                                        <h6 class="title mb-0">Which clinics are a fit for Smilelink and the management
+                                            dashboard?</h6>
                                     </div>
                                 </a>
                                 <div id="collapseone" class="collapse show" aria-labelledby="headingfifone"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">Dental, beauty, cosmetic, and wellness clinics can all benefit. Each solution is tailored to enhance patient management, scheduling, and operational efficiency.</p>
+                                        <p class="text-muted mb-0 faq-ans">Smilelink is designed for dental, cosmetic,
+                                            physiotherapy, and multi-provider clinics that want a patient-first mobile
+                                            experience and a clear operations hub.</p>
                                     </div>
                                 </div>
                             </div>
@@ -165,13 +217,15 @@
                                 <a data-toggle="collapse" href="#collapsetwo" class="faq position-relative collapsed"
                                     aria-expanded="false" aria-controls="collapsetwo">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingtwo">
-                                        <h6 class="title mb-0">I’m starting a new dental clinic. How can Leyoxa help me succeed?</h6>
+                                        <h6 class="title mb-0">How does Emergclinic handle emergency bookings?</h6>
                                     </div>
                                 </a>
                                 <div id="collapsetwo" class="collapse" aria-labelledby="headingtwo"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">Launching a new clinic comes with many challenges—from attracting your first patients to setting up efficient operations. Leyoxa offers end-to-end solutions that include custom software, marketing strategies, and content creation to help you establish a strong foundation, attract patients quickly, and streamline your day-to-day tasks.</p>
+                                        <p class="text-muted mb-0 faq-ans">Emergclinic triages urgency, checks real-time
+                                            availability, and routes the patient to the right chair or provider with
+                                            confirmed booking notifications.</p>
                                     </div>
                                 </div>
                             </div>
@@ -180,13 +234,15 @@
                                 <a data-toggle="collapse" href="#collapsethree" class="faq position-relative collapsed"
                                     aria-expanded="false" aria-controls="collapsethree">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingthree">
-                                        <h6 class="title mb-0">My existing clinic isn’t growing as expected. What can <span class="text-primary">Leyoxa</span> do to help me expand?</h6>
+                                        <h6 class="title mb-0">What does the DDSMarketing Voice Agent do?</h6>
                                     </div>
                                 </a>
                                 <div id="collapsethree" class="collapse" aria-labelledby="headingthree"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">Growth hurdles are common due to increasing competition and evolving patient expectations. Leyoxa analyzes your current situation and provides tailored solutions to enhance your online presence, improve patient engagement, and optimize your operations, all aimed at accelerating your clinic’s growth.</p>
+                                        <p class="text-muted mb-0 faq-ans">It answers calls, qualifies leads, books
+                                            appointments, and transfers to your front desk when a human touch is
+                                            needed. Every call is summarized with next steps.</p>
                                     </div>
                                 </div>
                             </div>
@@ -195,13 +251,14 @@
                                 <a data-toggle="collapse" href="#collapsefour" class="faq position-relative collapsed"
                                     aria-expanded="false" aria-controls="collapsefour">
                                     <div class="card-header border-0 bg-light p-3 pr-5" id="headingfour">
-                                        <h6 class="title mb-0">How can I attract more patients to my dental practice?</h6>
+                                        <h6 class="title mb-0">Can you integrate with our current PMS or EHR?</h6>
                                     </div>
                                 </a>
                                 <div id="collapsefour" class="collapse" aria-labelledby="headingfour"
                                     data-parent="#accordionExampleone">
                                     <div class="card-body px-2 py-4">
-                                        <p class="text-muted mb-0 faq-ans">Attracting patients involves more than just being a great dentist. Leyoxa enhances your visibility through targeted marketing campaigns, SEO optimization, and engaging content creation. We make it easier for potential patients to find you and choose your clinic over competitors.</p>
+                                        <p class="text-muted mb-0 faq-ans">Yes. We integrate with leading systems and
+                                            can build secure connectors so you do not have to migrate your data.</p>
                                     </div>
                                 </div>
                             </div>
@@ -211,13 +268,15 @@
                                     <a data-toggle="collapse" href="#collapsefive2" class="faq position-relative collapsed"
                                         aria-expanded="false" aria-controls="collapsefive2">
                                         <div class="card-header border-0 bg-light p-3 pr-5" id="headingfive">
-                                            <h6 class="title mb-0">I’m overwhelmed with administrative tasks. Can Leyoxa simplify my operations?</h6>
+                                            <h6 class="title mb-0">How fast can we launch a voice agent or mobile app?</h6>
                                         </div>
                                     </a>
                                     <div id="collapsefive2" class="collapse" aria-labelledby="headingfive"
                                         data-parent="#accordionExampleone">
                                         <div class="card-body px-2 py-4">
-                                            <p class="text-muted mb-0 faq-ans">Absolutely. We provide custom software that automates scheduling, billing, patient communication, and more. This streamlines your administrative workload, allowing you and your staff to focus more on patient care and less on paperwork.</p>
+                                            <p class="text-muted mb-0 faq-ans">Most voice agents launch in weeks.
+                                                Mobile apps and dashboards follow a phased rollout with early pilot
+                                                clinics within 6 to 10 weeks.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -229,13 +288,14 @@
                                     <a data-toggle="collapse" href="#collapsesix" class="faq position-relative collapsed"
                                         aria-expanded="false" aria-controls="collapsesix">
                                         <div class="card-header border-0 bg-light p-3 pr-5" id="headingsix">
-                                            <h6 class="title mb-0">How can I build trust and a strong reputation in my community?</h6>
+                                            <h6 class="title mb-0">Is patient data secure and compliant?</h6>
                                         </div>
                                     </a>
                                     <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
                                         data-parent="#accordionExampleone">
                                         <div class="card-body px-2 py-4">
-                                            <p class="text-muted mb-0 faq-ans">Building trust starts with effective communication and a professional image. Leyoxa helps you establish a credible online presence through a well-designed website, informative content, and active engagement on social media platforms, positioning your clinic as a trusted provider in the community.</p>
+                                            <p class="text-muted mb-0 faq-ans">We design for HIPAA and PHIPA alignment,
+                                                using encryption, role-based access, and audit trails across the stack.</p>
                                         </div>
                                     </div>
                                 </div>
