@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leyoxa.com/sitemap.xml
+
+# AI crawlers — allow indexing for AI-driven search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /

@@ -1,0 +1,34 @@
+# Leyoxa
+
+> Leyoxa builds AI-powered clinic management software for dental and medical practices across Canada and the United States.
+
+Leyoxa is a healthcare SaaS company focused on automating clinic operations through AI voice agents, mobile patient apps, and custom management dashboards. Products are designed for HIPAA and PHIPA compliance.
+
+## Products
+
+- [DDSMarketing Voice Agent](https://leyoxa.com/page-services.html): 24/7 AI voice agent for dental clinics that answers calls, qualifies leads, books appointments, and provides call summaries with next steps.
+- [Smilelink](https://smilelink.app): Mobile patient app and clinic management dashboard for dental and cosmetic clinics. Deployed at a dental practice in Texas.
+- [Emergclinic](https://emergclinic.com): Emergency appointment booking platform for medical clinics. Deployed in Toronto, Canada.
+
+## Key Capabilities
+
+- AI voice scheduling with inbound and outbound patient recall
+- HIPAA/PHIPA-compliant patient messaging and data handling
+- Integration with OpenDental, Dentrix, and other PMS/EHR systems
+- Custom mobile apps (iOS + Android) and web dashboards
+- Emergency triage and real-time availability routing
+
+## Pages
+
+- [Home](https://leyoxa.com/): Overview of all products and voice agent capabilities
+- [About](https://leyoxa.com/page-aboutus.html): Company background and team
+- [Services](https://leyoxa.com/page-services.html): Detailed product and service descriptions
+- [FAQ](https://leyoxa.com/page-faq.html): Common questions about integrations, compliance, and pricing
+- [Contact](https://leyoxa.com/page-contact.html): Book a demo or reach the team
+
+## Contact
+
+- Email: leyoxa.tech@gmail.com
+- Phone: +1 647-985-2468
+- Demo: https://calendly.com/leyoxa/30min
+- LinkedIn: https://www.linkedin.com/company/leyoxa/
