@@ -90,6 +90,8 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Mobile & smooth loading -->
+    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
@@ -184,7 +186,7 @@
         <div class="container">
             <!-- Logo container-->
             <div>
-                <a class="logo" href="index.html">
+                <a class="logo" href="/">
                     <img src="images/logo-dark.png" height="24" alt="">
                 </a>
             </div>
@@ -210,7 +212,7 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
                     <li><a href="page-services.html">Services</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
@@ -233,7 +235,7 @@
                         <div class="page-next">
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Leyoxa</a></li>
+                                    <li class="breadcrumb-item"><a href="/">Leyoxa</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">FAQs</li>
                                 </ul>
                             </nav>
@@ -618,7 +620,7 @@
                         </div>
                         <div class="content ml-4">
                             <h5 class="mb-1"><a href="page-contact.html" class="text-dark">Start a Meeting</a></h5>
-                            <p class="text-muted mb-0">This is required when, for text is not yet available.</p>
+                            <p class="text-muted mb-0">Schedule a free 30-minute consultation with the Leyoxa team to discuss your clinic's needs, see a live demo, and get a tailored implementation plan.</p>
                             <div class="mt-2">
                                 <a href="https://calendly.com/leyoxa/30min" target="_blank"
                                     class="text-primary btn btn-sm btn-soft-primary">Schedule a time</a>
@@ -672,6 +674,39 @@
     <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js" async></script>
     <!-- Main Js -->
     <script src="js/app.js" defer></script>
+    <!-- Smooth image loading -->
+    <script>
+    (function () {
+        function revealImg(img) {
+            if (img.complete && img.naturalWidth > 0) {
+                img.classList.add('loaded');
+                var wrap = img.closest('.img-wrap');
+                if (wrap) wrap.classList.add('ready');
+            } else {
+                img.addEventListener('load', function () {
+                    img.classList.add('loaded');
+                    var wrap = img.closest('.img-wrap');
+                    if (wrap) wrap.classList.add('ready');
+                });
+                img.addEventListener('error', function () {
+                    img.style.opacity = '1';
+                    var wrap = img.closest('.img-wrap');
+                    if (wrap) wrap.classList.add('ready');
+                });
+            }
+        }
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) { revealImg(entry.target); observer.unobserve(entry.target); }
+                });
+            }, { rootMargin: '0px 0px 120px 0px' });
+            document.querySelectorAll('img.img-smooth').forEach(function (img) { io.observe(img); });
+        } else {
+            document.querySelectorAll('img.img-smooth').forEach(revealImg);
+        }
+    })();
+    </script>
 </body>
 
 </html>

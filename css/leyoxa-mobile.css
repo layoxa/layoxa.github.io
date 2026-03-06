@@ -1,0 +1,163 @@
+/* ================================================================
+   Leyoxa — Mobile-friendly & smooth image loading supplement
+   Applied to all pages. index.html has its own inline copy.
+   ================================================================ */
+
+/* ── Smooth image loading ───────────────────────────────────────── */
+.img-smooth {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    will-change: opacity, transform;
+}
+.img-smooth.loaded {
+    opacity: 1;
+}
+
+/* Skeleton shimmer while image loads */
+.img-wrap {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #e8edf2 25%, #f3f6f9 50%, #e8edf2 75%);
+    background-size: 200% 100%;
+    animation: lx-shimmer 1.4s infinite;
+    border-radius: 12px;
+    display: block;
+}
+.img-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.img-wrap.ready {
+    background: none;
+    animation: none;
+}
+@keyframes lx-shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ── Global mobile tweaks ───────────────────────────────────────── */
+
+/* Touch-safe nav links */
+@media (max-width: 991px) {
+    #navigation ul.navigation-menu > li > a {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+}
+
+/* Headings scale down on phones */
+@media (max-width: 575px) {
+    h1, .heading { font-size: 28px !important; line-height: 1.25; }
+    h2, .title   { font-size: 22px !important; }
+    h3            { font-size: 19px !important; }
+}
+
+/* Paragraph width never causes horizontal scroll */
+@media (max-width: 767px) {
+    .para-desc {
+        max-width: 100% !important;
+        font-size: 15px;
+    }
+}
+
+/* Section images — center on mobile, no overflow */
+@media (max-width: 767px) {
+    .software-feature-left,
+    .feature-right {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .software-feature-left img,
+    .feature-right img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/* Full-width CTAs on small screens */
+@media (max-width: 575px) {
+    .btn-lg {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+}
+
+/* Services icon grid — 2 cols on small phones */
+@media (max-width: 575px) {
+    .col-lg-2.col-md-2.col-6 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .avatar.avatar-ex-sm {
+        max-height: 32px;
+    }
+}
+
+/* Testimonial cards — stack on phones */
+@media (max-width: 575px) {
+    .customer-testi {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .customer-testi .avatar-small {
+        margin-bottom: 12px;
+        margin-right: 0 !important;
+    }
+    .customer-testi .media-body {
+        width: 100%;
+    }
+}
+
+/* Services page feature grid — full width on mobile */
+@media (max-width: 767px) {
+    .features {
+        margin-bottom: 16px;
+    }
+    /* About page image grid */
+    .col-md-6 .img-fluid.rounded {
+        margin-bottom: 16px;
+    }
+}
+
+/* Prevent any image from exceeding viewport width */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero section — tighter on small phones */
+@media (max-width: 575px) {
+    .bg-home,
+    section.bg-home {
+        min-height: auto !important;
+        padding-top: 90px;
+        padding-bottom: 32px;
+    }
+    .margin-top-100 {
+        margin-top: 0 !important;
+    }
+    .home-dashboard img {
+        top: 0 !important;
+    }
+}
+
+/* Footer — center on mobile */
+@media (max-width: 575px) {
+    .footer .col-lg-4 p,
+    .footer .col-lg-2 {
+        text-align: center;
+    }
+    .footer .social-icon {
+        justify-content: center;
+        display: flex;
+    }
+    .footer-bar .col-sm-6 {
+        text-align: center !important;
+        margin-bottom: 8px;
+    }
+}

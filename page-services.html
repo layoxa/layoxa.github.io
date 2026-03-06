@@ -137,6 +137,7 @@
             box-shadow: 0 18px 40px rgba(11, 18, 32, 0.12);
         }
     </style>
+    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
         <!-- Calendly Badge Widget -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -171,7 +172,7 @@
             <div class="container">
                 <!-- Logo container-->
                 <div>
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="/">
                         <img src="images/logo-dark.png" height="24" alt="Leyoxa Logo">
                     </a>
                 </div>
@@ -195,7 +196,7 @@
                 <!-- Navigation Menu -->
                 <div id="navigation">
                     <ul class="navigation-menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="page-aboutus.html">About</a></li>
                         <li><a href="page-services.html">Services</a></li>
                         <li><a href="page-faq.html">FAQ</a></li>
@@ -217,7 +218,7 @@
                             <div class="page-next">
                                 <nav aria-label="breadcrumb" class="d-inline-block">
                                     <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Leyoxa</a></li>
+                                        <li class="breadcrumb-item"><a href="/">Leyoxa</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Services</li>
                                     </ul>
                                 </nav>
@@ -415,8 +416,10 @@
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 col-12">
                 <div class="software-feature-left">
-                    <img src="images/clinic-solutions/clinic-management-1.png" class="img-fluid"
-                        alt="Clinic Management Software">
+                    <div class="img-wrap">
+                        <img src="images/clinic-solutions/clinic-management-1.png" class="img-fluid img-smooth"
+                            alt="Clinic Management Software">
+                    </div>
                 </div>
             </div><!--end col-->
     
@@ -432,7 +435,7 @@
                         <li>Nearby search capability based on patient location</li>
                         <li>Credit system for clinics to manage and charge credits for specific actions</li>
                         <li>Secure payment processing with Stripe integration, including card storage</li>
-                        <li>HIPAA-compliant database to ensure patient data security</li>
+                        <li>HIPAA-aligned database to ensure patient data security (Leyoxa designs its data infrastructure to align with HIPAA/PHIPA technical safeguard requirements.)</li>
                         <li>CI/CD pipeline for efficient development and deployment</li>
                         <li>Multiple staging environments for development and production</li>
                     </ul>
@@ -450,8 +453,10 @@
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 col-12">
                 <div class="software-feature-left">
-                    <img src="images/clinic-solutions/clinic-management-2.png" class="img-fluid"
-                        alt="Clinic Management Software">
+                    <div class="img-wrap">
+                        <img src="images/clinic-solutions/clinic-management-2.png" class="img-fluid img-smooth"
+                            alt="Clinic Management Software">
+                    </div>
                 </div>
             </div><!--end col-->
     
@@ -470,7 +475,7 @@
                         <li>Two-way messaging system for seamless communication between dental clinics and patients via SMS</li>
                         <li>Data warehouse supporting multiple integrations, including OpenDental, Dentrix, and more</li>
                         <li>Booking system for multiple providers and operatories in dental clinics</li>
-                        <li>HIPAA-compliant database to ensure patient data security</li>
+                        <li>HIPAA-aligned database to ensure patient data security (Leyoxa designs its data infrastructure to align with HIPAA/PHIPA technical safeguard requirements.)</li>
                         <li>CI/CD pipeline for efficient development and deployment</li>
                         <li>Multiple staging environments for development and production</li>
                     </ul>
@@ -506,7 +511,7 @@
                     <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h4 class="text-light footer-head">Company</h4>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="index.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Home</a></li>
+                            <li><a href="/" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Home</a></li>
                             <li><a href="page-aboutus.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> About Us</a></li>
                             <li><a href="page-services.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Services</a></li>
                             <li><a href="page-faq.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> FAQ</a></li>
@@ -550,5 +555,38 @@
         <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js" async></script>
         <!-- Main Js -->
         <script src="js/app.js" defer></script>
+        <!-- Smooth image loading -->
+        <script>
+        (function () {
+            function revealImg(img) {
+                if (img.complete && img.naturalWidth > 0) {
+                    img.classList.add('loaded');
+                    var wrap = img.closest('.img-wrap');
+                    if (wrap) wrap.classList.add('ready');
+                } else {
+                    img.addEventListener('load', function () {
+                        img.classList.add('loaded');
+                        var wrap = img.closest('.img-wrap');
+                        if (wrap) wrap.classList.add('ready');
+                    });
+                    img.addEventListener('error', function () {
+                        img.style.opacity = '1';
+                        var wrap = img.closest('.img-wrap');
+                        if (wrap) wrap.classList.add('ready');
+                    });
+                }
+            }
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) { revealImg(entry.target); observer.unobserve(entry.target); }
+                    });
+                }, { rootMargin: '0px 0px 120px 0px' });
+                document.querySelectorAll('img.img-smooth').forEach(function (img) { io.observe(img); });
+            } else {
+                document.querySelectorAll('img.img-smooth').forEach(revealImg);
+            }
+        })();
+        </script>
     </body>
 </html>

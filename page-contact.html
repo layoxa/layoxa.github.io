@@ -93,6 +93,7 @@
         }
     </script>
     <!-- Calendly Badge Widget End -->
+    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="theme-2026">
@@ -112,7 +113,7 @@
         <div class="container">
             <!-- Logo container-->
             <div>
-                <a class="logo" href="index.html">
+                <a class="logo" href="/">
                     <img src="images/logo-dark.png" height="24" alt="">
                 </a>
             </div>
@@ -134,7 +135,7 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
                     <li><a href="page-services.html">Services</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
@@ -225,13 +226,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="footer-py-60 text-center">
-                        <a href="index.html" class="logo-footer">
+                        <a href="/" class="logo-footer">
                             <img src="images/logo-light.png" height="24" alt="Leyoxa">
                         </a>
                         <p class="mt-4 text-muted">AI-powered clinic management software for dental and medical
                             practices.</p>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li class="list-inline-item"><a href="index.html" class="text-muted">Home</a></li>
+                            <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
                             <li class="list-inline-item"><a href="page-aboutus.html" class="text-muted">About</a></li>
                             <li class="list-inline-item"><a href="page-services.html" class="text-muted">Services</a>
                             </li>
@@ -272,6 +273,39 @@
     <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js" async></script>
     <!-- Main Js -->
     <script src="js/app.js" defer></script>
+    <!-- Smooth image loading -->
+    <script>
+    (function () {
+        function revealImg(img) {
+            if (img.complete && img.naturalWidth > 0) {
+                img.classList.add('loaded');
+                var wrap = img.closest('.img-wrap');
+                if (wrap) wrap.classList.add('ready');
+            } else {
+                img.addEventListener('load', function () {
+                    img.classList.add('loaded');
+                    var wrap = img.closest('.img-wrap');
+                    if (wrap) wrap.classList.add('ready');
+                });
+                img.addEventListener('error', function () {
+                    img.style.opacity = '1';
+                    var wrap = img.closest('.img-wrap');
+                    if (wrap) wrap.classList.add('ready');
+                });
+            }
+        }
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) { revealImg(entry.target); observer.unobserve(entry.target); }
+                });
+            }, { rootMargin: '0px 0px 120px 0px' });
+            document.querySelectorAll('img.img-smooth').forEach(function (img) { io.observe(img); });
+        } else {
+            document.querySelectorAll('img.img-smooth').forEach(revealImg);
+        }
+    })();
+    </script>
 </body>
 
 </html>

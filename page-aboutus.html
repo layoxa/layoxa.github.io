@@ -101,6 +101,7 @@
                 box-shadow: 0 18px 40px rgba(11, 18, 32, 0.12);
             }
         </style>
+        <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
             <!-- Calendly Badge Widget -->
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -134,7 +135,7 @@
             <div class="container">
                 <!-- Logo container-->
                 <div>
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="/">
                         <img src="images/logo-dark.png" class="l-dark" height="24" alt="">
                         <img src="images/logo-light.png" class="l-light" height="24" alt="">
                     </a>
@@ -163,7 +164,7 @@
                 <div id="navigation">
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu nav-light">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
                     <li><a href="page-services.html">Services</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
@@ -191,7 +192,7 @@
                             <div class="page-next">
                                 <nav aria-label="breadcrumb" class="d-inline-block">
                                     <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Leyoxa</a></li>
+                                        <li class="breadcrumb-item"><a href="/">Leyoxa</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">About Us</li>
                                     </ul>
                                 </nav>
@@ -214,7 +215,9 @@
             <div class="container">
                 <div class="row align-items-center" id="counter">
                     <div class="col-md-6">
-                        <img src="images/company/about2.png" class="img-fluid" width="600" height="500" loading="lazy" alt="Leyoxa healthcare software team">
+                        <div class="img-wrap">
+                            <img src="images/company/about2.png" class="img-fluid img-smooth" width="600" height="500" loading="lazy" alt="Leyoxa healthcare software team">
+                        </div>
                     </div><!--end col-->
 
                     <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
@@ -400,7 +403,7 @@
                     <div class="col-md-8 col-12 mt-4 pt-2">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade bg-white show active p-4 rounded shadow" id="developing" role="tabpanel" aria-labelledby="webdeveloping">
-                                <img src="images/about/7.jpg" class="img-fluid rounded shadow" alt="">
+                                <img src="images/about/7.jpg" class="img-fluid rounded shadow img-smooth" alt="">
                                 <div class="mt-4">
                                     <p class="text-muted">
                                         Simplify administrative tasks, automate scheduling, billing, and patient communication to free up more time for patient care.
@@ -410,7 +413,7 @@
                             </div><!--end teb pane-->
                             
                             <div class="tab-pane fade bg-white p-4 rounded shadow" id="data-analise" role="tabpanel" aria-labelledby="database">
-                                <img src="images/about/8.jpg" class="img-fluid rounded shadow" alt="">
+                                <img src="images/about/8.jpg" class="img-fluid rounded shadow img-smooth" alt="">
                                 <div class="mt-4">
                                     <p class="text-muted">
                                         Increase your clinic’s visibility and attract new patients with SEO-optimized content, digital marketing campaigns, and an engaging online presence.
@@ -420,7 +423,7 @@
                             </div><!--end teb pane-->
 
                             <div class="tab-pane fade bg-white p-4 rounded shadow" id="security" role="tabpanel" aria-labelledby="server">
-                                <img src="images/about/9.jpg" class="img-fluid rounded shadow" alt="">
+                                <img src="images/about/9.jpg" class="img-fluid rounded shadow img-smooth" alt="">
                                 <div class="mt-4">
                                     <p class="text-muted">
                                         Improve efficiency and patient engagement with personalized tools and seamless integrations that adapt to your clinic’s needs.
@@ -430,7 +433,7 @@
                             </div><!--end teb pane-->
                             
                             <div class="tab-pane fade bg-white p-4 rounded shadow" id="designing" role="tabpanel" aria-labelledby="webdesigning">
-                                <img src="images/about/12.jpg" class="img-fluid rounded shadow" alt="">
+                                <img src="images/about/12.jpg" class="img-fluid rounded shadow img-smooth" alt="">
                                 <div class="mt-4">
                                     <p class="text-muted">
                                         Our expert team provides continuous updates, marketing enhancements, and technical support to ensure your clinic’s sustained success.
@@ -451,7 +454,7 @@
                     <div class="col-12 text-center">
                         <div class="video-solution-cta position-relative" style="z-index: 1;">
                             <div class="position-relative" style="display: none">
-                                <img src="images/cta-bg.jpg" class="img-fluid rounded-md shadow-lg" alt="">
+                                <img src="images/cta-bg.jpg" class="img-fluid rounded-md shadow-lg img-smooth" alt="">
                                 <div class="play-icon">
                                     <a href="https://www.youtube.com/watch?v=jNTZpfXYJa4" class="play-btn video-play-icon">
                                         <i class="mdi mdi-play text-primary rounded-circle bg-white shadow-lg"></i>
@@ -551,5 +554,38 @@
         <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js" async></script>
         <!-- Main Js -->
         <script src="js/app.js" defer></script>
+        <!-- Smooth image loading -->
+        <script>
+        (function () {
+            function revealImg(img) {
+                if (img.complete && img.naturalWidth > 0) {
+                    img.classList.add('loaded');
+                    var wrap = img.closest('.img-wrap');
+                    if (wrap) wrap.classList.add('ready');
+                } else {
+                    img.addEventListener('load', function () {
+                        img.classList.add('loaded');
+                        var wrap = img.closest('.img-wrap');
+                        if (wrap) wrap.classList.add('ready');
+                    });
+                    img.addEventListener('error', function () {
+                        img.style.opacity = '1';
+                        var wrap = img.closest('.img-wrap');
+                        if (wrap) wrap.classList.add('ready');
+                    });
+                }
+            }
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) { revealImg(entry.target); observer.unobserve(entry.target); }
+                    });
+                }, { rootMargin: '0px 0px 120px 0px' });
+                document.querySelectorAll('img.img-smooth').forEach(function (img) { io.observe(img); });
+            } else {
+                document.querySelectorAll('img.img-smooth').forEach(revealImg);
+            }
+        })();
+        </script>
     </body>
 </html>
