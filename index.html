@@ -382,6 +382,10 @@
             }
         }
 
+        /* Mobile stat badge strips */
+        .mobile-badge-strip { gap: 6px; }
+        .mobile-badge-strip .badge { font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 20px; }
+
         /* Agent flow — 3 cols always except very small phones */
         @media (max-width: 479px) {
             .agent-flow {
@@ -564,6 +568,11 @@
                             <div>SEO Agent</div>
                             <div>Marketing Agent</div>
                         </div>
+                        <div class="d-flex flex-wrap mobile-badge-strip mt-3 d-md-none">
+                            <span class="badge badge-soft-primary mr-2 mb-1">Voice Agent &mdash; 24/7</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1">SEO Agent</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1">Marketing Agent</span>
+                        </div>
                         <div class="mt-4">
                             <a href="https://concierge.ai.ddsmarketing.io" target="_blank" rel="noopener noreferrer"
                                 class="btn btn-primary mr-2">Try Voice Agent Live <i
@@ -573,7 +582,7 @@
                         </div>
                     </div>
                 </div><!--end col-->
-                <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 d-none d-md-block">
                     <div class="voice-card">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
@@ -611,7 +620,7 @@
 
             <!-- Client 2: SmileLink -->
             <div class="row align-items-center mt-100 mt-60">
-                <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="col-lg-6 col-md-6 col-12 order-2 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0 d-none d-md-block">
                     <div class="voice-card">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
@@ -646,7 +655,7 @@
                         </div>
                     </div>
                 </div><!--end col-->
-                <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1">
+                <div class="col-lg-6 col-md-6 col-12 order-1 order-md-1">
                     <div class="section-title pl-lg-4">
                         <span class="future-pill">Client 2 — SmileLink</span>
                         <h3 class="title mb-3 mt-3">Custom Mobile Patient App<br>for a Dental Practice</h3>
@@ -663,6 +672,11 @@
                             <li class="mb-2"><span class="text-primary h5 mr-2"><i
                                         class="uim uim-check-circle"></i></span>PMS sync with smart reminders</li>
                         </ul>
+                        <div class="d-flex flex-wrap mobile-badge-strip mt-3 d-md-none">
+                            <span class="badge badge-soft-success mr-2 mb-1">iOS &amp; Android App</span>
+                            <span class="badge badge-soft-success mr-2 mb-1">E2E Encrypted Chat</span>
+                            <span class="badge badge-soft-success mr-2 mb-1">PMS Integrated</span>
+                        </div>
                         <div class="mt-4">
                             <a href="https://smilelink.app" target="_blank" class="btn btn-primary">Build Your Patient
                                 App <i class="mdi mdi-chevron-right"></i></a>
@@ -690,13 +704,18 @@
                             <li class="mb-2"><span class="text-primary h5 mr-2"><i
                                         class="uim uim-check-circle"></i></span>Practice-side emergency dashboard</li>
                         </ul>
+                        <div class="d-flex flex-wrap mobile-badge-strip mt-3 d-md-none">
+                            <span class="badge badge-soft-danger mr-2 mb-1">Booking &lt; 60s</span>
+                            <span class="badge badge-soft-danger mr-2 mb-1">Real-time Availability</span>
+                            <span class="badge badge-soft-danger mr-2 mb-1">Auto Intake</span>
+                        </div>
                         <div class="mt-4">
                             <a href="https://emergclinic.com" target="_blank" class="btn btn-primary">Build a Booking
                                 System <i class="mdi mdi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div><!--end col-->
-                <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 d-none d-md-block">
                     <div class="voice-card">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
@@ -861,11 +880,11 @@
                             five products, one engineering team.
                         </p>
                         <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
-                            <span class="badge badge-soft-primary px-3 py-2 mr-2">Voice Agent</span>
-                            <span class="badge badge-soft-primary px-3 py-2 mr-2">SEO Agent</span>
-                            <span class="badge badge-soft-primary px-3 py-2 mr-2">Marketing Agent</span>
-                            <span class="badge badge-soft-primary px-3 py-2 mr-2">Mobile App</span>
-                            <span class="badge badge-soft-primary px-3 py-2">Booking Engine</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1 mr-2">Voice Agent</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1 mr-2">SEO Agent</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1 mr-2">Marketing Agent</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1 mr-2">Mobile App</span>
+                            <span class="badge badge-soft-primary mr-2 mb-1">Booking Engine</span>
                         </div>
                     </div>
                 </div><!--end col-->
