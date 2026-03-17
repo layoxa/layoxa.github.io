@@ -326,7 +326,19 @@
         @media (max-width: 767px) {
             .voice-card {
                 margin-top: 24px;
-                padding: 20px;
+                padding: 18px 16px;
+                border-radius: 16px;
+            }
+
+            /* Stat chips inside voice-card: stack to 1-per-row on phones */
+            .voice-card .row .col-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 8px;
+            }
+
+            .voice-card .row .col-4:last-child {
+                margin-bottom: 0;
             }
 
             .voice-agent {
@@ -351,18 +363,30 @@
                 max-width: 90%;
                 height: auto;
             }
-        }
 
-        /* Agent flow — always 3 cols on tablet, 1 col on phone */
-        @media (max-width: 991px) {
-            .agent-flow {
-                grid-template-columns: 1fr;
+            /* Client section rows — remove top spacing overlap on mobile */
+            .mt-100 {
+                margin-top: 48px !important;
+            }
+
+            .mt-60 {
+                margin-top: 36px !important;
             }
         }
 
-        @media (min-width: 576px) and (max-width: 991px) {
+        /* Stat chips — comfortable at tablet too */
+        @media (min-width: 576px) and (max-width: 767px) {
+            .voice-card .row .col-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* Agent flow — 3 cols always except very small phones */
+        @media (max-width: 479px) {
             .agent-flow {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: 1fr;
+                gap: 8px;
             }
         }
 
