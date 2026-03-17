@@ -260,9 +260,11 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
             will-change: opacity, transform;
         }
+
         .img-smooth.loaded {
             opacity: 1;
         }
+
         /* Skeleton shimmer placeholder while image loads */
         .img-wrap {
             position: relative;
@@ -272,13 +274,20 @@
             animation: shimmer 1.4s infinite;
             border-radius: 12px;
         }
+
         .img-wrap.ready {
             background: none;
             animation: none;
         }
+
         @keyframes shimmer {
-            0%   { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
         }
 
         /* ── Mobile fixes ─────────────────────────────────────────── */
@@ -289,20 +298,25 @@
                 padding-top: 90px;
                 padding-bottom: 32px;
             }
+
             .hero-2026 h1.heading {
                 font-size: 28px !important;
                 line-height: 1.25;
             }
+
             .hero-2026 .para-desc {
                 font-size: 15px !important;
             }
+
             .hero-2026 .future-badges {
                 gap: 8px;
             }
+
             .hero-2026 .future-badge {
                 font-size: 12px;
                 padding: 6px 10px;
             }
+
             .home-dashboard img {
                 top: 0 !important;
             }
@@ -314,20 +328,24 @@
                 margin-top: 24px;
                 padding: 20px;
             }
+
             .voice-agent {
                 border-radius: 16px;
                 padding: 28px 12px;
             }
+
             /* Feature cards — full width stack */
             .row .col-md-4 {
                 margin-bottom: 4px;
             }
+
             /* Section images — center on mobile */
             .software-feature-left,
             .feature-right {
                 text-align: center;
                 margin-bottom: 24px;
             }
+
             .software-feature-left img,
             .feature-right img {
                 max-width: 90%;
@@ -341,6 +359,7 @@
                 grid-template-columns: 1fr;
             }
         }
+
         @media (min-width: 576px) and (max-width: 991px) {
             .agent-flow {
                 grid-template-columns: repeat(3, 1fr);
@@ -355,6 +374,7 @@
                 margin-bottom: 16px;
                 text-align: center;
             }
+
             .avatar.avatar-ex-sm {
                 max-height: 32px;
             }
@@ -366,10 +386,12 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+
             .customer-testi .avatar-small {
                 margin-bottom: 12px;
                 margin-right: 0 !important;
             }
+
             .customer-testi .media-body {
                 width: 100%;
             }
@@ -382,6 +404,7 @@
                 margin-right: 0 !important;
                 margin-bottom: 10px;
             }
+
             .section-title .alert-pills {
                 flex-wrap: wrap;
             }
@@ -389,7 +412,7 @@
 
         /* Touch-friendly nav links */
         @media (max-width: 991px) {
-            #navigation ul.navigation-menu > li > a {
+            #navigation ul.navigation-menu>li>a {
                 padding: 12px 16px;
                 font-size: 15px;
             }
@@ -439,7 +462,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
                     <li><a href="page-services.html">Services</a></li>
-                    <li><a href="#voice-agent">Voice Agent</a></li>
+                    <li><a href="#our-work">Our Work</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
                     <li><a href="page-contact.html">Contact</a></li>
                 </ul><!-- End navigation menu -->
@@ -454,22 +477,26 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center mt-0 mt-md-5 pt-0 pt-md-5">
                     <div class="title-heading margin-top-100 future-reveal" style="animation-delay: 0.1s;">
-                        <span class="future-pill"> AI-Ready clinic platform</span>
-                        <h1 class="heading mb-4 mt-3">AI Voice Agent for Dental Practices &amp; DSOs</h1>
-                        <p class="para-desc mx-auto text-muted">Built for dental practices under 10 offices. Already deployed with DDS Marketing — a Miami-based agency managing $130M+ in dental ad spend.</p>
+                        <span class="future-pill">Custom AI Systems for Dental</span>
+                        <h1 class="heading mb-4 mt-3">We Build AI Agents<br>That Run Your Dental Operations</h1>
+                        <p class="para-desc mx-auto text-muted">Voice agents. SEO agents. Marketing agents. Built from
+                            scratch and deployed for real dental practices and agencies — not off-the-shelf software.
+                        </p>
                         <div class="mt-4">
-                            <a href="page-contact.html" class="btn btn-primary">Book a Demo</a>
+                            <a href="#our-work" class="btn btn-primary mr-2">See Our Work</a>
+                            <a href="page-contact.html" class="btn btn-outline-primary">Book a Call</a>
                         </div>
                         <div class="future-badges d-flex flex-wrap justify-content-center mt-4">
-                            <span class="future-badge">Lead manager Voice agent</span>
-                            <span class="future-badge">After-hours concierge</span>
-                            <span class="future-badge">HIPAA/PHIPA aligned</span>
+                            <span class="future-badge">SmileLink</span>
+                            <span class="future-badge">Emergclinic</span>
+                            <span class="future-badge">DDS Marketing</span>
                         </div>
                     </div>
 
                     <div class="home-dashboard future-reveal" style="animation-delay: 0.35s;">
                         <img src="images/clinic-solutions/hero.png" alt="Leyoxa clinic management software dashboard"
-                            fetchpriority="high" width="900" height="600" class="img-fluid mover img-smooth" loading="eager">
+                            fetchpriority="high" width="900" height="600" class="img-fluid mover img-smooth"
+                            loading="eager">
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -487,84 +514,215 @@
 
     <!-- Social Icons , features and testi Start -->
     <section class="section overflow-hidden">
-        <div class="container mt-60" id="voice-agent">
-            <div class="row align-items-center voice-agent">
+        <!-- Our Work Section Start -->
+        <div class="container mt-60" id="our-work">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                        <span class="future-pill">Live Deployments</span>
+                        <h2 class="title mb-3 mt-3">Three Clients. Three AI Systems.<br>All Built From Scratch.</h2>
+                        <p class="text-muted para-desc mx-auto mb-0">Not a SaaS product. Not a white-label. Every system
+                            was scoped, engineered, and deployed specifically for the client.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <!-- Client 1: DDS Marketing -->
+            <div class="row align-items-center mt-5 pt-2">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="section-title pr-lg-4">
-                        <span class="future-pill">Voice Agent Service</span>
-                        <h2 class="title mb-3 mt-3">Answer Every Dental &amp; Medical Call. Book Every Patient. 24/7.</h2>
-                        <p class="text-muted">Leyoxa Voice Agent handles inbound scheduling, after-hours triage, and
-                            outbound recalls with a calm, human-like voice. It syncs to your PMS/EHR, confirms intent,
-                            and hands off live when needed.</p>
+                        <span class="future-pill">Client 1 — DDS Marketing</span>
+                        <h3 class="title mb-3 mt-3">AI Voice, SEO &amp; Marketing Agents<br>for a $130M+ Dental Agency
+                        </h3>
+                        <p class="text-muted">DDS Marketing is a Miami-based agency managing paid advertising across
+                            hundreds of dental practices. Leyoxa built three separate AI agents for them: a voice agent
+                            that handles inbound patient calls 24/7, an SEO agent that automates content and ranking
+                            tasks, and a marketing agent that manages campaign logic and reporting.</p>
                         <div class="agent-flow">
-                            <div>Listen</div>
-                            <div>Decide</div>
-                            <div>Act</div>
+                            <div>Voice Agent</div>
+                            <div>SEO Agent</div>
+                            <div>Marketing Agent</div>
                         </div>
                         <div class="mt-4">
-                            <a href="https://concierge.ai.ddsmarketing.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary mr-2">Try Live Demo <i class="mdi mdi-chevron-right"></i></a>
-                            <a href="page-contact.html" class="btn btn-outline-primary">Book a Demo</a>
+                            <a href="https://concierge.ai.ddsmarketing.io" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary mr-2">Try Voice Agent Live <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                            <a href="https://ddsmarketing.io" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline-primary">ddsmarketing.io</a>
                         </div>
                     </div>
                 </div><!--end col-->
-
                 <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
                     <div class="voice-card">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h5 class="mb-1">Live Call Summary</h5>
-                                <p class="text-muted mb-0">Smile Link | Tuesday | 9:30 AM</p>
+                                <h5 class="mb-1">Live Call — DDS Marketing</h5>
+                                <p class="text-muted mb-0">Voice Agent | After-hours | 10:42 PM</p>
                             </div>
                             <span class="badge badge-soft-primary">Active</span>
                         </div>
                         <hr>
-                        <p class="mb-3">"Hi Sarah, I can help you schedule your cleaning. Would you like Friday at 11:00
-                            AM or Monday at 2:30 PM?"</p>
-                        <div class="mt-3 text-muted small">Built-in escalation to your front desk on complex requests.
+                        <p class="mb-3">&ldquo;Hi, this is the DDS concierge. I can help you book your appointment or
+                            answer questions about your visit. What can I help you with tonight?&rdquo;</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Voice Agent</small>
+                                    <strong class="text-primary">24/7 calls</strong>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">SEO Agent</small>
+                                    <strong class="text-primary">Auto-ranks</strong>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Marketing</small>
+                                    <strong class="text-primary">Campaigns</strong>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
 
-            <div class="row mt-4">
-                <div class="col-md-4 mt-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h6 class="mb-2">Inbound Scheduling</h6>
-                            <p class="text-muted mb-0">Natural language booking, rescheduling, and cancellations with
-                                instant confirmation.</p>
+            <!-- Client 2: SmileLink -->
+            <div class="row align-items-center mt-100 mt-60">
+                <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="voice-card">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h5 class="mb-1">SmileLink Patient App</h5>
+                                <p class="text-muted mb-0">Mobile App | iOS &amp; Android</p>
+                            </div>
+                            <span class="badge badge-soft-success">Live</span>
+                        </div>
+                        <hr>
+                        <p class="mb-3">A full-featured patient portal app: appointment management, encrypted in-app
+                            messaging with the care team, smart reminders, and a personalized patient dashboard synced
+                            to the practice PMS.</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Platform</small>
+                                    <strong class="text-primary">iOS + Android</strong>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Messaging</small>
+                                    <strong class="text-primary">E2E Encrypted</strong>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Compliance</small>
+                                    <strong class="text-primary">HIPAA</strong>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!--end col-->
-                <div class="col-md-4 mt-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h6 class="mb-2">Outbound Recall Engine</h6>
-                            <p class="text-muted mb-0">Automated reactivation campaigns tuned to your conversion goals
-                                and availability.</p>
+                <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1">
+                    <div class="section-title pl-lg-4">
+                        <span class="future-pill">Client 2 — SmileLink</span>
+                        <h3 class="title mb-3 mt-3">Custom Mobile Patient App<br>for a Dental Practice</h3>
+                        <p class="text-muted">SmileLink needed a branded patient experience beyond what any
+                            off-the-shelf PMS provided. Leyoxa built a native mobile app (iOS &amp; Android) with
+                            end-to-end encrypted chat, appointment management, personalized health dashboards, and
+                            automated reminders — fully integrated with their practice management system.</p>
+                        <ul class="list-unstyled text-muted mt-3">
+                            <li class="mb-2"><span class="text-primary h5 mr-2"><i
+                                        class="uim uim-check-circle"></i></span>Native iOS &amp; Android app</li>
+                            <li class="mb-2"><span class="text-primary h5 mr-2"><i
+                                        class="uim uim-check-circle"></i></span>End-to-end encrypted patient messaging
+                            </li>
+                            <li class="mb-2"><span class="text-primary h5 mr-2"><i
+                                        class="uim uim-check-circle"></i></span>PMS sync with smart reminders</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="page-contact.html" class="btn btn-primary">Build Your Patient App <i
+                                    class="mdi mdi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div><!--end col-->
-                <div class="col-md-4 mt-3">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h6 class="mb-2">Multilingual Empathy</h6>
-                            <p class="text-muted mb-0">Localized voice options with sentiment detection and soft
-                                handoff rules.</p>
+            </div><!--end row-->
+
+            <!-- Client 3: Emergclinic -->
+            <div class="row align-items-center mt-100 mt-60">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="section-title pr-lg-4">
+                        <span class="future-pill">Client 3 — Emergclinic</span>
+                        <h3 class="title mb-3 mt-3">One-Click Emergency Booking<br>for Dental Emergencies</h3>
+                        <p class="text-muted">Emergclinic is a platform that connects patients experiencing dental
+                            emergencies with available practices in real time. Leyoxa built the entire booking engine:
+                            instant availability detection, one-click patient intake, automated confirmation flows, and
+                            practice-side dashboard for managing emergency slots.</p>
+                        <ul class="list-unstyled text-muted mt-3">
+                            <li class="mb-2"><span class="text-primary h5 mr-2"><i
+                                        class="uim uim-check-circle"></i></span>Real-time availability matching</li>
+                            <li class="mb-2"><span class="text-primary h5 mr-2"><i
+                                        class="uim uim-check-circle"></i></span>One-click patient intake &amp;
+                                confirmation</li>
+                            <li class="mb-2"><span class="text-primary h5 mr-2"><i
+                                        class="uim uim-check-circle"></i></span>Practice-side emergency dashboard</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="page-contact.html" class="btn btn-primary">Build a Booking System <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="voice-card">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h5 class="mb-1">Emergclinic Booking Engine</h5>
+                                <p class="text-muted mb-0">Emergency Booking | Real-time</p>
+                            </div>
+                            <span class="badge badge-soft-danger">Emergency</span>
+                        </div>
+                        <hr>
+                        <p class="mb-3">Patient clicks &ldquo;Book Emergency Appointment&rdquo; &rarr; system finds the
+                            nearest available practice in real time &rarr; confirms slot and sends intake form in under
+                            60 seconds.</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Booking</small>
+                                    <strong class="text-primary">&lt; 60s</strong>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Availability</small>
+                                    <strong class="text-primary">Real-time</strong>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-0 bg-light rounded p-2 text-center">
+                                    <small class="text-muted d-block">Intake</small>
+                                    <strong class="text-primary">Automated</strong>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->
+        <!-- Our Work Section End -->
 
 
         <div class="container mt-md-5">
             <div class="row justify-content-center" id="counter">
                 <div class="col-lg-8 col-md-10">
                     <div class="mb-4 pb-2 text-center">
-                        <h5 class="mb-0 font-weight-normal text-muted">Trusted by dental practices across
-                            <span class="font-weight-bold text-primary">the US</span> to enhance
-                            patient experiences, improve efficiency, and drive growth.</h5>
+                        <h5 class="mb-0 font-weight-normal text-muted">Three live deployments.
+                            <span class="font-weight-bold text-primary">Zero off-the-shelf software.</span>
+                            Every system purpose-built for the client.
+                        </h5>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -582,8 +740,9 @@
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
-                        <h2 class="title mb-3">Real Deployments. Not Demos.</h2>
-                        <p class="text-muted para-desc mx-auto mb-0">Watch the voice agent handle real scheduling scenarios.</p>
+                        <h2 class="title mb-3">See the Systems in Action</h2>
+                        <p class="text-muted para-desc mx-auto mb-0">Videos from SmileLink, Emergclinic, and DDS
+                            Marketing — real products, real use cases.</p>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -592,13 +751,14 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card border-0 shadow rounded overflow-hidden">
                         <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-                            <iframe src="https://www.youtube.com/embed/8ZmSffwpcxo?autoplay=1&mute=1" title="All in one dashboard"
+                            <iframe src="https://www.youtube.com/embed/8ZmSffwpcxo?autoplay=1&mute=1"
+                                title="All in one dashboard"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"
                                 style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
                         </div>
                         <div class="card-body p-3">
-                            <h6 class="mb-0 text-center font-weight-bold">All in one dashboard</h6>
+                            <h6 class="mb-0 text-center font-weight-bold">SmileLink — All-in-One Dashboard</h6>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -606,13 +766,14 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card border-0 shadow rounded overflow-hidden">
                         <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-                            <iframe src="https://www.youtube.com/embed/A0O8qKt5jzk?autoplay=1&mute=1" title="Emergclinic one click emergency booking"
+                            <iframe src="https://www.youtube.com/embed/A0O8qKt5jzk?autoplay=1&mute=1"
+                                title="Emergclinic one click emergency booking"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"
                                 style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
                         </div>
                         <div class="card-body p-3">
-                            <h6 class="mb-0 text-center font-weight-bold">Emergclinic one click emergency booking</h6>
+                            <h6 class="mb-0 text-center font-weight-bold">Emergclinic — One-Click Emergency Booking</h6>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -620,13 +781,15 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card border-0 shadow rounded overflow-hidden">
                         <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-                            <iframe src="https://www.youtube.com/embed/kRjm02JgCHI?autoplay=1&mute=1" title="Patient personalized dashboard"
+                            <iframe src="https://www.youtube.com/embed/kRjm02JgCHI?autoplay=1&mute=1"
+                                title="Patient personalized app"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"
                                 style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
                         </div>
                         <div class="card-body p-3">
-                            <h6 class="mb-0 text-center font-weight-bold">Patient personalized dashboard</h6>
+                            <h6 class="mb-0 text-center font-weight-bold">SmileLink — Patient Personalized Dashboard
+                            </h6>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -640,8 +803,8 @@
                 <div class="col-lg-5 col-md-6 col-12">
                     <div class="software-feature-left">
                         <div class="img-wrap">
-                            <img src="images/clinic-solutions/clinic-management.png" class="img-fluid img-smooth" width="600"
-                                height="450" loading="lazy" alt="Clinic Management Software">
+                            <img src="images/clinic-solutions/clinic-management.png" class="img-fluid img-smooth"
+                                width="600" height="450" loading="lazy" alt="Clinic Management Software">
                         </div>
                     </div>
                 </div><!--end col-->
@@ -668,8 +831,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-6 col-12 order-1 order-md-2">
                     <div class="img-wrap">
-                        <img src="images/illustrator/social.svg" class="img-fluid img-smooth" width="500" height="400" loading="lazy"
-                            alt="Clinic Growth Solutions">
+                        <img src="images/illustrator/social.svg" class="img-fluid img-smooth" width="500" height="400"
+                            loading="lazy" alt="Clinic Growth Solutions">
                     </div>
                 </div><!--end col-->
 
@@ -822,8 +985,8 @@
                 <div class="col-lg-5 col-md-6 col-12 order-1 order-md-2">
                     <div class="feature-right">
                         <div class="img-wrap">
-                            <img src="images/clinic-solutions/integration.png" class="img-fluid img-smooth" width="600" height="450"
-                                loading="lazy" alt="Clinic Software Integration">
+                            <img src="images/clinic-solutions/integration.png" class="img-fluid img-smooth" width="600"
+                                height="450" loading="lazy" alt="Clinic Software Integration">
                         </div>
                     </div>
                 </div><!--end col-->
@@ -857,31 +1020,37 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-12">
                     <div class="p-4 rounded border text-center">
-                        <p class="text-muted mb-3" style="font-size: 1.05rem; line-height: 1.7;">Deployed in partnership with <a href="https://ddsmarketing.io" target="_blank" rel="noopener noreferrer" class="text-primary font-weight-bold">DDS Marketing</a> — a dental-specialized agency based in Miami, FL managing over $130M in ad spend across hundreds of dental practices.
+                        <p class="text-muted mb-2" style="font-size: 1.05rem; line-height: 1.7;">AI systems deployed for
+                            <strong class="text-dark">SmileLink</strong>, <strong
+                                class="text-dark">Emergclinic</strong>, and <a href="https://ddsmarketing.io"
+                                target="_blank" rel="noopener noreferrer" class="text-primary font-weight-bold">DDS
+                                Marketing</a> — a Miami-based dental agency managing $130M+ in ad spend. Three clients,
+                            five products, one engineering team.
                         </p>
-                        <a href="https://ddsmarketing.io" target="_blank" rel="noopener noreferrer" class="text-muted small">ddsmarketing.io</a>
+                        <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                            <span class="badge badge-soft-primary px-3 py-2 mr-2">Voice Agent</span>
+                            <span class="badge badge-soft-primary px-3 py-2 mr-2">SEO Agent</span>
+                            <span class="badge badge-soft-primary px-3 py-2 mr-2">Marketing Agent</span>
+                            <span class="badge badge-soft-primary px-3 py-2 mr-2">Mobile App</span>
+                            <span class="badge badge-soft-primary px-3 py-2">Booking Engine</span>
+                        </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->
-        <!-- Partner Callout End -->        <!-- Founder Section Start -->
+        <!-- Partner Callout End --> <!-- Founder Section Start -->
         <div class="container mt-100 mt-60" id="founder">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 col-12 text-center mb-4 mb-md-0">
-                    <!-- Replace with real founder headshot -->
-                    <img id="founder-photo" src="images/user/placeholder.png"
-                        alt="Leyoxa Founder"
-                        class="img-fluid rounded-circle shadow mx-auto d-block"
-                        style="max-width:220px; width:100%;"
-                        onerror="this.style.display='none'">
-
                     <!-- Founder intro videos -->
                     <div class="mt-4">
                         <p class="text-muted small font-weight-bold mb-2">Founder Intro</p>
                         <div class="row">
                             <div class="col-6 pr-1">
-                                <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:8px;">
-                                    <iframe src="https://www.youtube.com/embed/jGqHJYf5nFg?autoplay=1&mute=1&loop=1&playlist=jGqHJYf5nFg"
+                                <div
+                                    style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:8px;">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/jGqHJYf5nFg?autoplay=1&mute=1&loop=1&playlist=jGqHJYf5nFg"
                                         title="Emergclinic — founder and mh2Dental CEO intro"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen loading="lazy"
@@ -889,8 +1058,10 @@
                                 </div>
                             </div>
                             <div class="col-6 pl-1">
-                                <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:8px;">
-                                    <iframe src="https://www.youtube.com/embed/KtGM5b1yjZQ?autoplay=1&mute=1&loop=1&playlist=KtGM5b1yjZQ"
+                                <div
+                                    style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:8px;">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/KtGM5b1yjZQ?autoplay=1&mute=1&loop=1&playlist=KtGM5b1yjZQ"
                                         title="Founder intro — second clip"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen loading="lazy"
@@ -905,10 +1076,15 @@
                     <div class="section-title ml-lg-4">
                         <span class="future-pill">The person behind the product</span>
                         <h2 class="title mb-3 mt-3">Built by an engineer who knows the stack.</h2>
-                        <p class="text-muted">Leyoxa was founded by a security engineer with experience building AI infrastructure at a Canadian fintech company. Not a marketer who discovered AI — an engineer who built the systems and saw the gap in dental operations.</p>
-                        <p class="text-muted mt-3">If you want to talk to the person who built this, book directly below.</p>
+                        <p class="text-muted">Leyoxa was founded by a security engineer with experience building AI
+                            infrastructure at a Canadian fintech company. The systems you see on this page — the voice
+                            agent for DDS Marketing, the SmileLink patient app, the Emergclinic booking engine, the SEO
+                            and marketing agents — were all designed and built by the same person.</p>
+                        <p class="text-muted mt-3">Not a SaaS product. Not a reseller. If you want to work with the
+                            engineer who built it, book directly below.</p>
                         <div class="mt-4">
-                            <a href="page-contact.html" class="btn btn-primary">Book a Call with the Founder <i class="mdi mdi-chevron-right"></i></a>
+                            <a href="page-contact.html" class="btn btn-primary">Book a Call with the Founder <i
+                                    class="mdi mdi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -921,7 +1097,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-8">
                         <div class="section-title text-md-left text-center">
-                            <h2 class="title mb-3 text-white title-dark">Ready to Transform Your Clinic?</h2>
+                            <h2 class="title mb-3 text-white title-dark">Need a Custom AI System for Your Practice?</h2>
                         </div>
                     </div><!--end col-->
 
@@ -939,8 +1115,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-5 col-12">
                     <div class="img-wrap">
-                        <img src="images/clinic-solutions/clinic-software.png" class="img-fluid mx-auto d-block img-smooth" width="500"
-                            height="400" loading="lazy" alt="Clinic Software Solutions">
+                        <img src="images/clinic-solutions/clinic-software.png"
+                            class="img-fluid mx-auto d-block img-smooth" width="500" height="400" loading="lazy"
+                            alt="Clinic Software Solutions">
                     </div>
                 </div><!--end col-->
 
@@ -951,7 +1128,7 @@
                             <span class="content">Get started with Leyoxa <i data-feather="chevron-right"
                                     class="fea icon-sm"></i></span>
                         </div>
-                        <h2 class="title mb-4">AI Agents for Dental Operations <br> Built for Your Practice</h2>
+                        <h2 class="title mb-4">Custom AI Systems <br> Built for Dental</h2>
                         <p class="text-muted para-desc mb-0">Partner with <span
                                 class="text-primary font-weight-bold">Leyoxa</span> to create tailored software for your
                             clinic.
@@ -1099,41 +1276,41 @@
     <script src="js/app.js" defer></script>
     <!-- Smooth image loading -->
     <script>
-    (function () {
-        function revealImg(img) {
-            if (img.complete && img.naturalWidth > 0) {
-                img.classList.add('loaded');
-                var wrap = img.closest('.img-wrap');
-                if (wrap) wrap.classList.add('ready');
-            } else {
-                img.addEventListener('load', function () {
+        (function () {
+            function revealImg(img) {
+                if (img.complete && img.naturalWidth > 0) {
                     img.classList.add('loaded');
                     var wrap = img.closest('.img-wrap');
                     if (wrap) wrap.classList.add('ready');
-                });
-                img.addEventListener('error', function () {
-                    img.style.opacity = '1';
-                    var wrap = img.closest('.img-wrap');
-                    if (wrap) wrap.classList.add('ready');
-                });
+                } else {
+                    img.addEventListener('load', function () {
+                        img.classList.add('loaded');
+                        var wrap = img.closest('.img-wrap');
+                        if (wrap) wrap.classList.add('ready');
+                    });
+                    img.addEventListener('error', function () {
+                        img.style.opacity = '1';
+                        var wrap = img.closest('.img-wrap');
+                        if (wrap) wrap.classList.add('ready');
+                    });
+                }
             }
-        }
-        if ('IntersectionObserver' in window) {
-            var io = new IntersectionObserver(function (entries, observer) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        revealImg(entry.target);
-                        observer.unobserve(entry.target);
-                    }
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            revealImg(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { rootMargin: '0px 0px 120px 0px' });
+                document.querySelectorAll('img.img-smooth').forEach(function (img) {
+                    io.observe(img);
                 });
-            }, { rootMargin: '0px 0px 120px 0px' });
-            document.querySelectorAll('img.img-smooth').forEach(function (img) {
-                io.observe(img);
-            });
-        } else {
-            document.querySelectorAll('img.img-smooth').forEach(revealImg);
-        }
-    })();
+            } else {
+                document.querySelectorAll('img.img-smooth').forEach(revealImg);
+            }
+        })();
     </script>
 </body>
 
