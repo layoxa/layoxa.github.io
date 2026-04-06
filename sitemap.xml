@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leyoxa.com/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://leyoxa.com/page-services.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://leyoxa.com/page-faq.html</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
     <loc>https://leyoxa.com/page-aboutus.html</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+  <url>
+    <loc>https://leyoxa.com/page-contact.html</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
 </urlset>
