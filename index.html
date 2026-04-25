@@ -257,6 +257,153 @@
             color: var(--future-slate);
         }
 
+        /* ── Modern hero polish (added today) ───────────────────── */
+        .hero-2026 .heading {
+            font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+            line-height: 1.05;
+            font-weight: 800;
+            letter-spacing: -0.035em;
+        }
+
+        .text-grad {
+            background: linear-gradient(135deg, #14d3bf 0%, #0ea5e9 55%, #6366f1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .pill-live {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 14px 7px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--future-stroke);
+            color: var(--future-ink);
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(11, 18, 32, 0.04);
+        }
+
+        .pill-live .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #14d3bf;
+            box-shadow: 0 0 0 3px rgba(20, 211, 191, 0.18);
+            animation: lx-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes lx-pulse {
+            0%, 100% { box-shadow: 0 0 0 3px rgba(20, 211, 191, 0.18); }
+            50% { box-shadow: 0 0 0 7px rgba(20, 211, 191, 0.04); }
+        }
+
+        .btn-ink {
+            background: #0b1220;
+            border: 1px solid #0b1220;
+            color: #fff !important;
+            padding: 12px 22px;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 8px 24px rgba(11, 18, 32, 0.18);
+            transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .btn-ink:hover, .btn-ink:focus {
+            background: #1c2a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 36px rgba(11, 18, 32, 0.28);
+            color: #fff !important;
+        }
+
+        .btn-ghost-modern {
+            background: #fff;
+            border: 1px solid var(--future-stroke);
+            color: var(--future-ink) !important;
+            padding: 12px 22px;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(11, 18, 32, 0.06);
+            transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .btn-ghost-modern:hover {
+            border-color: var(--future-ink);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(11, 18, 32, 0.10);
+            color: var(--future-ink) !important;
+        }
+
+        .trust-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--future-stroke);
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--future-slate);
+        }
+
+        .trust-chip i { color: #0fb8a6; font-size: 16px; }
+
+        /* ── Big mint CTA section ─────────────────────────────────── */
+        .big-cta-mint {
+            position: relative;
+            border-radius: 28px;
+            padding: 64px 56px;
+            background:
+                radial-gradient(ellipse at top right, rgba(255, 138, 91, 0.42), transparent 60%),
+                radial-gradient(ellipse at bottom left, rgba(255, 255, 255, 0.18), transparent 60%),
+                linear-gradient(135deg, #14d3bf 0%, #0fb8a6 45%, #0a8c7e 100%);
+            color: #fff;
+            overflow: hidden;
+            box-shadow: 0 30px 70px rgba(15, 184, 166, 0.30);
+        }
+
+        .big-cta-mint h2 {
+            color: #fff;
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+            line-height: 1.15;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            text-shadow: 0 2px 18px rgba(11, 18, 32, 0.18);
+        }
+
+        .big-cta-mint p {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .big-cta-mint .btn-light {
+            background: #fff;
+            color: var(--future-ink) !important;
+            border: 0;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 700;
+            box-shadow: 0 12px 28px rgba(11, 18, 32, 0.18);
+        }
+
+        .big-cta-mint .btn-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(11, 18, 32, 0.24);
+        }
+
+        @media (max-width: 767px) {
+            .big-cta-mint { padding: 44px 28px; }
+        }
+
         .voice-agent {
             position: relative;
             background:
@@ -626,21 +773,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center mt-0 mt-md-5 pt-0 pt-md-5">
                     <div class="title-heading margin-top-100 future-reveal" style="animation-delay: 0.1s;">
-                        <span class="future-pill">Dental Software Development for Clinics</span>
-                        <h1 class="heading mb-4 mt-3">Custom Dental Software &amp; AI Automation<br>for Clinics and DSOs</h1>
-                        <p class="para-desc mx-auto text-muted">Leyoxa builds custom dental software for practices in
-                            Miami, Austin, and Toronto: AI voice agents, patient apps, appointment systems, and Open
-                            Dental integrations built from scratch for real clinic operations.
+                        <span class="pill-live">
+                            <span class="dot"></span>
+                            Now booking · Miami · Austin · Toronto
+                        </span>
+                        <h1 class="heading mb-4 mt-4">
+                            Custom dental software.<br>
+                            <span class="text-grad">Built for the clinic, not the template.</span>
+                        </h1>
+                        <p class="para-desc mx-auto text-muted">
+                            Leyoxa builds AI voice agents, patient apps, appointment systems, and Open Dental
+                            integrations for clinics and DSOs in Miami, Austin, and Toronto — engineered from
+                            scratch for how your practice actually runs. Founder-led delivery.
                         </p>
-                        <div class="mt-4">
-                            <a href="#our-work" class="btn btn-primary mr-2">See Our Work</a>
-                            <a href="https://calendly.com/leyoxa/30min" target="_blank"
-                                class="btn btn-outline-primary">Book a Call</a>
+                        <div class="mt-4 d-flex flex-wrap justify-content-center" style="gap: 12px;">
+                            <a href="#our-work" class="btn btn-ink">
+                                <i class="mdi mdi-briefcase-outline mr-1"></i> See Our Work
+                            </a>
+                            <a href="https://calendly.com/leyoxa/30min" target="_blank" rel="noopener"
+                                class="btn btn-ghost-modern">
+                                <i class="mdi mdi-calendar-check mr-1"></i> Book a Discovery Call
+                            </a>
                         </div>
-                        <div class="future-badges d-flex flex-wrap justify-content-center mt-4">
-                            <span class="future-badge">Miami Dental Offices</span>
-                            <span class="future-badge">Austin Clinics</span>
-                            <span class="future-badge">Toronto Practices</span>
+                        <div class="d-flex flex-wrap justify-content-center mt-4" style="gap: 10px;">
+                            <span class="trust-chip"><i class="mdi mdi-shield-check"></i> HIPAA / PHIPA aligned</span>
+                            <span class="trust-chip"><i class="mdi mdi-clock-outline"></i> 24/7 voice coverage</span>
+                            <span class="trust-chip"><i class="mdi mdi-account-tie"></i> Founder-led delivery</span>
+                            <span class="trust-chip"><i class="mdi mdi-puzzle"></i> Open Dental + Dentrix ready</span>
                         </div>
                     </div>
 
@@ -1111,21 +1270,23 @@
         <!-- Founder Section End -->
 
         <div class="container mt-100 mt-60">
-            <div class="rounded bg-primary p-lg-5 p-4">
-                <div class="row align-items-end">
+            <div class="big-cta-mint">
+                <div class="row align-items-center">
                     <div class="col-md-8">
-                        <div class="section-title text-md-left text-center">
-                            <h2 class="title mb-3 text-white title-dark">Need Custom Dental Software or AI Automation?</h2>
+                        <div class="text-md-left text-center">
+                            <h2 class="mb-3">Need custom dental software or AI automation?</h2>
+                            <p class="mb-0">Book a 30-minute discovery call with the engineer who builds it. No
+                                slides, no sales reps — just your clinic's workflow and what we can ship.</p>
                         </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-4 mt-4 mt-sm-0">
-                        <div class="text-md-right text-center">
-                            <a href="https://calendly.com/leyoxa/30min" target="_blank" class="btn btn-light">Schedule
-                                Your Free Consultation</a>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+                    </div>
+                    <div class="col-md-4 mt-4 mt-md-0 text-md-right text-center">
+                        <a href="https://calendly.com/leyoxa/30min" target="_blank" rel="noopener"
+                            class="btn btn-light">
+                            <i class="mdi mdi-calendar-check mr-1"></i>
+                            Book a Discovery Call
+                        </a>
+                    </div>
+                </div>
             </div>
         </div><!--end container-->
 
