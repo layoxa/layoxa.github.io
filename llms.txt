@@ -1,22 +1,30 @@
 # Leyoxa
 
-> Leyoxa is a healthcare SaaS company (Leyoxa LLC) building AI voice agents and
-> clinic management software for dental and medical practices in Canada and the
-> United States. All products are designed for HIPAA and PHIPA compliance.
+> Leyoxa builds custom dental software, AI voice agents, patient apps, and Open
+> Dental integrations for clinics and DSOs in Miami, Austin, and Toronto. Founded
+> and engineered by Sepehr Aflatounian. Each system is built from scratch around
+> the clinic's actual operations — not configured from a SaaS template.
 
-## Products
+## Products & client systems
 
-- [DDSMarketing Voice Agent](https://leyoxa.com/page-services.html): AI voice
-  concierge that answers inbound clinic calls 24/7, books appointments using
-  natural language, runs outbound patient recall, and transfers to staff with
-  full call summaries. Clinics report 92% first-call resolution and 38% more
-  appointments booked (average across deployments, 2024-2025).
-- [Smilelink](https://leyoxa.com/page-services.html): Patient-facing mobile app
-  and clinic management dashboard with end-to-end encrypted messaging,
-  OpenDental/Dentrix integration, and HIPAA-aligned data storage.
-- [Emergclinic](https://leyoxa.com/page-services.html): Emergency dental/medical
-  booking platform that triages urgency, routes to available providers, and
-  processes payments via Stripe.
+- [DDS Marketing — 3-Agent Suite](https://leyoxa.com/page-services.html): Built
+  for DDS Marketing, a Miami-based dental agency managing $130M+ in client ad
+  spend. Three integrated AI agents: (1) a Voice Agent that answers inbound
+  calls 24/7, qualifies leads, books appointments, and routes to staff with
+  full call summaries; (2) an SEO Agent that audits dental practice sites,
+  writes location and treatment pages, manages reviews, and maintains schema
+  and Core Web Vitals; (3) a Marketing Agent that drives patient retention and
+  growth campaigns across the agency's client base.
+- [SmileLink](https://dashboard.smilelink.app/auth/login): Patient-facing iOS
+  and Android app paired with a clinic management dashboard. End-to-end
+  encrypted messaging, scheduling, automated reminders, OpenDental and Dentrix
+  integration. Deployed at a dental practice in Texas. iOS:
+  https://apps.apple.com/ca/app/smile-link/id1645696642 · Android:
+  https://play.google.com/store/apps/details?id=app.blueteeth.
+- [Emergclinic](https://www.youtube.com/shorts/jGqHJYf5nFg): Emergency dental
+  booking platform built and operated in Toronto. Triaged urgency, routed to
+  available providers, processed payments via Stripe. Site is no longer live;
+  founder walk-through demo available on YouTube.
 
 ## Pages
 
@@ -31,11 +39,20 @@
 Leyoxa provides scheduling and administrative automation only. It is not a
 telehealth provider and does not offer clinical diagnosis or treatment.
 
+Leyoxa designs its data infrastructure to align with HIPAA/PHIPA technical
+safeguard requirements. Business Associate Agreements (BAAs) are available for
+covered entities upon request.
+
+## Founder
+
+Leyoxa was founded by Sepehr Aflatounian, a security engineer with experience
+building AI infrastructure at a Canadian fintech. The systems on this site —
+the DDS Marketing agents, SmileLink, and Emergclinic — were all designed and
+built by the same engineer. Not a SaaS product. Not a reseller.
+
 ## Contact
 
 - Email: contact@leyoxa.com
-- Phone: +1 647-985-2468
 - Demo: https://calendly.com/leyoxa/30min
 - LinkedIn: https://www.linkedin.com/company/leyoxa/
-
-Last updated: 2026-03-06
+- Cities served: Miami, Austin, Toronto

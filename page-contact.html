@@ -3,21 +3,41 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Contact Leyoxa - Book a Free Voice Agent Demo</title>
+    <title>Contact Leyoxa — Book a Discovery Call</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Book a free 30-minute demo of Leyoxa's AI voice agent, Smilelink, or Emergclinic. Call +1 647-985-2468 or email contact@leyoxa.com. Serving dental and medical clinics across Canada and the US." />
+        content="Book a free 30-minute discovery call with the engineer who builds it. Custom dental software, AI voice agents, patient apps, and Open Dental integrations for clinics in Miami, Austin, and Toronto." />
     <meta name="author" content="Sepehr Aflatounian" />
     <link rel="canonical" href="https://leyoxa.com/page-contact.html" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://leyoxa.com/page-contact.html" />
-    <meta property="og:title" content="Contact Leyoxa - Book a Free Voice Agent Demo" />
+    <meta property="og:title" content="Contact Leyoxa — Book a Discovery Call" />
     <meta property="og:description"
-        content="Book a free 30-minute demo of Leyoxa's AI voice agent, Smilelink, or Emergclinic. Call +1 647-985-2468 or email contact@leyoxa.com." />
+        content="Book a free 30-minute discovery call. Custom dental software and AI automation for clinics in Miami, Austin, and Toronto." />
     <meta property="og:image" content="https://leyoxa.com/images/contact-detail.jpg" />
     <meta property="og:site_name" content="Leyoxa" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- ContactPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Leyoxa",
+      "url": "https://leyoxa.com/page-contact.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Leyoxa",
+        "email": "contact@leyoxa.com",
+        "url": "https://leyoxa.com",
+        "areaServed": [
+          {"@type": "City", "name": "Miami"},
+          {"@type": "City", "name": "Austin"},
+          {"@type": "City", "name": "Toronto"}
+        ]
+      }
+    }
+    </script>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -25,7 +45,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" media="print"
+        onload="this.media='all'">
     <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +58,7 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
     <style>
         :root {
             --future-ink: #0b1220;
@@ -78,37 +100,74 @@
             letter-spacing: 0.12em;
             font-size: 12px;
         }
+
+        .contact-hero {
+            position: relative;
+            padding: 120px 0 60px;
+            background:
+                radial-gradient(circle at 12% 20%, rgba(50, 198, 180, 0.18), transparent 45%),
+                radial-gradient(circle at 88% 18%, rgba(255, 155, 90, 0.16), transparent 48%),
+                linear-gradient(180deg, #f7f4ef 0%, #eef4ff 100%);
+        }
+
+        .calendly-shell {
+            background: #fff;
+            border: 1px solid var(--future-stroke);
+            border-radius: 24px;
+            box-shadow: 0 14px 40px rgba(11, 18, 32, 0.10);
+            padding: 12px;
+            overflow: hidden;
+        }
+
+        .calendly-inline-widget {
+            min-width: 320px;
+            height: 720px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 767px) {
+            .calendly-inline-widget { height: 920px; }
+            .contact-hero { padding: 100px 0 40px; }
+        }
+
+        .alt-channels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .alt-channels .btn-soft {
+            background: #fff;
+            border: 1px solid var(--future-stroke);
+            color: var(--future-ink);
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .alt-channels .btn-soft:hover {
+            border-color: var(--future-ink);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(11, 18, 32, 0.10);
+        }
     </style>
-    <!-- Calendly Badge Widget -->
+    <!-- Calendly inline widget assets -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">
-        window.onload = function () {
-            Calendly.initBadgeWidget({
-                url: 'https://calendly.com/leyoxa/30min',
-                text: 'Schedule time with me',
-                color: '#0069ff',
-                textColor: '#ffffff'
-            });
-        }
-    </script>
-    <!-- Calendly Badge Widget End -->
-    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="theme-2026">
-    <!-- Loader -->
-    <!-- <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div> -->
-    <!-- Loader -->
 
-    <!-- Navbar STart -->
+    <!-- Navbar Start -->
     <header id="topnav" class="defaultscroll sticky">
         <div class="container">
             <!-- Logo container-->
@@ -117,102 +176,96 @@
                     <img src="images/logo-dark.svg" width="90" height="24" alt="Leyoxa">
                 </a>
             </div>
-            <!-- End Logo container-->
+            <!-- Mobile menu toggle-->
             <div class="menu-extras">
                 <div class="menu-item">
-                    <!-- Mobile menu toggle-->
                     <a class="navbar-toggle">
                         <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span></span><span></span><span></span>
                         </div>
                     </a>
-                    <!-- End mobile menu toggle-->
                 </div>
             </div>
 
             <div id="navigation">
-                <!-- Navigation Menu-->
                 <ul class="navigation-menu">
                     <li><a href="/">Home</a></li>
                     <li><a href="page-aboutus.html">About</a></li>
                     <li><a href="page-services.html">Services</a></li>
                     <li><a href="page-faq.html">FAQ</a></li>
-                    <li><a href="page-contact.html">Contact</a></li>
-                </ul><!-- End navigation menu -->
-            </div><!--end navigation-->
-        </div><!--end container-->
-    </header><!--end header-->
+                    <li class="active"><a href="page-contact.html">Contact</a></li>
+                    <li class="nav-cta">
+                        <a href="https://calendly.com/leyoxa/30min" target="_blank" rel="noopener">
+                            Book a Discovery Call
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <section class="vh-100 d-flex align-items-center"
-        style="background: url('images/contact-detail.jpg') center center;">
-        <div class="bg-overlay bg-overlay-white"></div>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 offset-lg-6 col-md-7 offset-md-5">
-                    <div class="title-heading mt-5 pt-4">
-                        <span class="future-pill">Book a demo</span>
-                        <h1 class="heading mt-3">Meet the 2026 clinic stack</h1>
-                        <p class="text-dark">See Smilelink, Emergclinic, and the DDSMarketing Voice Agent in action.
-                            We will tailor the workflow to your patients, team, and growth goals.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <span class="future-pill">Book a discovery call</span>
+                    <h1 class="heading mt-3 mb-3">Let's talk about your clinic.</h1>
+                    <p class="text-muted mx-auto" style="max-width: 620px;">
+                        Pick a 30-minute slot below. The session is with the engineer who builds it — no sales reps,
+                        no slides, just your clinic's workflow and what we can ship.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="media contact-detail align-items-center mt-3">
-                            <div class="icon">
-                                <i data-feather="calendar" class="fea icon-m-md text-dark mr-3"></i>
-                            </div>
-                            <div class="media-body content">
-                                <h4 class="title font-weight-bold mb-0">Demo</h4>
-                                <a href="https://calendly.com/leyoxa/30min" target="_blank"
-                                    class="text-primary">Schedule a product walkthrough</a>
-                            </div>
-                        </div>
 
-                        <div class="media contact-detail align-items-center mt-3">
-                            <div class="icon">
-                                <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                            </div>
-                            <div class="media-body content">
-                                <h4 class="title font-weight-bold mb-0">Email</h4>
-                                <a href="mailto:contact@leyoxa.com" class="text-primary">contact@leyoxa.com</a>
-                            </div>
-                        </div>
-
-                        <div class="media contact-detail align-items-center mt-3">
-                            <div class="icon">
-                                <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                            </div>
-                            <div class="media-body content">
-                                <h4 class="title font-weight-bold mb-0">Phone</h4>
-                                <a href="tel:+16479852468" class="text-primary">+1 647-985-2468</a>
-                            </div>
-                        </div>
-
-                        <div class="media contact-detail align-items-center mt-3">
-                            <div class="icon">
-                                <i data-feather="map-pin" class="fea icon-m-md text-dark mr-3"></i>
-                            </div>
-                            <div class="media-body content">
-                                <h4 class="title font-weight-bold mb-0">Location</h4>
-                                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36716.789982551905!2d-79.38327354688211!3d43.69822794062675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sch!4v1730899423807!5m2!1sen!2sch"
-                                    class="video-play-icon text-primary">View on Google map</a>
-                            </div>
-                        </div>
-                        <ul class="list-unstyled social-icon mb-0 mt-4">
-                            <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li> -->
-                            <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li> -->
-                            <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li> -->
-                            <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="youtube" class="fea icon-sm fea-social"></i></a></li> -->
-                            <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="gitlab" class="fea icon-sm fea-social"></i></a></li> -->
-                        </ul><!--end icon-->
+    <!-- Calendly inline embed -->
+    <section style="padding: 0 0 60px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="calendly-shell">
+                        <div class="calendly-inline-widget"
+                            data-url="https://calendly.com/leyoxa/30min?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=0fb8a6"></div>
                     </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- Hero End -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Alt channels -->
+    <section style="padding: 0 0 100px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="mb-3"
+                        style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: rgba(11,18,32,0.55);">
+                        Prefer email?
+                    </p>
+                    <div class="alt-channels">
+                        <a href="mailto:contact@leyoxa.com" class="btn-soft">
+                            <i class="mdi mdi-email-outline"></i> contact@leyoxa.com
+                        </a>
+                        <a href="https://www.linkedin.com/company/leyoxa/" target="_blank" rel="noopener"
+                            class="btn-soft">
+                            <i class="mdi mdi-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+
+                    <p class="mt-5 mb-0 text-muted"
+                        style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;">
+                        Serving clinics in Miami · Austin · Toronto
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -223,8 +276,8 @@
                         <a href="/" class="logo-footer">
                             <img src="images/logo-light.svg" width="90" height="24" alt="Leyoxa">
                         </a>
-                        <p class="mt-4 text-muted">AI-powered clinic management software for dental and medical
-                            practices.</p>
+                        <p class="mt-4 text-muted">Custom dental software, AI voice agents, and patient apps for
+                            clinics in Miami, Austin, and Toronto.</p>
                         <ul class="list-unstyled footer-list mt-4">
                             <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
                             <li class="list-inline-item"><a href="page-aboutus.html" class="text-muted">About</a></li>
@@ -252,49 +305,14 @@
             </div>
         </div>
     </footer>
-    <!-- Footer End -->
+
 
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <!-- Icons -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
     <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js" async></script>
-    <!-- Main Js -->
     <script src="js/app.js" defer></script>
-    <!-- Smooth image loading -->
-    <script>
-    (function () {
-        function revealImg(img) {
-            if (img.complete && img.naturalWidth > 0) {
-                img.classList.add('loaded');
-                var wrap = img.closest('.img-wrap');
-                if (wrap) wrap.classList.add('ready');
-            } else {
-                img.addEventListener('load', function () {
-                    img.classList.add('loaded');
-                    var wrap = img.closest('.img-wrap');
-                    if (wrap) wrap.classList.add('ready');
-                });
-                img.addEventListener('error', function () {
-                    img.style.opacity = '1';
-                    var wrap = img.closest('.img-wrap');
-                    if (wrap) wrap.classList.add('ready');
-                });
-            }
-        }
-        if ('IntersectionObserver' in window) {
-            var io = new IntersectionObserver(function (entries, observer) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) { revealImg(entry.target); observer.unobserve(entry.target); }
-                });
-            }, { rootMargin: '0px 0px 120px 0px' });
-            document.querySelectorAll('img.img-smooth').forEach(function (img) { io.observe(img); });
-        } else {
-            document.querySelectorAll('img.img-smooth').forEach(revealImg);
-        }
-    })();
-    </script>
 </body>
 
 </html>

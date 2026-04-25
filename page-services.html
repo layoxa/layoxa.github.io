@@ -33,24 +33,33 @@
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "DDSMarketing Voice Agent",
+      "name": "DDS Marketing — Voice, SEO & Marketing Agents",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Cloud",
-      "description": "AI voice concierge for dental practices that answers inbound calls 24/7, books appointments, runs outbound recall campaigns, and escalates to human staff with full call summaries.",
+      "description": "Three integrated AI agents built by Leyoxa for DDS Marketing, a Miami-based dental agency: a Voice Agent that answers inbound calls 24/7 and books appointments, an SEO Agent that audits and writes location and treatment pages, and a Marketing Agent that drives retention and growth campaigns.",
+      "featureList": [
+        "Voice Agent: 24/7 call answering, booking, rescheduling, insurance Q&A",
+        "SEO Agent: site audits, location and treatment page generation, review management",
+        "Marketing Agent: retention campaigns, paid ad routing, growth analytics"
+      ],
       "offers": {"@type": "Offer", "seller": {"@type": "Organization", "name": "Leyoxa"}},
-      "url": "https://concierge.ai.ddsmarketing.io/agent"
+      "url": "https://leyoxa.com/page-services.html"
     }
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Smilelink",
+      "name": "SmileLink",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "iOS, Android, Web",
       "description": "Patient-centric mobile app and office management dashboard for dental clinics with scheduling, end-to-end encrypted messaging, OpenDental integration, and HIPAA-compliant data storage.",
       "offers": {"@type": "Offer", "seller": {"@type": "Organization", "name": "Leyoxa"}},
-      "url": "https://smilelink.app/"
+      "url": "https://dashboard.smilelink.app/auth/login",
+      "downloadUrl": [
+        "https://apps.apple.com/ca/app/smile-link/id1645696642",
+        "https://play.google.com/store/apps/details?id=app.blueteeth"
+      ]
     }
     </script>
     <script type="application/ld+json">
@@ -60,9 +69,9 @@
       "name": "Emergclinic",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web",
-      "description": "Emergency dental booking platform that triages urgency, routes patients to available providers, and manages clinic chair time with real-time availability and Stripe payment processing.",
+      "description": "Emergency dental booking platform that triaged urgency, routed patients to available providers, and processed payments via Stripe. Built and operated in Toronto. Site is no longer live; founder walk-through demo on YouTube.",
       "offers": {"@type": "Offer", "seller": {"@type": "Organization", "name": "Leyoxa"}},
-      "url": "https://emergclinic.com"
+      "url": "https://www.youtube.com/shorts/jGqHJYf5nFg"
     }
     </script>
 
@@ -201,6 +210,11 @@
                         <li><a href="page-services.html">Services</a></li>
                         <li><a href="page-faq.html">FAQ</a></li>
                         <li><a href="page-contact.html">Contact</a></li>
+                    <li class="nav-cta">
+                        <a href="https://calendly.com/leyoxa/30min" target="_blank" rel="noopener">
+                            Book a Discovery Call
+                        </a>
+                    </li>
                     </ul><!-- End navigation menu -->
                 </div><!-- End navigation -->
             </div><!-- End container -->
@@ -247,16 +261,17 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            <!-- Voice Agent -->
+            <!-- DDS Marketing 3-Agent Suite -->
             <div class="col-md-4 col-12">
                 <div class="features mt-5">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/chat.svg" class="avatar avatar-small" alt="Voice Agent">
+                        <img src="images/icon/chat.svg" class="avatar avatar-small" alt="DDS Marketing AI Agents">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">DDSMarketing Voice Agent</h4>
-                        <p class="text-muted mb-0">Sales and front-desk voice automation that answers every call, books
-                            appointments, and escalates with context.</p>
+                        <h4 class="title-2">DDS Marketing — Voice, SEO &amp; Marketing</h4>
+                        <p class="text-muted mb-0">Three integrated AI agents built for a Miami dental agency: voice
+                            agent that books every call, SEO agent that writes location and treatment pages, and a
+                            marketing agent that drives retention.</p>
                     </div>
                 </div>
             </div><!--end col-->
@@ -275,16 +290,17 @@
                 </div>
             </div><!--end col-->
             
-            <!-- Smilelink Mobile App -->
+            <!-- SmileLink Mobile App -->
             <div class="col-md-4 col-12 mt-5">
                 <div class="features">
                     <div class="image position-relative d-inline-block">
-                        <img src="images/icon/smartphone.svg" class="avatar avatar-small" alt="Smilelink Mobile App">
+                        <img src="images/icon/smartphone.svg" class="avatar avatar-small" alt="SmileLink Mobile App">
                     </div>
                     <div class="content mt-4">
-                        <h4 class="title-2">Smilelink Mobile App</h4>
-                        <p class="text-muted mb-0">Patient-centric app for scheduling, messaging, care reminders, and
-                            digital intake.</p>
+                        <h4 class="title-2">SmileLink Mobile App</h4>
+                        <p class="text-muted mb-0">Patient-centric iOS &amp; Android app for scheduling, messaging,
+                            care reminders, and digital intake. Plus a clinic-side dashboard with OpenDental
+                            integration.</p>
                     </div>
                 </div>
             </div><!--end col-->
@@ -416,77 +432,101 @@
         </div><!--end row-->
     </div><!--end container-->
 
-    <div class="container mt-100 mt-60">
+    <div class="container mt-100 mt-60" id="emergclinic">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 col-12">
-                <div class="software-feature-left">
-                    <div class="img-wrap">
-                        <img src="images/clinic-solutions/clinic-management-1.png" class="img-fluid img-smooth"
-                            alt="Clinic Management Software">
-                    </div>
+                <!-- YouTube Short facade — Emergclinic founder demo -->
+                <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:14px;max-width:340px;margin:0 auto;">
+                    <button class="yt-facade" type="button" data-videoid="jGqHJYf5nFg"
+                        data-title="Emergclinic founder walk-through"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:14px;border:0;padding:0;background:#0b1220;cursor:pointer;">
+                        <img src="https://i.ytimg.com/vi/jGqHJYf5nFg/hqdefault.jpg"
+                            alt="Emergclinic founder walk-through video preview" loading="lazy"
+                            style="width:100%;height:100%;object-fit:cover;display:block;">
+                        <span aria-hidden="true"
+                            style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:999px;background:rgba(255,255,255,0.92);box-shadow:0 12px 32px rgba(11,18,32,0.22);color:#0b1220;font-size:22px;line-height:64px;text-align:center;">▶</span>
+                    </button>
                 </div>
             </div><!--end col-->
-    
+
             <div class="col-lg-7 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <div class="section-title ml-lg-4">
                     <p class="text-primary h2 mb-3"><i class="uil uil-clinic-medical"></i></p>
                     <h3 class="title mb-3">Emergclinic (Toronto)</h3>
-                    <p class="text-muted">Emergclinic connects patients to nearby dental clinics for prompt and dependable care during dental emergencies. Our platform offers instant access to trusted professionals, ensuring help is just a click away.</p>
-                    <p class="text-muted">Key features include:</p>
+                    <p class="text-muted">Emergclinic connected patients to nearby dental clinics for prompt and
+                        dependable care during dental emergencies. The site is no longer live, but the founder
+                        walk-through demo on YouTube shows how it worked end to end.</p>
+                    <p class="text-muted">Key features included:</p>
                     <ul class="text-muted">
                         <li>Responsive web application for both providers and patients</li>
-                        <li>Notification system for SMS and email</li>
-                        <li>Nearby search capability based on patient location</li>
-                        <li>Credit system for clinics to manage and charge credits for specific actions</li>
-                        <li>Secure payment processing with Stripe integration, including card storage</li>
-                        <li>HIPAA-aligned database to ensure patient data security (Leyoxa designs its data infrastructure to align with HIPAA/PHIPA technical safeguard requirements.)</li>
-                        <li>Business Associate Agreements (BAAs) are available for covered entities upon request.</li>
-                        <li>CI/CD pipeline for efficient development and deployment</li>
-                        <li>Multiple staging environments for development and production</li>
+                        <li>SMS &amp; email notification system</li>
+                        <li>Nearby search based on patient location</li>
+                        <li>Credit system for clinics to manage and charge for specific actions</li>
+                        <li>Secure payment processing via Stripe with card-on-file</li>
+                        <li>HIPAA-aligned database (Leyoxa designs its data infrastructure to align with HIPAA/PHIPA
+                            technical safeguard requirements.)</li>
+                        <li>Business Associate Agreements (BAAs) available for covered entities upon request</li>
+                        <li>CI/CD pipeline + multiple staging environments</li>
                     </ul>
                     <div class="mt-4">
-                        <a href="https://emergclinic.com" class="btn btn-primary">Visit Emergclinic<i class="mdi mdi-chevron-right"></i></a>
+                        <a href="https://www.youtube.com/shorts/jGqHJYf5nFg" target="_blank" rel="noopener"
+                            class="btn btn-primary">
+                            <i class="mdi mdi-play-circle-outline mr-1"></i> Watch the demo
+                        </a>
                     </div>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
     </div><!--end container-->
-    
-    
 
-    <div class="container mt-100 mt-60">
+
+
+    <div class="container mt-100 mt-60" id="smilelink">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 col-12">
                 <div class="software-feature-left">
                     <div class="img-wrap">
                         <img src="images/clinic-solutions/clinic-management-2.png" class="img-fluid img-smooth"
-                            alt="Clinic Management Software">
+                            alt="SmileLink patient app and clinic dashboard">
                     </div>
                 </div>
             </div><!--end col-->
-    
+
             <div class="col-lg-7 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <div class="section-title ml-lg-4">
                     <p class="text-primary h2 mb-3"><i class="uil uil-clinic-medical"></i></p>
-                    <h3 class="title mb-3">Smile Link (Texas)</h3>
-                    <p class="text-muted">Smile Link is the first dedicated patient app designed specifically for dental offices. It streamlines patient access, appointment scheduling, and communication, while enabling dentists to foster improved patient engagement and operational efficiency.</p>
+                    <h3 class="title mb-3">SmileLink (Texas)</h3>
+                    <p class="text-muted">SmileLink is a dedicated patient app and clinic dashboard designed
+                        specifically for dental offices. It streamlines patient access, appointment scheduling, and
+                        communication while giving dentists a clear path to better engagement.</p>
                     <p class="text-muted">Key features include:</p>
                     <ul class="text-muted">
-                        <li>Custom integration with their dental practice management system (OpenDental)</li>
-                        <li>Real-time, end-to-end encrypted chat system</li>
-                        <li>Native mobile apps for Android and iOS</li>
-                        <li>Dashboard with role-based access</li>
-                        <li>Customizable notification system using user-defined templates via SMS, Email, or Push Notifications</li>
-                        <li>Two-way messaging system for seamless communication between dental clinics and patients via SMS</li>
-                        <li>Data warehouse supporting multiple integrations, including OpenDental, Dentrix, and more</li>
-                        <li>Booking system for multiple providers and operatories in dental clinics</li>
-                        <li>HIPAA-aligned database to ensure patient data security (Leyoxa designs its data infrastructure to align with HIPAA/PHIPA technical safeguard requirements.)</li>
-                        <li>Business Associate Agreements (BAAs) are available for covered entities upon request.</li>
-                        <li>CI/CD pipeline for efficient development and deployment</li>
-                        <li>Multiple staging environments for development and production</li>
+                        <li>Custom integration with OpenDental practice management</li>
+                        <li>Real-time, end-to-end encrypted chat</li>
+                        <li>Native iOS and Android mobile apps</li>
+                        <li>Role-based access dashboard</li>
+                        <li>Customizable templates for SMS, email, and push notifications</li>
+                        <li>Two-way SMS messaging between clinic and patient</li>
+                        <li>Data warehouse with multiple PMS integrations (OpenDental, Dentrix)</li>
+                        <li>Booking system for multiple providers and operatories</li>
+                        <li>HIPAA-aligned database (Leyoxa designs its data infrastructure to align with HIPAA/PHIPA
+                            technical safeguard requirements.)</li>
+                        <li>Business Associate Agreements (BAAs) available for covered entities upon request</li>
+                        <li>CI/CD pipeline + multiple staging environments</li>
                     </ul>
-                    <div class="mt-4">
-                        <a href="https://smilelink.app/" class="btn btn-primary">Visit Smile Link <i class="mdi mdi-chevron-right"></i></a>
+                    <div class="mt-4 d-flex flex-wrap" style="gap: 10px;">
+                        <a href="https://dashboard.smilelink.app/auth/login" target="_blank" rel="noopener"
+                            class="btn btn-primary">
+                            <i class="mdi mdi-monitor-dashboard mr-1"></i> Open dashboard
+                        </a>
+                        <a href="https://apps.apple.com/ca/app/smile-link/id1645696642" target="_blank" rel="noopener"
+                            class="btn btn-outline-primary">
+                            <i class="mdi mdi-apple mr-1"></i> iOS app
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=app.blueteeth&amp;hl=en_AU"
+                            target="_blank" rel="noopener" class="btn btn-outline-primary">
+                            <i class="mdi mdi-google-play mr-1"></i> Android app
+                        </a>
                     </div>
                 </div>
             </div><!--end col-->

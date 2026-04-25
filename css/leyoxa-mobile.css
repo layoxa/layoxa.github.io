@@ -161,3 +161,56 @@ img {
         margin-bottom: 8px;
     }
 }
+
+/* ── Navbar CTA — "Book a Discovery Call" ───────────────────────── */
+#topnav .navigation-menu > li.nav-cta {
+    margin-left: 8px;
+}
+
+#topnav .navigation-menu > li.nav-cta > a {
+    display: inline-block;
+    background: #0b1220 !important;
+    color: #ffffff !important;
+    padding: 9px 18px !important;
+    border-radius: 10px;
+    font-family: "Manrope", "Sora", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 13.5px !important;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: none !important;
+    box-shadow: 0 4px 12px rgba(11, 18, 32, 0.18);
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+#topnav .navigation-menu > li.nav-cta > a:hover,
+#topnav .navigation-menu > li.nav-cta > a:focus {
+    background: #0a8c7e !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(11, 18, 32, 0.24);
+}
+
+#topnav.nav-sticky .navigation-menu > li.nav-cta > a {
+    background: #0b1220 !important;
+    color: #ffffff !important;
+}
+
+#topnav.nav-sticky .navigation-menu > li.nav-cta > a:hover {
+    background: #0a8c7e !important;
+}
+
+@media (max-width: 991px) {
+    #topnav .navigation-menu > li.nav-cta {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    #topnav .navigation-menu > li.nav-cta > a {
+        display: block;
+        text-align: center;
+        padding: 14px 18px !important;
+        font-size: 14.5px !important;
+    }
+}
