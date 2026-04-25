@@ -536,59 +536,60 @@
         style="background: linear-gradient(180deg, transparent, rgba(15, 184, 166, 0.04));">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5 col-12 text-center mb-4 mb-md-0">
-                    <p class="eyebrow" style="margin-bottom: 12px;">Founder Intro</p>
-                    <div class="row" style="margin: 0 -4px;">
-                        <div class="col-6" style="padding: 0 4px;">
-                            <div
-                                style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:14px;">
-                                <button class="yt-facade" type="button" data-videoid="jGqHJYf5nFg"
-                                    data-title="Emergclinic founder demo"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:14px;border:0;padding:0;background:#0b1220;cursor:pointer;">
-                                    <img src="https://i.ytimg.com/vi/jGqHJYf5nFg/hqdefault.jpg"
-                                        alt="Emergclinic founder demo preview" loading="lazy"
-                                        style="width:100%;height:100%;object-fit:cover;">
-                                    <span aria-hidden="true"
-                                        style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:999px;background:rgba(255,255,255,0.92);box-shadow:0 12px 32px rgba(11,18,32,0.22);color:#0b1220;font-size:20px;line-height:56px;text-align:center;">▶</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6" style="padding: 0 4px;">
-                            <div
-                                style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:14px;">
-                                <button class="yt-facade" type="button" data-videoid="KtGM5b1yjZQ"
-                                    data-title="Founder intro second clip"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:14px;border:0;padding:0;background:#0b1220;cursor:pointer;">
-                                    <img src="https://i.ytimg.com/vi/KtGM5b1yjZQ/hqdefault.jpg"
-                                        alt="Founder intro second clip preview" loading="lazy"
-                                        style="width:100%;height:100%;object-fit:cover;">
-                                    <span aria-hidden="true"
-                                        style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:999px;background:rgba(255,255,255,0.92);box-shadow:0 12px 32px rgba(11,18,32,0.22);color:#0b1220;font-size:20px;line-height:56px;text-align:center;">▶</span>
-                                </button>
-                            </div>
-                        </div>
+
+                <!-- Single portrait video — local MP4, no YouTube facade -->
+                <div class="col-lg-4 col-md-5 col-12 mb-4 mb-md-0">
+                    <div class="video-frame portrait" style="max-width: 280px;">
+                        <video controls playsinline preload="metadata"
+                            poster="https://i.ytimg.com/vi/jGqHJYf5nFg/hqdefault.jpg"
+                            aria-label="Founder walk-through — Sepehr Aflatounian">
+                            <source src="videos/YTDown_Shorts_Emergclinic_Media_jGqHJYf5nFg_001_480p.mp4"
+                                type="video/mp4">
+                            Your browser does not support embedded video.
+                        </video>
                     </div>
                 </div>
 
                 <div class="col-lg-8 col-md-7 col-12">
                     <div class="ml-lg-4">
                         <span class="eyebrow">The person behind the product</span>
-                        <h2 class="section-headline">Built by Sepehr Aflatounian, an engineer who knows the stack.</h2>
+                        <h2 class="section-headline">Built by the engineer<br>who ships it.</h2>
                         <p class="text-muted">
-                            Leyoxa was founded by <strong style="color: var(--ink);">Sepehr Aflatounian</strong>,
-                            a security engineer at a Canadian fintech with deep experience in healthcare API
-                            integration, voice AI, and AI infrastructure. Leyoxa now operates as a focused
-                            studio — building AI products with dental and healthcare operators, taking equity
-                            stakes in the ventures we ship, and staying technical end-to-end.
+                            <strong style="color: var(--ink);">Sepehr Aflatounian</strong> — security engineer at
+                            a Canadian fintech, with production experience in healthcare API integration, voice
+                            AI, and AI infrastructure. Every system on this page was architected and built by the
+                            same person.
                         </p>
-                        <p class="text-muted mt-3">
-                            Not a SaaS product. Not a reseller. If you want to work with the engineer who
-                            builds it, book directly below.
+
+                        <!-- Stack chips -->
+                        <div class="d-flex flex-wrap mt-3" style="gap: 8px;">
+                            <span class="trust-chip"
+                                style="font-size: 12px; padding: 6px 12px; background: #fff;">
+                                <i class="mdi mdi-database-outline"></i> OpenDental + Dentrix
+                            </span>
+                            <span class="trust-chip"
+                                style="font-size: 12px; padding: 6px 12px; background: #fff;">
+                                <i class="mdi mdi-account-voice"></i> OpenAI Realtime · ElevenLabs
+                            </span>
+                            <span class="trust-chip"
+                                style="font-size: 12px; padding: 6px 12px; background: #fff;">
+                                <i class="mdi mdi-shield-check"></i> HIPAA / PHIPA
+                            </span>
+                        </div>
+
+                        <p class="text-muted mt-4 mb-0">
+                            <strong style="color: var(--ink);">Not a SaaS. Not a reseller.</strong>
+                            Leyoxa operates as a focused studio — co-building AI products with operators,
+                            taking equity stakes in the ventures we ship, staying technical end-to-end.
                         </p>
-                        <div class="hero-cta-row" style="justify-content: flex-start;">
+
+                        <div class="hero-cta-row" style="justify-content: flex-start; margin-top: 28px;">
                             <a href="https://calendly.com/leyoxa/30min" target="_blank" rel="noopener"
                                 class="btn btn-ink">
                                 Book a Discovery Call <i class="mdi mdi-chevron-right"></i>
+                            </a>
+                            <a href="page-aboutus.html" class="btn btn-ghost">
+                                More about Leyoxa
                             </a>
                         </div>
                     </div>
