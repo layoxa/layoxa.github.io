@@ -896,15 +896,20 @@ body.theme-2026 .btn-mint:hover {
     box-shadow: var(--shadow-md);
     padding: 12px;
     overflow: hidden;
+    /* Reserve vertical space BEFORE the Calendly iframe loads, so the
+       page doesn't shift downward when the widget JS injects the iframe */
+    min-height: 744px;
 }
 .calendly-shell .calendly-inline-widget {
     min-width: 320px;
+    min-height: 720px;
     height: 720px;
     border-radius: 18px;
     overflow: hidden;
 }
 @media (max-width: 767px) {
-    .calendly-shell .calendly-inline-widget { height: 920px; }
+    .calendly-shell { min-height: 944px; }
+    .calendly-shell .calendly-inline-widget { min-height: 920px; height: 920px; }
 }
 .alt-channels {
     display: flex;
