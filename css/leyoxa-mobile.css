@@ -169,6 +169,11 @@ img {
     align-items: center !important;
 }
 
+/* Prevent multi-word menu labels from wrapping onto multiple lines */
+#topnav .navigation-menu > li > a {
+    white-space: nowrap !important;
+}
+
 #topnav .navigation-menu > li.nav-cta {
     margin-left: 12px;
     display: flex !important;
