@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leyoxa">
+  <rect width="128" height="128" rx="28" fill="#0F172A"/>
+  <circle cx="64" cy="64" r="40" stroke="#FFFFFF" stroke-width="5" fill="none"/>
+  <rect x="50" y="54" width="5" height="20" rx="2.5" fill="#FFFFFF"/>
+  <rect x="60" y="46" width="5" height="36" rx="2.5" fill="#FFFFFF"/>
+  <rect x="70" y="54" width="5" height="20" rx="2.5" fill="#FFFFFF"/>
+  <circle cx="84" cy="64" r="3" fill="#FFFFFF"/>
+</svg>
