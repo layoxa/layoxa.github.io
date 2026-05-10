@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "WebFetch(domain:itspraxis.ai)",
+      "Bash(grep -n -B1 -A4 \"#topnav .container\\\\|topnav {\\\\|#topnav$\" /Users/sepehrafla/Documents/layoxa.github.io/css/style.css)",
+      "Bash(grep -n -B1 -A6 \"^\\\\.container$\\\\|^\\\\.container {\" /Users/sepehrafla/Documents/layoxa.github.io/css/style.css)",
+      "Bash(git fetch *)",
+      "Bash(git reset *)",
+      "Bash(kill 32671)",
+      "Bash(kill -9 32671)",
+      "Bash(git ls-tree *)",
+      "Bash(grep -E '\\\\.\\(html|txt|xml\\)$|^CNAME$|llms|sitemap|robots')",
+      "Bash(git restore *)",
+      "Bash(python3)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/clinic-solutions/clinic-management-2.png images/clinic-solutions/hero.png images/clinic-solutions/services-header.png)"
+    ]
+  }
+}
