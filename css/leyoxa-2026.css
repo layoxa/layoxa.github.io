@@ -939,6 +939,285 @@ body.theme-2026 .btn-mint:hover {
     color: var(--ink);
 }
 
+/* Blog cards */
+.blog-card {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    text-decoration: none !important;
+    color: inherit;
+    height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--mint);
+    color: inherit;
+}
+.blog-card-media {
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--line);
+    font-size: 56px;
+    color: var(--mint-deep);
+}
+.blog-card-body {
+    padding: 22px 22px 26px;
+}
+.blog-tag {
+    display: inline-block;
+    background: var(--mint-soft);
+    color: var(--mint-deep);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+.blog-card-body h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 8px 0 10px;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+}
+.blog-card-body p {
+    font-size: 14.5px;
+    color: var(--slate);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.blog-meta {
+    font-size: 12px;
+    color: var(--mist);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Blog post (article) typography */
+.blog-post {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 48px 40px;
+    box-shadow: var(--shadow-sm);
+}
+.blog-post h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 40px 0 14px;
+}
+.blog-post h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 28px 0 10px;
+}
+.blog-post p,
+.blog-post li {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.75;
+}
+.blog-post ul,
+.blog-post ol {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+.blog-post ul li,
+.blog-post ol li {
+    margin-bottom: 6px;
+}
+.blog-post a {
+    color: var(--mint-deep);
+    text-decoration: underline;
+}
+.blog-post strong {
+    color: var(--ink);
+}
+.blog-post blockquote {
+    border-left: 3px solid var(--mint);
+    padding: 6px 0 6px 18px;
+    margin: 22px 0;
+    color: var(--ink);
+    font-size: 16px;
+    font-style: italic;
+}
+.blog-post code {
+    background: var(--cream);
+    color: var(--ink);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', Menlo, monospace;
+}
+@media (max-width: 767px) {
+    .blog-post {
+        padding: 28px 22px;
+    }
+    .blog-post h2 { font-size: 22px; }
+}
+
+/* Case study index tiles */
+.case-tile {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 24px;
+    text-decoration: none !important;
+    color: inherit;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.case-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--mint);
+    color: inherit;
+}
+.case-tile-media {
+    border-radius: 16px;
+    padding: 40px 24px;
+    text-align: center;
+    border: 1px solid var(--line);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case-tile-media img {
+    border-radius: 12px;
+}
+.case-tile-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--ink);
+}
+.case-tile-body {
+    padding: 16px 8px 16px 28px;
+}
+.case-tile-body h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 12px 0 10px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+}
+.case-tile-body p {
+    color: var(--slate);
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+.case-tile-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--mint-deep);
+    font-weight: 700;
+    font-size: 14px;
+}
+.case-tile:hover .case-tile-cta {
+    color: var(--mint);
+}
+@media (max-width: 767px) {
+    .case-tile-body {
+        padding: 18px 8px 8px;
+    }
+    .case-tile-media {
+        aspect-ratio: 5/3;
+        padding: 32px 16px;
+    }
+}
+
+/* Contact form */
+.contact-form {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+}
+.contact-form .form-row {
+    margin-bottom: 16px;
+}
+.contact-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 6px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: #fafbfc;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font: inherit;
+    font-size: 15px;
+    color: var(--ink);
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--mist);
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background: #fff;
+    border-color: var(--mint);
+    box-shadow: 0 0 0 4px rgba(15, 184, 166, 0.12);
+}
+.contact-form textarea {
+    resize: vertical;
+    min-height: 110px;
+    font-family: inherit;
+}
+.contact-form .btn-ink {
+    margin-top: 6px;
+}
+.contact-form .form-fineprint {
+    font-size: 12px;
+    color: var(--slate);
+    text-align: center;
+    margin: 14px 0 0;
+    line-height: 1.5;
+}
+.contact-form .form-fineprint a {
+    color: var(--mint-deep);
+    text-decoration: underline;
+}
+
 /* Long-form text pages (terms / privacy) */
 .legal-doc h2 {
     font-size: 18px;

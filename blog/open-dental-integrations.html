@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>OpenDental Integrations: The Practical Guide for App Builders — Leyoxa Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="How we integrate OpenDental and Dentrix in production — bridges, sync patterns, and the gotchas nobody documents. A practical guide for dental app builders." />
+    <meta name="author" content="Sepehr Aflatounian" />
+    <link rel="canonical" href="https://leyoxa.com/blog/open-dental-integrations.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://leyoxa.com/blog/open-dental-integrations.html" />
+    <meta property="og:title" content="OpenDental Integrations: The Practical Guide for App Builders" />
+    <meta property="og:description"
+        content="Real-world bridges, sync patterns, and the gotchas in OpenDental + Dentrix integration." />
+    <meta property="og:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
+    <meta property="og:image:alt" content="OpenDental integration architecture" />
+    <meta property="article:author" content="Sepehr Aflatounian" />
+    <meta property="article:published_time" content="2026-03-06" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "OpenDental Integrations: The Practical Guide for App Builders",
+      "description": "Real-world bridges, sync patterns, and gotchas in OpenDental and Dentrix integrations.",
+      "author": {"@type": "Person", "name": "Sepehr Aflatounian", "url": "https://leyoxa.com/page-aboutus.html"},
+      "publisher": {"@type": "Organization", "name": "Leyoxa",
+        "logo": {"@type": "ImageObject", "url": "https://leyoxa.com/images/logo-nav.svg"}},
+      "datePublished": "2026-03-06",
+      "dateModified": "2026-03-06",
+      "image": "https://leyoxa.com/images/clinic-solutions/hero.png",
+      "mainEntityOfPage": "https://leyoxa.com/blog/open-dental-integrations.html",
+      "keywords": "OpenDental integration, OpenDental API, Dentrix integration, dental PMS API, dental software integration"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://leyoxa.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://leyoxa.com/blog.html"},
+        {"@type": "ListItem", "position": 3, "name": "OpenDental Integrations", "item": "https://leyoxa.com/blog/open-dental-integrations.html"}
+      ]
+    }
+    </script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="apple-touch-icon" href="../images/app-icon.svg">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="../css/colors/default.css" rel="stylesheet" id="color-opt">
+    <link href="../css/leyoxa-2026.css" rel="stylesheet" type="text/css" />
+    <link href="../css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="theme-2026">
+
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <div>
+                <a class="logo" href="../index.html">
+                    <img src="../images/logo-nav.svg" height="34" alt="Leyoxa">
+                </a>
+            </div>
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle">
+                        <div class="lines"><span></span><span></span><span></span></div>
+                    </a>
+                </div>
+            </div>
+            <div id="navigation">
+                <ul class="navigation-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../page-aboutus.html">About</a></li>
+                    <li><a href="../page-services.html">Services</a></li>
+                    <li class="active"><a href="../blog.html">Blog</a></li>
+                    <li><a href="../page-faq.html">FAQ</a></li>
+                    <li><a href="../page-contact.html">Contact</a></li>
+                    <li class="nav-cta">
+                        <a href="../page-contact.html">Book a Discovery Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-hero" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 lx-reveal text-center">
+                    <span class="pill-live"><span class="dot"></span> Integrations · 10 min read</span>
+                    <h1>OpenDental integrations:<br><span class="text-grad">a practical guide.</span></h1>
+                    <p>How we wire modern apps into PMS systems that don't ship modern APIs.</p>
+                    <div class="crumb">
+                        <a href="../index.html">Leyoxa</a>
+                        <span class="sep">/</span>
+                        <a href="../blog.html">Blog</a>
+                        <span class="sep">/</span>
+                        <span class="current">OpenDental Integrations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <article class="blog-post">
+
+                        <p>The fastest way to ruin a clinic demo is to forget about integration. Voice
+                            agents, patient apps, scheduling tools — all of them die at the moment they need
+                            to read or write the clinic's actual schedule. And in dental specifically, that
+                            schedule lives inside <strong>OpenDental</strong> or
+                            <strong>Dentrix</strong>, neither of which ships the clean REST API you'd hope
+                            for.</p>
+
+                        <p>This guide is the version we'd have wanted before we started. It covers what
+                            integration actually looks like in production for both platforms — and the
+                            gotchas that aren't in any sales deck.</p>
+
+                        <h2>1. The honest landscape</h2>
+
+                        <p>Modern dental apps generally need to do four things against the PMS:</p>
+
+                        <ol>
+                            <li>Read patient records (name, contact info, insurance, history)</li>
+                            <li>Read schedule availability across providers and operatories</li>
+                            <li>Write new appointments and modify existing ones</li>
+                            <li>Read clinical context relevant to messaging (recall due, treatment plan)</li>
+                        </ol>
+
+                        <p>OpenDental and Dentrix both <em>support</em> these — they just don't make it
+                            obvious how.</p>
+
+                        <h2>2. OpenDental — the realistic integration path</h2>
+
+                        <h3>The API exists. Sort of.</h3>
+                        <p>OpenDental offers the <code>Open Dental API</code>, available through their
+                            <code>OpenDentalCloud</code> service or as a Web API alongside an on-prem
+                            install. It's REST-shaped, but the surface area is narrower than what most
+                            developers expect from a "modern API."</p>
+
+                        <p>Practical realities:</p>
+                        <ul>
+                            <li>You need to coordinate with the clinic's IT to enable API access and
+                                generate developer + customer keys</li>
+                            <li>Rate limits are conservative — design for backoff and batching</li>
+                            <li>Not every PMS workflow has a clean endpoint; some operations require
+                                compound calls or fall back to direct DB access patterns the clinic
+                                approves</li>
+                            <li>Schema evolves between versions — wrap your access in a thin adapter you
+                                control</li>
+                        </ul>
+
+                        <h3>The data-pipe pattern that actually works</h3>
+                        <p>For SmileLink we settled on this shape:</p>
+
+                        <ol>
+                            <li>A <strong>sync worker</strong> per clinic, running on a schedule (typically
+                                every 60–300 seconds) and on demand</li>
+                            <li>The worker pulls deltas — appointments, patients, recall — into our
+                                HIPAA-aligned warehouse</li>
+                            <li>Reads serve from the warehouse for speed; writes go through a queue that
+                                serializes into the PMS to avoid race conditions</li>
+                            <li>A reconciliation pass catches any drift between warehouse and PMS</li>
+                        </ol>
+
+                        <p>The warehouse model is the single biggest unlock. Reading the PMS live for every
+                            patient-facing surface will not scale and will not give you the speed you need
+                            for a good mobile experience.</p>
+
+                        <h2>3. Dentrix — the bridge approach</h2>
+
+                        <p>Dentrix is the older sibling. There's a Dentrix Developer Program (DDP) and an
+                            xCharge / API stack, but in practice many integrations still land on a
+                            <strong>local bridge</strong> running on a clinic workstation. The bridge
+                            connects to the Dentrix database and exposes a controlled API to your cloud.</p>
+
+                        <h3>What the bridge needs to do</h3>
+                        <ul>
+                            <li>Run as a service on a clinic-controlled machine that's always on</li>
+                            <li>Authenticate to your cloud over an outbound, mutually-authenticated tunnel
+                                (the clinic firewall won't allow inbound)</li>
+                            <li>Surface a stable, versioned API even as Dentrix versions change underneath</li>
+                            <li>Handle the office being offline gracefully — queue writes, retry on
+                                reconnect</li>
+                            <li>Be observable: heartbeats, error reporting, version reporting</li>
+                        </ul>
+
+                        <h3>The gotchas</h3>
+                        <ul>
+                            <li><strong>Locks.</strong> Dentrix tables can be locked by the front-desk
+                                client during write operations. Plan for retry-with-backoff on every write</li>
+                            <li><strong>Soft deletes.</strong> Records are flagged as deleted, not removed.
+                                Your sync needs to honor flags, not assume row absence means deletion</li>
+                            <li><strong>Time zones.</strong> Local clinic time vs. UTC vs. patient time —
+                                pick one canonical layer and convert at the edges</li>
+                            <li><strong>Provider mapping.</strong> Provider IDs change when staff rotates.
+                                Your app's references need a stable indirection layer</li>
+                        </ul>
+
+                        <h2>4. Patterns that work across both</h2>
+
+                        <h3>The adapter pattern, not the abstraction pattern</h3>
+                        <p>Tempting move: write a "universal PMS interface" and have each integration
+                            implement it. Reality: OpenDental and Dentrix differ enough in semantics that a
+                            shared interface either over-generalizes (and loses fidelity) or balloons. We
+                            recommend <strong>adapters per PMS</strong> that produce a normalized
+                            <em>data shape</em>, with PMS-specific logic kept in the adapter.</p>
+
+                        <h3>Idempotent writes, always</h3>
+                        <p>Every write operation should carry an idempotency key. Retries are inevitable —
+                            you don't want to create the same 9 a.m. cleaning four times because your worker
+                            restarted.</p>
+
+                        <h3>Capacity windows over single slots</h3>
+                        <p>Don't model availability as a list of bookable slots. Model it as
+                            <strong>capacity windows by provider and appointment type</strong>. Your booking
+                            logic decides slot resolution at request time, which lets the same capacity model
+                            serve a voice agent, a patient app, and a marketing reactivation flow.</p>
+
+                        <h3>HIPAA on the wire</h3>
+                        <ul>
+                            <li>All traffic between bridge and cloud over mutual TLS</li>
+                            <li>BAAs with cloud + database + observability vendors</li>
+                            <li>PHI fields encrypted at rest, separate from operational metadata</li>
+                            <li>Audit logs of every read and write, append-only storage</li>
+                        </ul>
+
+                        <h2>5. What to budget</h2>
+
+                        <p>Realistic timelines from start to first paying clinic:</p>
+
+                        <ul>
+                            <li><strong>OpenDental first integration:</strong> 4–8 weeks engineering for a
+                                production-grade, HIPAA-aligned sync + write path</li>
+                            <li><strong>Dentrix bridge first integration:</strong> 6–10 weeks, mostly
+                                because of the bridge deployment + clinic-side ops</li>
+                            <li><strong>Each additional clinic:</strong> days, not weeks, if you've
+                                architected for multi-tenancy from day one</li>
+                        </ul>
+
+                        <p>The economics work because the second, tenth, and hundredth clinic don't
+                            re-cost the integration — you've already paid for the platform.</p>
+
+                        <h2>6. Where Leyoxa fits</h2>
+
+                        <p>We've shipped both OpenDental and Dentrix integrations in production — across the
+                            <a href="../case-dds-marketing.html">DDS Marketing AI suite</a> and
+                            <a href="../case-smilelink.html">SmileLink</a>. The pattern above is what we run.</p>
+
+                        <p>If you're building a dental product and you don't want to spend six months on the
+                            integration layer before you can talk to a clinic, <a href="../page-contact.html">
+                            book a 30-minute discovery call</a>. We co-build with operators who have
+                            distribution and conviction.</p>
+
+                    </article>
+
+
+                    <!-- Author -->
+                    <div class="mt-4 d-flex align-items-center" style="background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px;">
+                        <div style="flex: 1;">
+                            <span class="eyebrow">Written by</span>
+                            <h5 class="mb-1" style="font-size: 16px; color: var(--ink);">Sepehr Aflatounian</h5>
+                            <p class="mb-0" style="font-size: 13.5px; color: var(--slate);">
+                                Founder, Leyoxa. Shipped production OpenDental and Dentrix integrations
+                                across two product lines.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Related -->
+                    <div class="mt-5">
+                        <span class="eyebrow">Keep reading</span>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <a href="dental-ai-voice-agent.html" class="blog-card">
+                                    <div class="blog-card-body">
+                                        <span class="blog-tag">Voice AI</span>
+                                        <h3>What a dental AI voice agent actually does (and what it doesn't)</h3>
+                                        <p>The honest tour of 24/7 voice agents in production.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="hipaa-compliant-patient-app.html" class="blog-card">
+                                    <div class="blog-card-body">
+                                        <span class="blog-tag">Compliance</span>
+                                        <h3>Shipping a HIPAA-compliant patient app: the real checklist</h3>
+                                        <p>What it actually takes to ship a HIPAA-aligned dental patient app.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                    <a href="../index.html" class="logo-footer">
+                        <img src="../images/logo-light.svg" height="40" alt="Leyoxa">
+                    </a>
+                    <p class="mt-3" style="max-width: 380px;">A focused studio building AI products with
+                        dental and healthcare operators in Miami, Austin, and Toronto.</p>
+                    <ul class="list-unstyled social-icon social mb-0 mt-3">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/leyoxa/" class="rounded" target="_blank"
+                                rel="noopener" aria-label="LinkedIn">
+                                <i data-feather="linkedin" class="fea icon-sm fea-social"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Navigate</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="../index.html" class="text-foot">Home</a></li>
+                        <li><a href="../page-aboutus.html" class="text-foot">About Us</a></li>
+                        <li><a href="../page-services.html" class="text-foot">Services</a></li>
+                        <li><a href="../page-faq.html" class="text-foot">FAQ</a></li>
+                        <li><a href="../page-contact.html" class="text-foot">Contact</a></li>
+                        <li><a href="../page-contact.html" class="text-foot">Book a Call</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Case Studies</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="../case-studies.html" class="text-foot">All case studies</a></li>
+                        <li><a href="../case-dds-marketing.html" class="text-foot">DDS Marketing</a></li>
+                        <li><a href="../case-smilelink.html" class="text-foot">SmileLink</a></li>
+                        <li><a href="../case-emergclinic.html" class="text-foot">Emergclinic</a></li>
+                        <li><a href="../blog.html" class="text-foot">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Legal</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="../privacy-policy.html" class="text-foot">Privacy Policy</a></li>
+                        <li><a href="../terms.html" class="text-foot">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2026 Leyoxa LLC. Registered in Austin, TX. &nbsp;|&nbsp;
+                            <a href="../privacy-policy.html" class="text-muted">Privacy</a> &nbsp;·&nbsp;
+                            <a href="../terms.html" class="text-muted">Terms</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-3 mt-sm-0">
+                    <div class="text-sm-right text-center">
+                        <p class="mb-0" style="color: rgba(255,255,255,0.5); font-size: 13px;">
+                            Built in Austin, TX · For clinics worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="../js/app.js" defer></script>
+</body>
+
+</html>

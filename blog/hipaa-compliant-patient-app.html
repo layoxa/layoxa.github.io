@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Shipping a HIPAA-Compliant Patient App: The Real Checklist — Leyoxa Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="The practical checklist for shipping a HIPAA-compliant dental patient app — schema design, BAAs, encryption, audit trails — based on what we built for SmileLink." />
+    <meta name="author" content="Sepehr Aflatounian" />
+    <link rel="canonical" href="https://leyoxa.com/blog/hipaa-compliant-patient-app.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://leyoxa.com/blog/hipaa-compliant-patient-app.html" />
+    <meta property="og:title" content="Shipping a HIPAA-Compliant Patient App: The Real Checklist" />
+    <meta property="og:description" content="The practical checklist for a production HIPAA-aligned patient app." />
+    <meta property="og:image" content="https://leyoxa.com/images/clinic-solutions/clinic-management-2.png" />
+    <meta property="og:image:alt" content="HIPAA-compliant patient app architecture" />
+    <meta property="article:author" content="Sepehr Aflatounian" />
+    <meta property="article:published_time" content="2026-03-06" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://leyoxa.com/images/clinic-solutions/clinic-management-2.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Shipping a HIPAA-Compliant Patient App: The Real Checklist",
+      "description": "The practical, production-grade checklist for HIPAA-aligned dental patient apps.",
+      "author": {"@type": "Person", "name": "Sepehr Aflatounian", "url": "https://leyoxa.com/page-aboutus.html"},
+      "publisher": {"@type": "Organization", "name": "Leyoxa",
+        "logo": {"@type": "ImageObject", "url": "https://leyoxa.com/images/logo-nav.svg"}},
+      "datePublished": "2026-03-06",
+      "dateModified": "2026-03-06",
+      "image": "https://leyoxa.com/images/clinic-solutions/clinic-management-2.png",
+      "mainEntityOfPage": "https://leyoxa.com/blog/hipaa-compliant-patient-app.html",
+      "keywords": "HIPAA-compliant patient app, dental patient app, HIPAA dental software, BAA, PHI, patient data security"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://leyoxa.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://leyoxa.com/blog.html"},
+        {"@type": "ListItem", "position": 3, "name": "HIPAA-Compliant Patient App", "item": "https://leyoxa.com/blog/hipaa-compliant-patient-app.html"}
+      ]
+    }
+    </script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="apple-touch-icon" href="../images/app-icon.svg">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="../css/colors/default.css" rel="stylesheet" id="color-opt">
+    <link href="../css/leyoxa-2026.css" rel="stylesheet" type="text/css" />
+    <link href="../css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="theme-2026">
+
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <div>
+                <a class="logo" href="../index.html">
+                    <img src="../images/logo-nav.svg" height="34" alt="Leyoxa">
+                </a>
+            </div>
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle">
+                        <div class="lines"><span></span><span></span><span></span></div>
+                    </a>
+                </div>
+            </div>
+            <div id="navigation">
+                <ul class="navigation-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../page-aboutus.html">About</a></li>
+                    <li><a href="../page-services.html">Services</a></li>
+                    <li class="active"><a href="../blog.html">Blog</a></li>
+                    <li><a href="../page-faq.html">FAQ</a></li>
+                    <li><a href="../page-contact.html">Contact</a></li>
+                    <li class="nav-cta">
+                        <a href="../page-contact.html">Book a Discovery Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-hero" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 lx-reveal text-center">
+                    <span class="pill-live"><span class="dot"></span> Compliance · 11 min read</span>
+                    <h1>Shipping a HIPAA-compliant<br><span class="text-grad">patient app.</span></h1>
+                    <p>The practical, production-grade checklist — not the marketing version.</p>
+                    <div class="crumb">
+                        <a href="../index.html">Leyoxa</a>
+                        <span class="sep">/</span>
+                        <a href="../blog.html">Blog</a>
+                        <span class="sep">/</span>
+                        <span class="current">HIPAA-Compliant Patient App</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <article class="blog-post">
+
+                        <p>"HIPAA-compliant" is one of the most overloaded phrases in healthcare software.
+                            Marketing pages slap it on landing copy; clinics ask for it without a clear
+                            picture of what it means; vendors interpret it however they need to. So let's be
+                            specific.</p>
+
+                        <p>This is the checklist we used to ship <a href="../case-smilelink.html">SmileLink</a>
+                            — a dental patient app and clinic dashboard — and that we use as the baseline for
+                            every healthcare product we build. It's not a substitute for legal counsel or a
+                            third-party audit. But it's the engineering reality of what production HIPAA
+                            alignment looks like.</p>
+
+                        <h2>1. The legal scaffolding (before any code)</h2>
+
+                        <h3>Business Associate Agreement (BAA)</h3>
+                        <p>If your app processes Protected Health Information (PHI) on behalf of a covered
+                            entity (the clinic), you are a Business Associate. That requires a signed BAA
+                            with the clinic and, separately, BAAs with <em>every</em> downstream subprocessor
+                            that touches PHI — your cloud provider, your database host, your email vendor,
+                            your push notification service, your error tracker.</p>
+
+                        <p>What gets forgotten: a single subprocessor without a BAA can break your whole
+                            compliance posture. Inventory them all before you ship.</p>
+
+                        <h3>Data Processing Inventory</h3>
+                        <p>Document, in writing:</p>
+                        <ul>
+                            <li>Every PHI field you collect (name, DOB, treatment, photos, messages)</li>
+                            <li>Where it's stored, and in what region</li>
+                            <li>Who can access it, and through which interface</li>
+                            <li>How long it's retained</li>
+                            <li>How it's deleted on patient request</li>
+                        </ul>
+
+                        <h2>2. Encryption — in transit, at rest, in messages</h2>
+
+                        <p>The HIPAA Security Rule doesn't prescribe specific algorithms, but in 2026 there's
+                            a clear baseline:</p>
+
+                        <ul>
+                            <li><strong>In transit:</strong> TLS 1.3 everywhere. No fallback to TLS 1.0/1.1.
+                                HSTS enabled on every PHI-bearing surface.</li>
+                            <li><strong>At rest:</strong> AES-256 column-level encryption for PHI fields,
+                                not just disk-level. Disk encryption alone is not enough for "in the wrong
+                                hands" scenarios like dev access.</li>
+                            <li><strong>Messages:</strong> patient ⇄ clinic chat needs end-to-end encryption
+                                — meaning the server can't decrypt content even if compromised. This is the
+                                bar SmileLink ships at.</li>
+                            <li><strong>Keys:</strong> KMS-managed, rotated, with separate keys per
+                                environment.</li>
+                        </ul>
+
+                        <h2>3. Authentication and access control</h2>
+
+                        <h3>Patient-side</h3>
+                        <ul>
+                            <li>Per-account login, never a shared "clinic kiosk" account for patient access</li>
+                            <li>MFA available, mandatory for password reset</li>
+                            <li>Session timeouts (30 min idle is a reasonable default)</li>
+                            <li>Device-level biometric unlock on the mobile app</li>
+                        </ul>
+
+                        <h3>Clinic-side</h3>
+                        <ul>
+                            <li>Role-based access control (RBAC) with minimum required scope per role —
+                                front-desk doesn't need access to clinical notes</li>
+                            <li>SSO support for clinic networks</li>
+                            <li>Forced MFA for any role that can read PHI in bulk</li>
+                            <li>Per-clinic data isolation enforced at the database level, not just the
+                                application layer</li>
+                        </ul>
+
+                        <h2>4. Audit logging</h2>
+
+                        <p>HIPAA requires you to know who accessed what PHI, when, and from where. In
+                            practice:</p>
+
+                        <ul>
+                            <li>Every read of a PHI field is logged with user, timestamp, IP, and the
+                                specific record ID</li>
+                            <li>Every write is logged with before/after diffs (or pointers to versioned data)</li>
+                            <li>Logs are immutable — append-only storage, separate from the operational
+                                database</li>
+                            <li>Retention typically 6 years to align with the HIPAA Privacy Rule</li>
+                        </ul>
+
+                        <h2>5. Data minimization in practice</h2>
+
+                        <p>"Collect the least PHI you need to do the job" sounds obvious; it's the easiest
+                            principle to violate at scale. A few concrete patterns:</p>
+
+                        <ul>
+                            <li>Don't store insurance card scans on the app server if your downstream PMS
+                                already has them — pass through</li>
+                            <li>Strip PHI from error tracking. Sentry-style services see your stack traces;
+                                make sure they don't see patient names</li>
+                            <li>Pseudonymize PHI in analytics. Aggregate counts are fine; individual
+                                identifiers don't belong in a BI tool</li>
+                            <li>Don't log full request bodies in production. Log enough to debug, never
+                                more</li>
+                        </ul>
+
+                        <h2>6. Patient rights — the operational side</h2>
+
+                        <p>HIPAA gives patients real rights: access to their data, correction, an accounting
+                            of disclosures, and the right to revoke consent. Your app needs operational
+                            workflows for each:</p>
+
+                        <ul>
+                            <li>A documented process for fulfilling access requests within 30 days</li>
+                            <li>A "delete me" path that actually works end-to-end, including in backups
+                                (typically a tombstone strategy, since immediate hard-delete fights audit
+                                retention)</li>
+                            <li>An accounting log of who saw what, including any third-party disclosures</li>
+                        </ul>
+
+                        <h2>7. The breach response plan</h2>
+
+                        <p>You will, at some point, have an incident. The Security Rule requires:</p>
+
+                        <ul>
+                            <li>A documented incident response process</li>
+                            <li>Defined roles — who decides if it's a breach, who notifies the clinic, who
+                                contacts patients</li>
+                            <li>Breach notification within 60 days (typically faster in practice)</li>
+                            <li>Annual tabletop exercises</li>
+                        </ul>
+
+                        <h2>8. Vendor / subprocessor list (the part nobody publishes)</h2>
+
+                        <p>A practical production stack we've used:</p>
+
+                        <ul>
+                            <li><strong>Cloud:</strong> AWS or GCP — both offer signed BAAs and HIPAA-eligible
+                                services</li>
+                            <li><strong>Database:</strong> Postgres on a HIPAA-eligible managed service</li>
+                            <li><strong>Email:</strong> a HIPAA-aligned transactional email provider (not
+                                the consumer-grade default)</li>
+                            <li><strong>SMS:</strong> Twilio with their HIPAA-eligible configuration and a
+                                BAA</li>
+                            <li><strong>Push:</strong> APNs / FCM — neither carries PHI in payloads, only
+                                pointers, since neither provider signs BAAs at this layer</li>
+                            <li><strong>Observability:</strong> a HIPAA-aligned error tracker with PHI
+                                scrubbing</li>
+                        </ul>
+
+                        <h2>9. What "HIPAA-aligned" means at Leyoxa</h2>
+
+                        <p>We use the phrase "HIPAA-aligned" rather than "HIPAA-compliant" deliberately.
+                            Compliance is a status that comes from the operator side — the covered entity,
+                            their policies, their training, their physical safeguards. We can build
+                            <em>infrastructure</em> that supports compliance end-to-end. Calling it "aligned"
+                            keeps that line honest.</p>
+
+                        <h2>10. The Canadian counterpart: PHIPA</h2>
+
+                        <p>For our Toronto partners, PHIPA (Ontario's Personal Health Information Protection
+                            Act) is the equivalent framework. Most of the operational controls above carry
+                            over — the differences are mostly in terminology and in the data residency
+                            preference for Canadian health information custodians. We host Canadian-bound
+                            workloads in Canadian regions.</p>
+
+                        <h2>Where Leyoxa fits</h2>
+
+                        <p>The checklist above is the engineering side of what we shipped with
+                            <a href="../case-smilelink.html">SmileLink</a>. If you're a clinic operator or
+                            healthcare-adjacent founder and you want a patient app you can actually defend in
+                            a security review — not a marketing claim —
+                            <a href="../page-contact.html">book a 30-minute discovery call</a>. The session
+                            is with the engineer who builds it.</p>
+
+                    </article>
+
+
+                    <!-- Author -->
+                    <div class="mt-4 d-flex align-items-center" style="background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px;">
+                        <div style="flex: 1;">
+                            <span class="eyebrow">Written by</span>
+                            <h5 class="mb-1" style="font-size: 16px; color: var(--ink);">Sepehr Aflatounian</h5>
+                            <p class="mb-0" style="font-size: 13.5px; color: var(--slate);">
+                                Founder, Leyoxa. Security engineer at a Canadian fintech, with production
+                                experience shipping HIPAA-aligned patient platforms.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Related -->
+                    <div class="mt-5">
+                        <span class="eyebrow">Keep reading</span>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <a href="dental-ai-voice-agent.html" class="blog-card">
+                                    <div class="blog-card-body">
+                                        <span class="blog-tag">Voice AI</span>
+                                        <h3>What a dental AI voice agent actually does (and what it doesn't)</h3>
+                                        <p>The honest tour of 24/7 voice agents in production.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="open-dental-integrations.html" class="blog-card">
+                                    <div class="blog-card-body">
+                                        <span class="blog-tag">Integrations</span>
+                                        <h3>OpenDental integrations: the practical guide for app builders</h3>
+                                        <p>Bridges, sync patterns, and the gotchas nobody documents.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                    <a href="../index.html" class="logo-footer">
+                        <img src="../images/logo-light.svg" height="40" alt="Leyoxa">
+                    </a>
+                    <p class="mt-3" style="max-width: 380px;">A focused studio building AI products with
+                        dental and healthcare operators in Miami, Austin, and Toronto.</p>
+                    <ul class="list-unstyled social-icon social mb-0 mt-3">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/leyoxa/" class="rounded" target="_blank"
+                                rel="noopener" aria-label="LinkedIn">
+                                <i data-feather="linkedin" class="fea icon-sm fea-social"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Navigate</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="../index.html" class="text-foot">Home</a></li>
+                        <li><a href="../page-aboutus.html" class="text-foot">About Us</a></li>
+                        <li><a href="../page-services.html" class="text-foot">Services</a></li>
+                        <li><a href="../page-faq.html" class="text-foot">FAQ</a></li>
+                        <li><a href="../page-contact.html" class="text-foot">Contact</a></li>
+                        <li><a href="../page-contact.html" class="text-foot">Book a Call</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Case Studies</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="../case-studies.html" class="text-foot">All case studies</a></li>
+                        <li><a href="../case-dds-marketing.html" class="text-foot">DDS Marketing</a></li>
+                        <li><a href="../case-smilelink.html" class="text-foot">SmileLink</a></li>
+                        <li><a href="../case-emergclinic.html" class="text-foot">Emergclinic</a></li>
+                        <li><a href="../blog.html" class="text-foot">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Legal</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="../privacy-policy.html" class="text-foot">Privacy Policy</a></li>
+                        <li><a href="../terms.html" class="text-foot">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2026 Leyoxa LLC. Registered in Austin, TX. &nbsp;|&nbsp;
+                            <a href="../privacy-policy.html" class="text-muted">Privacy</a> &nbsp;·&nbsp;
+                            <a href="../terms.html" class="text-muted">Terms</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-3 mt-sm-0">
+                    <div class="text-sm-right text-center">
+                        <p class="mb-0" style="color: rgba(255,255,255,0.5); font-size: 13px;">
+                            Built in Austin, TX · For clinics worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="../js/app.js" defer></script>
+</body>
+
+</html>
