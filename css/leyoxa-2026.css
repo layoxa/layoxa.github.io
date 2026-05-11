@@ -163,6 +163,61 @@ body.theme-2026 .btn-mint:hover {
     50% { box-shadow: 0 0 0 7px rgba(15, 184, 166, 0.04); }
 }
 
+/* "Incoming" variant for products not yet live */
+.pill-soon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px 7px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-sm);
+}
+.pill-soon .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--coral, #f97316);
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.18);
+    animation: lx-pulse-coral 2.4s ease-in-out infinite;
+}
+@keyframes lx-pulse-coral {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.18); }
+    50% { box-shadow: 0 0 0 7px rgba(249, 115, 22, 0.04); }
+}
+
+/* Inline "incoming" badge for cards (smaller, used on product cards) */
+.badge-incoming {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: var(--coral-soft);
+    color: var(--coral);
+    font-weight: 700;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(249, 115, 22, 0.25);
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.badge-incoming::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--coral, #f97316);
+}
+
 .trust-chip {
     display: inline-flex;
     align-items: center;
