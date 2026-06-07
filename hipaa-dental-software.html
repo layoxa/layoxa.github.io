@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HIPAA-Compliant Dental Software — Production Stack | Leyoxa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="HIPAA-compliant dental software: BAAs, encryption in transit + at rest, audit logs, per-clinic isolation. Production stack used by SmileLink &amp; DDS Marketing." />
+    <meta name="author" content="Sepehr Aflatounian" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://leyoxa.com/hipaa-dental-software.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leyoxa.com/hipaa-dental-software.html" />
+    <meta property="og:title" content="HIPAA-Compliant Dental Software — Production Stack" />
+    <meta property="og:description"
+        content="Production HIPAA-compliant dental software stack: BAAs, encryption, audit logs, role-based access. Built for SmileLink &amp; DDS Marketing." />
+    <meta property="og:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "HIPAA-Compliant Dental Software Development",
+      "url": "https://leyoxa.com/hipaa-dental-software.html",
+      "description": "HIPAA-aligned dental software stack — BAAs with downstream subprocessors, encryption in transit and at rest, audit logs on every PHI read and write, per-clinic data isolation, role-based access control. Production-grade and defensible in a real security review.",
+      "serviceType": "HIPAA-compliant dental software",
+      "category": [
+        "HIPAA-compliant dental software",
+        "HIPAA dental app",
+        "PHIPA dental compliance",
+        "Healthcare software security"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Leyoxa",
+        "url": "https://leyoxa.com",
+        "email": "contact@leyoxa.com"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Miami"},
+        {"@type": "City", "name": "Austin"},
+        {"@type": "City", "name": "Toronto"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does HIPAA-compliant dental software actually mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HIPAA-compliant dental software supports a covered entity (the clinic) in meeting the HIPAA Security and Privacy Rules. Concretely: the software processes Protected Health Information under a signed Business Associate Agreement (BAA), encrypts PHI in transit and at rest, logs every read and write of PHI, isolates data per clinic, and supports patient rights (access, correction, deletion). Leyoxa uses the term 'HIPAA-aligned' to be honest about the engineering posture — compliance status is a property of the operator."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a BAA with my dental software vendor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your dental software processes Protected Health Information (PHI) on your behalf, then yes — HIPAA requires a Business Associate Agreement (BAA) between the clinic and the vendor. Leyoxa signs BAAs as a Business Associate, and our downstream subprocessors (cloud, database, SMS, model providers) all carry signed BAAs as well."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is HIPAA different from PHIPA for Canadian clinics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PHIPA is Ontario's Personal Health Information Protection Act, the Canadian counterpart to HIPAA. Most engineering controls carry over — encryption, audit logging, BAAs — with differences mainly in terminology and a strong data residency preference for Canadian health information custodians. Leyoxa hosts Canadian-bound workloads in Canadian regions."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://leyoxa.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Dental AI Software", "item": "https://leyoxa.com/dental-ai-software.html"},
+        {"@type": "ListItem", "position": 3, "name": "HIPAA-Compliant Dental Software", "item": "https://leyoxa.com/hipaa-dental-software.html"}
+      ]
+    }
+    </script>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/app-icon.svg">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <link href="css/leyoxa-2026.css" rel="stylesheet" type="text/css" />
+    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="theme-2026">
+
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <div>
+                <a class="logo" href="index.html">
+                    <img src="images/logo-nav.svg" height="34" alt="Leyoxa">
+                </a>
+            </div>
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle">
+                        <div class="lines"><span></span><span></span><span></span></div>
+                    </a>
+                </div>
+            </div>
+            <div id="navigation">
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page-aboutus.html">About</a></li>
+                    <li class="active"><a href="page-services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="page-faq.html">FAQ</a></li>
+                    <li><a href="page-contact.html">Contact</a></li>
+                    <li class="nav-cta">
+                        <a href="page-contact.html">Book a Discovery Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 lx-reveal text-center">
+                    <span class="pill-live"><span class="dot"></span> HIPAA + PHIPA aligned · BAA available</span>
+                    <h1>HIPAA-compliant dental software,<br>
+                        <span class="text-grad">designed for a real security review.</span></h1>
+                    <p>The stack we run for SmileLink and the DDS Marketing AI suite — built to align with
+                        HIPAA from the schema up, not retrofitted with a privacy badge.</p>
+                    <div class="crumb">
+                        <a href="index.html">Leyoxa</a>
+                        <span class="sep">/</span>
+                        <a href="dental-ai-software.html">Dental AI Software</a>
+                        <span class="sep">/</span>
+                        <span class="current">HIPAA Dental Software</span>
+                    </div>
+                    <div class="hero-cta-row" style="justify-content: center; margin-top: 28px;">
+                        <a href="page-contact.html" class="btn btn-ink">
+                            Book a Discovery Call <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                        <a href="blog/hipaa-compliant-patient-app.html" class="btn btn-ghost">
+                            Read the engineering checklist <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">Why "HIPAA-aligned"</span>
+                    <h2 class="section-headline">Compliance is a status.<br>Alignment is a stack.</h2>
+                    <p class="text-muted" style="font-size: 17px; line-height: 1.7;">
+                        Leyoxa uses the phrase "HIPAA-aligned" rather than "HIPAA-compliant" deliberately.
+                        Compliance is a status that lives with the covered entity — the clinic, its
+                        policies, its training, its physical safeguards. We can build
+                        <em>infrastructure</em> that supports compliance end-to-end. Calling it "aligned"
+                        keeps that line honest.
+                    </p>
+                    <p class="text-muted" style="font-size: 17px; line-height: 1.7;">
+                        What follows is the actual stack we run — the same controls a real HIPAA audit will
+                        look for.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-9 text-center">
+                    <span class="eyebrow">The stack</span>
+                    <h2 class="section-headline">Six layers of HIPAA-aligned controls.</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic"><i class="mdi mdi-file-document-edit-outline"></i></span>
+                                <h5>1 · BAAs end-to-end</h5>
+                                <p>Signed Business Associate Agreements with the clinic and with every
+                                    downstream subprocessor that touches PHI — cloud, database, SMS, model
+                                    providers, observability.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic coral"><i class="mdi mdi-lock-outline"></i></span>
+                                <h5>2 · Encryption everywhere</h5>
+                                <p>TLS 1.3 in transit (no fallback), AES-256 column-level encryption at
+                                    rest on PHI fields, end-to-end encryption on patient ⇄ clinic chat.
+                                    KMS-managed keys with per-environment rotation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic"><i class="mdi mdi-shield-key-outline"></i></span>
+                                <h5>3 · Role-based access (RBAC)</h5>
+                                <p>Minimum-required-scope per role on the clinic side. Front desk doesn't
+                                    see clinical notes. SSO supported. MFA forced for any role that can read
+                                    PHI in bulk.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic coral"><i class="mdi mdi-file-clock-outline"></i></span>
+                                <h5>4 · Audit logs, append-only</h5>
+                                <p>Every read of a PHI field is logged with user, timestamp, IP, and record
+                                    ID. Every write is logged with before/after diffs. Logs are immutable
+                                    and stored separately, with 6-year retention.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic"><i class="mdi mdi-database-eye-off-outline"></i></span>
+                                <h5>5 · Per-clinic isolation</h5>
+                                <p>Per-clinic data isolation enforced at the database level, not just the
+                                    application layer. PHI doesn't co-mingle with operational metadata or
+                                    with other clinics' data.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic coral"><i class="mdi mdi-account-check-outline"></i></span>
+                                <h5>6 · Patient rights workflows</h5>
+                                <p>Documented processes for access, correction, deletion, and accounting of
+                                    disclosures. Tombstone-based delete strategy that respects audit
+                                    retention while honoring patient requests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">Subprocessor stack</span>
+                    <h2 class="section-headline">Every vendor on the path<br>carries a BAA.</h2>
+                    <p class="text-muted" style="font-size: 16px; line-height: 1.7;">
+                        A single subprocessor without a BAA breaks the whole compliance posture. We keep the
+                        list short and signed:
+                    </p>
+                    <ul class="feature-list mt-3">
+                        <li><strong>Cloud:</strong> AWS or GCP HIPAA-eligible services</li>
+                        <li><strong>Database:</strong> Postgres on a HIPAA-eligible managed service</li>
+                        <li><strong>SMS / telephony:</strong> Twilio with HIPAA configuration and a BAA</li>
+                        <li><strong>Email:</strong> HIPAA-aligned transactional email provider</li>
+                        <li><strong>Voice + LLM:</strong> OpenAI &amp; ElevenLabs under HIPAA-eligible
+                            agreements</li>
+                        <li><strong>Observability:</strong> HIPAA-aligned error tracker with PHI scrubbing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">Where it's deployed</span>
+                    <h2 class="section-headline">In production today.</h2>
+                    <p class="text-muted" style="font-size: 16px; line-height: 1.7;">
+                        This isn't a hypothetical stack. It's the one running across the Leyoxa portfolio:
+                    </p>
+                    <ul class="feature-list mt-3">
+                        <li><strong><a href="case-smilelink.html">SmileLink</a></strong> — HIPAA-compliant
+                            dental patient app + clinic dashboard, OpenDental + Dentrix data layer</li>
+                        <li><strong><a href="case-dds-marketing.html">DDS Marketing AI Suite</a></strong> —
+                            voice agent, SEO, marketing, and Office Brain (incoming) operating under the
+                            same HIPAA-aligned data flow</li>
+                        <li><strong><a href="case-emergclinic.html">Emergclinic</a></strong> — Toronto
+                            on-demand matching with PHIPA-aligned data residency</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 class="section-headline">HIPAA dental software — common questions.</h2>
+
+                    <div class="mt-4" style="background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 8px 0;">
+                        <details open style="padding: 18px 24px; border-bottom: 1px solid var(--line);">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                What does HIPAA-compliant dental software actually mean?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                HIPAA-compliant dental software supports a covered entity (the clinic) in
+                                meeting the HIPAA Security and Privacy Rules: signed BAA, encryption in
+                                transit and at rest, audit logs on every PHI read and write, per-clinic
+                                isolation, and patient-rights workflows. We use the term "HIPAA-aligned" to
+                                be honest about the engineering posture — compliance status is a property
+                                of the operator.
+                            </p>
+                        </details>
+                        <details style="padding: 18px 24px; border-bottom: 1px solid var(--line);">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                Do I need a BAA with my dental software vendor?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                If your dental software processes Protected Health Information on your
+                                behalf, HIPAA requires a Business Associate Agreement (BAA). Leyoxa signs
+                                BAAs as a Business Associate, and every downstream subprocessor on our
+                                stack carries a signed BAA.
+                            </p>
+                        </details>
+                        <details style="padding: 18px 24px;">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                How is HIPAA different from PHIPA for Canadian clinics?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                PHIPA (Ontario's Personal Health Information Protection Act) is the
+                                Canadian equivalent. Most engineering controls carry over with differences
+                                mainly in terminology and a strong data residency preference for Canadian
+                                health information custodians. We host Canadian-bound workloads in Canadian
+                                regions.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <h2 class="section-headline">Need dental software you can defend?</h2>
+                    <p class="text-muted">Book a 30-minute call. We'll walk through the security posture
+                        and what a BAA looks like.</p>
+                    <div class="hero-cta-row" style="justify-content: center; margin-top: 20px;">
+                        <a href="page-contact.html" class="btn btn-ink">
+                            Book a Discovery Call <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                        <a href="blog/hipaa-compliant-patient-app.html" class="btn btn-ghost">
+                            Read the engineering checklist <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <a href="index.html" class="logo-footer">
+                        <img src="images/logo-light.svg" height="40" alt="Leyoxa">
+                    </a>
+                    <p class="mt-3" style="max-width: 320px;">Dental AI software, built with operators in
+                        Miami, Austin, and Toronto.</p>
+                    <ul class="list-unstyled social-icon social mb-0 mt-3">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/leyoxa/" class="rounded" target="_blank"
+                                rel="noopener" aria-label="LinkedIn">
+                                <i data-feather="linkedin" class="fea icon-sm fea-social"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Solutions</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="dental-ai-software.html" class="text-foot">Dental AI Software</a></li>
+                        <li><a href="dental-voice-agent.html" class="text-foot">Dental AI Voice Agent</a></li>
+                        <li><a href="ai-dental-scheduling.html" class="text-foot">AI Dental Scheduling</a></li>
+                        <li><a href="hipaa-dental-software.html" class="text-foot">HIPAA Dental Software</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Navigate</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="index.html" class="text-foot">Home</a></li>
+                        <li><a href="page-aboutus.html" class="text-foot">About Us</a></li>
+                        <li><a href="page-services.html" class="text-foot">Services</a></li>
+                        <li><a href="case-studies.html" class="text-foot">Case Studies</a></li>
+                        <li><a href="blog.html" class="text-foot">Blog</a></li>
+                        <li><a href="page-faq.html" class="text-foot">FAQ</a></li>
+                        <li><a href="page-contact.html" class="text-foot">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Legal</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="privacy-policy.html" class="text-foot">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-foot">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2026 Leyoxa LLC. Registered in Austin, TX. &nbsp;|&nbsp;
+                            <a href="privacy-policy.html" class="text-muted">Privacy</a> &nbsp;·&nbsp;
+                            <a href="terms.html" class="text-muted">Terms</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-3 mt-sm-0">
+                    <div class="text-sm-right text-center">
+                        <p class="mb-0" style="color: rgba(255,255,255,0.5); font-size: 13px;">
+                            Built in Austin, TX · For clinics worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>

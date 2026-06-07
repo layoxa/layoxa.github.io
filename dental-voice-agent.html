@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dental AI Voice Agent — 24/7 Call Answering for Dental Clinics | Leyoxa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Dental AI voice agent: 24/7 inbound call answering, real Open Dental booking, insurance Q&amp;A, staff handoff. Live in production at Miami dental clinics." />
+    <meta name="author" content="Sepehr Aflatounian" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://leyoxa.com/dental-voice-agent.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leyoxa.com/dental-voice-agent.html" />
+    <meta property="og:title" content="Dental AI Voice Agent — 24/7 Call Answering for Dental Clinics" />
+    <meta property="og:description"
+        content="A production dental AI voice agent — 24/7, books into Open Dental, handles insurance Q&amp;A, hands off to staff with summaries." />
+    <meta property="og:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
+    <meta property="og:image:alt" content="Dental AI voice agent" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Dental AI Voice Agent",
+      "url": "https://leyoxa.com/dental-voice-agent.html",
+      "description": "A production-grade dental AI voice agent that answers inbound calls 24/7, books appointments across operatories in Open Dental and Dentrix, handles insurance Q&A, and hands off to staff with structured summaries.",
+      "serviceType": "AI dental voice agent",
+      "category": [
+        "Dental AI voice agent",
+        "AI receptionist dental",
+        "AI dental call answering",
+        "24/7 dental booking"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Leyoxa",
+        "url": "https://leyoxa.com",
+        "email": "contact@leyoxa.com"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Miami"},
+        {"@type": "City", "name": "Austin"},
+        {"@type": "City", "name": "Toronto"}
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "30-minute discovery call",
+        "url": "https://leyoxa.com/page-contact.html",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a dental AI voice agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A dental AI voice agent is software that answers a dental practice's inbound phone calls using a natural-language AI. It greets the caller, captures intent, books or reschedules appointments directly in the practice management system, handles insurance and pricing questions, and hands off to staff when needed. The best dental voice agents run 24/7 and integrate with Open Dental, Dentrix, or whatever PMS the clinic uses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a dental AI voice agent actually book appointments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — production dental AI voice agents like the one Leyoxa built for DDS Marketing write confirmed bookings directly into the clinic's Open Dental schedule, respecting operatory availability, provider preferences, and appointment-type rules. The voice agent then SMSes the patient a confirmation and creates a handoff summary for front-desk staff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a dental AI voice agent HIPAA compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leyoxa's dental voice agent is HIPAA-aligned: telephony runs through Twilio with a signed BAA, model providers run under BAAs, PHI is encrypted in transit and at rest, and every call produces an audit log of who accessed what. Recordings and transcripts are stored in HIPAA-eligible cloud regions only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of calls can a dental voice agent handle end-to-end?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Leyoxa's DDS Marketing deployment, the voice agent handles roughly 60–70% of inbound calls end-to-end in the first two weeks of go-live, growing to 80–90% after a few rounds of knowledge-base tuning. After-hours numbers are typically higher because after-hours calls skew toward simpler intents (book / reschedule / confirm)."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://leyoxa.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Dental AI Software", "item": "https://leyoxa.com/dental-ai-software.html"},
+        {"@type": "ListItem", "position": 3, "name": "Dental AI Voice Agent", "item": "https://leyoxa.com/dental-voice-agent.html"}
+      ]
+    }
+    </script>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/app-icon.svg">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <link href="css/leyoxa-2026.css" rel="stylesheet" type="text/css" />
+    <link href="css/leyoxa-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="theme-2026">
+
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <div>
+                <a class="logo" href="index.html">
+                    <img src="images/logo-nav.svg" height="34" alt="Leyoxa">
+                </a>
+            </div>
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle">
+                        <div class="lines"><span></span><span></span><span></span></div>
+                    </a>
+                </div>
+            </div>
+            <div id="navigation">
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page-aboutus.html">About</a></li>
+                    <li class="active"><a href="page-services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="page-faq.html">FAQ</a></li>
+                    <li><a href="page-contact.html">Contact</a></li>
+                    <li class="nav-cta">
+                        <a href="page-contact.html">Book a Discovery Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 lx-reveal text-center">
+                    <span class="pill-live"><span class="dot"></span> Live · DDS Marketing · Miami</span>
+                    <h1>Dental AI voice agent.<br><span class="text-grad">24/7. Books real appointments.</span></h1>
+                    <p>The dental AI voice agent we built for DDS Marketing answers inbound calls around the
+                        clock, books directly into Open Dental, and hands off to staff with a structured call
+                        summary. Live in production across a Miami clinic base today.</p>
+                    <div class="crumb">
+                        <a href="index.html">Leyoxa</a>
+                        <span class="sep">/</span>
+                        <a href="dental-ai-software.html">Dental AI Software</a>
+                        <span class="sep">/</span>
+                        <span class="current">Voice Agent</span>
+                    </div>
+                    <div class="hero-cta-row" style="justify-content: center; margin-top: 28px;">
+                        <a href="page-contact.html" class="btn btn-ink">
+                            Book a Discovery Call <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                        <a href="case-dds-marketing.html" class="btn btn-ghost">
+                            See it in production <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">What it does</span>
+                    <h2 class="section-headline">An AI receptionist that<br>actually books the appointment.</h2>
+                    <p class="text-muted" style="font-size: 17px; line-height: 1.7;">
+                        Most dental AI voice agents on the market are voicemail with better grammar. They
+                        capture intent, send the clinic an email, and call themselves a "callback bot." That
+                        isn't the bar.
+                    </p>
+                    <p class="text-muted" style="font-size: 17px; line-height: 1.7;">
+                        A production dental AI voice agent <strong>writes the confirmed booking into the
+                        clinic's Open Dental schedule</strong>. It honors operatory rules, provider
+                        preferences, and appointment-type templates. It SMSes the patient a confirmation. And
+                        it logs the entire interaction in a HIPAA-aligned audit trail.
+                    </p>
+                    <p class="text-muted" style="font-size: 17px; line-height: 1.7;">
+                        That's what we shipped with DDS Marketing — and it's the baseline for any dental AI
+                        voice agent that's worth deploying.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-9 text-center">
+                    <span class="eyebrow">Capabilities</span>
+                    <h2 class="section-headline">What our dental voice agent handles.</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic"><i class="mdi mdi-phone-incoming-outline"></i></span>
+                                <h5>24/7 inbound call answering</h5>
+                                <p>Picks up every call — including after hours, lunch, and weekends. No
+                                    voicemail, no hold music. After-hours bookings stop leaking to the next
+                                    clinic on the Google list.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic coral"><i class="mdi mdi-calendar-check-outline"></i></span>
+                                <h5>Real Open Dental booking</h5>
+                                <p>Writes confirmed appointments directly into the clinic's schedule —
+                                    respecting operatory rules, provider preferences, and appointment-type
+                                    templates. Same for Dentrix via our local bridge.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic"><i class="mdi mdi-comment-question-outline"></i></span>
+                                <h5>Insurance &amp; pricing Q&amp;A</h5>
+                                <p>Answers from a clinic-specific knowledge base ("Do you take Aetna PPO?",
+                                    "How much is a cleaning without insurance?"). Not from a generic web
+                                    crawl.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic coral"><i class="mdi mdi-account-arrow-right-outline"></i></span>
+                                <h5>Smart staff handoff</h5>
+                                <p>When the caller needs a human — emergency, escalation, complex clinical
+                                    question — the agent transfers with a structured summary so staff don't
+                                    start from scratch.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic"><i class="mdi mdi-message-text-outline"></i></span>
+                                <h5>Post-call SMS &amp; intake</h5>
+                                <p>Confirmation SMS, intake form links, recall reminders — all sent
+                                    automatically through Twilio with a HIPAA-aligned messaging layer.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <span class="ic coral"><i class="mdi mdi-chart-line"></i></span>
+                                <h5>Observable, auditable</h5>
+                                <p>Every call produces a transcript, a structured summary, and intent
+                                    resolution stats. Visible in a slim dashboard — you can audit exactly
+                                    which step misfired when something goes sideways.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">The stack</span>
+                    <h2 class="section-headline">Built on a production-grade voice stack.</h2>
+                    <p class="text-muted" style="font-size: 16px; line-height: 1.7;">
+                        Voice technology is mostly solved now. What separates a real dental voice agent from
+                        a demo is the integration depth around it. Here's the stack we run:
+                    </p>
+                    <ul class="feature-list mt-3">
+                        <li><strong>OpenAI Realtime API</strong> — for low-latency speech-to-speech with
+                            tool-calling, so the agent can <em>do</em> things, not just talk</li>
+                        <li><strong>ElevenLabs voices</strong> — natural voice synthesis, clinic-specific
+                            voice personality</li>
+                        <li><strong>Twilio Voice + SMS</strong> — telephony layer with a signed BAA, plus
+                            outbound SMS confirmations</li>
+                        <li><strong>Open Dental + Dentrix adapters</strong> — real schedule reads and writes,
+                            not API illusions</li>
+                        <li><strong>Per-clinic knowledge base</strong> — insurance plans, providers, hours,
+                            policies — curated, not crawled</li>
+                        <li><strong>HIPAA-aligned data flow</strong> — encryption in transit and at rest,
+                            audit logs, BAA stack</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="quote-card">
+                        <p class="quote-text">
+                            "Sepehr ships like a co-founder. The voice agent paid for itself the first month
+                            — we stopped losing after-hours bookings."
+                        </p>
+                        <div class="quote-attrib">
+                            <span class="who">Ardi Safi</span>
+                            <span class="role">Founder, DDS Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Inline FAQ for AI Overviews + Featured Snippets -->
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 class="section-headline">Dental voice agent — common questions.</h2>
+
+                    <div class="mt-4" style="background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 8px 0;">
+                        <details open style="padding: 18px 24px; border-bottom: 1px solid var(--line);">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                What is a dental AI voice agent?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                A dental AI voice agent is software that answers a clinic's inbound phone
+                                calls using natural-language AI. It greets the caller, captures intent, books
+                                or reschedules appointments directly in Open Dental or Dentrix, handles
+                                insurance Q&amp;A, and hands off to staff when needed. The best dental voice
+                                agents run 24/7 and integrate with the practice's existing PMS.
+                            </p>
+                        </details>
+                        <details style="padding: 18px 24px; border-bottom: 1px solid var(--line);">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                Does it actually book appointments, or just take messages?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                Production dental AI voice agents like the one we built for DDS Marketing
+                                write confirmed bookings directly into the clinic's Open Dental schedule,
+                                respecting operatory availability and appointment-type rules. The voice agent
+                                then SMSes the patient a confirmation and creates a handoff summary for
+                                front-desk staff.
+                            </p>
+                        </details>
+                        <details style="padding: 18px 24px; border-bottom: 1px solid var(--line);">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                Is a dental AI voice agent HIPAA compliant?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                Leyoxa's dental voice agent is HIPAA-aligned: telephony runs through Twilio
+                                with a signed BAA, model providers run under BAAs, PHI is encrypted in
+                                transit and at rest, and every call produces an audit log. Read our
+                                <a href="blog/hipaa-compliant-patient-app.html">HIPAA-compliant patient app
+                                checklist</a> for the engineering detail.
+                            </p>
+                        </details>
+                        <details style="padding: 18px 24px;">
+                            <summary style="font-weight: 700; color: var(--ink); font-size: 16px; cursor: pointer; list-style: none;">
+                                <i class="mdi mdi-plus-circle-outline" style="color: var(--mint-deep);"></i>
+                                How many calls can it handle end-to-end?
+                            </summary>
+                            <p class="mt-3 mb-0" style="color: var(--slate); font-size: 15px; line-height: 1.7;">
+                                In Leyoxa's DDS Marketing deployment, the voice agent handles ~60–70% of
+                                inbound calls end-to-end in week one, climbing to 80–90% after a few rounds
+                                of knowledge-base tuning. After-hours numbers are higher because after-hours
+                                calls skew toward simpler intents.
+                                <a href="blog/dental-ai-voice-agent.html">Read the full blog post</a> for the
+                                breakdown.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2026" style="padding-top: 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <h2 class="section-headline">Want this for your clinic network?</h2>
+                    <p class="text-muted">Book a 30-minute call. We'll scope what a deployment looks like
+                        across your operator base.</p>
+                    <div class="hero-cta-row" style="justify-content: center; margin-top: 20px;">
+                        <a href="page-contact.html" class="btn btn-ink">
+                            Book a Discovery Call <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                        <a href="blog/dental-ai-voice-agent.html" class="btn btn-ghost">
+                            Read the blog post <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <a href="index.html" class="logo-footer">
+                        <img src="images/logo-light.svg" height="40" alt="Leyoxa">
+                    </a>
+                    <p class="mt-3" style="max-width: 320px;">Dental AI software, built with operators in
+                        Miami, Austin, and Toronto.</p>
+                    <ul class="list-unstyled social-icon social mb-0 mt-3">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/leyoxa/" class="rounded" target="_blank"
+                                rel="noopener" aria-label="LinkedIn">
+                                <i data-feather="linkedin" class="fea icon-sm fea-social"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Solutions</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="dental-ai-software.html" class="text-foot">Dental AI Software</a></li>
+                        <li><a href="dental-voice-agent.html" class="text-foot">Dental AI Voice Agent</a></li>
+                        <li><a href="ai-dental-scheduling.html" class="text-foot">AI Dental Scheduling</a></li>
+                        <li><a href="hipaa-dental-software.html" class="text-foot">HIPAA Dental Software</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Navigate</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="index.html" class="text-foot">Home</a></li>
+                        <li><a href="page-aboutus.html" class="text-foot">About Us</a></li>
+                        <li><a href="page-services.html" class="text-foot">Services</a></li>
+                        <li><a href="case-studies.html" class="text-foot">Case Studies</a></li>
+                        <li><a href="blog.html" class="text-foot">Blog</a></li>
+                        <li><a href="page-faq.html" class="text-foot">FAQ</a></li>
+                        <li><a href="page-contact.html" class="text-foot">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-head">Legal</h4>
+                    <ul class="list-unstyled footer-list mt-3">
+                        <li><a href="privacy-policy.html" class="text-foot">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-foot">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2026 Leyoxa LLC. Registered in Austin, TX. &nbsp;|&nbsp;
+                            <a href="privacy-policy.html" class="text-muted">Privacy</a> &nbsp;·&nbsp;
+                            <a href="terms.html" class="text-muted">Terms</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-3 mt-sm-0">
+                    <div class="text-sm-right text-center">
+                        <p class="mb-0" style="color: rgba(255,255,255,0.5); font-size: 13px;">
+                            Built in Austin, TX · For clinics worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
