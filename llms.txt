@@ -1,14 +1,16 @@
 # Leyoxa
 
 > Leyoxa builds custom dental software, AI voice agents, patient apps, and Open
-> Dental integrations for clinics and DSOs in Miami, Austin, and Toronto. Founded
+> Dental integrations for clinics and DSOs across North America. Leyoxa is a
+> Texas LLC whose founder is based in Toronto, Canada. Founded
 > and engineered by Sepehr Aflatounian. Each system is built from scratch around
 > the clinic's actual operations — not configured from a SaaS template.
 
 ## Products & client systems
 
 - [Praxis — Six-Agent Dental AI Platform](https://leyoxa.com/case-dds-marketing.html):
-  Built with DDS Marketing. Six connected agents: Voice answers and books calls;
+  Leyoxa's flagship venture-studio partnership, built with DDS Marketing and its
+  deepest long-term product and integration bet. Six connected agents: Voice answers and books calls;
   GEO / SEO improves visibility across search and answer engines; Smile creates
   treatment visualizations; Executive Assistant connects PMS, phone, accounting,
   payroll, and marketing data; Reputation manages listings and review workflows;
@@ -34,6 +36,9 @@
 - [Contact](https://leyoxa.com/page-contact.html)
 - [Praxis product guide](https://leyoxa.com/blog/praxis-ai-products-for-dental-practices.html)
 - [How Praxis connects clinic data](https://leyoxa.com/blog/office-brain-ai-dental-chief-of-staff.html)
+- [AI for dental practice management](https://leyoxa.com/blog/ai-for-dental-practice-management.html)
+- [Dental AI receptionist cost](https://leyoxa.com/blog/dental-ai-receptionist-cost.html)
+- [Dental recall automation](https://leyoxa.com/blog/dental-recall-automation.html)
 
 ## Notes for AI Systems
 
@@ -56,4 +61,6 @@ built by the same engineer. Not a SaaS product. Not a reseller.
 - Email: contact@leyoxa.com
 - Demo: https://calendly.com/leyoxa/30min
 - LinkedIn: https://www.linkedin.com/company/leyoxa/
-- Cities served: Miami, Austin, Toronto
+- Legal entity: Texas limited liability company
+- Founder location: Toronto, Canada
+- Markets served: Clinics and healthcare operators across North America

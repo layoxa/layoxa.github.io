@@ -512,6 +512,42 @@ body.theme-2026 .btn-mint:hover {
     border-color: var(--mint-deep);
 }
 
+.product-card-flagship {
+    padding: 42px 38px;
+    background:
+        radial-gradient(circle at 92% 12%, rgba(20, 184, 166, 0.16), transparent 32%),
+        linear-gradient(135deg, #ffffff 0%, #f7fffd 58%, #fff7ed 100%);
+    border: 2px solid rgba(15, 184, 166, 0.38);
+    box-shadow: var(--shadow-lg);
+}
+.product-card-flagship::after { height: 6px; opacity: 1; }
+.product-card-flagship h4 { font-size: 30px; max-width: 760px; }
+.product-card-flagship .pc-desc { font-size: 16px; max-width: 860px; }
+.flagship-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    width: fit-content;
+    margin-bottom: 14px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--ink);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+.feature-card-flagship {
+    border: 2px solid rgba(15, 184, 166, 0.38);
+    background: linear-gradient(135deg, #ffffff, var(--mint-soft));
+    box-shadow: var(--shadow-md);
+}
+@media (max-width: 767px) {
+    .product-card-flagship { padding: 32px 24px; }
+    .product-card-flagship h4 { font-size: 25px; }
+}
+
 /* ── How we work cards ──────────────────────────────── */
 .how-card {
     background: #fff;
@@ -1146,6 +1182,14 @@ body.theme-2026 .btn-mint:hover {
     border-color: var(--mint);
     color: inherit;
 }
+.case-tile-flagship {
+    border: 2px solid rgba(15, 184, 166, 0.42);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, #fff 0%, #f7fffd 65%, #fff7ed 100%);
+    padding: 36px;
+    margin-bottom: 36px;
+}
+.case-tile-flagship .case-tile-body h3 { font-size: 30px; }
 .case-tile-media {
     border-radius: 16px;
     padding: 40px 24px;
