@@ -16,7 +16,8 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(sips -g pixelWidth -g pixelHeight images/clinic-solutions/clinic-management-2.png images/clinic-solutions/hero.png images/clinic-solutions/services-header.png)"
+      "Bash(sips -g pixelWidth -g pixelHeight images/clinic-solutions/clinic-management-2.png images/clinic-solutions/hero.png images/clinic-solutions/services-header.png)",
+      "Bash(awk '/<h1/,/<\\\\/h1>/' /Users/sepehrafla/Documents/layoxa.github.io/index.html)"
     ]
   }
 }

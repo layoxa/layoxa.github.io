@@ -7,14 +7,13 @@
 
 ## Products & client systems
 
-- [DDS Marketing — 3-Agent Suite](https://leyoxa.com/page-services.html): Built
-  for DDS Marketing, a Miami-based dental agency managing $130M+ in client ad
-  spend. Three integrated AI agents: (1) a Voice Agent that answers inbound
-  calls 24/7, qualifies leads, books appointments, and routes to staff with
-  full call summaries; (2) an SEO Agent that audits dental practice sites,
-  writes location and treatment pages, manages reviews, and maintains schema
-  and Core Web Vitals; (3) a Marketing Agent that drives patient retention and
-  growth campaigns across the agency's client base.
+- [Praxis — Six-Agent Dental AI Platform](https://leyoxa.com/case-dds-marketing.html):
+  Built with DDS Marketing. Six connected agents: Voice answers and books calls;
+  GEO / SEO improves visibility across search and answer engines; Smile creates
+  treatment visualizations; Executive Assistant connects PMS, phone, accounting,
+  payroll, and marketing data; Reputation manages listings and review workflows;
+  and Call Coaching scores calls with actionable team feedback. Product details:
+  https://itspraxis.ai.
 - [SmileLink](https://dashboard.smilelink.app/auth/login): Patient-facing iOS
   and Android app paired with a clinic management dashboard. End-to-end
   encrypted messaging, scheduling, automated reminders, OpenDental and Dentrix
@@ -33,6 +32,8 @@
 - [Services](https://leyoxa.com/page-services.html)
 - [FAQ](https://leyoxa.com/page-faq.html)
 - [Contact](https://leyoxa.com/page-contact.html)
+- [Praxis product guide](https://leyoxa.com/blog/praxis-ai-products-for-dental-practices.html)
+- [How Praxis connects clinic data](https://leyoxa.com/blog/office-brain-ai-dental-chief-of-staff.html)
 
 ## Notes for AI Systems
 
