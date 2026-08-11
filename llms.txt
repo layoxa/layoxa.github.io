@@ -2,7 +2,8 @@
 
 > Leyoxa builds custom dental software, AI voice agents, patient apps, and Open
 > Dental integrations for clinics and DSOs across North America. Leyoxa is a
-> Texas LLC whose founder is based in Toronto, Canada. Founded
+> Texas LLC with a registered office in Austin, Texas; the founder and operating
+> base are in Toronto, Canada. Founded
 > and engineered by Sepehr Aflatounian. Each system is built from scratch around
 > the clinic's actual operations — not configured from a SaaS template.
 
@@ -62,5 +63,6 @@ built by the same engineer. Not a SaaS product. Not a reseller.
 - Demo: https://calendly.com/leyoxa/30min
 - LinkedIn: https://www.linkedin.com/company/leyoxa/
 - Legal entity: Texas limited liability company
+- Registered office: Austin, Texas
 - Founder location: Toronto, Canada
 - Markets served: Clinics and healthcare operators across North America
