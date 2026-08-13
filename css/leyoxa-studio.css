@@ -128,6 +128,19 @@ img { display: block; max-width: 100%; }
 .skip { position: absolute; left: -999px; }
 .skip:focus { left: 16px; top: 16px; z-index: 99; background: var(--white); padding: 12px; }
 
+/* Public pre-launch page */
+.launch-gate { position:fixed; inset:0; z-index:1000; min-height:100svh; padding:28px 32px; display:grid; grid-template-rows:auto 1fr auto; overflow:auto; background:#090909; color:#fff; isolation:isolate; }
+.launch-gate-grid { position:absolute; inset:0; z-index:-1; background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px); background-size:10vw 10vw; mask-image:linear-gradient(180deg,transparent,#000 16%,#000 86%,transparent); }
+.launch-gate::after { content:""; position:absolute; z-index:-1; width:min(52vw,760px); aspect-ratio:1; right:-14vw; top:14%; border-radius:50%; background:radial-gradient(circle,rgba(108,108,255,.2),transparent 68%); filter:blur(10px); }
+.launch-gate-top,.launch-gate-bottom { display:flex; align-items:center; justify-content:space-between; gap:24px; color:#858585; font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+.launch-gate-top img { width:122px; }
+.launch-gate-content { width:min(100%,1040px); margin:auto; padding:76px 0; }
+.launch-gate-content .kicker { color:#8c8c8c; }
+.launch-gate-content h1 { max-width:1000px; margin:26px 0 34px; font-size:clamp(58px,7.4vw,116px); line-height:.92; letter-spacing:-.065em; font-weight:400; }
+.launch-gate-content > p:not(.kicker) { max-width:650px; margin:0; color:#a5a5a5; font-size:clamp(18px,1.7vw,24px); }
+.launch-gate-action { min-height:52px; margin-top:42px; padding:0 22px; display:inline-flex; align-items:center; gap:18px; border-radius:999px; background:#fff; color:#090909; font-size:14px; font-weight:700; }
+.launch-gate-action span { font-size:18px; }
+
 /* Homepage cinematic system */
 .home { background: #080808; }
 .home .site-header {
@@ -480,6 +493,14 @@ img { display: block; max-width: 100%; }
   .contact-action i { right:18px; width:40px; height:40px; }
   .contact-action i::before { top:13px; right:12px; }
   .contact-action i::after { top:20px; left:13px; }
+  .launch-gate { padding:20px 18px calc(20px + env(safe-area-inset-bottom)); }
+  .launch-gate-top img { width:104px; }
+  .launch-gate-top span { max-width:120px; text-align:right; font-size:9px; }
+  .launch-gate-content { padding:68px 0 48px; }
+  .launch-gate-content h1 { margin:22px 0 28px; font-size:clamp(48px,14vw,68px); }
+  .launch-gate-content > p:not(.kicker) { font-size:17px; }
+  .launch-gate-action { width:100%; margin-top:36px; justify-content:center; }
+  .launch-gate-bottom { align-items:flex-start; flex-direction:column; gap:6px; font-size:9px; }
   .legacy-studio #topnav { top:10px; left:10px; right:10px; min-height:60px; border-radius:14px; }
   .legacy-studio #topnav .container { min-height:58px; }
   .legacy-studio .page-hero { min-height:76svh; padding:130px 0 64px!important; }
