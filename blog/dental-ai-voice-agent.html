@@ -3,39 +3,20 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>What a Dental AI Voice Agent Actually Does — Leyoxa Blog</title>
+    <title>Dental AI Voice Agent — Leyoxa Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="The honest tour of dental AI voice agents in production — what they handle 24/7, where they hand off to humans, and the integration work behind the demo." />
+        content="Leyoxa does not sell or operate a dental AI voice agent product. That work now lives at Praxis (itspraxis.ai)." />
     <meta name="author" content="Sepehr Aflatounian" />
     <link rel="canonical" href="https://leyoxa.com/blog/dental-ai-voice-agent.html" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://leyoxa.com/blog/dental-ai-voice-agent.html" />
-    <meta property="og:title" content="What a Dental AI Voice Agent Actually Does (and What It Doesn't)" />
+    <meta property="og:title" content="Dental AI Voice Agent — Leyoxa Blog" />
     <meta property="og:description"
-        content="Plain-language tour of dental AI voice agents in production." />
+        content="Leyoxa does not sell or operate a dental AI voice agent product. That work now lives at Praxis (itspraxis.ai)." />
     <meta property="og:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
-    <meta property="og:image:alt" content="Dental AI voice agent diagram" />
-    <meta property="article:author" content="Sepehr Aflatounian" />
-    <meta property="article:published_time" content="2026-03-06" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://leyoxa.com/images/clinic-solutions/hero.png" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "What a Dental AI Voice Agent Actually Does (and What It Doesn't)",
-      "description": "The honest tour of dental AI voice agents in production.",
-      "author": {"@type": "Person", "name": "Sepehr Aflatounian", "url": "https://leyoxa.com/page-aboutus.html"},
-      "publisher": {"@type": "Organization", "name": "Leyoxa",
-        "logo": {"@type": "ImageObject", "url": "https://leyoxa.com/images/logo-nav.svg"}},
-      "datePublished": "2026-03-06",
-      "dateModified": "2026-03-06",
-      "image": "https://leyoxa.com/images/clinic-solutions/hero.png",
-      "mainEntityOfPage": "https://leyoxa.com/blog/dental-ai-voice-agent.html",
-      "keywords": "dental AI voice agent, dental call answering, 24/7 dental booking, AI receptionist dental"
-    }
-    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -100,10 +81,10 @@
     <section class="page-hero" style="padding-bottom: 50px;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9 lx-reveal text-center">
-                    <span class="pill-live"><span class="dot"></span> Voice AI · 8 min read</span>
-                    <h1>What a dental AI voice agent<br><span class="text-grad">actually does.</span></h1>
-                    <p>And — just as importantly — what it doesn't. The honest, demo-free tour.</p>
+                <div class="col-lg-8 lx-reveal text-center">
+                    <h1>Looking for a dental AI voice agent?</h1>
+                    <p>Leyoxa doesn't sell or operate a voice agent product. That work now lives at
+                        <strong>Praxis</strong>, a separate product at itspraxis.ai.</p>
                     <div class="crumb">
                         <a href="../index.html">Leyoxa</a>
                         <span class="sep">/</span>
@@ -111,167 +92,14 @@
                         <span class="sep">/</span>
                         <span class="current">Dental AI Voice Agent</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-2026" style="padding-top: 30px;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <article class="blog-post">
-
-                        <p>If you run a dental clinic and someone has pitched you an "AI receptionist," you've
-                            probably watched a polished demo: a calm voice books an appointment in 90 seconds
-                            and the rep nods knowingly. That demo is real. But it's also about 20% of what a
-                            production voice agent actually does day to day.</p>
-
-                        <p>This post is the other 80%.</p>
-
-                        <h2>1. What a dental AI voice agent actually handles</h2>
-
-                        <p>In production at a partner clinic network, a well-built dental voice agent picks up
-                            most calls a front desk would, with two big advantages: it answers <strong>24/7</strong>,
-                            and it never puts anyone on hold. The realistic scope today:</p>
-
-                        <ul>
-                            <li><strong>New patient booking.</strong> Greeting, capturing name, insurance,
-                                reason for visit, and slotting them into an open operatory window.</li>
-                            <li><strong>Existing patient changes.</strong> Confirming, rescheduling, and
-                                cancelling appointments using PMS lookup.</li>
-                            <li><strong>Insurance and pricing Q&amp;A.</strong> "Do you take Aetna PPO?" or
-                                "How much is a cleaning without insurance?" — answered from a clinic-specific
-                                knowledge base, not the open internet.</li>
-                            <li><strong>Triage.</strong> Routing emergency callers differently from routine
-                                requests, including escalation to an on-call human.</li>
-                            <li><strong>Post-call follow-up.</strong> SMS confirmations, intake form links,
-                                and structured call summaries delivered to staff.</li>
-                        </ul>
-
-                        <h2>2. What it doesn't (and shouldn't) handle</h2>
-
-                        <p>The voice agent is not a clinical tool. It does not give dental advice, diagnose
-                            symptoms, or speculate on treatment plans. In our deployments we hard-code those
-                            boundaries — when a caller asks "should I get a root canal or an extraction," the
-                            agent acknowledges, books a consult, and notes the question in the handoff.</p>
-
-                        <p>Other things we deliberately keep <em>off</em> the voice agent:</p>
-
-                        <ul>
-                            <li>Quoting exact insurance benefits before eligibility verification</li>
-                            <li>Handling angry escalations — those get fast-tracked to a human</li>
-                            <li>Selling treatment plans or up-selling on the phone</li>
-                            <li>Anything that requires the patient's chart context the agent can't access yet</li>
-                        </ul>
-
-                        <h2>3. The integration work nobody sees</h2>
-
-                        <p>The voice itself — speech-to-text, language model, text-to-speech — is mostly a
-                            solved problem now. The hard part is everything around it:</p>
-
-                        <h3>Practice management system integration</h3>
-                        <p>OpenDental, Dentrix, Eaglesoft, Curve — none of these ship a clean modern API.
-                            We've built bridges that read availability across providers and operatories, write
-                            confirmed bookings into the right blocks, and respect appointment-type rules
-                            (cleaning vs. consult vs. emergency). Without this, your "AI agent" is just a
-                            voicemail with better grammar.</p>
-
-                        <h3>Knowledge base curation</h3>
-                        <p>"Do you do Invisalign?" sounds like a single question; in practice it depends on
-                            which doctor, which location, and the clinic's current promo. Voice agents that
-                            answer convincingly are built on a tight, clinic-specific KB — not a generic web
-                            crawl. Curation is ongoing work, not a setup task.</p>
-
-                        <h3>Handoff and observability</h3>
-                        <p>Every call produces a structured summary: caller intent, outcome, any unresolved
-                            questions, and a transcript. Staff get those in their existing inbox or a slim
-                            dashboard. When something goes sideways, we want to see exactly which step
-                            misfired — that's how you actually improve the system.</p>
-
-                        <h2>4. Realistic expectations on launch day</h2>
-
-                        <p>Launch with a defined pilot cohort and publish results only when the call count,
-                            clinic count, date range, exclusions, and outcome definitions are available. A
-                            typical rollout starts with simple intents such as booking, rescheduling, and
-                            confirmation; reviewed edge cases expand the knowledge base and escalation rules.</p>
-
-                        <p>Handling rate is not portable from one practice to another. It changes with call
-                            mix, PMS access, insurance policy, languages, specialty, and the clinic's chosen
-                            human-review threshold. We therefore do not state a universal percentage here.</p>
-
-                        <p>Voice agents don't replace your front desk. They replace the missed call, the
-                            voicemail nobody returns, and the 6:30 a.m. emergency caller who would have
-                            picked the next clinic on the Google list.</p>
-
-                        <h2>5. What to look for in a vendor</h2>
-
-                        <ul>
-                            <li><strong>Real PMS integration.</strong> If the demo doesn't write into your
-                                actual schedule, it's a chatbot with a phone number.</li>
-                            <li><strong>Per-clinic configuration.</strong> Your insurance mix, your
-                                providers, your operatory rules — not someone else's defaults.</li>
-                            <li><strong>HIPAA-aligned data flow.</strong> Including BAAs with downstream
-                                subprocessors (model providers, voice providers, telephony).</li>
-                            <li><strong>Observability you can audit.</strong> Transcripts, summaries, intent
-                                resolution rates — visible, not hidden behind a sales process.</li>
-                        </ul>
-
-                        <h2>6. Where Leyoxa fits</h2>
-
-                        <p>We built the voice agent inside the <a href="../case-dds-marketing.html">DDS
-                            Marketing AI suite</a> end-to-end — telephony, model orchestration, OpenDental
-                            integration, knowledge base management, staff dashboards. It's been live in
-                            production across a dental clinic base ever since.</p>
-
-                        <p>If you have distribution into a clinic network and you want a real voice product
-                            built with you — not a white-label resold — <a href="../page-contact.html">book a
-                            30-minute discovery call</a>. The session is with the engineer who builds it.</p>
-
-                    </article>
-
-
-                    <!-- Author -->
-                    <div class="mt-4 d-flex align-items-center" style="background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px;">
-                        <div style="flex: 1;">
-                            <span class="eyebrow">Written by</span>
-                            <h5 class="mb-1" style="font-size: 16px; color: var(--ink);">Sepehr Aflatounian</h5>
-                            <p class="mb-0" style="font-size: 13.5px; color: var(--slate);">
-                                Founder, Leyoxa. Toronto-based security engineer building AI products with
-                                dental and healthcare operators across North America.
-                            </p>
-                        </div>
+                    <div class="hero-cta-row" style="justify-content: center; margin-top: 28px;">
+                        <a href="https://itspraxis.ai" target="_blank" rel="noopener noreferrer" class="btn btn-ink">
+                            Visit itspraxis.ai <i class="mdi mdi-open-in-new"></i>
+                        </a>
+                        <a href="../blog.html" class="btn btn-ghost">
+                            Back to the blog <i class="mdi mdi-chevron-right"></i>
+                        </a>
                     </div>
-
-
-                    <!-- Related -->
-                    <div class="mt-5">
-                        <span class="eyebrow">Keep reading</span>
-                        <div class="row mt-3">
-                            <div class="col-md-6 mb-3">
-                                <a href="hipaa-compliant-patient-app.html" class="blog-card">
-                                    <div class="blog-card-body">
-                                        <span class="blog-tag">Compliance</span>
-                                        <h3>Shipping a HIPAA-aligned patient app: the real checklist</h3>
-                                        <p>What it actually takes to ship a HIPAA-aligned dental patient app
-                                            to production.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <a href="open-dental-integrations.html" class="blog-card">
-                                    <div class="blog-card-body">
-                                        <span class="blog-tag">Integrations</span>
-                                        <h3>OpenDental integrations: the practical guide for app builders</h3>
-                                        <p>How we integrate OpenDental and Dentrix in production — bridges,
-                                            sync, and the gotchas nobody documents.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

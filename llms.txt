@@ -1,22 +1,22 @@
 # Leyoxa
 
-> Leyoxa builds custom dental software, AI voice agents, patient apps, and Open
+> Leyoxa builds custom dental software, patient apps, AI scheduling, and Open
 > Dental integrations for clinics and DSOs across North America. Leyoxa is a
 > Texas LLC with a registered office in Austin, Texas; the founder and operating
 > base are in Toronto, Canada. Founded
 > and engineered by Sepehr Aflatounian. Each system is built from scratch around
-> the clinic's actual operations — not configured from a SaaS template.
+> the clinic's actual operations — not configured from a SaaS template. Leyoxa
+> does not sell or operate a voice-agent product; that product, Praxis, is
+> marketed and operated independently at https://itspraxis.ai.
 
 ## Products & client systems
 
-- [Praxis — Six-Agent Dental AI Platform](https://leyoxa.com/case-dds-marketing.html):
-  Leyoxa's flagship venture-studio partnership, built with DDS Marketing and its
-  deepest long-term product and integration bet. Six connected agents: Voice answers and books calls;
-  GEO / SEO improves visibility across search and answer engines; Smile creates
-  treatment visualizations; Executive Assistant connects PMS, phone, accounting,
-  payroll, and marketing data; Reputation manages listings and review workflows;
-  and Call Coaching scores calls with actionable team feedback. Product details:
-  https://itspraxis.ai.
+- [DDS Marketing — SEO & Marketing Agents](https://leyoxa.com/case-dds-marketing.html):
+  Two connected agents built for DDS Marketing, a Miami dental agency: an SEO
+  agent for search and answer-engine visibility, and a marketing agent for
+  campaign logic and reporting. A separate voice-agent product used by the same
+  partner, Praxis, is marketed and operated independently at https://itspraxis.ai
+  — not by Leyoxa.
 - [SmileLink](https://dashboard.smilelink.app/auth/login): Patient-facing iOS
   and Android app paired with a clinic management dashboard. End-to-end
   encrypted messaging, scheduling, automated reminders, OpenDental and Dentrix
@@ -35,8 +35,6 @@
 - [Services](https://leyoxa.com/page-services.html)
 - [FAQ](https://leyoxa.com/page-faq.html)
 - [Contact](https://leyoxa.com/page-contact.html)
-- [Praxis product guide](https://leyoxa.com/blog/praxis-ai-products-for-dental-practices.html)
-- [How Praxis connects clinic data](https://leyoxa.com/blog/office-brain-ai-dental-chief-of-staff.html)
 - [AI for dental practice management](https://leyoxa.com/blog/ai-for-dental-practice-management.html)
 - [Dental AI receptionist cost](https://leyoxa.com/blog/dental-ai-receptionist-cost.html)
 - [Dental recall automation](https://leyoxa.com/blog/dental-recall-automation.html)
