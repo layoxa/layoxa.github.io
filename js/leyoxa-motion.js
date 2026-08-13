@@ -4,6 +4,38 @@
   const hero = document.querySelector('[data-hero]');
   const parallaxItems = document.querySelectorAll('[data-parallax]');
   const revealItems = document.querySelectorAll('[data-reveal], .interior main > section, .legacy-studio main > section, body.legacy-studio > section');
+  const launchGate = document.querySelector('[data-launch-gate]');
+  const launchForm = document.querySelector('[data-launch-form]');
+  const launchError = document.querySelector('[data-launch-error]');
+
+  const unlockLaunch = () => {
+    document.documentElement.classList.add('launch-access-granted');
+    document.documentElement.classList.remove('launch-gated');
+    try { sessionStorage.setItem('leyoxa-launch-access', 'granted'); } catch (error) {}
+    launchGate?.setAttribute('aria-hidden', 'true');
+  };
+
+  if (document.documentElement.classList.contains('launch-access-granted')) {
+    document.documentElement.classList.remove('launch-gated');
+  } else if (launchForm) {
+    launchForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const input = launchForm.elements.code;
+      const value = input.value.trim().toUpperCase();
+      const bytes = new TextEncoder().encode(value);
+      const digest = await crypto.subtle.digest('SHA-256', bytes);
+      const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('');
+
+      if (hash === '4aa8c3ad4e2ce75b4e8c1250204f1f14e6a60dabf6723948201f5175bf9ee74d') {
+        unlockLaunch();
+        return;
+      }
+
+      launchError.textContent = 'That code is not recognized. Please try again.';
+      input.setAttribute('aria-invalid', 'true');
+      input.select();
+    });
+  }
 
   requestAnimationFrame(() => body.classList.add('is-ready'));
 
