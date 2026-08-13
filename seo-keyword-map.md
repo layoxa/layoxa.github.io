@@ -1,6 +1,6 @@
 # Leyoxa SEO keyword map
 
-Updated: 2026-08-02
+Updated: 2026-08-13
 
 This map assigns one primary search intent to each indexable URL to reduce
 keyword cannibalization. Priorities are based on the supplied SEMrush diagnosis,
@@ -32,14 +32,13 @@ pages are indexed; no unverified volume estimates are used here.
 | P1 | dental office automation software | Commercial | `/blog/ai-for-dental-practice-management.html` | Secondary office-automation variant |
 | P1 | dental practice workflow automation | Informational | `/blog/ai-for-dental-practice-management.html` | Implementation sequence and operating model |
 | P1 | dental practice analytics AI | Commercial investigation | `/blog/office-brain-ai-dental-chief-of-staff.html` | Connected operational data and assistant intent |
-| P1 | AI dental executive assistant | Commercial | `/blog/office-brain-ai-dental-chief-of-staff.html` | Praxis Executive Assistant product intent |
-| P1 | dental AI products | Commercial investigation | `/blog/praxis-ai-products-for-dental-practices.html` | Six-product category guide |
+| P1 | dental operations data integration | Commercial | `/blog/office-brain-ai-dental-chief-of-staff.html` | Connected clinic systems and decision-support intent |
 | P1 | dental call answering service AI | Commercial investigation | `/blog/dental-ai-voice-agent.html` | Detailed voice capabilities and boundaries |
 | P1 | dental voice AI integration | Technical / commercial | `/blog/dental-ai-voice-agent.html` | PMS, telephony, and handoff sections |
 | P2 | emergency dentist booking platform | Commercial investigation | `/case-emergclinic.html` | Urgency-aware marketplace case study |
 | P2 | dental clinic management app | Commercial investigation | `/case-smilelink.html` | Patient app plus operations dashboard proof |
-| P2 | dental AI platform | Commercial | `/case-dds-marketing.html` | Praxis six-agent case study |
-| P2 | dental GEO SEO | Commercial investigation | `/blog/praxis-ai-products-for-dental-practices.html` | Praxis GEO / SEO product section |
+| P1 | dental AI platform | Commercial investigation | `/case-praxis.html` | Connected dental operating-platform case study |
+| P2 | healthcare AI consulting | Commercial | `/page-services.html` | Service-led strategy and implementation intent |
 
 ## Cluster architecture
 

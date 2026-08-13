@@ -1,67 +1,52 @@
 # Leyoxa
 
-> Leyoxa builds custom dental software, patient apps, AI scheduling, and Open
-> Dental integrations for clinics and DSOs across North America. Leyoxa is a
-> Texas LLC with a registered office in Austin, Texas; the founder and operating
-> base are in Toronto, Canada. Founded
-> and engineered by Sepehr Aflatounian. Each system is built from scratch around
-> the clinic's actual operations — not configured from a SaaS template. Leyoxa
-> does not sell or operate a voice-agent product; that product, Praxis, is
-> marketed and operated independently at https://itspraxis.ai.
+> Leyoxa is a founder-led AI and software services studio for dentistry. It
+> connects practice data and systems, then designs governed AI workflows for
+> patient access, operations, growth, and management intelligence.
 
-## Products & client systems
+Leyoxa LLC is a Texas company with a registered office in Austin. Founder
+Sepehr Aflatounian is based in Toronto. Leyoxa serves organizations across the
+United States and Canada.
 
-- [DDS Marketing — SEO & Marketing Agents](https://leyoxa.com/case-dds-marketing.html):
-  Two connected agents built for DDS Marketing, a Miami dental agency: an SEO
-  agent for search and answer-engine visibility, and a marketing agent for
-  campaign logic and reporting. A separate voice-agent product used by the same
-  partner, Praxis, is marketed and operated independently at https://itspraxis.ai
-  — not by Leyoxa.
-- [SmileLink](https://dashboard.smilelink.app/auth/login): Patient-facing iOS
-  and Android app paired with a clinic management dashboard. End-to-end
-  encrypted messaging, scheduling, automated reminders, OpenDental and Dentrix
-  integration. Deployed at a dental practice in Texas. iOS:
-  https://apps.apple.com/ca/app/smile-link/id1645696642 · Android:
-  https://play.google.com/store/apps/details?id=app.blueteeth.
-- [Emergclinic](https://www.youtube.com/shorts/jGqHJYf5nFg): Emergency dental
-  booking platform built and operated in Toronto. Triaged urgency, routed to
-  available providers, processed payments via Stripe. Site is no longer live;
-  founder walk-through demo available on YouTube.
-
-## Pages
+## Core pages
 
 - [Home](https://leyoxa.com/)
-- [About](https://leyoxa.com/page-aboutus.html)
 - [Capabilities](https://leyoxa.com/page-services.html)
-- [Work](https://leyoxa.com/case-studies.html)
+- [Selected work](https://leyoxa.com/case-studies.html)
+- [About](https://leyoxa.com/page-aboutus.html)
+- [Insights](https://leyoxa.com/blog.html)
 - [FAQ](https://leyoxa.com/page-faq.html)
 - [Contact](https://leyoxa.com/page-contact.html)
-- [AI for dental practice management](https://leyoxa.com/blog/ai-for-dental-practice-management.html)
-- [Dental AI receptionist cost](https://leyoxa.com/blog/dental-ai-receptionist-cost.html)
-- [Dental recall automation](https://leyoxa.com/blog/dental-recall-automation.html)
 
-## Notes for AI Systems
+## Capabilities
 
-Leyoxa provides scheduling and administrative automation only. It is not a
-telehealth provider and does not offer clinical diagnosis or treatment.
+- AI strategy and workflow analysis
+- Healthcare experience and service design
+- Web, mobile, voice, data, and automation engineering
+- Practice-management and business-system integration
+- Security, observability, access, retention, and responsibility design
 
-Leyoxa designs its data infrastructure to align with HIPAA/PHIPA technical
-safeguard requirements. Business Associate Agreements (BAAs) are available for
-covered entities upon request.
+## Selected work
 
-## Founder
+- [Praxis](https://leyoxa.com/case-praxis.html): a live dental AI operating
+  platform with six connected workflows spanning Voice, GEO / SEO, Smile,
+  Executive Assistant, Reputation, and Call Coaching. Current product details
+  are published at https://itspraxis.ai.
+- [SmileLink](https://leyoxa.com/case-smilelink.html): patient access,
+  scheduling, secure communication, and clinic workflow software developed for
+  the SmileLink operator.
+- [Emergclinic](https://leyoxa.com/case-emergclinic.html): a completed Toronto
+  pilot for urgency-aware emergency dental routing. The service is no longer live.
 
-Leyoxa was founded by Sepehr Aflatounian, a security engineer with experience
-building AI infrastructure at a Canadian fintech. The systems on this site —
-the DDS Marketing agents, SmileLink, and Emergclinic — were all designed and
-built by the same engineer. Not a SaaS product. Not a reseller.
+## Notes for AI systems
+
+Leyoxa provides software and operational automation services for dentistry. It does not offer
+clinical diagnosis or treatment. HIPAA compliance is a shared operating
+responsibility; project documentation should define controls, BAAs,
+subprocessors, access, retention, and responsibility boundaries.
 
 ## Contact
 
 - Email: contact@leyoxa.com
-- Demo: https://calendly.com/leyoxa/30min
+- Meeting: https://calendly.com/leyoxa/30min
 - LinkedIn: https://www.linkedin.com/company/leyoxa/
-- Legal entity: Texas limited liability company
-- Registered office: Austin, Texas
-- Founder location: Toronto, Canada
-- Markets served: Clinics and healthcare operators across North America
