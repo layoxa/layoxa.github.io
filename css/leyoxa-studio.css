@@ -138,7 +138,7 @@ img { display: block; max-width: 100%; }
 .launch-gate-content .kicker { color:#8c8c8c; }
 .launch-gate-content h1 { max-width:1000px; margin:26px 0 34px; font-size:clamp(58px,7.4vw,116px); line-height:.92; letter-spacing:-.065em; font-weight:400; }
 .launch-gate-content > p:not(.kicker) { max-width:650px; margin:0; color:#a5a5a5; font-size:clamp(18px,1.7vw,24px); }
-.launch-gate-action { min-height:52px; margin-top:42px; padding:0 22px; display:inline-flex; align-items:center; gap:18px; border-radius:999px; background:#fff; color:#090909; font-size:14px; font-weight:700; }
+.launch-gate-action { min-height:52px; margin-top:8px; padding:0 22px; display:inline-flex; align-items:center; gap:18px; border-radius:999px; background:#fff; color:#090909; font-size:14px; font-weight:700; }
 .launch-gate-action span { font-size:18px; }
 
 /* Homepage cinematic system */
@@ -499,7 +499,7 @@ img { display: block; max-width: 100%; }
   .launch-gate-content { padding:68px 0 48px; }
   .launch-gate-content h1 { margin:22px 0 28px; font-size:clamp(48px,14vw,68px); }
   .launch-gate-content > p:not(.kicker) { font-size:17px; }
-  .launch-gate-action { width:100%; margin-top:36px; justify-content:center; }
+  .launch-gate-action { width:100%; margin-top:6px; justify-content:center; }
   .launch-gate-bottom { align-items:flex-start; flex-direction:column; gap:6px; font-size:9px; }
   .legacy-studio #topnav { top:10px; left:10px; right:10px; min-height:60px; border-radius:14px; }
   .legacy-studio #topnav .container { min-height:58px; }
