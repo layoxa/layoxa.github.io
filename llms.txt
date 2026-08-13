@@ -32,7 +32,8 @@
 
 - [Home](https://leyoxa.com/)
 - [About](https://leyoxa.com/page-aboutus.html)
-- [Services](https://leyoxa.com/page-services.html)
+- [Capabilities](https://leyoxa.com/page-services.html)
+- [Work](https://leyoxa.com/case-studies.html)
 - [FAQ](https://leyoxa.com/page-faq.html)
 - [Contact](https://leyoxa.com/page-contact.html)
 - [AI for dental practice management](https://leyoxa.com/blog/ai-for-dental-practice-management.html)
