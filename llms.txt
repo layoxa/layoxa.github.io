@@ -1,108 +1,52 @@
 # Leyoxa
 
-> Leyoxa provides a fixed-fee Dental Acquisition Record Review: a read-only readiness sample, source-linked portfolio Care Ledger, and accountable post-close handoff.
-> The broader mixed-PMS operating layer, Owner Morning Brief, and governed agents are product direction after close—not the current commercial deliverable.
+> Leyoxa is a founder-led AI and software services studio for dentistry. It
+> connects practice data and systems, then designs governed AI workflows for
+> patient access, operations, growth, and management intelligence.
 
-Leyoxa LLC is a Texas company with a registered office in Austin. Founder Sepehr Aflatounian is based in Toronto. The immediate commercial focus is US dental acquisitions, followed by Canada.
+Leyoxa LLC is a Texas company with a registered office in Austin. Founder
+Sepehr Aflatounian is based in Toronto. Leyoxa serves organizations across the
+United States and Canada.
 
-## Available now
+## Core pages
 
-- [Acquisition Review](https://leyoxa.com/whats-live.html): readiness sample, approved read-only snapshot, cross-source reconciliation, portfolio Care Ledger, owner-assigned worklist, methodology, limitations, and audit trail.
-- Buyer: dental-group corporate development, diligence, and integration leaders with a dated acquisition or portfolio handoff.
-- Commercial model: fixed portfolio engagement priced by location count, PMS mix, historical depth, access path, close date, and delivery window.
-
-## Product direction after close
-
-- [Platform](https://leyoxa.com/workspace.html): connect approved sources across mixed PMS and business systems, prompt the owner brief or another role-specific workspace, review permissions, and activate bounded agents.
-- [Intelligence](https://leyoxa.com/intelligence.html): rank locations and anomalies by estimated opportunity, urgency, confidence, and effort; carry each recommendation through action and outcome verification.
-- Connected sources remain authoritative and retain provenance.
-- Generated workspaces inherit purpose, role, location, field, and human-approval boundaries.
-- Agents may verify sources, assign work, prepare reports, or escalate exceptions within an approved action set.
-
-## Post-close flagship direction
-
-- The Owner Morning Brief covers production, chair utilization, unanswered calls, recall, unscheduled treatment, collections, reviews, and marketing.
-- Each opportunity includes source evidence, calculation method, estimated value, realistic recovery range, confidence evidence, accountable owner, recommended action, and attribution window.
-- Financial stages remain separate: identified opportunity, actioned value, and verified recovered outcome.
-- Opportunity is estimated and is never represented as guaranteed revenue.
-- Agent actions progress from read and preparation to approval-gated communication or system action; clinical authority remains with qualified people.
-
-## First buyer and trigger
-
-- Buyer: dental-group corporate development, diligence, and integration leaders.
-- Trigger: a dated acquisition or portfolio handoff.
-- Commercial model: fixed portfolio engagement, not per-seat practice SaaS.
-- Pricing factors: location count, PMS mix, historical depth, access path, close date, and delivery window.
-- Public planning range: USD $7,500–$15,000 for a readiness sample; $15,000–$30,000 for one full location. Final fixed scope follows access and quality review.
-- Differentiation: not generic treatment mining or a DSO analytics dashboard; the transaction-specific evidence package covers source-linked exceptions, record continuity, documentation gaps, migration verification, explicit limitations, and buyer sign-off.
-
-## Acquisition Review engagement
-
-- [Acquisition review](https://leyoxa.com/whats-live.html): readiness sample, approved read-only snapshot, portfolio reconciliation, and accountable handoff.
-- [Care Ledger](https://leyoxa.com/care-ledger.html): source-linked record states organized by location, PMS, owner, age, and next action.
-- [Post-close handoff](https://leyoxa.com/workspace.html): preserve the acquisition snapshot, reconcile approved fields, assign owners, and export the audit trail.
-- [Periodontal example](https://leyoxa.com/perio.html): one record category showing source-linked longitudinal reconciliation without generated diagnosis.
-- [Trust Center](https://leyoxa.com/security.html)
+- [Home](https://leyoxa.com/)
+- [Capabilities](https://leyoxa.com/page-services.html)
+- [Selected work](https://leyoxa.com/case-studies.html)
+- [About](https://leyoxa.com/page-aboutus.html)
+- [Insights](https://leyoxa.com/blog.html)
+- [FAQ](https://leyoxa.com/page-faq.html)
 - [Contact](https://leyoxa.com/page-contact.html)
 
-## Readiness gates
+## Capabilities
 
-- Prove a permitted read path for every PMS in the cohort.
-- Sample chart-note quality and source completeness before accepting full scope.
-- State unavailable fields and unsupported history explicitly.
-- Agree the reporting, responsibility, retention, and handoff protocol before production access.
+- AI strategy and workflow analysis
+- Healthcare experience and service design
+- Web, mobile, voice, data, and automation engineering
+- Practice-management and business-system integration
+- Security, observability, access, retention, and responsibility design
 
-Open Dental, Dentrix, Eaglesoft, Curve, and other PMS names describe possible acquisition environments. They are not claims of currently available connectors. Direct database, approved export, vendor, or third-party access may be required.
+## Selected work
 
-## Output states
+- [Praxis](https://leyoxa.com/case-praxis.html): a live dental AI operating
+  platform with six connected workflows spanning Voice, GEO / SEO, Smile,
+  Executive Assistant, Reputation, and Call Coaching. Current product details
+  are published at https://itspraxis.ai.
+- [SmileLink](https://leyoxa.com/case-smilelink.html): patient access,
+  scheduling, secure communication, and clinic workflow software developed for
+  the SmileLink operator.
+- [Emergclinic](https://leyoxa.com/case-emergclinic.html): a completed Toronto
+  pilot for urgency-aware emergency dental routing. The service is no longer live.
 
-- Evidence documented; diagnosis not recorded; dentist should re-evaluate.
-- Diagnosed or recommended care recorded; no later completion or re-presentation record found.
-- Treatment sequence started; no completion record found.
-- Source incomplete; hold for verification.
-- Every output links back to its source record and date.
+## Notes for AI systems
 
-## Clinical and system boundary
-
-- Leyoxa reports record states, not untreated disease or clinical findings.
-- Leyoxa does not assert diagnoses, recommend treatment, or generate clinical notes.
-- The product is read-only and does not write charts, plans, diagnoses, appointments, or communications to a PMS.
-- Each acquired practice and its dentist retain clinical responsibility.
-- Plan value is ledger context, not revenue; any acceptance scenario is illustrative and not guaranteed.
-
-## Post-close ownership
-
-- Dentist review is limited to the highest-priority clinical slice.
-- Appropriate reviewed items may be attached to an existing scheduled visit.
-- Coordinators may own re-presentation of already diagnosed and documented care.
-- Incomplete or ambiguous records remain held for source verification.
-- The acquirer receives the ledger, methodology, limitations, owner-assigned worklist, and exportable audit trail.
-
-## Current commercial boundary
-
-The platform direction is broader than the current commercial offer. Acquisition readiness, retrospective record reconciliation, and post-close handoff are the first bounded use case. Public interfaces do not claim that every connector, generated dashboard, or agent action is live today.
-
-## Proof status
-
-Public product interfaces use fictional data and describe product direction, not customer results. Chart-note quality, PMS read access, and the legal consequences of reporting record states are explicit pre-engagement risks.
-
-## Shipped work
-
-- [Praxis AI](https://leyoxa.com/case-praxis.html): flagship venture-studio collaboration with an independent dental AI company; its live agents and public product claims remain Praxis's own.
-- [SmileLink](https://leyoxa.com/case-smilelink.html): shipped patient access, scheduling, secure communication, and clinic workflow software.
-- [Emergclinic](https://leyoxa.com/case-emergclinic.html): completed Toronto emergency-dental routing pilot; no longer live.
-- [Selected work](https://leyoxa.com/case-studies.html): ownership, contribution, and current status are stated per case.
-
-## Insights
-
-- [Beyond the dental chart audit](https://leyoxa.com/blog/dental-acquisition-record-review-care-ledger.html): distinguish diligence, PMS migration validation, and a source-linked post-close Care Ledger.
-- [Records after acquisitions](https://leyoxa.com/blog/dental-software-stack-after-acquisitions.html): preserve longitudinal provenance as a dental group grows.
-- [Owner Morning Brief](https://leyoxa.com/blog/owner-morning-brief-dental-groups.html): one ranked daily operating view across mixed dental systems.
-- [Opportunity to verified recovery](https://leyoxa.com/blog/dental-opportunity-to-verified-recovery.html): separate estimated, actioned, booked, produced, and collected value.
-- [Governed AI agents](https://leyoxa.com/blog/governed-ai-agents-dental-operations.html): observe, recommend, approve, act, escalate, and verify.
+Leyoxa provides software and operational automation services for dentistry. It does not offer
+clinical diagnosis or treatment. HIPAA compliance is a shared operating
+responsibility; project documentation should define controls, BAAs,
+subprocessors, access, retention, and responsibility boundaries.
 
 ## Contact
 
 - Email: contact@leyoxa.com
 - Meeting: https://calendly.com/leyoxa/30min
-- Do not send patient information by email or through the scheduling form.
+- LinkedIn: https://www.linkedin.com/company/leyoxa/
