@@ -1098,3 +1098,29 @@ img { display: block; max-width: 100%; }
   .interior main > section, .legacy-studio main > section, body.legacy-studio > section { opacity:1; transform:none; }
   .hero-media img, .visual-story-media img { transform: none; }
 }
+
+/* Mobile article typography — added 2026-09-03.
+   The article styles were desktop-only: h1 clamped to a 50px FLOOR with
+   line-height .96 and -.055em tracking, h2 to 34px at 1.05. On a 390px phone
+   that renders as 50px type in a 358px column with the lines visually
+   colliding, which is what "cramped" means here. Floors and leading are the
+   fix; the desktop rendering is untouched. */
+@media (max-width: 720px) {
+  .article-hero h1 { font-size: clamp(30px, 8.2vw, 46px); line-height: 1.08; letter-spacing: -.028em; margin: 14px 0 20px; }
+  .article-deck { font-size: clamp(17px, 4.4vw, 21px); line-height: 1.5; }
+  .article-meta { gap: 14px; margin-top: 24px; font-size: 12px; }
+  .article-body { padding-top: 44px; padding-bottom: 64px; }
+  .article-body > p, .article-body > ul { font-size: 17px; line-height: 1.7; }
+  .article-body h2 { font-size: clamp(23px, 6.4vw, 32px); line-height: 1.2; letter-spacing: -.02em; margin: 44px 0 16px; }
+  .article-body ul { padding-left: 20px; }
+  .article-body li + li { margin-top: 10px; }
+  .article-callout { margin: 32px 0; padding: 20px 18px; }
+  .article-callout p { font-size: 16px; line-height: 1.6; }
+  .article-end-cta { margin-top: 56px; padding-top: 32px; }
+  /* long source URLs and headings must not push the page sideways */
+  .article-body a:not(.button) { overflow-wrap: anywhere; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-grid article { min-height: 0; padding: 24px; }
+  .pricing-grid strong { margin: 24px 0 16px; font-size: clamp(32px, 9vw, 44px); }
+  .chairs { grid-template-columns: repeat(3, 1fr); }
+}
