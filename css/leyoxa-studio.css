@@ -1327,3 +1327,13 @@ img { display: block; max-width: 100%; }
   .cta { padding:78px 0; }
   .cta h2 { font-size:clamp(42px,12vw,58px); line-height:1.02; letter-spacing:-.045em; }
 }
+
+/* Legal pages (privacy-policy, terms) moved from the legacy #topnav to the
+   standard .site-header — 2026-09-03. The legacy header was position:fixed and
+   overlaid the hero, so .legacy-studio .page-hero carried 170px of top padding
+   to clear it. The standard header sits in flow, so that padding now reads as a
+   gap. These are the only two pages using .legacy-studio. */
+.legacy-studio .page-hero { padding-top: 96px !important; }
+@media (max-width: 860px) {
+  .legacy-studio .page-hero { padding-top: 64px !important; }
+}
