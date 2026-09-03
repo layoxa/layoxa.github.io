@@ -82,7 +82,14 @@
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    // threshold MUST stay 0. It was 0.12, and a section can only ever reach a
+    // ratio of (viewport height / its own height): with the -8% rootMargin that
+    // caps at 0.92 * 844 / 6997 = 0.11 for blog.html's insight list on a phone,
+    // so the section never intersected and never became visible. Anything taller
+    // than ~7.7 viewports silently stayed at opacity 0 -- the page "did not
+    // load". rootMargin already supplies the delay the threshold was there for:
+    // an element has to clear the bottom 8% of the viewport before it reveals.
+  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
 
   revealItems.forEach((item) => observer.observe(item));
 
