@@ -3,3 +3,7 @@
 */.idea
 */.vscode
 */node_modules
+
+# Local Claude Code context -- business strategy and house rules, kept off
+# the public repo on purpose. See .claude/skills/leyoxa-web/SKILL.md.
+.claude/
