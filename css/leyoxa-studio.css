@@ -1369,3 +1369,14 @@ img { display: block; max-width: 100%; }
   .future-vision-inner > p:not(.availability-badge):not(.future-vision-credit) { font-size: 17px; }
   .future-vision .button { width: 100%; min-height: 52px; display: grid; place-items: center; text-align: center; }
 }
+
+/* Hero spacing on mobile — 2026-09-03.
+   The mobile block overrode the hero h1's font-size and line-height but not its
+   margin, so the 28px bottom margin was measured from a line box only .91 of
+   the font size. The descender of "grow" hung into that gap and the deck below
+   read as touching it. Larger bottom margin, and a touch more leading. */
+@media (max-width: 860px) {
+  .market-hero-copy h1 { margin: 20px 0 38px; line-height: .94; }
+  .market-hero-copy > p:not(.kicker) { line-height: 1.55; }
+  .market-hero-copy .hero-actions { margin-top: 34px; }
+}
