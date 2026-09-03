@@ -122,7 +122,11 @@ img { display: block; max-width: 100%; }
 .work-card p { max-width: 560px; margin: 0; font-size: 18px; color: var(--muted); }
 .work-card.dark p { color: #aaa; }
 .arrow-link { display: inline-flex; gap: 10px; align-items: center; margin-top: 34px; font-weight: 700; font-size: 14px; }
-.arrow-link::after { content: "↗"; font-size: 18px; }
+/* U+FE0E after the arrow forces TEXT presentation. Without it iOS Safari
+   renders U+2197 with Apple Color Emoji — a blue rounded tile, reported
+   from an iPhone 2026-09-03. Every arrow written into the HTML already
+   carries the selector; this pseudo-element was the one that did not. */
+.arrow-link::after { content: "\2197\FE0E"; font-size: 18px; }
 .insight-list { border-top: 1px solid var(--line); }
 .insight { display: grid; grid-template-columns: 160px 1fr 30px; gap: 30px; padding: 28px 0; border-bottom: 1px solid var(--line); align-items: center; }
 .insight span { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
@@ -1441,7 +1445,13 @@ img { display: block; max-width: 100%; }
    line ("the connected operating layer is the direction it earns") moved with
    it on purpose — the headline is aspirational, and the page should say so
    above the fold rather than imply the operating layer already ships. */
-.lead-vision { padding: 118px 0 104px !important; }
+/* Full-viewport opener — 2026-09-03, owner: "can you make it so the whole
+   screen is the video". min-height rather than height so the copy can still
+   push it taller if a translation or a large text setting needs the room, and
+   svh not vh so the mobile browser chrome does not clip the buttons off the
+   bottom. Grid + align-items centres the copy in whatever height results. */
+.lead-vision { min-height: 100svh; display: grid; align-items: center;
+  padding: 128px 0 76px !important; }
 .lead-vision .kicker { color: #b9bbc4; }
 .lead-vision .future-vision-inner h2 {
   margin: 22px 0 26px; color: #fff;
@@ -1451,7 +1461,7 @@ img { display: block; max-width: 100%; }
 .button.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.42); }
 .button.ghost:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
 @media (max-width: 860px) {
-  .lead-vision { padding: 78px 0 72px !important; }
+  .lead-vision { padding: 112px 0 60px !important; }
   .lead-vision .future-vision-inner h2 { font-size: clamp(38px,10.5vw,56px); line-height: 1.02; }
   .lead-vision .button { width: 100%; min-height: 52px; display: grid; place-items: center; }
   .lead-vision .button + .button { margin: 12px 0 0; }
@@ -1514,7 +1524,7 @@ img { display: block; max-width: 100%; }
    allowed to make an aspirational claim, so it stays on every viewport. With
    less type over the video the scrim can also lift a little. */
 @media (max-width: 860px) {
-  .lead-vision { padding: 68px 0 64px !important; }
+  .lead-vision { padding: 108px 0 56px !important; }
   .lead-vision .kicker { margin-bottom: 0; }
   .lead-vision .future-vision-note { padding-top: 18px; font-size: 15px !important; }
   .lead-vision::before {
