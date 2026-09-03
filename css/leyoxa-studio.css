@@ -1445,3 +1445,12 @@ img { display: block; max-width: 100%; }
   .lead-vision .button { width: 100%; min-height: 52px; display: grid; place-items: center; }
   .lead-vision .button + .button { margin: 12px 0 0; }
 }
+
+/* Opener copy was centring in the viewport, not aligning with the header —
+   2026-09-03. The element carries .shell AND .future-vision-inner, and the
+   latter's max-width:760px overrode the shell width, so on a 2000px screen the
+   copy started at 620px while the logo sat at 298px. Release the cap for the
+   opener; the h2 and deck keep their own measure. */
+.lead-vision .future-vision-inner { max-width: none; }
+.lead-vision .future-vision-inner h2 { max-width: 15ch; }
+.lead-vision .future-vision-inner > p { max-width: 58ch; }
