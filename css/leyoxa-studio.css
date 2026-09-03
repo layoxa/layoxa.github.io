@@ -1370,6 +1370,17 @@ img { display: block; max-width: 100%; }
   .future-vision .button { width: 100%; min-height: 52px; display: grid; place-items: center; text-align: center; }
 }
 
+/* Hero spacing on desktop — the descender of "grow." was sitting on the deck.
+   Same specificity trap the mobile fix below documents, and it was only ever
+   fixed inside the 860px media query: .home .hero h1 (0,2,1) sets
+   `margin: 34px auto 0`, so .market-hero-copy h1's (0,1,1) `28px` bottom margin
+   never applied anywhere and the gap was 0. The .14em is given back because
+   .home .hero h1 span carries margin-bottom:-.14em to clip its reveal, which
+   pulls the h1 box up to the baseline and leaves the descender hanging outside
+   it. In em so it tracks the clamped font size instead of breaking at one
+   viewport width. */
+.home .hero .market-hero-copy h1 { margin: 26px 0 calc(.14em + 30px); }
+
 /* Hero spacing on mobile — 2026-09-03.
    The mobile block overrode the hero h1's font-size and line-height but not its
    margin, so the 28px bottom margin was measured from a line box only .91 of
@@ -1477,8 +1488,8 @@ img { display: block; max-width: 100%; }
 }
 .target-diligence::before {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(100deg, rgba(7,8,10,.96) 0%, rgba(7,8,10,.9) 36%,
-                              rgba(7,8,10,.62) 64%, rgba(7,8,10,.24) 100%);
+  background: linear-gradient(100deg, rgba(7,8,10,.96) 0%, rgba(7,8,10,.93) 44%,
+                              rgba(7,8,10,.55) 64%, rgba(7,8,10,.06) 86%, rgba(7,8,10,0) 100%);
 }
 .target-diligence > .shell { position: relative; z-index: 1; }
 .target-diligence .section-head { grid-template-columns: 1fr; gap: 24px; margin-bottom: 36px; }
@@ -1486,9 +1497,11 @@ img { display: block; max-width: 100%; }
 .target-diligence .section-head p { max-width: 56ch; color: #c9cad1; }
 .target-diligence .arrow-link { color: #fff; }
 @media (max-width: 860px) {
-  .target-diligence { padding: 84px 0 !important; background-position: 64% center !important; }
+  /* The screen is lit now, so the phone scrim has to carry more: the copy runs
+     the full width here and the dense table would otherwise read through it. */
+  .target-diligence { padding: 84px 0 !important; background-position: 74% center !important; }
   .target-diligence::before {
-    background: linear-gradient(180deg, rgba(7,8,10,.92) 0%, rgba(7,8,10,.84) 55%, rgba(7,8,10,.94) 100%);
+    background: linear-gradient(180deg, rgba(7,8,10,.95) 0%, rgba(7,8,10,.9) 58%, rgba(7,8,10,.96) 100%);
   }
   .target-diligence .brief-actions { display: block; }
   .target-diligence .button { width: 100%; min-height: 52px; }
@@ -1527,3 +1540,9 @@ img { display: block; max-width: 100%; }
   .in-use img { border-radius: 14px; }
   .data-scope-grid + .in-use { margin-top: 34px; }
 }
+
+/* The target-diligence laptop shows a real product screen as of 2026-09-03
+   (owner: "don't show off laptop open one of the dashboard in the laptop"), so
+   the band now needs the same fictional-data credit every other product screen
+   on this site carries. */
+.band-credit { margin: 40px 0 0; max-width: 60ch; color: #8f929b; font-size: 12px; letter-spacing: .03em; }
