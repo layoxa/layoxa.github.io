@@ -1423,3 +1423,25 @@ img { display: block; max-width: 100%; }
 .future-vision::before { z-index: 1; }
 .future-vision-inner { z-index: 2; }
 @media (prefers-reduced-motion: reduce) { .future-vision-video { display: none; } }
+
+/* The phrase + benefit video as the opening screen — 2026-09-03.
+   Moved up from the mid-page platform-direction band at the owner's request.
+   Not data-reveal: the first screen must never start invisible. The honesty
+   line ("the connected operating layer is the direction it earns") moved with
+   it on purpose — the headline is aspirational, and the page should say so
+   above the fold rather than imply the operating layer already ships. */
+.lead-vision { padding: 118px 0 104px !important; }
+.lead-vision .kicker { color: #b9bbc4; }
+.lead-vision .future-vision-inner h2 {
+  margin: 22px 0 26px; color: #fff;
+  font-size: clamp(48px,6.2vw,96px); line-height: .94; letter-spacing: -.055em; font-weight: 400;
+}
+.lead-vision .button + .button { margin-left: 12px; }
+.button.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.42); }
+.button.ghost:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
+@media (max-width: 860px) {
+  .lead-vision { padding: 78px 0 72px !important; }
+  .lead-vision .future-vision-inner h2 { font-size: clamp(38px,10.5vw,56px); line-height: 1.02; }
+  .lead-vision .button { width: 100%; min-height: 52px; display: grid; place-items: center; }
+  .lead-vision .button + .button { margin: 12px 0 0; }
+}
