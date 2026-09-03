@@ -1376,7 +1376,11 @@ img { display: block; max-width: 100%; }
    the font size. The descender of "grow" hung into that gap and the deck below
    read as touching it. Larger bottom margin, and a touch more leading. */
 @media (max-width: 860px) {
-  .market-hero-copy h1 { margin: 20px 0 38px; line-height: .94; }
+  /* .home .hero h1 sets `margin: 34px auto 0` at specificity 0,2,1, so a
+     .market-hero-copy rule (0,1,1) never applied and the bottom margin was 0.
+     Match through .home .hero to win, and add ~.14em back because
+     .home .hero h1 span carries margin-bottom:-.14em for the reveal clip. */
+  .home .hero .market-hero-copy h1 { margin: 20px 0 44px; line-height: .94; }
   .market-hero-copy > p:not(.kicker) { line-height: 1.55; }
   .market-hero-copy .hero-actions { margin-top: 34px; }
 }
