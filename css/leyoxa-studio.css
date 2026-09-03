@@ -1384,3 +1384,29 @@ img { display: block; max-width: 100%; }
   .market-hero-copy > p:not(.kicker) { line-height: 1.55; }
   .market-hero-copy .hero-actions { margin-top: 34px; }
 }
+
+/* Data figure inside an article — 2026-09-03. Product-specific imagery for this
+   site is the evidence itself, not a stock room. SVG so it stays sharp and
+   weighs 2KB, and so the numbers can never be garbled by an image model. */
+.market-figure { margin: 44px 0; }
+.size-chart { padding: 30px 28px 34px; border-radius: 18px; border: 1px solid #1c1e25; background: #0b0c10; }
+.size-kicker { margin: 0; color: #8f929b; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+.size-lead { margin: 14px 0 30px; color: #fff; font-size: clamp(21px,2.6vw,30px); line-height: 1.2; letter-spacing: -.02em; }
+.size-lead em { color: #c8bdff; font-style: normal; }
+.size-bars { margin: 0; }
+.size-row + .size-row { margin-top: 20px; }
+.size-row dt { color: #babac0; font-size: 14px; }
+/* grid, not flex: the bar lives in its own track so a 100% bar cannot push
+   the count out of the row (it clipped '341' on a 390px screen) */
+.size-row dd { margin: 8px 0 0; display: grid; grid-template-columns: 1fr auto;
+               align-items: center; gap: 14px; }
+.size-bar { height: 22px; border-radius: 4px; flex: none; min-width: 2px; }
+.size-a { background: #aee8d2; } .size-b { background: #8fb7ff; }
+.size-c { background: #c8bdff; } .size-d { background: #6f5bff; }
+.size-e { background: #3a3d46; }
+.size-row b { color: #fff; font-size: 17px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.market-figure figcaption { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+@media (max-width: 720px) {
+  .market-figure { margin: 30px 0; }
+  .market-figure img { border-radius: 12px; }
+}
