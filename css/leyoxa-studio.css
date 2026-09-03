@@ -1124,3 +1124,18 @@ img { display: block; max-width: 100%; }
   .pricing-grid strong { margin: 24px 0 16px; font-size: clamp(32px, 9vw, 44px); }
   .chairs { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* Mobile navbar — added 2026-09-03.
+   The nav has no toggle in the HTML: js/leyoxa-motion.js MOVES the six links
+   into a .mobile-nav-panel at runtime and appends a Menu button. The script is
+   deferred, so until it executes the six links render inline with gap:0 — a
+   jammed row that then snaps into a button. Hiding the direct anchors at mobile
+   removes that flash; after the script runs the rule is a no-op, because the
+   links are inside the panel by then. */
+@media (max-width: 860px) {
+  .site-header .nav-links > a { display: none; }
+  .site-header .nav-links { gap: 0; justify-content: flex-end; }
+  /* a six-item panel plus the button must never exceed the screen */
+  .mobile-nav-panel { max-height: calc(100vh - 96px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .nav-toggle { min-height: 44px; }
+}
