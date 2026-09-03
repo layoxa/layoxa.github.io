@@ -1456,14 +1456,74 @@ img { display: block; max-width: 100%; }
 .lead-vision .future-vision-inner > p { max-width: 58ch; }
 
 /* Supporting imagery — 2026-09-03 */
-.section-figure { margin: 46px 0 0; }
-.section-figure img { width: 100%; height: auto; display: block; border-radius: 20px; }
 .review-band { padding: 104px 0 !important; }
 .review-band .future-vision-inner h2 { margin: 20px 0 22px; color:#fff;
   font-size: clamp(40px,4.6vw,64px); line-height: 1.02; letter-spacing: -.04em; font-weight: 400; }
 @media (max-width: 860px) {
-  .section-figure { margin-top: 30px; }
-  .section-figure img { border-radius: 14px; }
   .review-band { padding: 72px 0 !important; }
   .review-band .button { width: 100%; min-height: 52px; display: grid; place-items: center; }
+}
+
+/* Target diligence — the photo is the ground, not a figure under the copy.
+   2026-09-03, owner: "this should be a background photo". Same scrim logic as
+   .future-vision: dark where the copy sits, clearing to the right so the
+   laptop and the operatory behind the glass stay visible. The section-head
+   grid collapses to one column here because its right-hand column would land
+   on the bright half of the photo and stop being readable. */
+.target-diligence {
+  position: relative; overflow: hidden; padding: 132px 0 !important;
+  background: #07080a url("../images/editorial/leyoxa-target-review.webp") right center/cover no-repeat !important;
+  border-color: #282828;
+}
+.target-diligence::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(100deg, rgba(7,8,10,.96) 0%, rgba(7,8,10,.9) 36%,
+                              rgba(7,8,10,.62) 64%, rgba(7,8,10,.24) 100%);
+}
+.target-diligence > .shell { position: relative; z-index: 1; }
+.target-diligence .section-head { grid-template-columns: 1fr; gap: 24px; margin-bottom: 36px; }
+.target-diligence .section-head h2 { max-width: 15ch; }
+.target-diligence .section-head p { max-width: 56ch; color: #c9cad1; }
+.target-diligence .arrow-link { color: #fff; }
+@media (max-width: 860px) {
+  .target-diligence { padding: 84px 0 !important; background-position: 64% center !important; }
+  .target-diligence::before {
+    background: linear-gradient(180deg, rgba(7,8,10,.92) 0%, rgba(7,8,10,.84) 55%, rgba(7,8,10,.94) 100%);
+  }
+  .target-diligence .brief-actions { display: block; }
+  .target-diligence .button { width: 100%; min-height: 52px; }
+  .target-diligence .arrow-link { margin-top: 22px; }
+}
+
+/* The opening screen was ~12 lines of type before the first button on a phone
+   — 2026-09-03, owner: "too many texts make them brief". The copy itself was
+   shortened rather than hidden: the honesty note is the reason this band is
+   allowed to make an aspirational claim, so it stays on every viewport. With
+   less type over the video the scrim can also lift a little. */
+@media (max-width: 860px) {
+  .lead-vision { padding: 68px 0 64px !important; }
+  .lead-vision .kicker { margin-bottom: 0; }
+  .lead-vision .future-vision-note { padding-top: 18px; font-size: 15px !important; }
+  .lead-vision::before {
+    background: linear-gradient(180deg, rgba(7,8,10,.86) 0%, rgba(7,8,10,.7) 52%, rgba(7,8,10,.9) 100%);
+  }
+}
+
+/* The product in the room — 2026-09-03, owner: "look at the product page, the
+   dashboard the way people would use it, and generate the images of that".
+   The screen in each of these is the real mockup out of images/product/,
+   perspective-mapped onto a scene generated with a flat chroma-green display.
+   Nothing on the screen was invented by an image model — which is the whole
+   reason for the chroma step. The caption still has to say the practice data
+   is fictional; the interface is the one this site ships. */
+.in-use { margin: 0 0 56px; }
+.in-use img { width: 100%; height: auto; display: block; border-radius: 24px;
+  box-shadow: 0 38px 100px rgba(0,0,0,.2); }
+.in-use figcaption { max-width: 780px; margin-top: 16px; color: var(--muted); font-size: 12px; }
+.black .in-use figcaption { color: var(--muted-on-dark); }
+.data-scope-grid + .in-use { margin: 56px 0 0; }
+@media (max-width: 860px) {
+  .in-use { margin-bottom: 34px; }
+  .in-use img { border-radius: 14px; }
+  .data-scope-grid + .in-use { margin-top: 34px; }
 }
