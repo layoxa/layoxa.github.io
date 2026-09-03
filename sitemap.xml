@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://leyoxa.com/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://leyoxa.com/whats-live.html</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://leyoxa.com/care-ledger.html</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://leyoxa.com/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://leyoxa.com/whats-live.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://leyoxa.com/san-antonio-dental-market.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leyoxa.com/toronto-dental-market.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leyoxa.com/page-services.html</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leyoxa.com/care-ledger.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://leyoxa.com/workspace.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://leyoxa.com/intelligence.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://leyoxa.com/perio.html</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://leyoxa.com/page-services.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://leyoxa.com/security.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://leyoxa.com/page-aboutus.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://leyoxa.com/page-faq.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -15,7 +17,7 @@
   <url><loc>https://leyoxa.com/case-praxis.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://leyoxa.com/case-smilelink.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://leyoxa.com/case-emergclinic.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://leyoxa.com/blog.html</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leyoxa.com/blog.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://leyoxa.com/blog/dental-acquisition-record-review-care-ledger.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://leyoxa.com/blog/owner-morning-brief-dental-groups.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://leyoxa.com/blog/dental-opportunity-to-verified-recovery.html</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -29,4 +31,4 @@
   <url><loc>https://leyoxa.com/blog/dental-ai-voice-agent.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://leyoxa.com/blog/dental-ai-receptionist-cost.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://leyoxa.com/blog/office-brain-ai-dental-chief-of-staff.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-<url><loc>https://leyoxa.com/san-antonio-dental-market.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url><loc>https://leyoxa.com/toronto-dental-market.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url></urlset>
+</urlset>
