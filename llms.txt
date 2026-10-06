@@ -1,88 +1,17 @@
 # Leyoxa
 
-> Leyoxa provides dental market intelligence for acquisition and expansion.
-> The product path is: metro screening → submarket opportunity → competitor and practice mapping → target-specific diligence.
+> Leyoxa LLC co-builds vertical AI companies with operators who already have customers. The operator brings the customers, the industry knowledge and a problem that costs money every week; Leyoxa brings the engineering, the AI systems and security for regulated data, and takes part of its return in equity.
 
-Leyoxa LLC is a Texas company with a registered office in Austin. Founder Sepehr Aflatounian is based in Toronto. The primary focus is dental growth in the United States, followed by Canada.
+Leyoxa is a Texas company founded by Sepehr Aflatounian (https://sepehrafla.github.io), based in Toronto.
 
-## What Leyoxa helps buyers decide
+## How Leyoxa builds
 
-- Which metro deserves deeper evaluation.
-- Which submarkets show the strongest combination of demand, supply, access, economics, and growth signals.
-- Which practices, competitors, referral patterns, and local conditions shape the opportunity.
-- What must be verified inside a specific acquisition target before and after close.
+Observe a business with real customers, find the bottleneck, build the system, deploy it in production, measure outcomes, and when the problem is large enough to be a company, build it as one with the operator.
 
-Leyoxa is designed for dental-group founders, DSO corporate-development teams, investors, operators, and integration leaders evaluating an expansion or acquisition decision.
+## First partnership
 
-## Intelligence path
+Praxis — AI for dental practices. Leyoxa is the technology partner: architecture, AI systems and platform. Six agents in production: Voice, Reputation, GEO/SEO, Smile Simulator, Executive Assistant and Call Coaching.
 
-1. [Metro screening](https://leyoxa.com/whats-live.html): compare markets using dated, source-linked public evidence and explicit limitations.
-2. Submarket opportunity: narrow the metro into practical trade areas and test the growth thesis against local demand, supply, access, and economics.
-3. Competitor and practice mapping: organize the practice landscape, ownership signals, specialties, locations, and relevant market context.
-4. [Target-specific diligence](https://leyoxa.com/page-services.html): move from public intelligence into approved private evidence, record continuity, migration verification, documentation gaps, and buyer sign-off.
+## Contact
 
-## Current public market intelligence
-
-- [San Antonio dental market](https://leyoxa.com/san-antonio-dental-market.html): Bexar County establishment structure and national consolidation context, with source limitations stated.
-- [Toronto dental market](https://leyoxa.com/toronto-dental-market.html): Ontario establishment structure, Toronto demand context, and the RCDSO practice-model process.
-- Public market reports support screening and hypothesis formation. They are not valuations, forecasts, legal opinions, or recommendations to acquire a practice.
-
-## Target diligence and Care Ledger
-
-- [Target diligence](https://leyoxa.com/page-services.html): readiness sample, permitted read-only snapshot, selected cross-source reconciliation, methodology, limitations, and accountable handoff.
-- [Care Ledger](https://leyoxa.com/care-ledger.html): a target-diligence artifact containing source-linked record states organized by location, PMS, owner, age, and next action.
-- [Periodontal example](https://leyoxa.com/perio.html): one record category showing longitudinal reconciliation without a generated diagnosis.
-- Buyer: dental-group corporate development, diligence, and integration leaders with an identified target or dated transaction.
-- Commercial model: fixed engagement priced by market or target scope, location count, PMS mix, historical depth, access path, and delivery window.
-
-## Diligence readiness gates
-
-- Prove a permitted read path for every in-scope PMS.
-- Sample chart-note quality and source completeness before accepting a full record scope.
-- State unavailable fields and unsupported history explicitly.
-- Agree reporting, responsibility, retention, and handoff protocols before production access.
-
-Open Dental, Dentrix, Eaglesoft, Curve, and other PMS names describe possible acquisition environments. They are not claims of currently available connectors. Direct database, approved export, vendor, or third-party access may be required.
-
-## Clinical and system boundary
-
-- Leyoxa reports record states, not untreated disease or clinical findings.
-- Leyoxa does not assert diagnoses or recommend treatment.
-- Target-diligence review is read-only and does not write charts, plans, diagnoses, appointments, or communications to a PMS.
-- Each acquired practice and its dentists retain clinical responsibility.
-- Plan value is ledger context, not revenue; any acceptance scenario is illustrative and not guaranteed.
-
-## Product direction after close
-
-- [Platform direction](https://leyoxa.com/workspace.html): connect approved sources across mixed PMS and business systems, create role-specific workspaces with plain-language AI, and activate bounded agents.
-- [Intelligence direction](https://leyoxa.com/intelligence.html): rank locations and anomalies by estimated opportunity, urgency, confidence, and effort; carry each recommendation through action and outcome verification.
-- Connected sources remain authoritative and retain provenance.
-- Agent actions progress from reading and preparation to approval-gated communication or system action; clinical authority remains with qualified people.
-- The broader operating layer is product direction, not the current public market-intelligence deliverable.
-
-## Proof status
-
-Public product interfaces use fictional data and describe product direction, not customer outcomes. Market reports cite dated public evidence. Target diligence requires approved data access, a defined scope, and explicit responsibility boundaries.
-
-## Shipped work
-
-- [Praxis AI](https://leyoxa.com/case-praxis.html): flagship venture-studio collaboration with an independent dental AI company; its products and public claims remain Praxis's own.
-- [SmileLink](https://leyoxa.com/case-smilelink.html): shipped patient access, scheduling, secure communication, and clinic workflow software.
-- [Emergclinic](https://leyoxa.com/case-emergclinic.html): completed Toronto emergency-dental routing pilot; no longer live.
-- [Selected work](https://leyoxa.com/case-studies.html): ownership, contribution, and current status are stated per case.
-
-## Insights
-
-- [Dental market intelligence insights](https://leyoxa.com/blog.html)
-- [Beyond the dental chart audit](https://leyoxa.com/blog/dental-acquisition-record-review-care-ledger.html)
-- [Records after acquisitions](https://leyoxa.com/blog/dental-software-stack-after-acquisitions.html)
-- [Owner Morning Brief](https://leyoxa.com/blog/owner-morning-brief-dental-groups.html)
-- [Governed AI agents](https://leyoxa.com/blog/governed-ai-agents-dental-operations.html)
-
-## Trust and contact
-
-- [Trust Center](https://leyoxa.com/security.html)
-- [Contact](https://leyoxa.com/page-contact.html)
-- Email: contact@leyoxa.com
-- Meeting: https://calendly.com/leyoxa/30min
-- Do not send patient information by email or through the scheduling form.
+contact@leyoxa.com
