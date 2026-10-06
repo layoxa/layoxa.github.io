@@ -1,149 +1,152 @@
 # Questions
 
-### What is Leyoxa?
-Leyoxa is an AI venture studio. It co-builds vertical AI companies with operators who already have customers.
+### What is AI visibility?
+Whether AI assistants such as ChatGPT, Gemini, Perplexity and Siri mention your business when a nearby customer asks for what you sell, and whether what they say about you is right. It is sometimes called generative engine optimization, or GEO.
 
-### What is an AI venture studio?
-A team that builds new companies rather than client projects. Leyoxa partners with an operator, builds the AI product with them, and takes part of its return in equity, so both sides win only if the company does.
+### Which AI assistants matter for a local business?
+The ones your customers already use: ChatGPT, Google’s Gemini and AI answers in Google Search, Apple’s Siri, Microsoft Copilot and Perplexity. They draw on overlapping sources, such as your listings, reviews and website, so fixing those helps everywhere at once.
 
-### How is that different from an AI agency?
-An agency is paid for hours and leaves when the project ends. Leyoxa is paid partly in equity and stays, because its return depends on the company working.
+### Can AI assistants really book appointments?
+They are starting to. Assistants can already follow booking links, and some can place calls or complete reservations for their users. A business with clear hours, services and a booking path an agent can use is the one that gets booked.
 
-### Who is a good fit?
-A business with paying customers, real industry knowledge, and one operational problem that costs money every week and that software could solve for many businesses like it.
+### Is this just SEO?
+It builds on it. Search engines rank pages; AI assistants pick one answer. Being that answer depends on reviews, consistent listings and facts a machine can read: services, prices, hours and how to book.
 
-### What does the operator bring?
-Customers, industry knowledge, and the willingness to sell the product to businesses like theirs. Distribution is the operator's half of the company.
+### Do I need a website?
+It helps, because it is the one place you fully control what a machine reads about you. If you do not have one, we can set up a simple page that does that job.
 
-### How does Leyoxa get paid?
-A build fee, usually below market rate, plus equity in the company being built. Terms are set for each partnership.
+### How long until AI recommends my business?
+Listing and website fixes are picked up as the assistants refresh what they know, which can take weeks. That is why we measure every month and show you the change, rather than promising a date.
 
-### Who owns the code and the IP?
-The company owns what is built for it. Leyoxa keeps its reusable tooling and licenses it to the company.
+### What does it cost?
+The first AI check is free. After it, we recommend only what your results call for, with a clear price before any work starts.
 
-### Which industries does Leyoxa work in?
-Any industry with a costly, repeated operational problem and an operator who already has customers. The first partnership is Praxis, in dental, and Leyoxa is committed to it there.
+### Which businesses do you work with?
+Businesses with a physical location that customers book or walk into, such as barbers, salons, gyms, studios, restaurants, cafés, auto repair and pet grooming. We do not currently work with healthcare, dental, legal or accounting practices.
 
-### How many partnerships does Leyoxa take on?
-A few a year, so each one gets real engineering attention.
+### Who is behind Leyoxa?
+Leyoxa LLC is a Texas company founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a software engineer who built Praxis, an AI platform that answers and books patient calls and keeps dental practices visible in search and AI answers.
 
-### Where is Leyoxa based?
-Leyoxa LLC is a Texas company. Its founder, Sepehr Aflatounian, works from Toronto. Partnerships run across the United States and Canada.
+### Where do you work?
+Across the United States and Canada.
 
 ### How do we start?
-Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership) with your business, your customers, and the problem that keeps costing you.
+Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check) with your business name and city for a free AI check.
 
 
 ---
 
-# How a partnership works
+# How it works
 
-An operator brings the customers and the problem. Leyoxa brings the engineering. The company that comes out of it is owned together.
+Search gave customers ten links to compare. An AI assistant gives them one answer, and more and more often it books that answer too. Here is how we make that answer your business.
 
-## What we look for
+## 1. The free AI check
 
-- **Paying customers today.** We build for a market that already pays you, not one we hope exists.
-- **Depth in one industry.** Years of knowing how the work is actually done, and where it breaks.
-- **One expensive problem.** Something that costs money every week, such as missed calls, slow follow-up or manual reporting, and that many businesses like yours share.
-- **A partner who sells.** Distribution is your half of the company.
+We ask the assistants your customers use, such as ChatGPT, Gemini, Perplexity and Google’s AI answers, the questions a nearby customer would ask: “best barber near me”, “brunch open now”, “oil change today”. You get back exactly what they said, including whether you were mentioned and whether the details were right.
 
-## The five stages
+## 2. Fix the facts AI relies on
 
-1. **Embed.** We work inside your operation and map where time and money leak.
-2. **Pick the bottleneck.** One problem, chosen by what it costs and by how many other businesses have it.
-3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring, engineered for regulated data from day one.
-4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
-5. **Build the company.** When the numbers hold, the product becomes its own company, sold to businesses like yours.
+Assistants trust businesses whose details agree everywhere. We bring your listings into line:
 
-## How the economics work
+- Google Business Profile, Apple Business Connect, Bing Places and Yelp
+- The same name, address, phone, hours and services on every one
+- Categories and photos that say what you actually do
 
-Every partnership is structured on its own terms, but the shape is the same:
+## 3. Make your business readable
 
-- Leyoxa is paid for the build, usually below market rate.
-- In exchange, Leyoxa holds equity in the company being built.
-- What is built for the company belongs to the company. Leyoxa's reusable tooling stays Leyoxa's and is licensed to it, so every partnership starts further ahead than the last.
+Hours in a photo and prices “on request” are invisible to a machine. We publish your services, prices, hours and location in the structured format assistants read, on your website and in your listings, so an assistant can answer a customer’s question about you without guessing.
 
-## What we build with
+## 4. Make it bookable
 
-| Layer | What it does |
+An assistant that cannot finish a booking moves on to someone it can. We connect a booking path an agent can complete from start to finish, and add an AI receptionist that answers your phone and books appointments, day or night.
+
+## 5. Keep the reviews coming
+
+Recent, real reviews are one of the strongest signals an assistant uses. We set up a simple way to ask happy customers for one, and to reply to every review.
+
+## 6. See it work
+
+Every month you get a short report: which assistants mention you, what they say, how you compare with nearby competitors, and the calls and bookings that came in.
+
+| What an assistant checks | What we do about it |
 |---|---|
-| Voice and chat agents | Talk to customers, book, answer, hand off to people |
-| Integrations | Read and write the systems the business already runs on |
-| Retrieval and memory | Answer from the company's own records |
-| Orchestration | Run multi-step work reliably, with retries and approvals |
-| Evaluation and monitoring | Measure every agent against real outcomes |
-| Security | Permissions, audit trails and handling of regulated data |
+| Are you real and open now? | Consistent listings and current hours everywhere |
+| Do you offer what was asked? | Services and prices a machine can read |
+| Are you any good? | A steady stream of recent reviews, all answered |
+| Can it book you? | A booking link an agent can finish, and calls always answered |
 
-## What we do not do
+## Who it is for
 
-- Generic AI agency work.
-- Short projects with no path to a company.
-- More than a few partnerships at once.
+Businesses with a physical location that customers book or walk into: barbers, salons, nail studios, gyms, yoga and pilates studios, restaurants, cafés, auto repair, car washes, pet grooming, tattoo studios and more.
 
-Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership): your business, your customers, and the problem that keeps costing you.
+We do not currently work with dental, medical or other healthcare practices, or with legal and accounting firms.
+
+Start with a [free AI check](mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check): send your business name and city.
 
 
 ---
 
 # Leyoxa
 
-> AI venture studio. Leyoxa co-builds vertical AI companies with operators who already have customers.
+> Leyoxa makes local businesses the one AI assistants recommend, understand and book.
 
-You bring customers and a problem worth a company. We build the system that solves it, and take part of our return in equity.
+Your customers have started asking ChatGPT, Gemini and Siri where to go. We make sure the answer is you, and that the AI can book you.
 
-## How we build
+## How AI chooses a business
 
-1. **Observe.** We work inside a business that already has customers, and watch where the money and the hours leak.
-2. **Find the bottleneck.** Many complaints, one constraint. We name the problem that costs money every week.
-3. **Build.** Agents, integrations, memory, permissions. Engineered for regulated data from day one.
-4. **Deploy.** Into production, through the operator's own customers.
-5. **Measure.** Outcomes, not demos.
-6. **Own.** When the problem is big enough to be a company, we build it as one, with the operator, and share the upside.
+1. **Ask.** A customer nearby asks an assistant for what you sell.
+2. **Narrow.** The assistant keeps the few it can trust: consistent listings, real reviews, open right now.
+3. **Read.** It reads your services, prices and hours. If a machine can’t read them, you drop out.
+4. **Book.** It follows your booking link, or calls. Whoever answers, at any hour, gets the customer.
+5. **Remember.** New reviews and repeat visits feed the next answer.
 
-## Chapter one: Praxis
+## What we do
 
-AI for dental practices, built with a dental marketing company that already had the practices. Leyoxa is the technology partner. Six AI agents in production: Voice, Reputation, GEO/SEO, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md).
+- **Get found.** We check what ChatGPT, Gemini, Perplexity and Google’s AI say about you, then fix the listings, reviews and profiles they rely on.
+- **Get understood.** Services, prices, hours and location, published in the structured form assistants read.
+- **Get booked.** A booking path an agent can finish, and an AI receptionist that answers calls and books, day or night.
+- **See it work.** A monthly report: where AI mentions you, what it says, and the bookings it sends.
 
-## The partnership
+## Who it is for
 
-You bring customers who already pay you, years inside the industry, and a problem that costs money every week. We bring engineering end to end, AI systems that survive production, and security for regulated data. [How a partnership works](https://leyoxa.com/how-it-works.md).
+Barbers, hair salons, nail studios, gyms, yoga and pilates studios, restaurants, cafés, auto repair, car washes, pet grooming, tattoo studios and dry cleaners. Not currently healthcare, dental, legal or accounting.
 
-## Founder
+## Built before
 
-Sepehr Aflatounian: eight years building software people trust with their money, in iOS, sign-in and security at EQ Bank and Ford. Built Smile Link, a patient app for dentists, and the AI platform behind Praxis. https://sepehrafla.github.io
+Praxis, the AI platform Leyoxa built with a dental marketing company, answers patient calls, books into each practice’s own schedule and keeps practices visible in search and AI answers. [Read the Praxis story](https://leyoxa.com/praxis.md).
 
-## Contact
+## Free AI visibility check
 
-contact@leyoxa.com
+Email contact@leyoxa.com with your business name and city. We’ll ask the assistants your customers use and send you exactly what they answered.
 
 
 ---
 
 # Praxis
 
-Praxis is the first company Leyoxa co-built. A dental marketing company had the practices. Leyoxa built the technology.
+Before we brought this to local businesses, we built it for dentists. Praxis is the AI platform Leyoxa built with a dental marketing company that already had the practices.
 
 ## The problem
 
-Dental practices lose patients at the front desk. Calls ring out after hours and at lunch, reviews go unanswered, and the owner sees the numbers weeks late. The marketing company behind Praxis saw it across every practice it served.
+Dental practices lose patients at the front desk. Calls ring out after hours and at lunch, reviews go unanswered, and the owner sees the numbers weeks late.
 
 ## What was built
 
 Six AI agents, in production:
 
-- **Voice.** Answers patient calls, books, reschedules and cancels in the practice's own scheduling system, and hands off to staff when a person is needed.
-- **Reputation.** Gathers a practice's reviews from Google, Facebook, Yelp, Healthgrades and other sites, and scores each provider.
+- **Voice.** Answers patient calls, books, reschedules and cancels in the practice’s own scheduling system, and hands off to staff when a person is needed.
 - **GEO / SEO.** Keeps the practice findable in search and in AI answers.
-- **Smile Simulator.** Lets a prospective patient preview a new smile from a photo, on the practice's own website.
-- **Executive Assistant.** Answers the owner's questions from the practice's own data.
+- **Reputation.** Gathers a practice’s reviews from Google, Facebook, Yelp, Healthgrades and other sites, and scores each provider.
+- **Smile Simulator.** Lets a prospective patient preview a new smile from a photo, on the practice’s own website.
+- **Executive Assistant.** Answers the owner’s questions from the practice’s own data.
 - **Call Coaching.** Reviews calls so the front desk gets better every week.
 
-## How it is built
+## What carried over
 
-- **Into the practice's existing systems.** The agents read and write the practice-management software the office already uses, rather than adding another tool to check.
-- **For patient data.** Praxis handles protected health information, so access is limited to named people under business associate agreements.
-- **Measured.** Each agent is judged by what it actually did on a call or a record, not by a demo.
+- **Bookings happen inside the systems a business already uses**, not in another app someone has to check.
+- **Every agent is judged by what it actually did** on a call or a booking, not by a demo.
+- **Visibility and booking belong together.** Being recommended is only worth something if the customer can then be booked.
 
 ## Where it is now
 
-Live with dental practices across the United States. Leyoxa remains Praxis's technology partner.
+Live with dental practices across the United States. Leyoxa remains Praxis’s technology partner.

@@ -1,45 +1,46 @@
-# How a partnership works
+# How it works
 
-An operator brings the customers and the problem. Leyoxa brings the engineering. The company that comes out of it is owned together.
+Search gave customers ten links to compare. An AI assistant gives them one answer, and more and more often it books that answer too. Here is how we make that answer your business.
 
-## What we look for
+## 1. The free AI check
 
-- **Paying customers today.** We build for a market that already pays you, not one we hope exists.
-- **Depth in one industry.** Years of knowing how the work is actually done, and where it breaks.
-- **One expensive problem.** Something that costs money every week, such as missed calls, slow follow-up or manual reporting, and that many businesses like yours share.
-- **A partner who sells.** Distribution is your half of the company.
+We ask the assistants your customers use, such as ChatGPT, Gemini, Perplexity and Google’s AI answers, the questions a nearby customer would ask: “best barber near me”, “brunch open now”, “oil change today”. You get back exactly what they said, including whether you were mentioned and whether the details were right.
 
-## The five stages
+## 2. Fix the facts AI relies on
 
-1. **Embed.** We work inside your operation and map where time and money leak.
-2. **Pick the bottleneck.** One problem, chosen by what it costs and by how many other businesses have it.
-3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring, engineered for regulated data from day one.
-4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
-5. **Build the company.** When the numbers hold, the product becomes its own company, sold to businesses like yours.
+Assistants trust businesses whose details agree everywhere. We bring your listings into line:
 
-## How the economics work
+- Google Business Profile, Apple Business Connect, Bing Places and Yelp
+- The same name, address, phone, hours and services on every one
+- Categories and photos that say what you actually do
 
-Every partnership is structured on its own terms, but the shape is the same:
+## 3. Make your business readable
 
-- Leyoxa is paid for the build, usually below market rate.
-- In exchange, Leyoxa holds equity in the company being built.
-- What is built for the company belongs to the company. Leyoxa's reusable tooling stays Leyoxa's and is licensed to it, so every partnership starts further ahead than the last.
+Hours in a photo and prices “on request” are invisible to a machine. We publish your services, prices, hours and location in the structured format assistants read, on your website and in your listings, so an assistant can answer a customer’s question about you without guessing.
 
-## What we build with
+## 4. Make it bookable
 
-| Layer | What it does |
+An assistant that cannot finish a booking moves on to someone it can. We connect a booking path an agent can complete from start to finish, and add an AI receptionist that answers your phone and books appointments, day or night.
+
+## 5. Keep the reviews coming
+
+Recent, real reviews are one of the strongest signals an assistant uses. We set up a simple way to ask happy customers for one, and to reply to every review.
+
+## 6. See it work
+
+Every month you get a short report: which assistants mention you, what they say, how you compare with nearby competitors, and the calls and bookings that came in.
+
+| What an assistant checks | What we do about it |
 |---|---|
-| Voice and chat agents | Talk to customers, book, answer, hand off to people |
-| Integrations | Read and write the systems the business already runs on |
-| Retrieval and memory | Answer from the company's own records |
-| Orchestration | Run multi-step work reliably, with retries and approvals |
-| Evaluation and monitoring | Measure every agent against real outcomes |
-| Security | Permissions, audit trails and handling of regulated data |
+| Are you real and open now? | Consistent listings and current hours everywhere |
+| Do you offer what was asked? | Services and prices a machine can read |
+| Are you any good? | A steady stream of recent reviews, all answered |
+| Can it book you? | A booking link an agent can finish, and calls always answered |
 
-## What we do not do
+## Who it is for
 
-- Generic AI agency work.
-- Short projects with no path to a company.
-- More than a few partnerships at once.
+Businesses with a physical location that customers book or walk into: barbers, salons, nail studios, gyms, yoga and pilates studios, restaurants, cafés, auto repair, car washes, pet grooming, tattoo studios and more.
 
-Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership): your business, your customers, and the problem that keeps costing you.
+We do not currently work with dental, medical or other healthcare practices, or with legal and accounting firms.
+
+Start with a [free AI check](mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check): send your business name and city.

@@ -57,7 +57,7 @@ def render(body):
                 i += 1
             th = "".join(f"<th>{inline(c)}</th>" for c in rows[0])
             tb = "".join("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>" for r in rows[1:])
-            out.append(f"<table><thead><tr>{th}</tr></thead><tbody>{tb}</tbody></table>")
+            out.append(f'<div class="tw"><table><thead><tr>{th}</tr></thead><tbody>{tb}</tbody></table></div>')
         elif re.match(r"(- |\d+\. )", ln):
             tag = "ul" if ln.startswith("- ") else "ol"
             items = []
@@ -79,8 +79,18 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#partner">Partner with us</a></nav>
-</header>"""
+  <nav aria-label="Main"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#check">Free AI check</a></nav>
+  <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
+</header>
+<div class="sheet" id="sheet"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="/#check">Free AI check</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+
+FOOT = """<footer>
+  <div class="foot">
+    <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
+    <nav aria-label="Footer"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin</span></div>
+  </div>
+</footer>"""
 
 
 def page(meta, htm, faq, slug):
@@ -106,10 +116,11 @@ def page(meta, htm, faq, slug):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(meta["seo_title"])}</title>
 <meta name="description" content="{e(meta["description"])}">
-<meta name="theme-color" content="#07070b">
+<meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="{url}">
 <link rel="alternate" type="text/markdown" href="/{slug}.md" title="Markdown version">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{e(meta["seo_title"])}">
 <meta property="og:description" content="{e(meta["description"])}">
@@ -118,7 +129,7 @@ def page(meta, htm, faq, slug):
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">{ld}</script>
 </head>
@@ -129,10 +140,11 @@ def page(meta, htm, faq, slug):
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / {e(meta["title"])}</nav>
 {htm}
 <p class="updated">Updated <time datetime="{meta["updated"]}">{meta["updated"]}</time> · <a href="/{slug}.md">Read as markdown</a></p>
-<section class="end"><h2>Have the customers?</h2><p>Tell us about your business and the problem that keeps costing you.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Partnership">contact@leyoxa.com</a></section>
+<section class="end"><h2>What does AI say about you?</h2><p>Send your business name and city. We’ll ask the assistants your customers use and send you what they answered, free.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check&amp;body=Business%20name%3A%0ACity%3A%0AWebsite%20(if%20any)%3A%0A">Get my free check</a></section>
 </article>
 </main>
-<footer><span>© 2026 Leyoxa LLC · Texas</span><span>Toronto · Austin</span></footer>
+{FOOT}
+<script src="/assets/ui.js" defer></script>
 </body>
 </html>
 """
@@ -156,13 +168,13 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC is an AI venture studio. It co-builds vertical AI companies with operators who already have customers: the operator brings customers, industry knowledge and a costly operational problem; Leyoxa brings the engineering, AI systems and security for regulated data, and takes part of its return in equity.
+> Leyoxa LLC makes local businesses with a physical location the one AI assistants (ChatGPT, Gemini, Siri, Perplexity, Copilot) recommend, understand and book: consistent listings, machine-readable services, prices and hours, an agent-completable booking path, an AI receptionist, and a monthly AI visibility report. Serves the United States and Canada; not healthcare, dental, legal or accounting.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home]({SITE}/index.md): What Leyoxa is, how it builds, and its first partnership.
+- [Home]({SITE}/index.md): What Leyoxa does, how AI assistants choose a business, and who it is for.
 {links}
 
 ## Optional

@@ -60,7 +60,7 @@ catch (e) { document.body.classList.add('nogl'); }
 
 if (renderer) {
   renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
-  renderer.setClearColor(0x07070b, 1);
+  renderer.setClearColor(0xffffff, 1);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(42, 1, .1, 50);
   camera.position.set(0, 0, small ? 8.6 : 7.2);
@@ -76,7 +76,7 @@ if (renderer) {
   geo.setAttribute('r', new THREE.BufferAttribute(rand, 1));
 
   const mat = new THREE.ShaderMaterial({
-    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+    transparent: true, depthWrite: false, blending: THREE.NormalBlending,
     uniforms: { uA: { value: 0 }, uB: { value: 0 }, uT: { value: 0 }, uTime: { value: 0 }, uPx: { value: renderer.getPixelRatio() * (small ? 1.5 : 1) }, uFade: { value: 1 } },
     vertexShader: `
       attribute vec3 s0; attribute vec3 s1; attribute vec3 s2; attribute vec3 s3; attribute vec3 s4; attribute vec3 s5;
@@ -94,19 +94,19 @@ if (renderer) {
         vec4 mv = modelViewMatrix * vec4(p, 1.);
         gl_Position = projectionMatrix * mv;
         vD = -mv.z;
-        gl_PointSize = (1.3 + r*1.8) * uPx * (6.5 / vD);
+        gl_PointSize = min((1.3 + r*1.8) * uPx * (6.5 / vD), 5. * uPx);
         vR = r;
       }`,
     fragmentShader: `
       varying float vR; varying float vD; uniform float uTime; uniform float uFade;
       void main(){
         vec2 c = gl_PointCoord - .5; float d = dot(c,c); if(d > .25) discard;
-        vec3 a = vec3(.48,.48,1.), b = vec3(.71,.85,.29), w = vec3(.95,.95,.92);
+        vec3 a = vec3(.36,.36,.96), b = vec3(.18,.62,.56), w = vec3(.11,.11,.12);
         vec3 col = mix(a, b, smoothstep(.15,.85,vR));
-        col = mix(col, w, step(.93, vR) * .8);
+        col = mix(col, w, step(.9, vR) * .7);
         float tw = .75 + .25*sin(uTime*1.3 + vR*90.);
         float fog = smoothstep(12., 4.5, vD);
-        gl_FragColor = vec4(col * tw, (1. - d*4.) * .85 * fog * uFade);
+        gl_FragColor = vec4(col, (1. - d*4.) * .62 * tw * fog * uFade);
       }`
   });
   const pts = new THREE.Points(geo, mat);
@@ -114,7 +114,9 @@ if (renderer) {
 
   /* ---------- scroll → shape ---------- */
   const steps = [...document.querySelectorAll('.step')];
-  const band = document.querySelector('#praxis');
+  const band = document.querySelector('#what'), fin = document.querySelector('.final');
+  let atEnd = 0;
+  const rail = [...document.querySelectorAll('.rail i')], railBox = document.querySelector('.rail');
   let p = 0;
   function progress() {
     const mid = innerHeight * .5;
@@ -126,16 +128,23 @@ if (renderer) {
     p = s;
     let on = -1; steps.forEach((el, k) => { const r = el.getBoundingClientRect(); if (r.top < mid && r.bottom > mid) on = k; });
     steps.forEach((el, k) => el.classList.toggle('on', k === on));
+    rail.forEach((d, k) => d.classList.toggle('on', k === on));
+    railBox?.classList.toggle('show', on >= 0);
     // dim the field once the solid sections take over
     const bt = band.getBoundingClientRect().top;
     mat.uniforms.uFade.value = Math.max(.35, Math.min(1, bt / innerHeight + .35));
+    // at the closing call to action the mark moves behind the centred text, quietly
+    const ft = fin.getBoundingClientRect().top / innerHeight;
+    atEnd = Math.max(0, Math.min(1, 1.1 - ft));
+    if (atEnd > 0) mat.uniforms.uFade.value = .35 - atEnd * .15;
   }
 
   /* ---------- layout ---------- */
+  let baseX = 0, baseY = 0;
   function resize() {
     const w = innerWidth, h = innerHeight;
     renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
-    group.position.set(w > 900 ? 1.9 : 0, w > 900 ? 0 : .9, 0);
+    baseX = w > 900 ? 1.9 : 0; baseY = w > 900 ? 0 : .9; group.position.set(baseX, baseY, 0);
   }
   addEventListener('resize', resize); resize();
 
@@ -153,6 +162,10 @@ if (renderer) {
     u.uA.value = SEQ[k]; u.uB.value = SEQ[k + 1];
     u.uT.value = Math.min(1, Math.max(0, (f - .15) / .7));
     u.uTime.value = t;
+    group.position.x += (baseX * (1 - atEnd) - group.position.x) * (reduce ? 1 : .06);
+    // on a phone the hero text sits on top, so the mark waits below it until the loop starts
+    const ty = baseY && shown < .5 ? -2.6 : baseY;
+    group.position.y += (ty - group.position.y) * (reduce ? 1 : .06);
     if (!reduce) {
       group.rotation.y += dt * .07;
       group.rotation.x += ((my * .3 + .12) - group.rotation.x) * .04;
@@ -162,17 +175,9 @@ if (renderer) {
     if (!reduce || Math.abs(p - shown) > .001) requestAnimationFrame(frame);
   }
   frame();
+  requestAnimationFrame(() => canvas.classList.add('ready'));
   if (reduce) addEventListener('scroll', () => requestAnimationFrame(frame), { passive: true });
 }
-
-/* ---------- page chrome ---------- */
-const nav = document.querySelector('.nav');
-const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
-addEventListener('scroll', onScroll, { passive: true }); onScroll();
-
-const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
-document.querySelectorAll('.loop-head, .band .kicker, .band h2, .band .body, .facts, .agents, .halves, .not, .founder > *, .cred, .final > *')
-  .forEach(el => { el.classList.add('reveal'); io.observe(el); });
 
 /* ---------- Praxis: one quiet waveform per agent ---------- */
 const wave = document.getElementById('wave');
@@ -182,7 +187,7 @@ if (wave) {
   const size = () => { const d = Math.min(devicePixelRatio, 2); W = wave.clientWidth; H = wave.clientHeight; wave.width = W * d; wave.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0); };
   new ResizeObserver(size).observe(wave); size();
   new IntersectionObserver(([e]) => { live = e.isIntersecting; if (live) requestAnimationFrame(draw); }).observe(wave);
-  const grad = () => { const g = ctx.createLinearGradient(0, 0, W, 0); g.addColorStop(0, 'rgba(123,123,255,0)'); g.addColorStop(.45, 'rgba(123,123,255,.5)'); g.addColorStop(1, 'rgba(182,216,74,.65)'); return g; };
+  const grad = () => { const g = ctx.createLinearGradient(0, 0, W, 0); g.addColorStop(0, 'rgba(91,91,246,0)'); g.addColorStop(.45, 'rgba(91,91,246,.35)'); g.addColorStop(1, 'rgba(47,158,143,.5)'); return g; };
   function draw(ts) {
     ctx.clearRect(0, 0, W, H);
     const t = reduce ? 0 : ts / 1000, top = wave.getBoundingClientRect().top;
