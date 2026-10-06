@@ -7,7 +7,7 @@ updated: 2026-10-06
 ---
 # Praxis
 
-Praxis is the first company Leyoxa co-built. A dental marketing company had the practices. Leyoxa built the technology.
+Praxis started as a project. A dental marketing company had the practices and a problem at their front desks; Leyoxa built the technology. It worked, so it became a partnership.
 
 ## The problem
 

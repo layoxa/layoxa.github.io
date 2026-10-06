@@ -1,13 +1,13 @@
 ---
 title: How it works
 seo_title: How an AI venture studio partnership works | Leyoxa
-description: How Leyoxa partners with a business that already has customers — the three problems AI solves, the six-stage loop, who is a fit, and how the economics and IP work.
+description: How working with Leyoxa works — start with one AI project at a price agreed up front, the three problems AI solves, the build loop, and how a project can grow into a partnership.
 path: /how-it-works/
 updated: 2026-10-06
 ---
 # How it works
 
-A business brings the customers and the problem. Leyoxa brings the engineering. What comes out of it is built to be a company, and owned together.
+You start by buying one project, like any other service. If it works, we keep improving it, and if it could help many businesses like yours, we can grow it into a company together.
 
 ## The three problems AI solves first
 
@@ -17,7 +17,7 @@ Most of what AI can do for a business with customers falls into three kinds of w
 - **Earn more from every customer.** Calls answered after hours, appointments booked, reminders sent, reviews asked for. The revenue that used to ring out stays.
 - **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
 
-Every partnership starts with one of these, chosen by what it costs today.
+Every project starts with one of these, chosen by what it costs you today.
 
 ## The loop
 
@@ -26,22 +26,19 @@ Every partnership starts with one of these, chosen by what it costs today.
 3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring.
 4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
 5. **Measure.** What got booked, earned or saved, and what did not.
-6. **Own.** When the numbers hold, the product becomes its own company, sold to businesses like yours.
+6. **Grow.** When the numbers hold, we keep improving it, and if many businesses share the problem, it can become its own company.
 
-## What we look for
+## Working together
 
-- **Paying customers today.** We build for a market that already pays you, not one we hope exists.
-- **Depth in one industry.** Years of knowing how the work is actually done, and where it breaks.
-- **One expensive problem.** Something that costs money every week, and that many businesses like yours share.
-- **A partner who sells.** Distribution is your half of the company.
+1. **Pick the problem.** A free call. We find the one problem costing you the most, and what AI can do about it.
+2. **We build it.** A clear scope and price, agreed before we start. Built into the tools you already use, and live with your customers.
+3. **Grow it together.** If it works, we keep making it better. If it could help many businesses like yours, we can partner to turn it into a company.
 
-## How the economics work
+## How paying works
 
-Every partnership is structured on its own terms, but the shape is the same:
-
-- Leyoxa is paid for the build, usually below market rate.
-- In exchange, Leyoxa holds equity in what is being built.
-- What is built for the company belongs to the company. Leyoxa’s reusable tooling stays Leyoxa’s and is licensed to it, so every partnership starts further ahead than the last.
+- **You pay for the project.** The scope and price are agreed before any work starts. No equity is asked for.
+- **You own what we build for you.** Leyoxa keeps its reusable tooling and licenses it to you, so every project starts further ahead than the last.
+- **Partnership is optional, and later.** It only comes up when a project has proven itself and both sides want to build it into something bigger. That is how Praxis happened.
 
 ## What we build with
 
@@ -56,9 +53,8 @@ Every partnership is structured on its own terms, but the shape is the same:
 
 ## What we do not do
 
-- Generic AI agency work.
-- Short projects with no path to a company.
-- More than a few partnerships at once.
-- New partnerships in healthcare, dental, legal or accounting. Our dental work is Praxis.
+- Work we cannot measure. Every project has an outcome agreed up front.
+- More projects than we can do well at once.
+- New work in healthcare, dental, legal or accounting. Our dental work is Praxis.
 
-Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership): your business, your customers, and the problem that keeps costing you.
+Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=New%20project): your business, your customers, and the problem that keeps costing you.

@@ -30,7 +30,7 @@
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   }), { threshold: .12, rootMargin: '0px 0px -6% 0px' });
   const groups = ['.loop-head', '.band .wrap > .kicker', '.band .wrap > h2', '.band .split > div > *', '.agents',
-    '.feature > *', '.halves', '.not', '.qa', '.more', '.final > *', '.doc > *'];
+    '.feature > *', '.path > *', '.not', '.qa', '.more', '.final > *', '.doc > *'];
   document.querySelectorAll(groups.join(',')).forEach(el => {
     const sibs = [...el.parentElement.children].filter(c => c.matches(groups.join(',')));
     el.style.setProperty('--i', Math.min(sibs.indexOf(el), 6));

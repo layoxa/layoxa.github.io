@@ -1,7 +1,7 @@
 # Questions
 
 ### What is an AI venture studio, in plain terms?
-A team that builds AI products together with a business that already has customers, and is paid partly in a share of what it builds. Leyoxa does not bill hours and leave; it wins only if the product works.
+Leyoxa builds AI products for businesses. You start by buying one project, like any other service. When a project proves itself and could help many businesses like yours, we can grow it into a company together.
 
 ### What can AI actually do for a business like mine?
 Three things, most often. Help more customers find you, including through AI assistants like ChatGPT and Siri. Earn more from the customers you have, by answering every call, booking and following up. And take busywork off your plate, such as scheduling, reminders and reports.
@@ -9,36 +9,36 @@ Three things, most often. Help more customers find you, including through AI ass
 ### What does “getting found by AI” mean?
 People increasingly ask an AI assistant where to go instead of searching. The assistant gives one answer, and it picks a business whose hours, services, prices and reviews it can read, and that it can book. Making a business that answer is one of the problems we build for.
 
-### How is a venture studio different from an AI agency?
-An agency is paid for hours and leaves when the project ends. Leyoxa is paid partly in equity and stays, because its return depends on what it built working.
+### How is that different from an AI agency?
+The first project is much the same: you pay for it and you own it. The difference is what happens when it works. An agency moves on; we keep improving it, and when it could serve many businesses, we can build it into a company with you.
 
 ### Who is a good fit?
-A business with paying customers, real industry knowledge, and one problem that costs money every week and that software could solve for many businesses like it.
-
-### What does the business bring?
-Customers, industry knowledge, and the willingness to sell what we build to businesses like theirs. Distribution is the partner’s half of the company.
+A business with customers and one problem that costs it money every week, such as missed calls, slow follow-up, manual scheduling or not being found.
 
 ### How does Leyoxa get paid?
-A build fee, usually below market rate, plus equity in what is being built. Terms are set for each partnership.
+You pay for the project, at a scope and price agreed before work starts.
+
+### Do I have to give up equity?
+No. A partnership only comes up later, if a project has proven itself and both sides want to grow it into a company.
 
 ### Who owns the code and the IP?
-The company owns what is built for it. Leyoxa keeps its reusable tooling and licenses it to the company.
+You own what we build for you. Leyoxa keeps its reusable tooling and licenses it to you.
 
 ### Which industries does Leyoxa work in?
-Any industry with a costly, repeated problem and a partner who already has customers. Our dental work is Praxis, and we are not taking on new healthcare, dental, legal or accounting partnerships.
+Any business with customers and a costly, repeated problem. Our dental work is Praxis, and we are not taking on new healthcare, dental, legal or accounting work.
 
 ### Who is behind Leyoxa?
 Leyoxa LLC is a Texas company founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a software engineer who built Praxis, an AI platform that answers and books patient calls and keeps dental practices visible in search and AI answers.
 
 ### How do we start?
-Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership) with your business, your customers, and the problem that keeps costing you.
+Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=New%20project) with your business, your customers, and the problem that keeps costing you. The first call is free.
 
 
 ---
 
 # How it works
 
-A business brings the customers and the problem. Leyoxa brings the engineering. What comes out of it is built to be a company, and owned together.
+You start by buying one project, like any other service. If it works, we keep improving it, and if it could help many businesses like yours, we can grow it into a company together.
 
 ## The three problems AI solves first
 
@@ -48,7 +48,7 @@ Most of what AI can do for a business with customers falls into three kinds of w
 - **Earn more from every customer.** Calls answered after hours, appointments booked, reminders sent, reviews asked for. The revenue that used to ring out stays.
 - **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
 
-Every partnership starts with one of these, chosen by what it costs today.
+Every project starts with one of these, chosen by what it costs you today.
 
 ## The loop
 
@@ -57,22 +57,19 @@ Every partnership starts with one of these, chosen by what it costs today.
 3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring.
 4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
 5. **Measure.** What got booked, earned or saved, and what did not.
-6. **Own.** When the numbers hold, the product becomes its own company, sold to businesses like yours.
+6. **Grow.** When the numbers hold, we keep improving it, and if many businesses share the problem, it can become its own company.
 
-## What we look for
+## Working together
 
-- **Paying customers today.** We build for a market that already pays you, not one we hope exists.
-- **Depth in one industry.** Years of knowing how the work is actually done, and where it breaks.
-- **One expensive problem.** Something that costs money every week, and that many businesses like yours share.
-- **A partner who sells.** Distribution is your half of the company.
+1. **Pick the problem.** A free call. We find the one problem costing you the most, and what AI can do about it.
+2. **We build it.** A clear scope and price, agreed before we start. Built into the tools you already use, and live with your customers.
+3. **Grow it together.** If it works, we keep making it better. If it could help many businesses like yours, we can partner to turn it into a company.
 
-## How the economics work
+## How paying works
 
-Every partnership is structured on its own terms, but the shape is the same:
-
-- Leyoxa is paid for the build, usually below market rate.
-- In exchange, Leyoxa holds equity in what is being built.
-- What is built for the company belongs to the company. Leyoxa’s reusable tooling stays Leyoxa’s and is licensed to it, so every partnership starts further ahead than the last.
+- **You pay for the project.** The scope and price are agreed before any work starts. No equity is asked for.
+- **You own what we build for you.** Leyoxa keeps its reusable tooling and licenses it to you, so every project starts further ahead than the last.
+- **Partnership is optional, and later.** It only comes up when a project has proven itself and both sides want to build it into something bigger. That is how Praxis happened.
 
 ## What we build with
 
@@ -87,19 +84,18 @@ Every partnership is structured on its own terms, but the shape is the same:
 
 ## What we do not do
 
-- Generic AI agency work.
-- Short projects with no path to a company.
-- More than a few partnerships at once.
-- New partnerships in healthcare, dental, legal or accounting. Our dental work is Praxis.
+- Work we cannot measure. Every project has an outcome agreed up front.
+- More projects than we can do well at once.
+- New work in healthcare, dental, legal or accounting. Our dental work is Praxis.
 
-Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership): your business, your customers, and the problem that keeps costing you.
+Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=New%20project): your business, your customers, and the problem that keeps costing you.
 
 
 ---
 
 # Leyoxa
 
-> AI venture studio. Leyoxa partners with businesses that already have customers, builds the AI that grows them, and shares in the upside.
+> AI venture studio. Leyoxa builds AI that brings businesses more customers and takes the busywork off their plate. Start with one project; if it works, it can grow into something bigger, together.
 
 ## What that looks like
 
@@ -107,17 +103,17 @@ Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pa
 2. **Earn more from every customer.** AI answers after hours, books the appointment, sends the reminder and asks for the review.
 3. **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
 
-## How we build
+## How we work
 
-Observe a business with real customers, find the bottleneck, build, deploy with its own customers, measure outcomes, and when the problem is big enough to be a company, build it as one with the partner and share the upside.
+1. **Pick the problem.** A free call to find the one problem costing you the most.
+2. **We build it.** A clear scope and price, agreed before we start, live with your customers.
+3. **Grow it together.** If it works, we keep making it better; if it could help many businesses, we can partner to turn it into a company. Praxis started exactly this way.
 
 ## Chapter one: Praxis
 
 AI for dental practices, built with a dental marketing company that already had the practices. Six AI agents in production: Voice, GEO/SEO, Reputation, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md). Praxis: https://itspraxis.ai
 
-## The partnership
-
-You bring customers who already pay you, years inside your industry, and a problem that costs money every week. We bring engineering end to end, AI that survives real customers, and security for sensitive data. [How it works](https://leyoxa.com/how-it-works.md).
+[How it works](https://leyoxa.com/how-it-works.md).
 
 ## Contact
 
@@ -128,7 +124,7 @@ contact@leyoxa.com
 
 # Praxis
 
-Praxis is the first company Leyoxa co-built. A dental marketing company had the practices. Leyoxa built the technology.
+Praxis started as a project. A dental marketing company had the practices and a problem at their front desks; Leyoxa built the technology. It worked, so it became a partnership.
 
 ## The problem
 

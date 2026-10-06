@@ -79,10 +79,10 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#partner">Partner with us</a></nav>
+  <nav aria-label="Main"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#start">Start a project</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="/#partner">Partner with us</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+<div class="sheet" id="sheet"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="/#start">Start a project</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
 
 FOOT = """<footer>
   <div class="foot">
@@ -140,7 +140,7 @@ def page(meta, htm, faq, slug):
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / {e(meta["title"])}</nav>
 {htm}
 <p class="updated">Updated <time datetime="{meta["updated"]}">{meta["updated"]}</time> · <a href="/{slug}.md">Read as markdown</a></p>
-<section class="end"><h2>Have the customers?</h2><p>Tell us about your business and the problem that keeps costing you.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Partnership&amp;body=Business%3A%0AWhat%20you%20sell%20and%20to%20whom%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Tell us about your business</a></section>
+<section class="end"><h2>Something costing you every week?</h2><p>Tell us about your business. We’ll come back with what AI can do about it, and what it would cost.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=New%20project&amp;body=Business%3A%0AWhat%20you%20sell%20and%20to%20whom%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Start a project</a></section>
 </article>
 </main>
 {FOOT}
@@ -168,7 +168,7 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC is an AI venture studio. It partners with businesses that already have customers, builds the AI that grows them, and takes part of its return in equity. In plain terms the AI does three things: helps more customers find the business (including through assistants like ChatGPT, Gemini and Siri), earns more from each customer (every call answered, booked and followed up), and removes busywork (scheduling, reminders, reports). First partnership: Praxis, AI for dental practices.
+> Leyoxa LLC is an AI venture studio. Businesses start by buying one AI project at a price agreed up front; when a project proves itself and could serve many businesses, Leyoxa can partner with the client to grow it into a company. In plain terms the AI does three things: helps more customers find the business (including through assistants like ChatGPT, Gemini and Siri), earns more from each customer (every call answered, booked and followed up), and removes busywork (scheduling, reminders, reports). First partnership: Praxis, AI for dental practices.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
