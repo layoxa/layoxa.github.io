@@ -87,7 +87,7 @@ NAV = """<header class="nav solid">
 FOOT = """<footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="/praxis/">Praxis</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
     <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
   </div>
 </footer>"""
@@ -168,7 +168,7 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC builds Leyoxa Verify: robotic and AI commissioning QA for electrical systems on data center, energy (solar, battery storage, substations, on-site power) and manufacturing builds. It checks every termination, label and test result against the design before energization (computer vision on labels and torque marks, test results read against NETA ATS and IEC 62446 limits with peer outliers flagged), catches hot joints with thermal scans under first load, and writes the handover package. Runs on a robot, a cart or in a technician's hand; works alongside NETA and commissioning crews; follows NFPA 70E; imagery stays on site. Pilots: one room, yard or substation for 8-12 weeks in parallel with the crew. Serves the United States, Canada and the Middle East.
+> Leyoxa LLC builds Leyoxa Verify: AI commissioning QA for data center electrical systems, producing evidence for every connection before energization. It reads test results (insulation and contact resistance, breaker and relay tests, load-bank runs) against NETA limits and against peer equipment, checks labels against the one-line diagram and matches torque marks to torque records (a mark is evidence, not proof), catches hot joints with thermal scans under first load, and writes the handover package. Verify supplies evidence and flags anomalies; qualified engineers make every acceptance decision. Runs on a cart, a robot or in a technician's hand; follows NFPA 70E; imagery stays on site. Pilot: one electrical room for 8-12 weeks in parallel with the crew, measured on recall, precision, missed findings and time to verified close. Energy and manufacturing builds come next. Serves the United States, Canada and the Middle East.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 

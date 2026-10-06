@@ -33,19 +33,19 @@
 <article class="doc">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / How it works</nav>
 <h1>How it works</h1>
-<p class="lede">Leyoxa Verify does three things at the end of a build: it inspects what was installed, it reads every test result, and it writes the handover.</p>
-<h2>1. Inspect</h2>
-<p>Before energization, Verify walks the electrical rooms, yards and substations, on a robot, a cart or in a technician’s hand. RGB, thermal and depth sensors capture every compartment. Computer vision checks:</p>
-<ul><li>every label against the one-line diagram and panel schedules</li><li>every lug for its torque mark, matched against the torque log</li><li>cable routing and segregation against the design</li></ul>
-<h2>2. Test</h2>
+<p class="lede">Leyoxa Verify produces evidence for every electrical connection before an AI data center is energized: it reads every test result, checks what was installed against the design, and writes the handover. <strong>Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision.</strong></p>
+<h2>1. Test</h2>
 <p>Verify reads the results your crew already produces and checks them against the acceptance limits:</p>
 <div class="tw"><table><thead><tr><th>Test</th><th>What Verify looks for</th></tr></thead><tbody><tr><td>Insulation resistance</td><td>Readings below limit, and readings far below their peers</td></tr><tr><td>Contact and winding resistance</td><td>Imbalance between phases</td></tr><tr><td>Breaker and relay tests</td><td>Settings that do not match the coordination study</td></tr><tr><td>Solar IV curves</td><td>Strings that pass but underperform their neighbours</td></tr><tr><td>Load-bank and first-load thermal</td><td>Joints running hotter than the same joint on other phases</td></tr></tbody></table></div>
+<h2>2. Inspect</h2>
+<p>Before energization, Verify walks the electrical rooms, yards and substations, on a robot, a cart or in a technician’s hand. RGB, thermal and depth sensors capture every compartment. Computer vision checks:</p>
+<ul><li>every label against the one-line diagram and panel schedules</li><li>every lug for its torque mark, matched to its torque record (a mark is evidence that someone marked the bolt; the record is what counts)</li><li>cable routing and segregation against the design</li></ul>
 <h2>3. Hand over</h2>
 <p>Every finding gets a photo, a location and the standard it cites, and goes to the technician’s iPhone. It is closed with a photo and a rescan, and the evidence is collected into the turnover package for your commissioning platform.</p>
 <h2>The pilot</h2>
-<ul><li><strong>Scope.</strong> One electrical room, battery yard or substation, during commissioning. Scope and price agreed before we start.</li><li><strong>Duration.</strong> About 8 to 12 weeks.</li><li><strong>Method.</strong> Verify runs in parallel with your crew’s own inspection and IR survey. Nothing in your process changes.</li><li><strong>Measured.</strong> The share of the crew’s findings Verify caught, what it caught that was missed, and the technician hours saved on documentation.</li></ul>
+<ul><li><strong>Scope.</strong> One electrical room, battery yard or substation, during commissioning. Scope and price agreed before we start.</li><li><strong>Duration.</strong> About 8 to 12 weeks.</li><li><strong>Method.</strong> Verify runs in parallel with your crew’s own inspection and IR survey. Nothing in your process changes.</li><li><strong>Measured.</strong> Recall against the validated defects, precision (how many flags were real), what Verify found that the crew missed, inspection and documentation time per asset, and time from finding to verified close.</li></ul>
 <h2>Safety and data</h2>
-<ul><li><strong>Alongside your crew.</strong> It captures, checks and documents; your testers keep every decision.</li><li><strong>Safe by design.</strong> Visual inspection on de-energized gear with covers off; thermal under load through IR windows or with qualified staff present, per NFPA 70E.</li><li><strong>Imagery stays on site.</strong> Processing on edge hardware; exports only to the platform you choose.</li></ul>
+<ul><li><strong>Humans accept.</strong> Verify supplies evidence and flags anomalies; qualified engineers make every acceptance decision.</li><li><strong>Safe by design.</strong> Visual inspection on de-energized gear with covers off; thermal under load through IR windows or with qualified staff present, per NFPA 70E.</li><li><strong>Imagery stays on site.</strong> Processing on edge hardware; exports only to the platform you choose.</li></ul>
 <p>Start with an email to <a href="mailto:contact@leyoxa.com?subject=Pilot">contact@leyoxa.com</a>: the build, the country and your commissioning dates.</p>
 <p class="updated">Updated <time datetime="2026-10-06">2026-10-06</time> · <a href="/how-it-works.md">Read as markdown</a></p>
 <section class="end"><h2>Energizing soon?</h2><p>Tell us the build, the country and your commissioning dates. We’ll come back with a pilot plan and a price.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ABuild%20type%20(data%20center%2C%20solar%2C%20BESS%2C%20substation%2C%20plant)%3A%0ACountry%3A%0ACommissioning%20stage%20and%20dates%3A%0A">Book a pilot</a></section>
@@ -54,7 +54,7 @@
 <footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="/praxis/">Praxis</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
     <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
   </div>
 </footer>

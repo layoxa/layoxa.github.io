@@ -1,6 +1,6 @@
 # Leyoxa Verify
 
-> Robotic and AI commissioning QA for electrical systems. Every termination, label and test result checked against the design before energization; hot joints caught under first load; the handover package written. For data center, energy and manufacturing builds.
+> AI commissioning QA for data center electrical systems: evidence for every connection before energization. Every test result read against limits and peers, every termination and label checked against the design, hot joints caught under first load, the handover package written. Verify supplies evidence and flags anomalies; qualified engineers make every acceptance decision. Energy and manufacturing builds come next.
 
 ## Why it matters
 
@@ -10,8 +10,8 @@
 
 ## How it works
 
-1. **Inspect.** On a robot, a cart or in a technician’s hand: labels checked against the one-line diagram, lugs checked for torque marks, gaps matched against the torque log.
-2. **Test.** Insulation resistance, contact resistance, relay tests, IV curves and load-bank runs read and checked against NETA and IEC limits, with outliers flagged.
+1. **Test.** Insulation resistance, contact resistance, relay tests and load-bank runs read and checked against NETA limits and against peer equipment, with outliers flagged.
+2. **Inspect.** On a cart, a robot or in a technician’s hand: labels checked against the one-line diagram, torque marks matched to torque records.
 3. **Hand over.** Thermal scans under first load catch hot joints; findings are closed on an iPhone with a photo and rescan, and collected into the turnover package.
 
 ## Where it works
@@ -24,4 +24,4 @@ Works alongside your NETA or commissioning crew; follows NFPA 70E; imagery stays
 
 ## The pilot
 
-One room, yard or substation, 8–12 weeks, in parallel with your crew, measured on what Verify caught. [How it works](https://leyoxa.com/how-it-works.md). Serving the United States, Canada and the Middle East. contact@leyoxa.com
+One electrical room, 8–12 weeks, in parallel with your crew, measured on recall, precision, what the crew missed and time per asset to a verified close. [How it works](https://leyoxa.com/how-it-works.md). Serving the United States, Canada and the Middle East. contact@leyoxa.com

@@ -7,6 +7,8 @@ updated: 2026-10-06
 ---
 # Manufacturing commissioning QA
 
+*Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
+
 New fabs, battery plants and gigafactories energize thousands of panels and feeders on schedules that cannot slip. Leyoxa Verify checks each one against the design and documents it, so the plant starts on time and stays up.
 
 ## Where it helps

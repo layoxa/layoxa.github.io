@@ -7,11 +7,11 @@ updated: 2026-10-06
 ---
 # Data center commissioning QA
 
-AI halls are energized on compressed schedules by stretched electrical crews. Leyoxa Verify checks every connection before energization and watches it under load, so the handover is right the first time.
+AI halls are energized on compressed schedules by stretched electrical crews. Leyoxa Verify produces evidence for every connection before energization and watches it under load. Qualified engineers make every acceptance decision.
 
 ## Where it helps
 
-- **Before energization (Levels 2–3).** Switchgear, busway, UPS, PDUs and RPPs: every label checked against the one-line diagram, every lug checked for its torque mark, gaps matched against the torque log.
+- **Before energization (Levels 2–3).** Switchgear, busway, UPS, PDUs and RPPs: every label checked against the one-line diagram, every lug checked for its torque mark and matched to its torque record.
 - **Test results.** Insulation resistance, contact resistance, breaker and relay tests read from the test sets and checked against NETA acceptance limits, with outliers flagged even when they pass.
 - **Under load (Levels 4–5).** Thermal scans during load-bank testing and integrated systems testing catch the joint running hotter than its neighbours.
 - **Handover.** Findings with photos, locations and the standard they cite, closed on an iPhone and collected into the turnover package.
@@ -22,7 +22,7 @@ A one-month delay can cost up to $14.2M on a typical 60 MW data center ([STL Par
 
 ## On a live site
 
-- **Alongside your crew.** Your NETA or commissioning team keeps every decision.
+- **Humans accept.** Verify supplies evidence and flags anomalies; your engineers decide.
 - **Safe by design.** Visual checks on de-energized gear; thermal under load through IR windows or with qualified staff, per NFPA 70E.
 - **Imagery stays on site.** Edge processing; nothing leaves unless you export it.
 

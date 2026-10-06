@@ -321,6 +321,8 @@ a.u:hover{text-decoration:underline}
 .ii{width:48px;height:48px;border-radius:14px;background:var(--bg2);display:grid;place-items:center;margin-bottom:28px}
 .ii svg{width:24px;height:24px;fill:none;stroke:var(--blue);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .ind h3{font-size:24px;letter-spacing:-.035em}
+.ind{position:relative}
+.soon{position:absolute;top:32px;right:30px;font-size:12px;font-weight:600;color:var(--ink3);background:var(--bg2);padding:3px 9px;border-radius:99px}
 .ind p{margin-top:10px;font-size:17px;line-height:1.47;color:var(--ink3);letter-spacing:-.022em;flex:1}
 .ind .go{margin-top:24px;color:var(--link);font-size:17px;display:inline-flex;gap:4px;align-items:center}
 .ind:hover .arr{transform:translateX(2px)}

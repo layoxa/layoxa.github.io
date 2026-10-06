@@ -9,7 +9,10 @@ faq: true
 # Questions
 
 ### What is Leyoxa Verify?
-Robotic and AI commissioning QA for electrical systems. It checks every termination, label and test result against the design before energization, catches hot joints under first load, and writes the handover package.
+AI commissioning QA for data center electrical systems. It reads every test result, checks every termination and label against the design, catches hot joints under first load, and writes the handover package, so there is evidence for every connection before energization.
+
+### Does Verify accept or approve equipment?
+No. Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision, and “no anomaly flagged” never means “accepted”.
 
 ### Does it replace our testing technicians?
 No. It works alongside your NETA or commissioning crew: it captures, checks and documents, so each technician covers more equipment and nothing is missed.
@@ -24,13 +27,16 @@ No. Verify starts on a cart or in a technician’s hand. A robot pays off for re
 Your project specifications first, then the acceptance standards they call on, such as ANSI/NETA ATS for electrical equipment and IEC 62446 for solar.
 
 ### Which builds does it work on?
-Any build with switchgear, busway, transformers or terminations to verify: data centers, solar, battery storage, substations, on-site power, fabs and battery plants.
+We start with AI data centers. The same checks apply to battery storage, substations, on-site power, fabs and battery plants, and those come next.
+
+### Does a torque mark prove a bolt was torqued?
+No. A mark is evidence that someone marked it. Verify matches each mark to its torque record and flags marks with no record and records with no mark.
 
 ### Where does site imagery go?
 It stays on site by default. Processing runs on edge hardware, with exports only to the commissioning platform you choose.
 
 ### What does a pilot look like?
-One room, yard or substation, about 8 to 12 weeks, in parallel with your crew, measured on what Verify caught against what the crew found. Scope and price are agreed up front.
+One electrical room, about 8 to 12 weeks, in parallel with your crew. It is measured on recall against validated defects, precision, what the crew missed, and time per asset to a verified close. Scope and price are agreed up front.
 
 ### Who builds it?
 Leyoxa LLC was founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a University of Waterloo computer engineer who led its autonomous driving team, co-founded a machine-learning startup for cyber-attack detection, and built sign-in for millions of banking customers.

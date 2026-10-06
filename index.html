@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leyoxa Verify — robotic and AI commissioning QA for electrical systems</title>
-<meta name="description" content="Leyoxa Verify checks every termination, label and test result against the design before energization, catches hot joints under first load, and writes the handover package. For data centers, energy and manufacturing builds.">
+<title>Leyoxa Verify — AI commissioning QA for data center electrical systems</title>
+<meta name="description" content="Leyoxa Verify reads every test result, checks every termination against the design and catches hot joints under first load, producing evidence for every connection before an AI data center is energized. Qualified people make every acceptance decision.">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://leyoxa.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="text/markdown" href="/index.md" title="Markdown version">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Leyoxa Verify — every connection, verified before energization">
+<meta property="og:title" content="Leyoxa Verify — prove every connection before you energize">
 <meta property="og:description" content="Robotic and AI commissioning QA for data centers, energy and manufacturing builds.">
 <meta property="og:url" content="https://leyoxa.com/">
 <meta property="og:image" content="https://leyoxa.com/assets/og.jpg">
@@ -47,12 +47,12 @@
 <main id="top">
   <section class="hero">
     <p class="kicker rise">Leyoxa Verify · Commissioning QA</p>
-    <h1 class="rise d1">Every connection,<br><em>verified before energization.</em></h1>
-    <p class="lede rise d2">Robotics and AI that check every termination, label and test result against the design, catch hot joints under first load, and write the handover package. For data center, energy and manufacturing builds.</p>
+    <h1 class="rise d1">Prove every connection<br><em>before you energize.</em></h1>
+    <p class="lede rise d2">AI that reads every test result, checks every termination against the design and catches hot joints under first load, so your crew has the evidence before an AI data center goes live.</p>
     <div class="cta rise d3"><a class="btn" href="#start">Book a pilot</a><a class="ghost" href="#how">See how it works <span class="arr down">↓</span></a></div>
     <ul class="outcomes rise d3" aria-label="What it does">
-      <li><a href="#ex-see"><span class="oi"><svg viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><b>See every termination</b><span>Labels, torque marks, routing</span></a></li>
-      <li><a href="#ex-tests"><span class="oi"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg></span><b>Read every test</b><span>Outliers flagged against limits</span></a></li>
+      <li><a href="#ex-tests"><span class="oi"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg></span><b>Read every test</b><span>Outliers flagged against limits and peers</span></a></li>
+      <li><a href="#ex-see"><span class="oi"><svg viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><b>Check every termination</b><span>Labels, torque marks, torque records</span></a></li>
       <li><a href="#ex-close"><span class="oi"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4.5h6M8.5 12l2.4 2.4 4.6-4.8"/></svg></span><b>Hand over, done</b><span>Findings and turnover written</span></a></li>
     </ul>
     <div class="scrollcue" aria-hidden="true"><span></span></div>
@@ -74,13 +74,32 @@
   <section class="band" id="how">
     <div class="wrap">
       <p class="kicker center">How it works</p>
-      <h2 class="center">Inspect. Test.<br><em>Hand over.</em></h2>
+      <h2 class="center">Test. Inspect.<br><em>Hand over.</em></h2>
 
-      <div class="feature" id="ex-see">
+      <div class="feature" id="ex-tests">
         <div class="fcopy">
-          <p class="kicker">01 · See every termination</p>
+          <p class="kicker">01 · Read every test</p>
+          <h3>The outlier a spreadsheet hides.</h3>
+          <p>Insulation resistance, contact resistance, relay tests, IV curves, load‑bank runs. Verify reads the results, checks them against NETA and IEC limits, and flags the reading that passes the limit but not its peers.</p>
+        </div>
+        <div class="fvis">
+          <figure class="widget tests" data-seq aria-label="Illustration: test results checked against acceptance limits">
+            <div class="wtop"><b>Test results</b><span>Insulation resistance · 480 V feeders</span></div>
+            <div class="trow"><b>FDR‑11</b><span>2.1 GΩ</span><i class="pass">Pass</i></div>
+            <div class="trow"><b>FDR‑12</b><span>1.8 GΩ</span><i class="pass">Pass</i></div>
+            <div class="trow"><b>FDR‑13</b><span>36 MΩ</span><i class="warn">Outlier</i></div>
+            <div class="trow"><b>FDR‑14</b><span>2.4 GΩ</span><i class="pass">Pass</i></div>
+            <div class="wfoot warnfoot">FDR‑13 passes the minimum but sits far below its peers. Retest before energizing.</div>
+            <figcaption>Illustration.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="feature flip" id="ex-see">
+        <div class="fcopy">
+          <p class="kicker">02 · Check every termination</p>
           <h3>Checked against the drawings, not memory.</h3>
-          <p>Before energization, Verify walks the electrical rooms, on a robot, a cart or in a technician’s hand. Computer vision checks every label against the one‑line diagram and every lug for its torque mark, and the torque log fills the gaps.</p>
+          <p>Before energization, Verify walks the electrical rooms, on a robot, a cart or in a technician’s hand. Computer vision checks every label against the one‑line diagram and every lug for its torque mark, then matches the mark to its torque record. A mark is evidence that someone marked the bolt; the record is what counts.</p>
         </div>
         <div class="fvis">
           <figure class="scan" data-scan aria-label="Illustration: computer vision and thermal checks on a switchgear termination compartment">
@@ -100,28 +119,9 @@
             </svg>
             <ul class="legend">
               <li class="ok">Labels match the one‑line diagram</li>
-              <li class="ok">Phase A and C: torque mark present</li>
+              <li class="ok">Phase A and C: torque mark and torque record found</li>
               <li class="bad">Phase B: no torque mark, no torque log entry</li>
             </ul>
-            <figcaption>Illustration.</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="feature flip" id="ex-tests">
-        <div class="fcopy">
-          <p class="kicker">02 · Read every test</p>
-          <h3>The outlier a spreadsheet hides.</h3>
-          <p>Insulation resistance, contact resistance, relay tests, IV curves, load‑bank runs. Verify reads the results, checks them against NETA and IEC limits, and flags the reading that passes the limit but not its peers.</p>
-        </div>
-        <div class="fvis">
-          <figure class="widget tests" data-seq aria-label="Illustration: test results checked against acceptance limits">
-            <div class="wtop"><b>Test results</b><span>Insulation resistance · 480 V feeders</span></div>
-            <div class="trow"><b>FDR‑11</b><span>2.1 GΩ</span><i class="pass">Pass</i></div>
-            <div class="trow"><b>FDR‑12</b><span>1.8 GΩ</span><i class="pass">Pass</i></div>
-            <div class="trow"><b>FDR‑13</b><span>36 MΩ</span><i class="warn">Outlier</i></div>
-            <div class="trow"><b>FDR‑14</b><span>2.4 GΩ</span><i class="pass">Pass</i></div>
-            <div class="wfoot warnfoot">FDR‑13 passes the minimum but sits far below its peers. Retest before energizing.</div>
             <figcaption>Illustration.</figcaption>
           </figure>
         </div>
@@ -161,11 +161,11 @@
   <section class="band alt" id="industries">
     <div class="wrap">
       <p class="kicker center">Where it works</p>
-      <h2 class="center">Every build with<br><em>switchgear in it.</em></h2>
+      <h2 class="center">Built for AI data centers.<br><em>Then every build with switchgear.</em></h2>
       <div class="inds">
-        <a class="ind" href="/data-centers/"><span class="ii"><svg viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8 7.5h8M8 11h8M8 14.5h8"/></svg></span><h3>Data centers</h3><p>Switchgear, busway, UPS and PDUs, verified before IST and watched under load‑bank tests.</p><span class="go">Data centers <span class="arr">→</span></span></a>
-        <a class="ind" href="/energy/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg></span><h3>Energy</h3><p>Solar strings, battery storage, substations and on‑site power, from IV curves to busbar joints.</p><span class="go">Energy <span class="arr">→</span></span></a>
-        <a class="ind" href="/manufacturing/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M3 20V10l6 4V10l6 4V6h6v14z"/></svg></span><h3>Manufacturing</h3><p>Fabs, battery plants and gigafactories: every panel and feeder, documented for handover.</p><span class="go">Manufacturing <span class="arr">→</span></span></a>
+        <a class="ind" href="/data-centers/"><span class="ii"><svg viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8 7.5h8M8 11h8M8 14.5h8"/></svg></span><h3>Data centers</h3><p>Switchgear, busway, UPS and PDUs, verified before IST and watched under load‑bank tests.</p><span class="go">Start here <span class="arr">→</span></span></a>
+        <a class="ind" href="/energy/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg></span><h3>Energy</h3><span class="soon">Next</span><p>Solar strings, battery storage, substations and on‑site power, from IV curves to busbar joints.</p><span class="go">Energy <span class="arr">→</span></span></a>
+        <a class="ind" href="/manufacturing/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M3 20V10l6 4V10l6 4V6h6v14z"/></svg></span><h3>Manufacturing</h3><span class="soon">Next</span><p>Fabs, battery plants and gigafactories: every panel and feeder, documented for handover.</p><span class="go">Manufacturing <span class="arr">→</span></span></a>
       </div>
     </div>
   </section>
@@ -173,9 +173,9 @@
   <section class="band" id="built">
     <div class="wrap">
       <p class="kicker center">On a live site</p>
-      <h2 class="center">Works with your crew,<br><em>by your rules.</em></h2>
+      <h2 class="center">We supply the evidence.<br><em>Your engineers decide.</em></h2>
       <div class="specs">
-        <div class="spec"><h3>Alongside your testers</h3><p>It captures, checks and documents. Your NETA or commissioning crew keeps every decision.</p></div>
+        <div class="spec"><h3>Humans accept</h3><p>Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision.</p></div>
         <div class="spec"><h3>Safe by design</h3><p>Visual checks on de‑energized gear; thermal under load through IR windows or with qualified staff, per NFPA 70E.</p></div>
         <div class="spec"><h3>Imagery stays on site</h3><p>Processing on edge hardware. Nothing leaves the site unless you export it.</p></div>
         <div class="spec"><h3>Into your Cx platform</h3><p>Findings with photos, locations and the standard they cite, in the issue log you already use.</p></div>
@@ -190,13 +190,13 @@
           <p class="kicker">Who builds it</p>
           <h2>Perception engineers, <em>on the jobsite.</em></h2>
           <p class="body">Leyoxa was founded by <a class="u" href="https://sepehrafla.github.io" target="_blank" rel="noopener">Sepehr Aflatounian</a>, a University of Waterloo computer engineer. The same problems as a self‑driving car, small objects, mixed sensors, rooms without GPS, applied to the last weeks of a build.</p>
-          <p class="more left"><a href="/praxis/">Our agents in production <span class="arr">→</span></a></p>
-        </div>
+                  </div>
         <ul class="creds">
           <li><b>Autonomous systems</b><span>Led Watonomous, the University of Waterloo’s autonomous driving team.</span></li>
           <li><b>Machine learning</b><span>Co‑founded SeedCI: cyber‑attack detection and price prediction models.</span></li>
           <li><b>Security at bank scale</b><span>Sign‑in and identity for millions of banking customers at EQ Bank and PC Financial.</span></li>
           <li><b>Field apps</b><span>Eight years building iPhone apps people rely on every day.</span></li>
+          <li><b>Previously shipped</b><span>AI agents in production for another industry, answering live calls inside legacy software.</span></li>
         </ul>
       </div>
     </div>
@@ -209,7 +209,7 @@
       <ol class="path">
         <li><span class="pn">1</span><h3>Pick the room</h3><p>One electrical room, battery yard or substation, during commissioning. We agree scope and price before we start.</p></li>
         <li><span class="pn">2</span><h3>Run in parallel</h3><p>Verify inspects and reads tests alongside your crew’s own inspection and IR survey. Nothing changes in your process.</p></li>
-        <li><span class="pn">3</span><h3>Compare the findings</h3><p>How many of the crew’s findings Verify caught, what it caught that was missed, and the documentation hours saved.</p></li>
+        <li><span class="pn">3</span><h3>Measure it honestly</h3><p>Recall against validated defects, how many flags were real, what was found that the crew missed, and time per asset to a verified close.</p></li>
       </ol>
       <p class="more"><a href="/how-it-works/">How a pilot works <span class="arr">→</span></a></p>
     </div>
@@ -241,7 +241,7 @@
 <footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="/praxis/">Praxis</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
     <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
   </div>
 </footer>

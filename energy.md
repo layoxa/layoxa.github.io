@@ -1,5 +1,7 @@
 # Energy commissioning QA
 
+*Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
+
 Solar, battery storage, substations and on-site power all end the same way: thousands of connections that have to be right before the system is energized. Leyoxa Verify checks them, reads the test results, and writes the handover.
 
 ## Where it helps

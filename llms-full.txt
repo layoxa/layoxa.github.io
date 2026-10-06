@@ -1,10 +1,10 @@
 # Data center commissioning QA
 
-AI halls are energized on compressed schedules by stretched electrical crews. Leyoxa Verify checks every connection before energization and watches it under load, so the handover is right the first time.
+AI halls are energized on compressed schedules by stretched electrical crews. Leyoxa Verify produces evidence for every connection before energization and watches it under load. Qualified engineers make every acceptance decision.
 
 ## Where it helps
 
-- **Before energization (Levels 2–3).** Switchgear, busway, UPS, PDUs and RPPs: every label checked against the one-line diagram, every lug checked for its torque mark, gaps matched against the torque log.
+- **Before energization (Levels 2–3).** Switchgear, busway, UPS, PDUs and RPPs: every label checked against the one-line diagram, every lug checked for its torque mark and matched to its torque record.
 - **Test results.** Insulation resistance, contact resistance, breaker and relay tests read from the test sets and checked against NETA acceptance limits, with outliers flagged even when they pass.
 - **Under load (Levels 4–5).** Thermal scans during load-bank testing and integrated systems testing catch the joint running hotter than its neighbours.
 - **Handover.** Findings with photos, locations and the standard they cite, closed on an iPhone and collected into the turnover package.
@@ -15,7 +15,7 @@ A one-month delay can cost up to $14.2M on a typical 60 MW data center ([STL Par
 
 ## On a live site
 
-- **Alongside your crew.** Your NETA or commissioning team keeps every decision.
+- **Humans accept.** Verify supplies evidence and flags anomalies; your engineers decide.
 - **Safe by design.** Visual checks on de-energized gear; thermal under load through IR windows or with qualified staff, per NFPA 70E.
 - **Imagery stays on site.** Edge processing; nothing leaves unless you export it.
 
@@ -25,6 +25,8 @@ We work with builders and operators in the United States, Canada and the Middle 
 ---
 
 # Energy commissioning QA
+
+*Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
 
 Solar, battery storage, substations and on-site power all end the same way: thousands of connections that have to be right before the system is energized. Leyoxa Verify checks them, reads the test results, and writes the handover.
 
@@ -53,7 +55,10 @@ We work in the United States, Canada and the Middle East. [Book a pilot on one y
 # Questions
 
 ### What is Leyoxa Verify?
-Robotic and AI commissioning QA for electrical systems. It checks every termination, label and test result against the design before energization, catches hot joints under first load, and writes the handover package.
+AI commissioning QA for data center electrical systems. It reads every test result, checks every termination and label against the design, catches hot joints under first load, and writes the handover package, so there is evidence for every connection before energization.
+
+### Does Verify accept or approve equipment?
+No. Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision, and “no anomaly flagged” never means “accepted”.
 
 ### Does it replace our testing technicians?
 No. It works alongside your NETA or commissioning crew: it captures, checks and documents, so each technician covers more equipment and nothing is missed.
@@ -68,13 +73,16 @@ No. Verify starts on a cart or in a technician’s hand. A robot pays off for re
 Your project specifications first, then the acceptance standards they call on, such as ANSI/NETA ATS for electrical equipment and IEC 62446 for solar.
 
 ### Which builds does it work on?
-Any build with switchgear, busway, transformers or terminations to verify: data centers, solar, battery storage, substations, on-site power, fabs and battery plants.
+We start with AI data centers. The same checks apply to battery storage, substations, on-site power, fabs and battery plants, and those come next.
+
+### Does a torque mark prove a bolt was torqued?
+No. A mark is evidence that someone marked it. Verify matches each mark to its torque record and flags marks with no record and records with no mark.
 
 ### Where does site imagery go?
 It stays on site by default. Processing runs on edge hardware, with exports only to the commissioning platform you choose.
 
 ### What does a pilot look like?
-One room, yard or substation, about 8 to 12 weeks, in parallel with your crew, measured on what Verify caught against what the crew found. Scope and price are agreed up front.
+One electrical room, about 8 to 12 weeks, in parallel with your crew. It is measured on recall against validated defects, precision, what the crew missed, and time per asset to a verified close. Scope and price are agreed up front.
 
 ### Who builds it?
 Leyoxa LLC was founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a University of Waterloo computer engineer who led its autonomous driving team, co-founded a machine-learning startup for cyber-attack detection, and built sign-in for millions of banking customers.
@@ -90,17 +98,9 @@ Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pilot) with the bui
 
 # How it works
 
-Leyoxa Verify does three things at the end of a build: it inspects what was installed, it reads every test result, and it writes the handover.
+Leyoxa Verify produces evidence for every electrical connection before an AI data center is energized: it reads every test result, checks what was installed against the design, and writes the handover. **Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision.**
 
-## 1. Inspect
-
-Before energization, Verify walks the electrical rooms, yards and substations, on a robot, a cart or in a technician’s hand. RGB, thermal and depth sensors capture every compartment. Computer vision checks:
-
-- every label against the one-line diagram and panel schedules
-- every lug for its torque mark, matched against the torque log
-- cable routing and segregation against the design
-
-## 2. Test
+## 1. Test
 
 Verify reads the results your crew already produces and checks them against the acceptance limits:
 
@@ -112,6 +112,14 @@ Verify reads the results your crew already produces and checks them against the 
 | Solar IV curves | Strings that pass but underperform their neighbours |
 | Load-bank and first-load thermal | Joints running hotter than the same joint on other phases |
 
+## 2. Inspect
+
+Before energization, Verify walks the electrical rooms, yards and substations, on a robot, a cart or in a technician’s hand. RGB, thermal and depth sensors capture every compartment. Computer vision checks:
+
+- every label against the one-line diagram and panel schedules
+- every lug for its torque mark, matched to its torque record (a mark is evidence that someone marked the bolt; the record is what counts)
+- cable routing and segregation against the design
+
 ## 3. Hand over
 
 Every finding gets a photo, a location and the standard it cites, and goes to the technician’s iPhone. It is closed with a photo and a rescan, and the evidence is collected into the turnover package for your commissioning platform.
@@ -121,11 +129,11 @@ Every finding gets a photo, a location and the standard it cites, and goes to th
 - **Scope.** One electrical room, battery yard or substation, during commissioning. Scope and price agreed before we start.
 - **Duration.** About 8 to 12 weeks.
 - **Method.** Verify runs in parallel with your crew’s own inspection and IR survey. Nothing in your process changes.
-- **Measured.** The share of the crew’s findings Verify caught, what it caught that was missed, and the technician hours saved on documentation.
+- **Measured.** Recall against the validated defects, precision (how many flags were real), what Verify found that the crew missed, inspection and documentation time per asset, and time from finding to verified close.
 
 ## Safety and data
 
-- **Alongside your crew.** It captures, checks and documents; your testers keep every decision.
+- **Humans accept.** Verify supplies evidence and flags anomalies; qualified engineers make every acceptance decision.
 - **Safe by design.** Visual inspection on de-energized gear with covers off; thermal under load through IR windows or with qualified staff present, per NFPA 70E.
 - **Imagery stays on site.** Processing on edge hardware; exports only to the platform you choose.
 
@@ -136,7 +144,7 @@ Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pi
 
 # Leyoxa Verify
 
-> Robotic and AI commissioning QA for electrical systems. Every termination, label and test result checked against the design before energization; hot joints caught under first load; the handover package written. For data center, energy and manufacturing builds.
+> AI commissioning QA for data center electrical systems: evidence for every connection before energization. Every test result read against limits and peers, every termination and label checked against the design, hot joints caught under first load, the handover package written. Verify supplies evidence and flags anomalies; qualified engineers make every acceptance decision. Energy and manufacturing builds come next.
 
 ## Why it matters
 
@@ -146,8 +154,8 @@ Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pi
 
 ## How it works
 
-1. **Inspect.** On a robot, a cart or in a technician’s hand: labels checked against the one-line diagram, lugs checked for torque marks, gaps matched against the torque log.
-2. **Test.** Insulation resistance, contact resistance, relay tests, IV curves and load-bank runs read and checked against NETA and IEC limits, with outliers flagged.
+1. **Test.** Insulation resistance, contact resistance, relay tests and load-bank runs read and checked against NETA limits and against peer equipment, with outliers flagged.
+2. **Inspect.** On a cart, a robot or in a technician’s hand: labels checked against the one-line diagram, torque marks matched to torque records.
 3. **Hand over.** Thermal scans under first load catch hot joints; findings are closed on an iPhone with a photo and rescan, and collected into the turnover package.
 
 ## Where it works
@@ -160,12 +168,14 @@ Works alongside your NETA or commissioning crew; follows NFPA 70E; imagery stays
 
 ## The pilot
 
-One room, yard or substation, 8–12 weeks, in parallel with your crew, measured on what Verify caught. [How it works](https://leyoxa.com/how-it-works.md). Serving the United States, Canada and the Middle East. contact@leyoxa.com
+One electrical room, 8–12 weeks, in parallel with your crew, measured on recall, precision, what the crew missed and time per asset to a verified close. [How it works](https://leyoxa.com/how-it-works.md). Serving the United States, Canada and the Middle East. contact@leyoxa.com
 
 
 ---
 
 # Manufacturing commissioning QA
+
+*Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
 
 New fabs, battery plants and gigafactories energize thousands of panels and feeders on schedules that cannot slip. Leyoxa Verify checks each one against the design and documents it, so the plant starts on time and stays up.
 
