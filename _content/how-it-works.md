@@ -1,60 +1,45 @@
 ---
 title: How it works
-seo_title: How an AI venture studio partnership works | Leyoxa
-description: How working with Leyoxa works — start with one AI project at a price agreed up front, the three problems AI solves, the build loop, and how a project can grow into a partnership.
+seo_title: How a Leyoxa field operations AI pilot works
+description: How working with Leyoxa works — a free site walk, a pilot on one problem with scope and price agreed up front, then rollout across sites. Read-only, on-premise or in-country.
 path: /how-it-works/
 updated: 2026-10-06
 ---
 # How it works
 
-You start by buying one project, like any other service. If it works, we keep improving it, and if it could help many businesses like yours, we can grow it into a company together.
+Start with one site and one problem. If the pilot pays off, take it across your sites and crews.
 
-## The three problems AI solves first
+## 1. Walk the site
 
-Most of what AI can do for a business with customers falls into three kinds of work:
+A free visit or call. We look at the equipment, the alarms and the paperwork that cost you the most, and agree on the one outcome a pilot should move, such as time to repair on cooling equipment or unplanned stops on a line.
 
-- **More customers find you.** People now ask ChatGPT, Gemini and Siri where to go, and the assistant gives one answer. We make the business readable and bookable by AI, so it is the one recommended.
-- **Earn more from every customer.** Calls answered after hours, appointments booked, reminders sent, reviews asked for. The revenue that used to ring out stays.
-- **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
+## 2. Pilot one problem
 
-Every project starts with one of these, chosen by what it costs you today.
+One site, one problem, one measurable outcome. The scope and price are agreed before work starts. We connect, read-only, to the systems that matter:
 
-## The loop
+| Source | What the AI uses it for |
+|---|---|
+| Maintenance system (CMMS) | Past work orders, assets, parts and schedules |
+| Building management, SCADA or historian | Sensor history and alarms, read-only |
+| Manuals and procedures | Answers a technician can trust, with the page they came from |
+| The crew | Voice notes and photos, turned into records |
 
-1. **Observe.** We work inside your operation and map where time and money leak.
-2. **Find the bottleneck.** One problem, chosen by what it costs and by how many other businesses have it.
-3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring.
-4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
-5. **Measure.** What got booked, earned or saved, and what did not.
-6. **Grow.** When the numbers hold, we keep improving it, and if many businesses share the problem, it can become its own company.
+## 3. Roll it out
 
-## Working together
-
-1. **Pick the problem.** A free call. We find the one problem costing you the most, and what AI can do about it.
-2. **We build it.** A clear scope and price, agreed before we start. Built into the tools you already use, and live with your customers.
-3. **Grow it together.** If it works, we keep making it better. If it could help many businesses like yours, we can partner to turn it into a company.
+If the pilot works, we take it across halls, sites and crews, and keep improving it. If what we built could serve your whole industry, we can partner to turn it into a product together.
 
 ## How paying works
 
-- **You pay for the project.** The scope and price are agreed before any work starts. No equity is asked for.
-- **You own what we build for you.** Leyoxa keeps its reusable tooling and licenses it to you, so every project starts further ahead than the last.
-- **Partnership is optional, and later.** It only comes up when a project has proven itself and both sides want to build it into something bigger. That is how Praxis happened.
+- **You pay for the pilot**, at a scope and price agreed up front.
+- **You own what we build for you.** Leyoxa keeps its reusable tooling and licenses it to you.
+- **Partnership is optional, and later**, only when something has proven itself and both sides want to build it into a product.
 
-## What we build with
+## Safety and data
 
-| Layer | What it does |
-|---|---|
-| Voice and chat agents | Talk to customers, book, answer, hand off to people |
-| AI visibility | Make the business readable and bookable by AI assistants |
-| Integrations | Read and write the systems the business already runs on |
-| Retrieval and memory | Answer from the company’s own records |
-| Orchestration | Run multi-step work reliably, with retries and approvals |
-| Evaluation and security | Measure every agent against real outcomes; permissions and audit trails |
+- **Read-only by default.** It never writes to control systems. Anything beyond reading goes through the people and permissions you set.
+- **Your data stays put.** On your servers, in your cloud account, or in-country.
+- **Security first.** Single sign-on, least privilege and a full audit trail.
 
-## What we do not do
+We do not take on healthcare, dental, legal or accounting work.
 
-- Work we cannot measure. Every project has an outcome agreed up front.
-- More projects than we can do well at once.
-- New work in healthcare, dental, legal or accounting. Our dental work is Praxis.
-
-Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=New%20project): your business, your customers, and the problem that keeps costing you.
+Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pilot): your site, your country, and the problem that keeps costing you.

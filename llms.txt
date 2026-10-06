@@ -1,15 +1,18 @@
 # Leyoxa
 
-> Leyoxa LLC is an AI venture studio. Businesses start by buying one AI project at a price agreed up front; when a project proves itself and could serve many businesses, Leyoxa can partner with the client to grow it into a company. In plain terms the AI does three things: helps more customers find the business (including through assistants like ChatGPT, Gemini and Siri), earns more from each customer (every call answered, booked and followed up), and removes busywork (scheduling, reminders, reports). First partnership: Praxis, AI for dental practices.
+> Leyoxa LLC builds AI for field operations in data centers, oil and gas and manufacturing: a voice copilot for technicians that answers from manuals and work-order history, early warning from sensor data (anomaly detection per machine), and work orders, handovers and inspection logs written automatically. Read-only by default, never writes to control systems; deployed on-premise, in the customer's cloud or in-country. Serves the United States, Canada and the Middle East. Engagements start with a paid pilot on one site at an agreed scope and price.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home](https://leyoxa.com/index.md): What an AI venture studio is, three examples of what the AI does, how Leyoxa builds, and Praxis.
-- [Questions](https://leyoxa.com/faq.md): Plain answers about Leyoxa, an AI venture studio — what it means, what AI can do for a business, getting found by AI assistants, who owns the IP, and how to start.
-- [How it works](https://leyoxa.com/how-it-works.md): How working with Leyoxa works — start with one AI project at a price agreed up front, the three problems AI solves, the build loop, and how a project can grow into a partnership.
-- [Praxis](https://leyoxa.com/praxis.md): Praxis is the first company Leyoxa co-built — six AI agents in production for dental practices, covering all three problems AI solves: getting found, earning more, and less busywork.
+- [Home](https://leyoxa.com/index.md): What Leyoxa builds for field operations, where it works, safety, who builds it and how a pilot works.
+- [Data centers](https://leyoxa.com/data-centers.md): Leyoxa builds AI for data center operations teams — a voice copilot for technicians, early warning on cooling and power equipment, alarm triage and work orders written automatically. On-premise or in-country.
+- [Questions](https://leyoxa.com/faq.md): Answers for data center, oil and gas and manufacturing operators — control systems, where data lives, what a pilot looks like, which systems it works with, and where Leyoxa works.
+- [How it works](https://leyoxa.com/how-it-works.md): How working with Leyoxa works — a free site walk, a pilot on one problem with scope and price agreed up front, then rollout across sites. Read-only, on-premise or in-country.
+- [Manufacturing](https://leyoxa.com/manufacturing.md): Leyoxa builds AI for manufacturing maintenance teams — repairs guided by voice, early warning on machines, and work orders and shift reports written automatically. On-premise or in-country.
+- [Oil & gas](https://leyoxa.com/oil-and-gas.md): Leyoxa builds AI for oil and gas operations — early warning on pumps and compressors, a voice copilot for field crews, and inspection and work-order paperwork written automatically. On-premise or in-country.
+- [Praxis](https://leyoxa.com/praxis.md): Proof that Leyoxa's AI agents work in production — Praxis runs six AI agents for dental practices, answering live calls and working inside the practices' own legacy software.
 
 ## Optional
 

@@ -113,25 +113,30 @@ if (renderer) {
   const group = new THREE.Group(); group.add(pts); scene.add(group);
 
   /* ---------- scroll → shape ---------- */
+  // With a step-by-step loop section, each step drives one shape. Without
+  // one, the whole page scroll walks the field through the sequence, so the
+  // hero shows the mark and the closing section returns to it.
   const steps = [...document.querySelectorAll('.step')];
-  const band = document.querySelector('#praxis'), fin = document.querySelector('.final');
+  const band = document.querySelector('#examples, #praxis'), fin = document.querySelector('.final');
   let atEnd = 0;
   const rail = [...document.querySelectorAll('.rail i')], railBox = document.querySelector('.rail');
   let p = 0;
   function progress() {
     const mid = innerHeight * .5;
-    const first = steps[0].getBoundingClientRect();
-    const h = first.height;
-    // 0 at the hero, k while step k sits mid-screen, 6 by the end of the loop
-    let s = (mid - (first.top + h * .5)) / h + 1;
-    s = Math.max(0, Math.min(steps.length, s));
-    p = s;
-    let on = -1; steps.forEach((el, k) => { const r = el.getBoundingClientRect(); if (r.top < mid && r.bottom > mid) on = k; });
-    steps.forEach((el, k) => el.classList.toggle('on', k === on));
-    rail.forEach((d, k) => d.classList.toggle('on', k === on));
-    railBox?.classList.toggle('show', on >= 0);
+    if (steps.length) {
+      const first = steps[0].getBoundingClientRect(), h = first.height;
+      // 0 at the hero, k while step k sits mid-screen, 6 by the end of the loop
+      p = Math.max(0, Math.min(steps.length, (mid - (first.top + h * .5)) / h + 1));
+      let on = -1; steps.forEach((el, k) => { const r = el.getBoundingClientRect(); if (r.top < mid && r.bottom > mid) on = k; });
+      steps.forEach((el, k) => el.classList.toggle('on', k === on));
+      rail.forEach((d, k) => d.classList.toggle('on', k === on));
+      railBox?.classList.toggle('show', on >= 0);
+    } else {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      p = max > 0 ? Math.max(0, Math.min(SEQ.length - 1, scrollY / max * (SEQ.length - 1))) : 0;
+    }
     // dim the field once the solid sections take over
-    const bt = band.getBoundingClientRect().top;
+    const bt = band ? band.getBoundingClientRect().top : innerHeight;
     mat.uniforms.uFade.value = Math.max(.35, Math.min(1, bt / innerHeight + .35));
     // at the closing call to action the mark moves behind the centred text, quietly
     const ft = fin.getBoundingClientRect().top / innerHeight;

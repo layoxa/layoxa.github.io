@@ -1,25 +1,31 @@
 # Leyoxa
 
-> AI venture studio. Leyoxa builds AI that brings businesses more customers and takes the busywork off their plate. Start with one project; if it works, it can grow into something bigger, together.
+> Field operations AI for data centers, oil and gas and manufacturing. A voice copilot for technicians, early warning from sensor data, and work orders that write themselves. Read-only by default; on-premise or in-country.
 
-## What that looks like
+## Three problems every site has
 
-1. **More customers find you.** People now ask ChatGPT, Gemini and Siri where to go. AI gives one answer, and it picks the business it can read and book.
-2. **Earn more from every customer.** AI answers after hours, books the appointment, sends the reminder and asks for the review.
-3. **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
+1. **Fix it faster.** The answer is usually in a manual, an old work order or someone’s head. The copilot reads all three and answers by voice, hands-free.
+2. **Catch it early.** Pumps, chillers, compressors and UPS units drift before they fail. We learn each machine’s normal behaviour and flag the drift days ahead, with the likely cause.
+3. **Paperwork done.** Work orders, parts used, handovers and compliance logs, written from what the crew said and did, into the maintenance system you already run.
+
+## Where it works
+
+- [Data centers](https://leyoxa.com/data-centers.md): cooling, power, alarms and uptime.
+- [Oil and gas](https://leyoxa.com/oil-and-gas.md): rotating equipment, remote sites and inspections.
+- [Manufacturing](https://leyoxa.com/manufacturing.md): downtime, machine health and shift paperwork.
+
+## Built for operations
+
+Read-only by default and never writes to control systems. Data stays on your servers, in your cloud or in-country. Single sign-on, least privilege and a full audit trail.
+
+## Who builds it
+
+Founded by Sepehr Aflatounian, a University of Waterloo computer engineer: led the Watonomous autonomous driving team, co-founded SeedCI (machine learning for cyber-attack detection), built sign-in for millions of banking customers. Our agents already run in production at [Praxis](https://leyoxa.com/praxis.md).
 
 ## How we work
 
-1. **Pick the problem.** A free call to find the one problem costing you the most.
-2. **We build it.** A clear scope and price, agreed before we start, live with your customers.
-3. **Grow it together.** If it works, we keep making it better; if it could help many businesses, we can partner to turn it into a company. Praxis started exactly this way.
+1. **Walk the site.** Free.
+2. **Pilot one problem.** Scope and price agreed before we start.
+3. **Roll it out** across sites, and optionally build it into a product together.
 
-## Chapter one: Praxis
-
-AI for dental practices, built with a dental marketing company that already had the practices. Six AI agents in production: Voice, GEO/SEO, Reputation, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md). Praxis: https://itspraxis.ai
-
-[How it works](https://leyoxa.com/how-it-works.md).
-
-## Contact
-
-contact@leyoxa.com
+Serving the United States, Canada and the Middle East. contact@leyoxa.com

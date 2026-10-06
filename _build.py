@@ -79,16 +79,16 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#start">Start a project</a></nav>
+  <nav aria-label="Main"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a class="pill" href="/#start">Start a pilot</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="/#start">Start a project</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+<div class="sheet" id="sheet"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/#start">Start a pilot</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
 
 FOOT = """<footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
-    <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin</span></div>
+    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
   </div>
 </footer>"""
 
@@ -140,7 +140,7 @@ def page(meta, htm, faq, slug):
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / {e(meta["title"])}</nav>
 {htm}
 <p class="updated">Updated <time datetime="{meta["updated"]}">{meta["updated"]}</time> · <a href="/{slug}.md">Read as markdown</a></p>
-<section class="end"><h2>Something costing you every week?</h2><p>Tell us about your business. We’ll come back with what AI can do about it, and what it would cost.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=New%20project&amp;body=Business%3A%0AWhat%20you%20sell%20and%20to%20whom%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Start a project</a></section>
+<section class="end"><h2>Which machine keeps you up at night?</h2><p>Tell us about your site. We’ll come back with what a pilot would look like, and what it would cost.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ASite%20type%20(data%20center%2C%20plant%2C%20field)%3A%0ACountry%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Start a pilot</a></section>
 </article>
 </main>
 {FOOT}
@@ -168,13 +168,13 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC is an AI venture studio. Businesses start by buying one AI project at a price agreed up front; when a project proves itself and could serve many businesses, Leyoxa can partner with the client to grow it into a company. In plain terms the AI does three things: helps more customers find the business (including through assistants like ChatGPT, Gemini and Siri), earns more from each customer (every call answered, booked and followed up), and removes busywork (scheduling, reminders, reports). First partnership: Praxis, AI for dental practices.
+> Leyoxa LLC builds AI for field operations in data centers, oil and gas and manufacturing: a voice copilot for technicians that answers from manuals and work-order history, early warning from sensor data (anomaly detection per machine), and work orders, handovers and inspection logs written automatically. Read-only by default, never writes to control systems; deployed on-premise, in the customer's cloud or in-country. Serves the United States, Canada and the Middle East. Engagements start with a paid pilot on one site at an agreed scope and price.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home]({SITE}/index.md): What an AI venture studio is, three examples of what the AI does, how Leyoxa builds, and Praxis.
+- [Home]({SITE}/index.md): What Leyoxa builds for field operations, where it works, safety, who builds it and how a pilot works.
 {links}
 
 ## Optional

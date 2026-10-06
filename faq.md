@@ -1,34 +1,31 @@
 # Questions
 
-### What is an AI venture studio, in plain terms?
-Leyoxa builds AI products for businesses. You start by buying one project, like any other service. When a project proves itself and could help many businesses like yours, we can grow it into a company together.
+### What does Leyoxa do?
+Leyoxa builds AI for the crews that keep data centers, oil and gas sites and plants running: a voice copilot for technicians, early warning from sensor data, and work orders that write themselves.
 
-### What can AI actually do for a business like mine?
-Three things, most often. Help more customers find you, including through AI assistants like ChatGPT and Siri. Earn more from the customers you have, by answering every call, booking and following up. And take busywork off your plate, such as scheduling, reminders and reports.
+### Does the AI touch our control systems?
+No. It reads from monitoring, maintenance and document systems and never writes to control systems. Anything beyond reading, such as opening a work order, goes through the people and permissions you set.
 
-### What does “getting found by AI” mean?
-People increasingly ask an AI assistant where to go instead of searching. The assistant gives one answer, and it picks a business whose hours, services, prices and reviews it can read, and that it can book. Making a business that answer is one of the problems we build for.
+### Where does our data live?
+Where your rules say: on your own servers, in your cloud account, or in-country. Nothing is used to train anyone else’s models.
 
-### How is that different from an AI agency?
-The first project is much the same: you pay for it and you own it. The difference is what happens when it works. An agency moves on; we keep improving it, and when it could serve many businesses, we can build it into a company with you.
+### Which systems does it work with?
+Your maintenance system (CMMS), building management, SCADA or historian data for sensor history and alarms, and your manuals and procedures. We connect read-only and work with what you already run.
 
-### Who is a good fit?
-A business with customers and one problem that costs it money every week, such as missed calls, slow follow-up, manual scheduling or not being found.
+### What does a pilot look like?
+One site, one problem, one measurable outcome, such as faster repairs on cooling equipment. Scope and price are agreed before work starts.
 
-### How does Leyoxa get paid?
-You pay for the project, at a scope and price agreed before work starts.
+### How does the copilot know our equipment?
+It reads your manuals, procedures and the work-order history for each asset, and every answer points to the page or record it came from, so a technician can check it.
 
-### Do I have to give up equity?
-No. A partnership only comes up later, if a project has proven itself and both sides want to grow it into a company.
+### Does it work offline or in noisy plant rooms?
+It is built for the field: voice-first, hands-free, and designed around patchy connectivity. Exactly how depends on the site, and we settle it during the site walk.
 
-### Who owns the code and the IP?
-You own what we build for you. Leyoxa keeps its reusable tooling and licenses it to you.
+### Who builds it?
+Leyoxa LLC was founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a computer engineer from the University of Waterloo who led its autonomous driving team, co-founded a machine-learning startup for cyber-attack detection, and built sign-in for millions of banking customers. Our AI agents already run in production at [Praxis](https://leyoxa.com/praxis.md).
 
-### Which industries does Leyoxa work in?
-Any business with customers and a costly, repeated problem. Our dental work is Praxis, and we are not taking on new healthcare, dental, legal or accounting work.
-
-### Who is behind Leyoxa?
-Leyoxa LLC is a Texas company founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a software engineer who built Praxis, an AI platform that answers and books patient calls and keeps dental practices visible in search and AI answers.
+### Where do you work?
+The United States, Canada and the Middle East.
 
 ### How do we start?
-Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=New%20project) with your business, your customers, and the problem that keeps costing you. The first call is free.
+Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pilot) with your site, your country and the problem that keeps costing you. The site walk is free.

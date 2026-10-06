@@ -264,6 +264,45 @@ a.u:hover{text-decoration:underline}
 .wfoot{padding:14px 2px 2px;border-top:1px solid var(--line);font-size:14px;color:var(--green);font-weight:600}
 .feature .phone-wrap figcaption{margin-top:0}
 
+
+/* ---------- sensor chart ---------- */
+.chart{width:min(440px,100%);background:#fff;border-radius:var(--r3);padding:24px 24px 18px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 30px 60px -36px rgba(0,0,0,.3)}
+.ctop{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.ctop b{display:block;font-size:17px;font-weight:600;letter-spacing:-.022em}
+.ctop span{font-size:14px;color:var(--ink4)}
+.flag{flex:none;font-size:12px!important;font-weight:600;color:#c4410c!important;background:#fff1e8;padding:4px 10px;border-radius:99px}
+.chart svg{width:100%;height:150px;margin:18px 0 6px;overflow:visible}
+.chart .band{fill:rgba(47,158,91,.1)}
+.chart .line{fill:none;stroke:var(--ink);stroke-width:2;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 2.4s var(--ease)}
+.chart .dot{fill:#ff6b1a;opacity:0;transition:opacity .4s var(--ease) 2.2s}
+.chart.drawn .line{stroke-dashoffset:0}
+.chart.drawn .dot{opacity:1}
+.cfoot{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-top:16px;border-top:1px solid var(--line)}
+.cfoot b{display:block;font-size:15px;font-weight:600;letter-spacing:-.02em}
+.cfoot span{display:block;font-size:13px;color:var(--ink3);line-height:1.35;margin-top:2px}
+.chart figcaption{font-size:12px;color:var(--ink4);text-align:center;margin-top:14px}
+
+/* ---------- industries, specs, credentials ---------- */
+.inds{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.ind{display:flex;flex-direction:column;border-radius:var(--r3);padding:32px 30px 30px;background:#fff;transition:transform .5s var(--spring),box-shadow .5s var(--ease)}
+.ind:hover{transform:translateY(-4px);box-shadow:0 24px 48px -28px rgba(0,0,0,.25)}
+.ind:active{transform:scale(.99)}
+.ii{width:48px;height:48px;border-radius:14px;background:var(--bg2);display:grid;place-items:center;margin-bottom:28px}
+.ii svg{width:24px;height:24px;fill:none;stroke:var(--blue);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ind h3{font-size:24px;letter-spacing:-.035em}
+.ind p{margin-top:10px;font-size:17px;line-height:1.47;color:var(--ink3);letter-spacing:-.022em;flex:1}
+.ind .go{margin-top:24px;color:var(--link);font-size:17px;display:inline-flex;gap:4px;align-items:center}
+.ind:hover .arr{transform:translateX(2px)}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.spec{border-top:2px solid var(--ink);padding-top:20px}
+.spec h3{font-size:21px;letter-spacing:-.03em}
+.spec p{margin-top:8px;font-size:15px;line-height:1.47;color:var(--ink3);letter-spacing:-.016em}
+.creds{list-style:none;background:#fff;border-radius:var(--r3);padding:8px 28px}
+.creds li{padding:20px 0;border-bottom:1px solid var(--line)}
+.creds li:last-child{border-bottom:0}
+.creds b{display:block;font-size:17px;font-weight:600;letter-spacing:-.022em}
+.creds span{display:block;margin-top:4px;font-size:15px;line-height:1.47;color:var(--ink3);letter-spacing:-.016em}
+
 /* ---------- footer ---------- */
 footer{background:var(--bg2);border-top:1px solid var(--line);padding:32px var(--pad) calc(28px + env(safe-area-inset-bottom));font-size:12px;line-height:1.33;color:var(--ink3);letter-spacing:-.01em}
 .foot{max-width:calc(var(--max) - 2 * var(--pad));margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:20px 40px;align-items:center}
@@ -318,6 +357,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:32px var(-
 /* ---------- type scale at Apple's breakpoints: fixed sizes, never fractional ---------- */
 @media (max-width:1068px){
   :root{--pad:40px}
+  .specs{grid-template-columns:1fr 1fr;gap:32px 24px}
   .band{padding:120px 0}
   h1{font-size:72px} h2{font-size:56px} .lede{font-size:21px}
   .step h3{font-size:48px} .facts dt{font-size:40px} .fcopy h3{font-size:40px}
@@ -325,6 +365,9 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:32px var(-
 }
 @media (max-width:734px){
   .outcomes{grid-template-columns:1fr}
+  .specs{grid-template-columns:1fr;gap:28px}
+  .cfoot{grid-template-columns:1fr;gap:12px}
+  .creds{padding:4px 22px}
   :root{--pad:20px}
   .band{padding:96px 0}
   h1{font-size:48px} h2{font-size:40px} .lede{font-size:19px} .body{font-size:17px}
@@ -334,6 +377,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:32px var(-
 
 /* ---------- responsive ---------- */
 @media (max-width:900px){
+  .inds{grid-template-columns:1fr;max-width:640px;margin-left:auto;margin-right:auto}
   .path{grid-template-columns:1fr;gap:12px;max-width:640px;margin-left:auto;margin-right:auto}
   .path li{display:grid;grid-template-columns:48px 1fr;padding:26px 28px 28px 22px}
   .pn{margin:0;grid-row:1/3}
