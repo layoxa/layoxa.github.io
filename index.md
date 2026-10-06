@@ -14,7 +14,7 @@ Observe a business with real customers, find the bottleneck, build, deploy with 
 
 ## Chapter one: Praxis
 
-AI for dental practices, built with a dental marketing company that already had the practices. Six AI agents in production: Voice, GEO/SEO, Reputation, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md).
+AI for dental practices, built with a dental marketing company that already had the practices. Six AI agents in production: Voice, GEO/SEO, Reputation, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md). Praxis: https://itspraxis.ai
 
 ## The partnership
 

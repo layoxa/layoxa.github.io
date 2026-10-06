@@ -29,7 +29,7 @@ def front(text):
 def inline(s):
     s = html.escape(s, quote=False)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
-    return re.sub(r"\[(.+?)\]\((.+?)\)", lambda m: f'<a href="{m[2].replace(".md", "/") if m[2].startswith(SITE) else m[2]}">{m[1]}</a>', s)
+    return re.sub(r"\[(.+?)\]\((.+?)\)", lambda m: f'<a href="{m[2].replace(".md", "/") if m[2].startswith(SITE) else m[2]}"{'' if m[2].startswith((SITE, "mailto:")) else ' target="_blank" rel="noopener"'}>{m[1]}</a>', s)
 
 
 def render(body):

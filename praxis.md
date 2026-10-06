@@ -20,4 +20,4 @@ Dental practices lose patients at the front desk. Calls ring out after hours and
 
 ## Where it is now
 
-Live with dental practices across the United States. Leyoxa remains Praxis’s technology partner.
+Live with dental practices across the United States at [itspraxis.ai](https://itspraxis.ai). Leyoxa remains Praxis’s technology partner.
