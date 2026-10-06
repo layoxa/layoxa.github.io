@@ -1,38 +1,42 @@
 # How it works
 
-Start with one site and one problem. If the pilot pays off, take it across your sites and crews.
+Leyoxa Verify does three things at the end of a build: it inspects what was installed, it reads every test result, and it writes the handover.
 
-## 1. Walk the site
+## 1. Inspect
 
-A free visit or call. We look at the equipment, the alarms and the paperwork that cost you the most, and agree on the one outcome a pilot should move, such as time to repair on cooling equipment or unplanned stops on a line.
+Before energization, Verify walks the electrical rooms, yards and substations, on a robot, a cart or in a technician’s hand. RGB, thermal and depth sensors capture every compartment. Computer vision checks:
 
-## 2. Pilot one problem
+- every label against the one-line diagram and panel schedules
+- every lug for its torque mark, matched against the torque log
+- cable routing and segregation against the design
 
-One site, one problem, one measurable outcome. The scope and price are agreed before work starts. We connect, read-only, to the systems that matter:
+## 2. Test
 
-| Source | What the AI uses it for |
+Verify reads the results your crew already produces and checks them against the acceptance limits:
+
+| Test | What Verify looks for |
 |---|---|
-| Maintenance system (CMMS) | Past work orders, assets, parts and schedules |
-| Building management, SCADA or historian | Sensor history and alarms, read-only |
-| Manuals and procedures | Answers a technician can trust, with the page they came from |
-| The crew | Voice notes and photos, turned into records |
+| Insulation resistance | Readings below limit, and readings far below their peers |
+| Contact and winding resistance | Imbalance between phases |
+| Breaker and relay tests | Settings that do not match the coordination study |
+| Solar IV curves | Strings that pass but underperform their neighbours |
+| Load-bank and first-load thermal | Joints running hotter than the same joint on other phases |
 
-## 3. Roll it out
+## 3. Hand over
 
-If the pilot works, we take it across halls, sites and crews, and keep improving it. If what we built could serve your whole industry, we can partner to turn it into a product together.
+Every finding gets a photo, a location and the standard it cites, and goes to the technician’s iPhone. It is closed with a photo and a rescan, and the evidence is collected into the turnover package for your commissioning platform.
 
-## How paying works
+## The pilot
 
-- **You pay for the pilot**, at a scope and price agreed up front.
-- **You own what we build for you.** Leyoxa keeps its reusable tooling and licenses it to you.
-- **Partnership is optional, and later**, only when something has proven itself and both sides want to build it into a product.
+- **Scope.** One electrical room, battery yard or substation, during commissioning. Scope and price agreed before we start.
+- **Duration.** About 8 to 12 weeks.
+- **Method.** Verify runs in parallel with your crew’s own inspection and IR survey. Nothing in your process changes.
+- **Measured.** The share of the crew’s findings Verify caught, what it caught that was missed, and the technician hours saved on documentation.
 
 ## Safety and data
 
-- **Read-only by default.** It never writes to control systems. Anything beyond reading goes through the people and permissions you set.
-- **Your data stays put.** On your servers, in your cloud account, or in-country.
-- **Security first.** Single sign-on, least privilege and a full audit trail.
+- **Alongside your crew.** It captures, checks and documents; your testers keep every decision.
+- **Safe by design.** Visual inspection on de-energized gear with covers off; thermal under load through IR windows or with qualified staff present, per NFPA 70E.
+- **Imagery stays on site.** Processing on edge hardware; exports only to the platform you choose.
 
-We do not take on healthcare, dental, legal or accounting work.
-
-Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pilot): your site, your country, and the problem that keeps costing you.
+Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Pilot): the build, the country and your commissioning dates.

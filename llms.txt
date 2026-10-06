@@ -1,17 +1,17 @@
 # Leyoxa
 
-> Leyoxa LLC builds AI for field operations in data centers, oil and gas and manufacturing: a voice copilot for technicians that answers from manuals and work-order history, early warning from sensor data (anomaly detection per machine), and work orders, handovers and inspection logs written automatically. Read-only by default, never writes to control systems; deployed on-premise, in the customer's cloud or in-country. Serves the United States, Canada and the Middle East. Engagements start with a paid pilot on one site at an agreed scope and price.
+> Leyoxa LLC builds Leyoxa Verify: robotic and AI commissioning QA for electrical systems on data center, energy (solar, battery storage, substations, on-site power) and manufacturing builds. It checks every termination, label and test result against the design before energization (computer vision on labels and torque marks, test results read against NETA ATS and IEC 62446 limits with peer outliers flagged), catches hot joints with thermal scans under first load, and writes the handover package. Runs on a robot, a cart or in a technician's hand; works alongside NETA and commissioning crews; follows NFPA 70E; imagery stays on site. Pilots: one room, yard or substation for 8-12 weeks in parallel with the crew. Serves the United States, Canada and the Middle East.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home](https://leyoxa.com/index.md): What Leyoxa builds for field operations, where it works, safety, who builds it and how a pilot works.
-- [Data centers](https://leyoxa.com/data-centers.md): Leyoxa builds AI for data center operations teams — a voice copilot for technicians, early warning on cooling and power equipment, alarm triage and work orders written automatically. On-premise or in-country.
-- [Questions](https://leyoxa.com/faq.md): Answers for data center, oil and gas and manufacturing operators — control systems, where data lives, what a pilot looks like, which systems it works with, and where Leyoxa works.
-- [How it works](https://leyoxa.com/how-it-works.md): How working with Leyoxa works — a free site walk, a pilot on one problem with scope and price agreed up front, then rollout across sites. Read-only, on-premise or in-country.
-- [Manufacturing](https://leyoxa.com/manufacturing.md): Leyoxa builds AI for manufacturing maintenance teams — repairs guided by voice, early warning on machines, and work orders and shift reports written automatically. On-premise or in-country.
-- [Oil & gas](https://leyoxa.com/oil-and-gas.md): Leyoxa builds AI for oil and gas operations — early warning on pumps and compressors, a voice copilot for field crews, and inspection and work-order paperwork written automatically. On-premise or in-country.
+- [Home](https://leyoxa.com/index.md): What Leyoxa Verify does, the evidence for why it matters, where it works and how a pilot runs.
+- [Data centers](https://leyoxa.com/data-centers.md): Leyoxa Verify checks switchgear, busway, UPS and PDU terminations against the design before IST, catches hot joints under load-bank testing, and writes the handover package.
+- [Energy](https://leyoxa.com/energy.md): Leyoxa Verify checks solar strings, battery storage, substations and on-site power before energization — terminations, labels and test results against the design — and catches hot joints under first load.
+- [Questions](https://leyoxa.com/faq.md): Answers about Leyoxa Verify, robotic and AI commissioning QA — technicians, safety around energized equipment, robots, data, standards, pilots and where Leyoxa works.
+- [How it works](https://leyoxa.com/how-it-works.md): How Leyoxa Verify inspects terminations, reads test results and writes the handover package, and how an 8–12 week pilot runs alongside your commissioning crew.
+- [Manufacturing](https://leyoxa.com/manufacturing.md): Leyoxa Verify checks every panel, feeder and termination in new fabs, battery plants and gigafactories against the design before energization, and documents it for handover.
 - [Praxis](https://leyoxa.com/praxis.md): Proof that Leyoxa's AI agents work in production — Praxis runs six AI agents for dental practices, answering live calls and working inside the practices' own legacy software.
 
 ## Optional

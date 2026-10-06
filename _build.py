@@ -79,15 +79,15 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a class="pill" href="/#start">Start a pilot</a></nav>
+  <nav aria-label="Main"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a class="pill" href="/#start">Book a pilot</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/#start">Start a pilot</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+<div class="sheet" id="sheet"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/#start">Book a pilot</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
 
 FOOT = """<footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="/praxis/">Praxis</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
     <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
   </div>
 </footer>"""
@@ -140,7 +140,7 @@ def page(meta, htm, faq, slug):
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / {e(meta["title"])}</nav>
 {htm}
 <p class="updated">Updated <time datetime="{meta["updated"]}">{meta["updated"]}</time> · <a href="/{slug}.md">Read as markdown</a></p>
-<section class="end"><h2>Which machine keeps you up at night?</h2><p>Tell us about your site. We’ll come back with what a pilot would look like, and what it would cost.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ASite%20type%20(data%20center%2C%20plant%2C%20field)%3A%0ACountry%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Start a pilot</a></section>
+<section class="end"><h2>Energizing soon?</h2><p>Tell us the build, the country and your commissioning dates. We’ll come back with a pilot plan and a price.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ABuild%20type%20(data%20center%2C%20solar%2C%20BESS%2C%20substation%2C%20plant)%3A%0ACountry%3A%0ACommissioning%20stage%20and%20dates%3A%0A">Book a pilot</a></section>
 </article>
 </main>
 {FOOT}
@@ -168,13 +168,13 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC builds AI for field operations in data centers, oil and gas and manufacturing: a voice copilot for technicians that answers from manuals and work-order history, early warning from sensor data (anomaly detection per machine), and work orders, handovers and inspection logs written automatically. Read-only by default, never writes to control systems; deployed on-premise, in the customer's cloud or in-country. Serves the United States, Canada and the Middle East. Engagements start with a paid pilot on one site at an agreed scope and price.
+> Leyoxa LLC builds Leyoxa Verify: robotic and AI commissioning QA for electrical systems on data center, energy (solar, battery storage, substations, on-site power) and manufacturing builds. It checks every termination, label and test result against the design before energization (computer vision on labels and torque marks, test results read against NETA ATS and IEC 62446 limits with peer outliers flagged), catches hot joints with thermal scans under first load, and writes the handover package. Runs on a robot, a cart or in a technician's hand; works alongside NETA and commissioning crews; follows NFPA 70E; imagery stays on site. Pilots: one room, yard or substation for 8-12 weeks in parallel with the crew. Serves the United States, Canada and the Middle East.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home]({SITE}/index.md): What Leyoxa builds for field operations, where it works, safety, who builds it and how a pilot works.
+- [Home]({SITE}/index.md): What Leyoxa Verify does, the evidence for why it matters, where it works and how a pilot runs.
 {links}
 
 ## Optional

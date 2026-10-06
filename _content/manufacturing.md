@@ -1,31 +1,25 @@
 ---
 title: Manufacturing
-seo_title: AI for manufacturing maintenance and downtime | Leyoxa
-description: Leyoxa builds AI for manufacturing maintenance teams — repairs guided by voice, early warning on machines, and work orders and shift reports written automatically. On-premise or in-country.
+seo_title: Electrical commissioning QA for fabs and battery plants | Leyoxa Verify
+description: Leyoxa Verify checks every panel, feeder and termination in new fabs, battery plants and gigafactories against the design before energization, and documents it for handover.
 path: /manufacturing/
 updated: 2026-10-06
 ---
-# AI for manufacturing
+# Manufacturing commissioning QA
 
-When a line stops, the clock is running. We build the AI that gets the right fix to the technician faster, flags machines before they fail, and takes the paperwork off the shift.
+New fabs, battery plants and gigafactories energize thousands of panels and feeders on schedules that cannot slip. Leyoxa Verify checks each one against the design and documents it, so the plant starts on time and stays up.
 
 ## Where it helps
 
-- **Unplanned downtime.** The fault, the manual and every past repair on that machine, answered by voice at the line.
-- **Machine health.** Motors, spindles, pumps and compressors: drift in vibration and temperature flagged days ahead.
-- **Knowledge that walks out the door.** What your most experienced technicians know, captured from their repairs and available to every shift.
-- **Shift paperwork.** Work orders, parts used and shift reports written from what the crew said and did.
+- **Distribution and panels.** Labels, terminations and torque marks checked against the one-line diagram and panel schedules.
+- **Test results.** Insulation and contact resistance and breaker tests read and checked against acceptance limits, outliers flagged.
+- **First load.** Thermal scans as production equipment comes online catch the connection running hot.
+- **Handover.** Every finding documented with a photo, location and the standard it cites.
 
-## What the crew gets
+## On a live site
 
-1. **A voice copilot** that answers from your manuals, procedures and work-order history.
-2. **Early warning** learned from each machine’s own normal behaviour.
-3. **Paperwork done** in the maintenance system you already run.
+- **Alongside your crew**, with every decision staying with your testers.
+- **Safe by design**, per NFPA 70E.
+- **Imagery stays on site**, which matters in plants with strict confidentiality rules.
 
-## Built for the plant floor
-
-- **Read-only by default.** It never writes to control systems.
-- **Your data stays put.** On your servers, in your cloud, or in-country.
-- **Security first.** Single sign-on, least privilege and a full audit trail.
-
-We work in the United States, Canada and the Middle East. Start with a [pilot on one line](mailto:contact@leyoxa.com?subject=Manufacturing%20pilot).
+We work in the United States, Canada and the Middle East. [Book a pilot on one area](mailto:contact@leyoxa.com?subject=Manufacturing%20pilot).

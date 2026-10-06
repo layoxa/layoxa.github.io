@@ -1,31 +1,29 @@
 ---
 title: Data centers
-seo_title: AI for data center operations and maintenance | Leyoxa
-description: Leyoxa builds AI for data center operations teams — a voice copilot for technicians, early warning on cooling and power equipment, alarm triage and work orders written automatically. On-premise or in-country.
+seo_title: Data center electrical commissioning QA with robotics and AI | Leyoxa Verify
+description: Leyoxa Verify checks switchgear, busway, UPS and PDU terminations against the design before IST, catches hot joints under load-bank testing, and writes the handover package.
 path: /data-centers/
 updated: 2026-10-06
 ---
-# AI for data center operations
+# Data center commissioning QA
 
-Uptime depends on a small crew keeping cooling and power equipment healthy, around the clock. We build the AI that helps that crew find faults faster, see failures coming, and stop typing.
+AI halls are energized on compressed schedules by stretched electrical crews. Leyoxa Verify checks every connection before energization and watches it under load, so the handover is right the first time.
 
 ## Where it helps
 
-- **Cooling.** CRAHs, CRACs, chillers, pumps and cooling towers: faults diagnosed from the alarm, the manual and every past repair on that unit.
-- **Power.** UPS, batteries, generators and switchgear: drift in temperature, load and runtime flagged before it becomes an outage.
-- **Alarms.** Hundreds of building-management alarms a shift, grouped and ranked, so the one that matters is not buried.
-- **Rounds and handovers.** Inspection rounds, shift handovers and maintenance logs written from what the technician says.
+- **Before energization (Levels 2–3).** Switchgear, busway, UPS, PDUs and RPPs: every label checked against the one-line diagram, every lug checked for its torque mark, gaps matched against the torque log.
+- **Test results.** Insulation resistance, contact resistance, breaker and relay tests read from the test sets and checked against NETA acceptance limits, with outliers flagged even when they pass.
+- **Under load (Levels 4–5).** Thermal scans during load-bank testing and integrated systems testing catch the joint running hotter than its neighbours.
+- **Handover.** Findings with photos, locations and the standard they cite, closed on an iPhone and collected into the turnover package.
 
-## What the crew gets
+## Why now
 
-1. **A voice copilot.** “CRAH-3 high discharge temperature, what do I check first?” Answered from your manuals, procedures and work-order history, hands-free.
-2. **Early warning.** Each machine’s normal behaviour learned from your historian and BMS data, with drift flagged days ahead and the likely cause named.
-3. **Paperwork done.** Work orders, parts used and handovers written into the maintenance system you already run.
+A one-month delay can cost up to $14.2M on a typical 60 MW data center ([STL Partners, 2025](https://stlpartners.com/press/delays-in-data-centre-construction/)), and across 25 million sq ft of 2025 data center builds, electrical containment went in at 59.4% of the required pace ([Buildots](https://buildots.com/lab/data-center-mep-benchmarks/)). Crews are short; the checks are not optional.
 
-## Built for a live facility
+## On a live site
 
-- **Read-only by default.** It reads monitoring, maintenance and document systems, and never writes to control systems.
-- **Your data stays put.** On your servers, in your cloud, or in-country, which matters for sovereign and regulated facilities.
-- **Security first.** Single sign-on, least privilege and a full audit trail.
+- **Alongside your crew.** Your NETA or commissioning team keeps every decision.
+- **Safe by design.** Visual checks on de-energized gear; thermal under load through IR windows or with qualified staff, per NFPA 70E.
+- **Imagery stays on site.** Edge processing; nothing leaves unless you export it.
 
-We work with operators and builders in the United States, Canada and the Middle East. Start with a [pilot on one hall](mailto:contact@leyoxa.com?subject=Data%20center%20pilot).
+We work with builders and operators in the United States, Canada and the Middle East. [Book a pilot on one electrical room](mailto:contact@leyoxa.com?subject=Data%20center%20pilot).

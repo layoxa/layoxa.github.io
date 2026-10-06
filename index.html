@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leyoxa — AI for field operations in data centers, oil &amp; gas and manufacturing</title>
-<meta name="description" content="Leyoxa builds AI for the crews that keep data centers, oil and gas sites and plants running: a voice copilot for technicians, early warning from sensor data, and work orders that write themselves. On-premise or in-country.">
+<title>Leyoxa Verify — robotic and AI commissioning QA for electrical systems</title>
+<meta name="description" content="Leyoxa Verify checks every termination, label and test result against the design before energization, catches hot joints under first load, and writes the handover package. For data centers, energy and manufacturing builds.">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://leyoxa.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="text/markdown" href="/index.md" title="Markdown version">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Leyoxa — AI for the crews that keep things running">
-<meta property="og:description" content="Field operations AI for data centers, oil &amp; gas and manufacturing. Fix it faster, catch it early, paperwork done.">
+<meta property="og:title" content="Leyoxa Verify — every connection, verified before energization">
+<meta property="og:description" content="Robotic and AI commissioning QA for data centers, energy and manufacturing builds.">
 <meta property="og:url" content="https://leyoxa.com/">
 <meta property="og:image" content="https://leyoxa.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,13 +22,13 @@
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Organization","@id":"https://leyoxa.com/#org","name":"Leyoxa","legalName":"Leyoxa LLC","url":"https://leyoxa.com/","logo":"https://leyoxa.com/favicon.svg","description":"Leyoxa builds AI for field operations in data centers, oil and gas and manufacturing: voice copilots for technicians, sensor anomaly detection and automatic work orders, deployed on-premise or in-country.","foundingDate":"2023","address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"areaServed":["United States","Canada","Middle East"],"founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io","alumniOf":"University of Waterloo"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"contact@leyoxa.com"},"knowsAbout":["industrial AI","predictive maintenance","anomaly detection","data center operations","oil and gas operations","manufacturing maintenance","voice AI","CMMS integration","OT security"]},
+ {"@type":"Organization","@id":"https://leyoxa.com/#org","name":"Leyoxa","legalName":"Leyoxa LLC","url":"https://leyoxa.com/","logo":"https://leyoxa.com/favicon.svg","description":"Leyoxa builds Leyoxa Verify, robotic and AI commissioning QA for electrical systems on data center, energy and manufacturing builds.","foundingDate":"2023","address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"areaServed":["United States","Canada","Middle East"],"founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io","alumniOf":"University of Waterloo"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"contact@leyoxa.com"},"knowsAbout":["electrical commissioning","NETA acceptance testing","infrared thermography","QA/QC","battery energy storage commissioning","data center commissioning","robotic inspection","computer vision","anomaly detection"]},
  {"@type":"WebSite","@id":"https://leyoxa.com/#site","url":"https://leyoxa.com/","name":"Leyoxa","publisher":{"@id":"https://leyoxa.com/#org"}},
- {"@type":"Service","name":"Field operations AI","provider":{"@id":"https://leyoxa.com/#org"},"serviceType":"Industrial AI for maintenance and operations","areaServed":["United States","Canada","Middle East"],"audience":{"@type":"BusinessAudience","name":"Data center, oil and gas and manufacturing operators"},"offers":{"@type":"Offer","name":"Pilot on one site","url":"https://leyoxa.com/#start"}},
+ {"@type":"Product","@id":"https://leyoxa.com/#verify","name":"Leyoxa Verify","brand":{"@id":"https://leyoxa.com/#org"},"category":"Commissioning QA for electrical systems","description":"Checks every termination, label and test result against the design before energization, catches hot joints under first load, and writes the handover package. Runs on a robot, a cart or in a technician's hand.","audience":{"@type":"BusinessAudience","name":"Data center, energy and manufacturing builders, commissioning agents and electrical testing firms"}},
  {"@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"Does the AI touch our control systems?","acceptedAnswer":{"@type":"Answer","text":"No. It reads from monitoring, maintenance and document systems and never writes to control systems. Anything it does outside reading, such as opening a work order, goes through the people and permissions you set."}},
-  {"@type":"Question","name":"Where does our data live?","acceptedAnswer":{"@type":"Answer","text":"Where your rules say: on your own servers, in your cloud account, or in-country. Nothing is used to train anyone else's models."}},
-  {"@type":"Question","name":"What does a pilot look like?","acceptedAnswer":{"@type":"Answer","text":"One site, one problem, one measurable outcome, such as faster repairs on cooling equipment. Scope and price are agreed before work starts."}}]}
+  {"@type":"Question","name":"Does Leyoxa Verify replace our testing technicians?","acceptedAnswer":{"@type":"Answer","text":"No. It works alongside your NETA or commissioning crew: it captures, checks and documents, so each technician covers more equipment and nothing is missed. Pilots run in parallel with the crew's own inspection."}},
+  {"@type":"Question","name":"Is it safe around energized equipment?","acceptedAnswer":{"@type":"Answer","text":"It follows the same rules your crew does. Visual inspection happens on de-energized gear with covers off; thermal scans under load go through IR windows or with qualified staff present, per NFPA 70E."}},
+  {"@type":"Question","name":"Where does site imagery go?","acceptedAnswer":{"@type":"Answer","text":"It stays on site by default. Processing runs on edge hardware, with exports only to the commissioning platform you choose."}}]}
 ]}
 </script>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
@@ -39,96 +39,120 @@
 
 <header class="nav">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a class="pill" href="#start">Start a pilot</a></nav>
+  <nav aria-label="Main"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a class="pill" href="#start">Book a pilot</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="#start">Start a pilot</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>
+<div class="sheet" id="sheet"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="#start">Book a pilot</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>
 
 <main id="top">
   <section class="hero">
-    <p class="kicker rise">Field operations AI</p>
-    <h1 class="rise d1">AI for the crews<br><em>that keep things running.</em></h1>
-    <p class="lede rise d2">For data centers, oil &amp; gas and manufacturing. A voice copilot for technicians, early warning from sensor data, and work orders that write themselves. Built by engineers, deployed on your terms.</p>
-    <div class="cta rise d3"><a class="btn" href="#start">Start a pilot</a><a class="ghost" href="#examples">See it on the floor <span class="arr down">↓</span></a></div>
+    <p class="kicker rise">Leyoxa Verify · Commissioning QA</p>
+    <h1 class="rise d1">Every connection,<br><em>verified before energization.</em></h1>
+    <p class="lede rise d2">Robotics and AI that check every termination, label and test result against the design, catch hot joints under first load, and write the handover package. For data center, energy and manufacturing builds.</p>
+    <div class="cta rise d3"><a class="btn" href="#start">Book a pilot</a><a class="ghost" href="#how">See how it works <span class="arr down">↓</span></a></div>
     <ul class="outcomes rise d3" aria-label="What it does">
-      <li><a href="#ex-fix"><span class="oi"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span><b>Fix it faster</b><span>Answers from manuals and past repairs</span></a></li>
-      <li><a href="#ex-early"><span class="oi"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg></span><b>Catch it early</b><span>Sensor drift flagged before failure</span></a></li>
-      <li><a href="#ex-done"><span class="oi"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4.5h6M8.5 12l2.4 2.4 4.6-4.8"/></svg></span><b>Paperwork done</b><span>Work orders and handovers, written for you</span></a></li>
+      <li><a href="#ex-see"><span class="oi"><svg viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><b>See every termination</b><span>Labels, torque marks, routing</span></a></li>
+      <li><a href="#ex-tests"><span class="oi"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg></span><b>Read every test</b><span>Outliers flagged against limits</span></a></li>
+      <li><a href="#ex-close"><span class="oi"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4.5h6M8.5 12l2.4 2.4 4.6-4.8"/></svg></span><b>Hand over, done</b><span>Findings and turnover written</span></a></li>
     </ul>
     <div class="scrollcue" aria-hidden="true"><span></span></div>
   </section>
 
-  <section class="band" id="examples">
+  <section class="band alt" id="why">
     <div class="wrap">
-      <p class="kicker center">On the floor</p>
-      <h2 class="center">Three problems<br><em>every site has.</em></h2>
+      <p class="kicker center">Why it matters</p>
+      <h2 class="center">The riskiest weeks<br><em>are the last ones.</em></h2>
+      <div class="stats">
+        <figure class="stat"><b>72%</b><p>of battery storage failures with a known system age happened during construction, commissioning or the first two years of operation.</p><figcaption><a href="https://www.powermag.com/wp-content/uploads/2024/05/bess-failure-report.pdf" target="_blank" rel="noopener">EPRI, with TWAICE and PNNL, 2024 ↗</a></figcaption></figure>
+        <figure class="stat"><b>$14.2M</b><p>is what a one‑month delay can cost on a typical 60 MW data center.</p><figcaption><a href="https://stlpartners.com/press/delays-in-data-centre-construction/" target="_blank" rel="noopener">STL Partners, 2025 ↗</a></figcaption></figure>
+        <figure class="stat"><b>59%</b><p>of the required pace: how fast electrical containment was actually installed across 25 million sq ft of data center builds.</p><figcaption><a href="https://buildots.com/lab/data-center-mep-benchmarks/" target="_blank" rel="noopener">Buildots, 2025 ↗</a></figcaption></figure>
+      </div>
+      <p class="not">Crews are stretched, schedules are compressed, and every connection still has to be right. <b>That is the job we automate.</b></p>
+    </div>
+  </section>
 
-      <div class="feature" id="ex-fix">
+  <section class="band" id="how">
+    <div class="wrap">
+      <p class="kicker center">How it works</p>
+      <h2 class="center">Inspect. Test.<br><em>Hand over.</em></h2>
+
+      <div class="feature" id="ex-see">
         <div class="fcopy">
-          <p class="kicker">01 · Fix it faster</p>
-          <h3>Every technician, as good as your best one.</h3>
-          <p>The answer is usually in a manual, an old work order or someone’s head. The copilot reads all three and answers by voice, hands‑free, in the plant room or on the pad.</p>
+          <p class="kicker">01 · See every termination</p>
+          <h3>Checked against the drawings, not memory.</h3>
+          <p>Before energization, Verify walks the electrical rooms, on a robot, a cart or in a technician’s hand. Computer vision checks every label against the one‑line diagram and every lug for its torque mark, and the torque log fills the gaps.</p>
         </div>
         <div class="fvis">
-          <figure class="phone-wrap" aria-label="Illustration: a technician asks the AI copilot about an alarm and logs the fix">
+          <figure class="scan" data-scan aria-label="Illustration: computer vision and thermal checks on a switchgear termination compartment">
+            <div class="ctop"><div><b>SWGR‑2A · Cubicle 4</b><span>Pre‑energization scan · RGB + thermal</span></div><span class="flag">2 findings</span></div>
+            <svg viewBox="0 0 400 230" aria-hidden="true">
+              <rect x="1" y="1" width="398" height="228" rx="14" class="cab"/>
+              <g class="bars"><rect x="70" y="30" width="34" height="170" rx="4"/><rect x="183" y="30" width="34" height="170" rx="4"/><rect x="296" y="30" width="34" height="170" rx="4"/></g>
+              <g class="lugs"><rect x="62" y="150" width="50" height="34" rx="6"/><rect x="175" y="150" width="50" height="34" rx="6" class="hot"/><rect x="288" y="150" width="50" height="34" rx="6"/></g>
+              <g class="marks"><path d="M70 158 l18 10"/><path d="M296 158 l18 10"/></g>
+              <g class="labels"><rect x="64" y="44" width="46" height="16" rx="3"/><rect x="177" y="44" width="46" height="16" rx="3"/><rect x="290" y="44" width="46" height="16" rx="3"/></g>
+              <g class="box ok b1"><rect x="56" y="38" width="58" height="28" rx="5"/></g>
+              <g class="box ok b2"><rect x="169" y="38" width="62" height="28" rx="5"/></g>
+              <g class="box ok b3"><rect x="282" y="38" width="62" height="28" rx="5"/></g>
+              <g class="box bad b4"><rect x="166" y="142" width="68" height="50" rx="7"/></g>
+              <g class="box ok b5"><rect x="53" y="142" width="68" height="50" rx="7"/></g>
+              <g class="box ok b6"><rect x="279" y="142" width="68" height="50" rx="7"/></g>
+            </svg>
+            <ul class="legend">
+              <li class="ok">Labels match the one‑line diagram</li>
+              <li class="ok">Phase A and C: torque mark present</li>
+              <li class="bad">Phase B: no torque mark, no torque log entry</li>
+            </ul>
+            <figcaption>Illustration.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="feature flip" id="ex-tests">
+        <div class="fcopy">
+          <p class="kicker">02 · Read every test</p>
+          <h3>The outlier a spreadsheet hides.</h3>
+          <p>Insulation resistance, contact resistance, relay tests, IV curves, load‑bank runs. Verify reads the results, checks them against NETA and IEC limits, and flags the reading that passes the limit but not its peers.</p>
+        </div>
+        <div class="fvis">
+          <figure class="widget tests" data-seq aria-label="Illustration: test results checked against acceptance limits">
+            <div class="wtop"><b>Test results</b><span>Insulation resistance · 480 V feeders</span></div>
+            <div class="trow"><b>FDR‑11</b><span>2.1 GΩ</span><i class="pass">Pass</i></div>
+            <div class="trow"><b>FDR‑12</b><span>1.8 GΩ</span><i class="pass">Pass</i></div>
+            <div class="trow"><b>FDR‑13</b><span>36 MΩ</span><i class="warn">Outlier</i></div>
+            <div class="trow"><b>FDR‑14</b><span>2.4 GΩ</span><i class="pass">Pass</i></div>
+            <div class="wfoot warnfoot">FDR‑13 passes the minimum but sits far below its peers. Retest before energizing.</div>
+            <figcaption>Illustration.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="feature" id="ex-close">
+        <div class="fcopy">
+          <p class="kicker">03 · Hand over, done</p>
+          <h3>Find it, fix it, prove it.</h3>
+          <p>Under first load, thermal scans catch the joint running hot. The finding goes to the technician’s iPhone with the evidence, gets closed with a photo and a rescan, and lands in the turnover package.</p>
+        </div>
+        <div class="fvis">
+          <figure class="phone-wrap" aria-label="Illustration: a technician closes a hot-joint finding on an iPhone">
           <div class="phone" id="demo">
-            <div class="ph-top"><span class="ph-time">02:14</span><span class="ph-island"></span><span class="ph-icons"><i></i><i></i><i></i></span></div>
-            <div class="ph-head"><span class="ph-av"></span><b>Site copilot</b></div>
+            <div class="ph-top"><span class="ph-time">10:42</span><span class="ph-island"></span><span class="ph-icons"><i></i><i></i><i></i></span></div>
+            <div class="ph-head"><span class="ph-av"></span><b>Verify · SWGR‑2A</b></div>
             <div class="chat">
-              <div class="msg me" data-t="0">CRAH‑3 high discharge temp. What do I check first?</div>
+              <div class="msg ai" data-t="0">Finding 214 · Phase B lug runs 14 °C above A and C at 40% load.</div>
               <div class="typing" data-t="1"><i></i><i></i><i></i></div>
-              <div class="msg ai" data-t="2">The last 3 times, it was the fan belt. From the OEM manual, p.&nbsp;42:</div>
-              <div class="pick" data-t="3">
-                <div class="biz top"><span class="tag">Most likely</span><b>1. Check belt tension and wear</b><span>Spare belt: store room, bin B‑14</span></div>
-                <div class="biz"><b>2. Confirm supply air sensor</b><span>Compare with CRAH‑4 reading</span></div>
-                <div class="biz dim"><b>3. Inspect filters</b><span>Last changed 9 days ago</span></div>
+              <div class="pick" data-t="2">
+                <div class="biz top"><span class="tag">Likely cause</span><b>Under‑torqued termination</b><span>No torque mark in the pre‑energization scan</span></div>
+                <div class="biz"><b>Spec: 50 ft·lb · NETA ATS 7.1</b><span>Torque log has no entry for this lug</span></div>
               </div>
-              <div class="msg me" data-t="4">Belt was cracked. Replaced it.</div>
-              <div class="msg ai" data-t="5">Temp is back to normal. Log it?</div>
-              <div class="booked" data-t="6"><span class="ok"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Work order closed · 18 min</b><span>Belt replaced · part used: 1 × B‑14</span></div></div>
+              <div class="msg me" data-t="3">Re‑torqued to spec. Mark applied.</div>
+              <div class="msg ai" data-t="4">Rescanning under load…</div>
+              <div class="msg ai" data-t="5">Phase B now within 2 °C of A and C.</div>
+              <div class="booked" data-t="6"><span class="ok"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Finding 214 closed</b><span>Photo, torque and rescan added to the handover</span></div></div>
             </div>
           </div>
-          <figcaption>Illustration. The fix, found by voice and logged without typing.</figcaption>
+          <figcaption>Illustration. A hot joint found, fixed and documented in one pass.</figcaption>
         </figure>
-        </div>
-      </div>
-
-      <div class="feature flip" id="ex-early">
-        <div class="fcopy">
-          <p class="kicker">02 · Catch it early</p>
-          <h3>See the failure coming.</h3>
-          <p>Pumps, chillers, compressors and UPS units drift before they fail. We learn what normal looks like for each machine and flag the drift days ahead, with the likely cause.</p>
-        </div>
-        <div class="fvis">
-          <figure class="chart" data-draw aria-label="Illustration: vibration on a chiller drifting outside its normal band">
-            <div class="ctop"><div><b>Chiller 2 · bearing vibration</b><span>Last 14 days</span></div><span class="flag">Unusual</span></div>
-            <svg viewBox="0 0 400 170" preserveAspectRatio="none" aria-hidden="true">
-              <path class="band" d="M0 92 C60 88 120 96 180 90 S300 92 400 90 L400 128 C320 130 240 126 180 130 S60 126 0 130 Z"/>
-              <path class="line" d="M0 112 L20 108 L40 114 L60 109 L80 113 L100 107 L120 112 L140 110 L160 115 L180 108 L200 111 L220 106 L240 110 L260 104 L275 99 L290 92 L305 86 L320 78 L335 72 L350 63 L365 57 L380 49 L400 42"/>
-              <circle class="dot" cx="400" cy="42" r="5"/>
-            </svg>
-            <div class="cfoot"><div><b>Likely bearing wear</b><span>Rising for 6 hours, outside its normal band</span></div><div><b>Act within ~10 days</b><span>Work order drafted for review</span></div></div>
-            <figcaption>Illustration.</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="feature" id="ex-done">
-        <div class="fcopy">
-          <p class="kicker">03 · Paperwork done</p>
-          <h3>The shift report writes itself.</h3>
-          <p>Work orders, parts used, handovers and compliance logs, written from what the crew said and did. Into the maintenance system you already run.</p>
-        </div>
-        <div class="fvis">
-          <figure class="widget" data-seq aria-label="Illustration: end-of-shift paperwork completed by AI">
-            <div class="wtop"><b>End of shift</b><span>Night crew · Hall B</span></div>
-            <div class="task"><i></i><b>3 work orders closed, notes from voice</b></div>
-            <div class="task"><i></i><b>Parts used logged to inventory</b></div>
-            <div class="task"><i></i><b>Handover sent to the day crew</b></div>
-            <div class="task"><i></i><b>Inspection log updated</b></div>
-            <div class="wfoot">About 90 minutes of typing, done.</div>
-            <figcaption>Illustration.</figcaption>
-          </figure>
         </div>
       </div>
     </div>
@@ -137,24 +161,24 @@
   <section class="band alt" id="industries">
     <div class="wrap">
       <p class="kicker center">Where it works</p>
-      <h2 class="center">Built for sites<br><em>where downtime is expensive.</em></h2>
+      <h2 class="center">Every build with<br><em>switchgear in it.</em></h2>
       <div class="inds">
-        <a class="ind" href="/data-centers/"><span class="ii"><svg viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8 7.5h8M8 11h8M8 14.5h8"/><circle cx="8.5" cy="17.5" r=".6"/></svg></span><h3>Data centers</h3><p>Cooling, power and uptime. Faster fixes on CRAHs, chillers and UPS, and every alarm triaged.</p><span class="go">Data centers <span class="arr">→</span></span></a>
-        <a class="ind" href="/oil-and-gas/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M12 3s5 6 5 10a5 5 0 0 1-10 0c0-4 5-10 5-10z"/></svg></span><h3>Oil &amp; gas</h3><p>Pumps, compressors and remote sites. Early warning from sensors, and crews guided in the field.</p><span class="go">Oil &amp; gas <span class="arr">→</span></span></a>
-        <a class="ind" href="/manufacturing/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M3 20V10l6 4V10l6 4V6h6v14z"/></svg></span><h3>Manufacturing</h3><p>Lines, downtime and changeovers. Repairs guided by voice, and shift paperwork done.</p><span class="go">Manufacturing <span class="arr">→</span></span></a>
+        <a class="ind" href="/data-centers/"><span class="ii"><svg viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8 7.5h8M8 11h8M8 14.5h8"/></svg></span><h3>Data centers</h3><p>Switchgear, busway, UPS and PDUs, verified before IST and watched under load‑bank tests.</p><span class="go">Data centers <span class="arr">→</span></span></a>
+        <a class="ind" href="/energy/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg></span><h3>Energy</h3><p>Solar strings, battery storage, substations and on‑site power, from IV curves to busbar joints.</p><span class="go">Energy <span class="arr">→</span></span></a>
+        <a class="ind" href="/manufacturing/"><span class="ii"><svg viewBox="0 0 24 24"><path d="M3 20V10l6 4V10l6 4V6h6v14z"/></svg></span><h3>Manufacturing</h3><p>Fabs, battery plants and gigafactories: every panel and feeder, documented for handover.</p><span class="go">Manufacturing <span class="arr">→</span></span></a>
       </div>
     </div>
   </section>
 
   <section class="band" id="built">
     <div class="wrap">
-      <p class="kicker center">Built for operations</p>
-      <h2 class="center">Safe enough<br><em>for a live site.</em></h2>
+      <p class="kicker center">On a live site</p>
+      <h2 class="center">Works with your crew,<br><em>by your rules.</em></h2>
       <div class="specs">
-        <div class="spec"><h3>Read‑only by default</h3><p>It reads monitoring, maintenance and document systems. It never writes to control systems.</p></div>
-        <div class="spec"><h3>Your data stays put</h3><p>On your servers, in your cloud, or in‑country. Never used to train anyone else’s models.</p></div>
-        <div class="spec"><h3>Works with what you run</h3><p>Your CMMS, building management and historian data, plus the manuals and procedures you already have.</p></div>
-        <div class="spec"><h3>Security first</h3><p>Single sign‑on, least privilege and a full audit trail, from engineers who built sign‑in for banks.</p></div>
+        <div class="spec"><h3>Alongside your testers</h3><p>It captures, checks and documents. Your NETA or commissioning crew keeps every decision.</p></div>
+        <div class="spec"><h3>Safe by design</h3><p>Visual checks on de‑energized gear; thermal under load through IR windows or with qualified staff, per NFPA 70E.</p></div>
+        <div class="spec"><h3>Imagery stays on site</h3><p>Processing on edge hardware. Nothing leaves the site unless you export it.</p></div>
+        <div class="spec"><h3>Into your Cx platform</h3><p>Findings with photos, locations and the standard they cite, in the issue log you already use.</p></div>
       </div>
     </div>
   </section>
@@ -164,15 +188,15 @@
       <div class="split">
         <div>
           <p class="kicker">Who builds it</p>
-          <h2>Engineers, <em>not an agency.</em></h2>
-          <p class="body">Leyoxa was founded by <a class="u" href="https://sepehrafla.github.io" target="_blank" rel="noopener">Sepehr Aflatounian</a>, a computer engineer from the University of Waterloo. Our AI agents already run in production, answering live calls and working inside the old, messy systems real operations depend on.</p>
-          <p class="more left"><a href="/praxis/">See Praxis, in production <span class="arr">→</span></a></p>
+          <h2>Perception engineers, <em>on the jobsite.</em></h2>
+          <p class="body">Leyoxa was founded by <a class="u" href="https://sepehrafla.github.io" target="_blank" rel="noopener">Sepehr Aflatounian</a>, a University of Waterloo computer engineer. The same problems as a self‑driving car, small objects, mixed sensors, rooms without GPS, applied to the last weeks of a build.</p>
+          <p class="more left"><a href="/praxis/">Our agents in production <span class="arr">→</span></a></p>
         </div>
         <ul class="creds">
           <li><b>Autonomous systems</b><span>Led Watonomous, the University of Waterloo’s autonomous driving team.</span></li>
           <li><b>Machine learning</b><span>Co‑founded SeedCI: cyber‑attack detection and price prediction models.</span></li>
           <li><b>Security at bank scale</b><span>Sign‑in and identity for millions of banking customers at EQ Bank and PC Financial.</span></li>
-          <li><b>Agents in production</b><span>Praxis: six AI agents running inside practice systems, answering live calls.</span></li>
+          <li><b>Field apps</b><span>Eight years building iPhone apps people rely on every day.</span></li>
         </ul>
       </div>
     </div>
@@ -180,12 +204,12 @@
 
   <section class="band" id="work">
     <div class="wrap">
-      <p class="kicker center">How we work</p>
-      <h2 class="center">Start with one pilot.</h2>
+      <p class="kicker center">The pilot</p>
+      <h2 class="center">One room. Eight to twelve weeks.<br><em>Measured against your crew.</em></h2>
       <ol class="path">
-        <li><span class="pn">1</span><h3>Walk the site</h3><p>A free visit or call. We find the equipment, the alarms and the paperwork costing you the most.</p></li>
-        <li><span class="pn">2</span><h3>Pilot one problem</h3><p>One site, one outcome you can measure. Scope and price agreed before we start.</p></li>
-        <li><span class="pn">3</span><h3>Roll it out</h3><p>If it works, we take it across sites and crews. If it could serve your whole industry, we can build it into a product together.</p></li>
+        <li><span class="pn">1</span><h3>Pick the room</h3><p>One electrical room, battery yard or substation, during commissioning. We agree scope and price before we start.</p></li>
+        <li><span class="pn">2</span><h3>Run in parallel</h3><p>Verify inspects and reads tests alongside your crew’s own inspection and IR survey. Nothing changes in your process.</p></li>
+        <li><span class="pn">3</span><h3>Compare the findings</h3><p>How many of the crew’s findings Verify caught, what it caught that was missed, and the documentation hours saved.</p></li>
       </ol>
       <p class="more"><a href="/how-it-works/">How a pilot works <span class="arr">→</span></a></p>
     </div>
@@ -194,30 +218,30 @@
   <section class="band alt" id="questions">
     <div class="wrap">
       <p class="kicker center">Questions</p>
-      <h2 class="center">What operators ask first.</h2>
+      <h2 class="center">What commissioning leads ask.</h2>
       <div class="qa">
-        <details open><summary>Does the AI touch our control systems?</summary><p>No. It reads from monitoring, maintenance and document systems and never writes to control systems. Anything beyond reading, such as opening a work order, goes through the people and permissions you set.</p></details>
-        <details><summary>Where does our data live?</summary><p>Where your rules say: on your own servers, in your cloud account, or in‑country. Nothing is used to train anyone else’s models.</p></details>
-        <details><summary>What does a pilot look like?</summary><p>One site, one problem, one measurable outcome, such as faster repairs on cooling equipment. Scope and price are agreed before work starts.</p></details>
-        <details><summary>Where do you work?</summary><p>The United States, Canada and the Middle East.</p></details>
+        <details open><summary>Does it replace our testing technicians?</summary><p>No. It works alongside your NETA or commissioning crew: it captures, checks and documents, so each technician covers more equipment and nothing is missed.</p></details>
+        <details><summary>Is it safe around energized equipment?</summary><p>It follows the same rules your crew does. Visual inspection happens on de‑energized gear with covers off; thermal scans under load go through IR windows or with qualified staff present, per NFPA 70E.</p></details>
+        <details><summary>Do we need a robot?</summary><p>No. Verify starts on a cart or in a technician’s hand. A robot pays off for repeated sweeps during first load and on large outdoor yards.</p></details>
+        <details><summary>Where does site imagery go?</summary><p>It stays on site by default. Processing runs on edge hardware, with exports only to the commissioning platform you choose.</p></details>
       </div>
       <p class="more"><a href="/faq/">All questions <span class="arr">→</span></a><a href="/how-it-works/">How it works <span class="arr">→</span></a></p>
     </div>
   </section>
 
   <section class="final" id="start">
-    <p class="kicker">Start a pilot</p>
-    <h2>Which machine<br><em>keeps you up at night?</em></h2>
-    <p class="lede">Tell us about your site and the problem that keeps costing you. We’ll come back with what a pilot would look like, and what it would cost.</p>
-    <a class="btn big" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ASite%20type%20(data%20center%2C%20plant%2C%20field)%3A%0ACountry%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Start a pilot</a>
-    <p class="fine">Or write to contact@leyoxa.com</p>
+    <p class="kicker">Book a pilot</p>
+    <h2>Energizing soon?<br><em>Let’s verify it first.</em></h2>
+    <p class="lede">Tell us the build, the country and your commissioning dates. We’ll come back with a pilot plan and a price.</p>
+    <a class="btn big" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ABuild%20type%20(data%20center%2C%20solar%2C%20BESS%2C%20substation%2C%20plant)%3A%0ACountry%3A%0ACommissioning%20stage%20and%20dates%3A%0A">Book a pilot</a>
+    <p class="fine">United States, Canada and the Middle East · contact@leyoxa.com</p>
   </section>
 </main>
 
 <footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/oil-and-gas/">Oil &amp; gas</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="/praxis/">Praxis</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
     <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
   </div>
 </footer>

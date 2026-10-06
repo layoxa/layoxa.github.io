@@ -30,7 +30,7 @@
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   }), { threshold: .12, rootMargin: '0px 0px -6% 0px' });
   const groups = ['.loop-head', '.band .wrap > .kicker', '.band .wrap > h2', '.band .split > div > *', '.agents',
-    '.feature > *', '.path > *', '.not', '.inds > *', '.specs > *', '.creds', '.qa', '.more', '.final > *', '.doc > *'];
+    '.feature > *', '.path > *', '.not', '.inds > *', '.specs > *', '.creds', '.stats > *', '.qa', '.more', '.final > *', '.doc > *'];
   document.querySelectorAll(groups.join(',')).forEach(el => {
     const sibs = [...el.parentElement.children].filter(c => c.matches(groups.join(',')));
     el.style.setProperty('--i', Math.min(sibs.indexOf(el), 6));
@@ -50,10 +50,10 @@
     }, { threshold: .4 }).observe(box);
   });
 
-  // charts draw their line once they are on screen
-  document.querySelectorAll('[data-draw]').forEach(el => {
-    if (reduce) { el.classList.add('drawn'); return; }
-    new IntersectionObserver(([e], o) => { if (e.isIntersecting) { el.classList.add('drawn'); o.disconnect(); } }, { threshold: .5 }).observe(el);
+  // the scan draws its detection boxes once it is on screen
+  document.querySelectorAll('[data-scan]').forEach(el => {
+    if (reduce) { el.classList.add('on'); return; }
+    new IntersectionObserver(([e], o) => { if (e.isIntersecting) { el.classList.add('on'); o.disconnect(); } }, { threshold: .5 }).observe(el);
   });
 
   // the phone: the assistant answers, shortlists and books, then starts again
