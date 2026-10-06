@@ -1,17 +1,16 @@
 # Leyoxa
 
-> Leyoxa LLC co-builds vertical AI companies with operators who already have customers. The operator brings the customers, the industry knowledge and a problem that costs money every week; Leyoxa brings the engineering, the AI systems and security for regulated data, and takes part of its return in equity.
+> Leyoxa LLC is an AI venture studio. It co-builds vertical AI companies with operators who already have customers: the operator brings customers, industry knowledge and a costly operational problem; Leyoxa brings the engineering, AI systems and security for regulated data, and takes part of its return in equity.
 
-Leyoxa is a Texas company founded by Sepehr Aflatounian (https://sepehrafla.github.io), based in Toronto.
+Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
-## How Leyoxa builds
+## Pages
 
-Observe a business with real customers, find the bottleneck, build the system, deploy it in production, measure outcomes, and when the problem is large enough to be a company, build it as one with the operator.
+- [Home](https://leyoxa.com/index.md): What Leyoxa is, how it builds, and its first partnership.
+- [Questions about Leyoxa](https://leyoxa.com/faq.md): Answers about Leyoxa, an AI venture studio — what it is, who is a fit, how it is paid, who owns the IP, and how to start a partnership.
+- [How an AI venture studio partnership works](https://leyoxa.com/how-it-works.md): How Leyoxa co-builds a vertical AI company with an operator — who is a fit, the five stages, how the economics and IP work, and what we do not do.
+- [Praxis: AI agents for dental practices](https://leyoxa.com/praxis.md): How Leyoxa co-built Praxis with a dental marketing company — six AI agents in production, from voice booking to reputation, built for patient data.
 
-## First partnership
+## Optional
 
-Praxis — AI for dental practices. Leyoxa is the technology partner: architecture, AI systems and platform. Six agents in production: Voice, Reputation, GEO/SEO, Smile Simulator, Executive Assistant and Call Coaching.
-
-## Contact
-
-contact@leyoxa.com
+- [Everything in one file](https://leyoxa.com/llms-full.txt)

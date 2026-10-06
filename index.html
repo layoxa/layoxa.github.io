@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leyoxa — We co-build vertical AI companies</title>
+<title>Leyoxa — AI venture studio that co-builds vertical AI companies</title>
 <meta name="description" content="Leyoxa co-builds vertical AI companies with operators who already have customers. We find the problem, build the system, and take part of our return in equity.">
 <meta name="theme-color" content="#07070b">
 <link rel="canonical" href="https://leyoxa.com/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Leyoxa — We co-build vertical AI companies">
 <meta property="og:description" content="Operators bring customers and a problem worth a company. We bring the system. We share the upside.">
@@ -17,9 +17,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="text/markdown" href="/index.md" title="Markdown version">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Leyoxa LLC","url":"https://leyoxa.com","logo":"https://leyoxa.com/favicon.svg","email":"contact@leyoxa.com","founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io"},"address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"description":"Leyoxa co-builds vertical AI companies with operators who already have customers."}
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://leyoxa.com/#org","name":"Leyoxa","legalName":"Leyoxa LLC","url":"https://leyoxa.com/","logo":"https://leyoxa.com/favicon.svg","description":"AI venture studio that co-builds vertical AI companies with operators who already have customers.","foundingDate":"2023","address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io","jobTitle":"Founder"},"contactPoint":{"@type":"ContactPoint","contactType":"partnerships","email":"contact@leyoxa.com"},"knowsAbout":["AI agents","vertical AI","venture studio","voice AI","HIPAA-compliant software","iOS"]},
+ {"@type":"WebSite","@id":"https://leyoxa.com/#site","url":"https://leyoxa.com/","name":"Leyoxa","publisher":{"@id":"https://leyoxa.com/#org"}},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What is an AI venture studio?","acceptedAnswer":{"@type":"Answer","text":"A team that builds new companies rather than client projects. Leyoxa partners with an operator who already has customers, builds the AI product with them, and takes part of its return in equity."}},
+  {"@type":"Question","name":"Who is a good fit for a Leyoxa partnership?","acceptedAnswer":{"@type":"Answer","text":"A business with paying customers, real industry knowledge, and one operational problem that costs money every week and that software could solve for many companies like it."}},
+  {"@type":"Question","name":"Who owns what Leyoxa builds?","acceptedAnswer":{"@type":"Answer","text":"The company owns what is built for it. Leyoxa keeps its reusable tooling and licenses it to the company."}}]}
+]}
 </script>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
 </head>
@@ -28,16 +36,16 @@
 <div class="veil" aria-hidden="true"></div>
 
 <header class="nav">
-  <a class="brand" href="#top" aria-label="Leyoxa home">
+  <a class="brand" href="/" aria-label="Leyoxa home">
     <svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#7b7bff"/><stop offset="1" stop-color="#b6d84a"/></linearGradient></defs><circle cx="20" cy="20" r="17" fill="none" stroke="url(#g)" stroke-width="2"/><g stroke="url(#g)" stroke-width="1.1" stroke-linecap="round"><path d="M20 20V8.5M20 20l7.5-9.5M20 20l11.5-3.5M20 20l10.8 4.5M20 20l5 10.5M20 20l-3.5 11.2M20 20l-10.2-6.5M20 20l-11.5-1.5M20 20l-7.5-8.7"/></g><circle cx="20" cy="20" r="3" fill="url(#g)"/></svg>
     <span>Leyoxa</span>
   </a>
-  <nav><a href="#loop">How we build</a><a href="#praxis">Praxis</a><a href="#founder">Founder</a><a class="pill" href="#partner">Partner with us</a></nav>
+  <nav><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="#partner">Partner with us</a></nav>
 </header>
 
 <main id="top">
   <section class="hero">
-    <p class="kicker rise">Venture studio · AI</p>
+    <p class="kicker rise">AI venture studio</p>
     <h1 class="rise d1">We co‑build<br><em>vertical AI</em> companies.</h1>
     <p class="lede rise d2">You bring customers and a problem worth a company. We build the system that solves it, and take part of our return in equity.</p>
     <div class="cta rise d3"><a class="btn" href="#partner">Partner with us</a><a class="ghost" href="#praxis">See the first one ↓</a></div>
@@ -66,9 +74,10 @@
           <p class="kicker">Chapter one</p>
           <h2>Praxis.<br><em>AI for dental practices.</em></h2>
           <p class="body">Built with a dental marketing company that already had the practices. Leyoxa is the technology partner: architecture, AI systems and the platform, from first agent to production.</p>
+          <p class="more left"><a href="/praxis/">Read the Praxis story →</a></p>
           <dl class="facts">
             <div><dt>6</dt><dd>AI agents in production</dd></div>
-            <div><dt>US + CA</dt><dd>Dental practices live</dd></div>
+            <div><dt>US</dt><dd>Dental practices live</dd></div>
             <div><dt>HIPAA</dt><dd>Built for patient data</dd></div>
           </dl>
         </div>
@@ -103,21 +112,28 @@
         </div>
       </div>
       <p class="not">Not an agency. Not hourly work. Not twenty small projects. <b>A few partnerships, built to be companies.</b></p>
+      <p class="more"><a href="/how-it-works/">How a partnership works →</a></p>
     </div>
   </section>
 
   <section class="band" id="founder">
-    <div class="wrap founder">
-      <img src="assets/sepehr.jpg" alt="Sepehr Aflatounian" width="399" height="492" loading="lazy">
-      <div>
-        <p class="kicker">Founder</p>
-        <h2>Sepehr Aflatounian</h2>
-        <p class="body">Eight years building software people trust with their money: iOS, sign‑in and security at EQ Bank and Ford. Built Smile Link, a patient app for dentists, and the AI platform behind Praxis.</p>
-        <div class="cred">
-          <a class="chip" href="https://sepehrafla.github.io" target="_blank" rel="noopener"><img src="assets/smile-link.jpg" alt="" width="28" height="28">Portfolio ↗</a>
-          <a class="chip" href="https://www.linkedin.com/in/saflatounian" target="_blank" rel="noopener">LinkedIn ↗</a>
-        </div>
+    <div class="wrap founder-text">
+      <p class="kicker">Founder</p>
+      <h2>Built by an engineer who ships to production.</h2>
+      <p class="body">Leyoxa was founded by <a class="u" href="https://sepehrafla.github.io" rel="author">Sepehr Aflatounian</a>: eight years building software people trust with their money, in iOS, sign‑in and security at EQ Bank and Ford. He built Smile Link, a patient app for dentists, and the AI platform behind Praxis.</p>
+    </div>
+  </section>
+
+  <section class="band light" id="questions">
+    <div class="wrap">
+      <p class="kicker">Questions</p>
+      <h2 class="center">What operators ask first.</h2>
+      <div class="qa">
+        <details open><summary>What is an AI venture studio?</summary><p>A team that builds new companies rather than client projects. Leyoxa partners with an operator who already has customers, builds the AI product with them, and takes part of its return in equity, so both sides win only if the company does.</p></details>
+        <details><summary>Who is a good fit?</summary><p>A business with paying customers, real industry knowledge, and one operational problem that costs money every week and that software could solve for many companies like it.</p></details>
+        <details><summary>Who owns what gets built?</summary><p>The company owns what is built for it. Leyoxa keeps its reusable tooling and licenses it to the company, so each partnership starts further ahead than the last.</p></details>
       </div>
+      <p class="more"><a href="/faq/">All questions →</a> · <a href="/how-it-works/">How a partnership works →</a></p>
     </div>
   </section>
 
@@ -134,7 +150,7 @@
   <span>Toronto · Austin</span>
 </footer>
 
-<script type="module" src="assets/loop.js"></script>
+<script type="module" src="/assets/loop.js"></script>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>

@@ -1,0 +1,149 @@
+# Questions
+
+### What is Leyoxa?
+Leyoxa is an AI venture studio. It co-builds vertical AI companies with operators who already have customers.
+
+### What is an AI venture studio?
+A team that builds new companies rather than client projects. Leyoxa partners with an operator, builds the AI product with them, and takes part of its return in equity, so both sides win only if the company does.
+
+### How is that different from an AI agency?
+An agency is paid for hours and leaves when the project ends. Leyoxa is paid partly in equity and stays, because its return depends on the company working.
+
+### Who is a good fit?
+A business with paying customers, real industry knowledge, and one operational problem that costs money every week and that software could solve for many businesses like it.
+
+### What does the operator bring?
+Customers, industry knowledge, and the willingness to sell the product to businesses like theirs. Distribution is the operator's half of the company.
+
+### How does Leyoxa get paid?
+A build fee, usually below market rate, plus equity in the company being built. Terms are set for each partnership.
+
+### Who owns the code and the IP?
+The company owns what is built for it. Leyoxa keeps its reusable tooling and licenses it to the company.
+
+### Which industries does Leyoxa work in?
+Any industry with a costly, repeated operational problem and an operator who already has customers. The first partnership is Praxis, in dental, and Leyoxa is committed to it there.
+
+### How many partnerships does Leyoxa take on?
+A few a year, so each one gets real engineering attention.
+
+### Where is Leyoxa based?
+Leyoxa LLC is a Texas company. Its founder, Sepehr Aflatounian, works from Toronto. Partnerships run across the United States and Canada.
+
+### How do we start?
+Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership) with your business, your customers, and the problem that keeps costing you.
+
+
+---
+
+# How a partnership works
+
+An operator brings the customers and the problem. Leyoxa brings the engineering. The company that comes out of it is owned together.
+
+## What we look for
+
+- **Paying customers today.** We build for a market that already pays you, not one we hope exists.
+- **Depth in one industry.** Years of knowing how the work is actually done, and where it breaks.
+- **One expensive problem.** Something that costs money every week, such as missed calls, slow follow-up or manual reporting, and that many businesses like yours share.
+- **A partner who sells.** Distribution is your half of the company.
+
+## The five stages
+
+1. **Embed.** We work inside your operation and map where time and money leak.
+2. **Pick the bottleneck.** One problem, chosen by what it costs and by how many other businesses have it.
+3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring, engineered for regulated data from day one.
+4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
+5. **Build the company.** When the numbers hold, the product becomes its own company, sold to businesses like yours.
+
+## How the economics work
+
+Every partnership is structured on its own terms, but the shape is the same:
+
+- Leyoxa is paid for the build, usually below market rate.
+- In exchange, Leyoxa holds equity in the company being built.
+- What is built for the company belongs to the company. Leyoxa's reusable tooling stays Leyoxa's and is licensed to it, so every partnership starts further ahead than the last.
+
+## What we build with
+
+| Layer | What it does |
+|---|---|
+| Voice and chat agents | Talk to customers, book, answer, hand off to people |
+| Integrations | Read and write the systems the business already runs on |
+| Retrieval and memory | Answer from the company's own records |
+| Orchestration | Run multi-step work reliably, with retries and approvals |
+| Evaluation and monitoring | Measure every agent against real outcomes |
+| Security | Permissions, audit trails and handling of regulated data |
+
+## What we do not do
+
+- Generic AI agency work.
+- Short projects with no path to a company.
+- More than a few partnerships at once.
+
+Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership): your business, your customers, and the problem that keeps costing you.
+
+
+---
+
+# Leyoxa
+
+> AI venture studio. Leyoxa co-builds vertical AI companies with operators who already have customers.
+
+You bring customers and a problem worth a company. We build the system that solves it, and take part of our return in equity.
+
+## How we build
+
+1. **Observe.** We work inside a business that already has customers, and watch where the money and the hours leak.
+2. **Find the bottleneck.** Many complaints, one constraint. We name the problem that costs money every week.
+3. **Build.** Agents, integrations, memory, permissions. Engineered for regulated data from day one.
+4. **Deploy.** Into production, through the operator's own customers.
+5. **Measure.** Outcomes, not demos.
+6. **Own.** When the problem is big enough to be a company, we build it as one, with the operator, and share the upside.
+
+## Chapter one: Praxis
+
+AI for dental practices, built with a dental marketing company that already had the practices. Leyoxa is the technology partner. Six AI agents in production: Voice, Reputation, GEO/SEO, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md).
+
+## The partnership
+
+You bring customers who already pay you, years inside the industry, and a problem that costs money every week. We bring engineering end to end, AI systems that survive production, and security for regulated data. [How a partnership works](https://leyoxa.com/how-it-works.md).
+
+## Founder
+
+Sepehr Aflatounian: eight years building software people trust with their money, in iOS, sign-in and security at EQ Bank and Ford. Built Smile Link, a patient app for dentists, and the AI platform behind Praxis. https://sepehrafla.github.io
+
+## Contact
+
+contact@leyoxa.com
+
+
+---
+
+# Praxis
+
+Praxis is the first company Leyoxa co-built. A dental marketing company had the practices. Leyoxa built the technology.
+
+## The problem
+
+Dental practices lose patients at the front desk. Calls ring out after hours and at lunch, reviews go unanswered, and the owner sees the numbers weeks late. The marketing company behind Praxis saw it across every practice it served.
+
+## What was built
+
+Six AI agents, in production:
+
+- **Voice.** Answers patient calls, books, reschedules and cancels in the practice's own scheduling system, and hands off to staff when a person is needed.
+- **Reputation.** Gathers a practice's reviews from Google, Facebook, Yelp, Healthgrades and other sites, and scores each provider.
+- **GEO / SEO.** Keeps the practice findable in search and in AI answers.
+- **Smile Simulator.** Lets a prospective patient preview a new smile from a photo, on the practice's own website.
+- **Executive Assistant.** Answers the owner's questions from the practice's own data.
+- **Call Coaching.** Reviews calls so the front desk gets better every week.
+
+## How it is built
+
+- **Into the practice's existing systems.** The agents read and write the practice-management software the office already uses, rather than adding another tool to check.
+- **For patient data.** Praxis handles protected health information, so access is limited to named people under business associate agreements.
+- **Measured.** Each agent is judged by what it actually did on a call or a record, not by a demo.
+
+## Where it is now
+
+Live with dental practices across the United States. Leyoxa remains Praxis's technology partner.
