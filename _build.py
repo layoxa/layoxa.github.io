@@ -78,10 +78,7 @@ def render(body):
 
 
 NAV = """<header class="nav solid">
-  <a class="brand" href="/" aria-label="Leyoxa home">
-    <svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#7b7bff"/><stop offset="1" stop-color="#b6d84a"/></linearGradient></defs><circle cx="20" cy="20" r="17" fill="none" stroke="url(#g)" stroke-width="2"/><g stroke="url(#g)" stroke-width="1.1" stroke-linecap="round"><path d="M20 20V8.5M20 20l7.5-9.5M20 20l11.5-3.5M20 20l10.8 4.5M20 20l5 10.5M20 20l-3.5 11.2M20 20l-10.2-6.5M20 20l-11.5-1.5M20 20l-7.5-8.7"/></g><circle cx="20" cy="20" r="3" fill="url(#g)"/></svg>
-    <span>Leyoxa</span>
-  </a>
+  <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
   <nav><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#partner">Partner with us</a></nav>
 </header>"""
 
