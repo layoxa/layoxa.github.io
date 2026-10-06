@@ -30,7 +30,7 @@
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   }), { threshold: .12, rootMargin: '0px 0px -6% 0px' });
   const groups = ['.loop-head', '.band .wrap > .kicker', '.band .wrap > h2', '.band .split > div > *', '.agents',
-    '.cards > *', '.chips', '.compare > *', '.qa', '.more', '.final > *', '.doc > *'];
+    '.feature > *', '.halves', '.not', '.qa', '.more', '.final > *', '.doc > *'];
   document.querySelectorAll(groups.join(',')).forEach(el => {
     const sibs = [...el.parentElement.children].filter(c => c.matches(groups.join(',')));
     el.style.setProperty('--i', Math.min(sibs.indexOf(el), 6));
@@ -39,7 +39,18 @@
 
   document.querySelectorAll('.yr').forEach(y => y.textContent = new Date().getFullYear());
 
-  // hero phone: the assistant answers, shortlists and books, then starts again
+  // example panels: items arrive one by one while on screen, then settle
+  document.querySelectorAll('[data-seq]').forEach(box => {
+    const items = [...box.children].filter(c => c.tagName !== 'FIGCAPTION');
+    if (reduce) { items.forEach(i => i.classList.add('show')); return; }
+    new IntersectionObserver(([e], o) => {
+      if (!e.isIntersecting) return;
+      items.forEach((it, k) => setTimeout(() => it.classList.add('show'), 250 + k * 420));
+      o.disconnect();
+    }, { threshold: .4 }).observe(box);
+  });
+
+  // the phone: the assistant answers, shortlists and books, then starts again
   const chat = document.querySelector('#demo .chat');
   if (chat) {
     const items = [...chat.children];

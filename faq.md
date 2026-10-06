@@ -1,34 +1,34 @@
 # Questions
 
-### What is AI visibility?
-Whether AI assistants such as ChatGPT, Gemini, Perplexity and Siri mention your business when a nearby customer asks for what you sell, and whether what they say about you is right. It is sometimes called generative engine optimization, or GEO.
+### What is an AI venture studio, in plain terms?
+A team that builds AI products together with a business that already has customers, and is paid partly in a share of what it builds. Leyoxa does not bill hours and leave; it wins only if the product works.
 
-### Which AI assistants matter for a local business?
-The ones your customers already use: ChatGPT, Google’s Gemini and AI answers in Google Search, Apple’s Siri, Microsoft Copilot and Perplexity. They draw on overlapping sources, such as your listings, reviews and website, so fixing those helps everywhere at once.
+### What can AI actually do for a business like mine?
+Three things, most often. Help more customers find you, including through AI assistants like ChatGPT and Siri. Earn more from the customers you have, by answering every call, booking and following up. And take busywork off your plate, such as scheduling, reminders and reports.
 
-### Can AI assistants really book appointments?
-They are starting to. Assistants can already follow booking links, and some can place calls or complete reservations for their users. A business with clear hours, services and a booking path an agent can use is the one that gets booked.
+### What does “getting found by AI” mean?
+People increasingly ask an AI assistant where to go instead of searching. The assistant gives one answer, and it picks a business whose hours, services, prices and reviews it can read, and that it can book. Making a business that answer is one of the problems we build for.
 
-### Is this just SEO?
-It builds on it. Search engines rank pages; AI assistants pick one answer. Being that answer depends on reviews, consistent listings and facts a machine can read: services, prices, hours and how to book.
+### How is a venture studio different from an AI agency?
+An agency is paid for hours and leaves when the project ends. Leyoxa is paid partly in equity and stays, because its return depends on what it built working.
 
-### Do I need a website?
-It helps, because it is the one place you fully control what a machine reads about you. If you do not have one, we can set up a simple page that does that job.
+### Who is a good fit?
+A business with paying customers, real industry knowledge, and one problem that costs money every week and that software could solve for many businesses like it.
 
-### How long until AI recommends my business?
-Listing and website fixes are picked up as the assistants refresh what they know, which can take weeks. That is why we measure every month and show you the change, rather than promising a date.
+### What does the business bring?
+Customers, industry knowledge, and the willingness to sell what we build to businesses like theirs. Distribution is the partner’s half of the company.
 
-### What does it cost?
-The first AI check is free. After it, we recommend only what your results call for, with a clear price before any work starts.
+### How does Leyoxa get paid?
+A build fee, usually below market rate, plus equity in what is being built. Terms are set for each partnership.
 
-### Which businesses do you work with?
-Businesses with a physical location that customers book or walk into, such as barbers, salons, gyms, studios, restaurants, cafés, auto repair and pet grooming. We do not currently work with healthcare, dental, legal or accounting practices.
+### Who owns the code and the IP?
+The company owns what is built for it. Leyoxa keeps its reusable tooling and licenses it to the company.
+
+### Which industries does Leyoxa work in?
+Any industry with a costly, repeated problem and a partner who already has customers. Our dental work is Praxis, and we are not taking on new healthcare, dental, legal or accounting partnerships.
 
 ### Who is behind Leyoxa?
 Leyoxa LLC is a Texas company founded by [Sepehr Aflatounian](https://sepehrafla.github.io), a software engineer who built Praxis, an AI platform that answers and books patient calls and keeps dental practices visible in search and AI answers.
 
-### Where do you work?
-Across the United States and Canada.
-
 ### How do we start?
-Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check) with your business name and city for a free AI check.
+Email [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership) with your business, your customers, and the problem that keeps costing you.

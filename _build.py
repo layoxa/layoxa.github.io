@@ -79,10 +79,10 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#check">Free AI check</a></nav>
+  <nav aria-label="Main"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a class="pill" href="/#partner">Partner with us</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="/#check">Free AI check</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+<div class="sheet" id="sheet"><a href="/how-it-works/">How it works</a><a href="/praxis/">Praxis</a><a href="/faq/">FAQ</a><a href="/#partner">Partner with us</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
 
 FOOT = """<footer>
   <div class="foot">
@@ -140,7 +140,7 @@ def page(meta, htm, faq, slug):
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / {e(meta["title"])}</nav>
 {htm}
 <p class="updated">Updated <time datetime="{meta["updated"]}">{meta["updated"]}</time> · <a href="/{slug}.md">Read as markdown</a></p>
-<section class="end"><h2>What does AI say about you?</h2><p>Send your business name and city. We’ll ask the assistants your customers use and send you what they answered, free.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check&amp;body=Business%20name%3A%0ACity%3A%0AWebsite%20(if%20any)%3A%0A">Get my free check</a></section>
+<section class="end"><h2>Have the customers?</h2><p>Tell us about your business and the problem that keeps costing you.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Partnership&amp;body=Business%3A%0AWhat%20you%20sell%20and%20to%20whom%3A%0AThe%20problem%20that%20keeps%20costing%20you%3A%0A">Tell us about your business</a></section>
 </article>
 </main>
 {FOOT}
@@ -168,13 +168,13 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC makes local businesses with a physical location the one AI assistants (ChatGPT, Gemini, Siri, Perplexity, Copilot) recommend, understand and book: consistent listings, machine-readable services, prices and hours, an agent-completable booking path, an AI receptionist, and a monthly AI visibility report. Serves the United States and Canada; not healthcare, dental, legal or accounting.
+> Leyoxa LLC is an AI venture studio. It partners with businesses that already have customers, builds the AI that grows them, and takes part of its return in equity. In plain terms the AI does three things: helps more customers find the business (including through assistants like ChatGPT, Gemini and Siri), earns more from each customer (every call answered, booked and followed up), and removes busywork (scheduling, reminders, reports). First partnership: Praxis, AI for dental practices.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home]({SITE}/index.md): What Leyoxa does, how AI assistants choose a business, and who it is for.
+- [Home]({SITE}/index.md): What an AI venture studio is, three examples of what the AI does, how Leyoxa builds, and Praxis.
 {links}
 
 ## Optional

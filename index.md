@@ -1,32 +1,25 @@
 # Leyoxa
 
-> Leyoxa makes local businesses the one AI assistants recommend, understand and book.
+> AI venture studio. Leyoxa partners with businesses that already have customers, builds the AI that grows them, and shares in the upside.
 
-Your customers have started asking ChatGPT, Gemini and Siri where to go. We make sure the answer is you, and that the AI can book you.
+## What that looks like
 
-## How AI chooses a business
+1. **More customers find you.** People now ask ChatGPT, Gemini and Siri where to go. AI gives one answer, and it picks the business it can read and book.
+2. **Earn more from every customer.** AI answers after hours, books the appointment, sends the reminder and asks for the review.
+3. **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
 
-1. **Ask.** A customer nearby asks an assistant for what you sell.
-2. **Narrow.** The assistant keeps the few it can trust: consistent listings, real reviews, open right now.
-3. **Read.** It reads your services, prices and hours. If a machine can’t read them, you drop out.
-4. **Book.** It follows your booking link, or calls. Whoever answers, at any hour, gets the customer.
-5. **Remember.** New reviews and repeat visits feed the next answer.
+## How we build
 
-## What we do
+Observe a business with real customers, find the bottleneck, build, deploy with its own customers, measure outcomes, and when the problem is big enough to be a company, build it as one with the partner and share the upside.
 
-- **Get found.** We check what ChatGPT, Gemini, Perplexity and Google’s AI say about you, then fix the listings, reviews and profiles they rely on.
-- **Get understood.** Services, prices, hours and location, published in the structured form assistants read.
-- **Get booked.** A booking path an agent can finish, and an AI receptionist that answers calls and books, day or night.
-- **See it work.** A monthly report: where AI mentions you, what it says, and the bookings it sends.
+## Chapter one: Praxis
 
-## Who it is for
+AI for dental practices, built with a dental marketing company that already had the practices. Six AI agents in production: Voice, GEO/SEO, Reputation, Smile Simulator, Executive Assistant and Call Coaching. [Read the Praxis story](https://leyoxa.com/praxis.md).
 
-Barbers, hair salons, nail studios, gyms, yoga and pilates studios, restaurants, cafés, auto repair, car washes, pet grooming, tattoo studios and dry cleaners. Not currently healthcare, dental, legal or accounting.
+## The partnership
 
-## Built before
+You bring customers who already pay you, years inside your industry, and a problem that costs money every week. We bring engineering end to end, AI that survives real customers, and security for sensitive data. [How it works](https://leyoxa.com/how-it-works.md).
 
-Praxis, the AI platform Leyoxa built with a dental marketing company, answers patient calls, books into each practice’s own schedule and keeps practices visible in search and AI answers. [Read the Praxis story](https://leyoxa.com/praxis.md).
+## Contact
 
-## Free AI visibility check
-
-Email contact@leyoxa.com with your business name and city. We’ll ask the assistants your customers use and send you exactly what they answered.
+contact@leyoxa.com

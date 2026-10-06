@@ -1,53 +1,64 @@
 ---
 title: How it works
-seo_title: How to get your local business recommended and booked by AI | Leyoxa
-description: How Leyoxa gets a local business found, understood and booked by AI assistants like ChatGPT, Gemini and Siri — the free check, the fixes, booking and the monthly report.
+seo_title: How an AI venture studio partnership works | Leyoxa
+description: How Leyoxa partners with a business that already has customers — the three problems AI solves, the six-stage loop, who is a fit, and how the economics and IP work.
 path: /how-it-works/
 updated: 2026-10-06
 ---
 # How it works
 
-Search gave customers ten links to compare. An AI assistant gives them one answer, and more and more often it books that answer too. Here is how we make that answer your business.
+A business brings the customers and the problem. Leyoxa brings the engineering. What comes out of it is built to be a company, and owned together.
 
-## 1. The free AI check
+## The three problems AI solves first
 
-We ask the assistants your customers use, such as ChatGPT, Gemini, Perplexity and Google’s AI answers, the questions a nearby customer would ask: “best barber near me”, “brunch open now”, “oil change today”. You get back exactly what they said, including whether you were mentioned and whether the details were right.
+Most of what AI can do for a business with customers falls into three kinds of work:
 
-## 2. Fix the facts AI relies on
+- **More customers find you.** People now ask ChatGPT, Gemini and Siri where to go, and the assistant gives one answer. We make the business readable and bookable by AI, so it is the one recommended.
+- **Earn more from every customer.** Calls answered after hours, appointments booked, reminders sent, reviews asked for. The revenue that used to ring out stays.
+- **Less busywork.** Scheduling, follow-ups, reports and the questions an owner asks every Monday, handled by agents inside the tools the business already uses.
 
-Assistants trust businesses whose details agree everywhere. We bring your listings into line:
+Every partnership starts with one of these, chosen by what it costs today.
 
-- Google Business Profile, Apple Business Connect, Bing Places and Yelp
-- The same name, address, phone, hours and services on every one
-- Categories and photos that say what you actually do
+## The loop
 
-## 3. Make your business readable
+1. **Observe.** We work inside your operation and map where time and money leak.
+2. **Find the bottleneck.** One problem, chosen by what it costs and by how many other businesses have it.
+3. **Build.** Agents, integrations with the systems you already use, memory, permissions and monitoring.
+4. **Deploy.** In production with your own customers first, measured against the outcome we agreed on before writing code.
+5. **Measure.** What got booked, earned or saved, and what did not.
+6. **Own.** When the numbers hold, the product becomes its own company, sold to businesses like yours.
 
-Hours in a photo and prices “on request” are invisible to a machine. We publish your services, prices, hours and location in the structured format assistants read, on your website and in your listings, so an assistant can answer a customer’s question about you without guessing.
+## What we look for
 
-## 4. Make it bookable
+- **Paying customers today.** We build for a market that already pays you, not one we hope exists.
+- **Depth in one industry.** Years of knowing how the work is actually done, and where it breaks.
+- **One expensive problem.** Something that costs money every week, and that many businesses like yours share.
+- **A partner who sells.** Distribution is your half of the company.
 
-An assistant that cannot finish a booking moves on to someone it can. We connect a booking path an agent can complete from start to finish, and add an AI receptionist that answers your phone and books appointments, day or night.
+## How the economics work
 
-## 5. Keep the reviews coming
+Every partnership is structured on its own terms, but the shape is the same:
 
-Recent, real reviews are one of the strongest signals an assistant uses. We set up a simple way to ask happy customers for one, and to reply to every review.
+- Leyoxa is paid for the build, usually below market rate.
+- In exchange, Leyoxa holds equity in what is being built.
+- What is built for the company belongs to the company. Leyoxa’s reusable tooling stays Leyoxa’s and is licensed to it, so every partnership starts further ahead than the last.
 
-## 6. See it work
+## What we build with
 
-Every month you get a short report: which assistants mention you, what they say, how you compare with nearby competitors, and the calls and bookings that came in.
-
-| What an assistant checks | What we do about it |
+| Layer | What it does |
 |---|---|
-| Are you real and open now? | Consistent listings and current hours everywhere |
-| Do you offer what was asked? | Services and prices a machine can read |
-| Are you any good? | A steady stream of recent reviews, all answered |
-| Can it book you? | A booking link an agent can finish, and calls always answered |
+| Voice and chat agents | Talk to customers, book, answer, hand off to people |
+| AI visibility | Make the business readable and bookable by AI assistants |
+| Integrations | Read and write the systems the business already runs on |
+| Retrieval and memory | Answer from the company’s own records |
+| Orchestration | Run multi-step work reliably, with retries and approvals |
+| Evaluation and security | Measure every agent against real outcomes; permissions and audit trails |
 
-## Who it is for
+## What we do not do
 
-Businesses with a physical location that customers book or walk into: barbers, salons, nail studios, gyms, yoga and pilates studios, restaurants, cafés, auto repair, car washes, pet grooming, tattoo studios and more.
+- Generic AI agency work.
+- Short projects with no path to a company.
+- More than a few partnerships at once.
+- New partnerships in healthcare, dental, legal or accounting. Our dental work is Praxis.
 
-We do not currently work with dental, medical or other healthcare practices, or with legal and accounting firms.
-
-Start with a [free AI check](mailto:contact@leyoxa.com?subject=Free%20AI%20visibility%20check): send your business name and city.
+Start with an email to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Partnership): your business, your customers, and the problem that keeps costing you.

@@ -114,7 +114,7 @@ if (renderer) {
 
   /* ---------- scroll → shape ---------- */
   const steps = [...document.querySelectorAll('.step')];
-  const band = document.querySelector('#what'), fin = document.querySelector('.final');
+  const band = document.querySelector('#praxis'), fin = document.querySelector('.final');
   let atEnd = 0;
   const rail = [...document.querySelectorAll('.rail i')], railBox = document.querySelector('.rail');
   let p = 0;
