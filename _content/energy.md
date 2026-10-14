@@ -3,9 +3,11 @@ title: Energy
 seo_title: Commissioning QA for solar, battery storage and substations | Leyoxa Verify
 description: Leyoxa Verify checks solar strings, battery storage, substations and on-site power before energization — terminations, labels and test results against the design — and catches hot joints under first load.
 path: /energy/
-updated: 2026-10-06
+updated: 2026-10-13
 ---
 # Energy commissioning QA
+
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
 
 *Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
 
@@ -28,4 +30,4 @@ In EPRI’s database of battery storage failures, 72% of failures with a known s
 - **Safe by design.** Per NFPA 70E, with thermal under load through IR windows or with qualified staff.
 - **Built for big yards.** On a cart or in a technician’s hand first; a robot for repeated sweeps across large outdoor sites.
 
-We work in the United States, Canada and the Middle East. [Book a pilot on one yard or substation](mailto:contact@leyoxa.com?subject=Energy%20pilot).
+If you build or commission electrical systems and want to compare notes, write to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Commissioning%20QA%20research).

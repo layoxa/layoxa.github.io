@@ -1,5 +1,7 @@
 # Questions
 
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
+
 ### What is Leyoxa Verify?
 AI commissioning QA for data center electrical systems. It reads every test result, checks every termination and label against the design, catches hot joints under first load, and writes the handover package, so there is evidence for every connection before energization.
 

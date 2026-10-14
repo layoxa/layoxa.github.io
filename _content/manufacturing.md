@@ -3,9 +3,11 @@ title: Manufacturing
 seo_title: Electrical commissioning QA for fabs and battery plants | Leyoxa Verify
 description: Leyoxa Verify checks every panel, feeder and termination in new fabs, battery plants and gigafactories against the design before energization, and documents it for handover.
 path: /manufacturing/
-updated: 2026-10-06
+updated: 2026-10-13
 ---
 # Manufacturing commissioning QA
+
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
 
 *Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
 
@@ -24,4 +26,4 @@ New fabs, battery plants and gigafactories energize thousands of panels and feed
 - **Safe by design**, per NFPA 70E.
 - **Imagery stays on site**, which matters in plants with strict confidentiality rules.
 
-We work in the United States, Canada and the Middle East. [Book a pilot on one area](mailto:contact@leyoxa.com?subject=Manufacturing%20pilot).
+If you build or commission electrical systems and want to compare notes, write to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Commissioning%20QA%20research).

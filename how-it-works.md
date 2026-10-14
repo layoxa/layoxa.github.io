@@ -1,5 +1,7 @@
 # How it works
 
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
+
 Leyoxa Verify produces evidence for every electrical connection before an AI data center is energized: it reads every test result, checks what was installed against the design, and writes the handover. **Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision.**
 
 ## 1. Test

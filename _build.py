@@ -79,16 +79,16 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a class="pill" href="/#start">Book a pilot</a></nav>
+  <nav aria-label="Main"><a href="/#build">What we build</a><a href="/#research">Research</a><a href="/#team">About</a><a class="pill" href="/#start">Get in touch</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/#start">Book a pilot</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+<div class="sheet" id="sheet"><a href="/#build">What we build</a><a href="/#research">Research</a><a href="/#team">About</a><a href="/#start">Get in touch</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
 
 FOOT = """<footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/data-centers/">Data centers</a><a href="/energy/">Energy</a><a href="/manufacturing/">Manufacturing</a><a href="/how-it-works/">How it works</a><a href="/faq/">FAQ</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
-    <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin · Serving the US, Canada and the Middle East</span></div>
+    <nav aria-label="Footer"><a href="/#build">What we build</a><a href="/#research">Research</a><a href="/how-it-works/">Commissioning QA research</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin</span></div>
   </div>
 </footer>"""
 
@@ -140,7 +140,7 @@ def page(meta, htm, faq, slug):
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Leyoxa</a> / {e(meta["title"])}</nav>
 {htm}
 <p class="updated">Updated <time datetime="{meta["updated"]}">{meta["updated"]}</time> · <a href="/{slug}.md">Read as markdown</a></p>
-<section class="end"><h2>Energizing soon?</h2><p>Tell us the build, the country and your commissioning dates. We’ll come back with a pilot plan and a price.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Pilot&amp;body=Company%3A%0ABuild%20type%20(data%20center%2C%20solar%2C%20BESS%2C%20substation%2C%20plant)%3A%0ACountry%3A%0ACommissioning%20stage%20and%20dates%3A%0A">Book a pilot</a></section>
+<section class="end"><h2>Working on something similar?</h2><p>This is a research area, not yet a commercial offering. If you build or commission electrical systems and want to compare notes, we’d like to hear from you.</p><a class="btn" href="mailto:contact@leyoxa.com?subject=Commissioning%20QA%20research">contact@leyoxa.com</a></section>
 </article>
 </main>
 {FOOT}
@@ -168,13 +168,13 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC builds Leyoxa Verify: AI commissioning QA for data center electrical systems, producing evidence for every connection before energization. It reads test results (insulation and contact resistance, breaker and relay tests, load-bank runs) against NETA limits and against peer equipment, checks labels against the one-line diagram and matches torque marks to torque records (a mark is evidence, not proof), catches hot joints with thermal scans under first load, and writes the handover package. Verify supplies evidence and flags anomalies; qualified engineers make every acceptance decision. Runs on a cart, a robot or in a technician's hand; follows NFPA 70E; imagery stays on site. Pilot: one electrical room for 8-12 weeks in parallel with the crew, measured on recall, precision, missed findings and time to verified close. Energy and manufacturing builds come next. Serves the United States, Canada and the Middle East.
+> Leyoxa LLC designs, builds and runs production AI systems for real-world operations: voice and workflow agents that work inside the software a business already uses, integrations with legacy systems, data and reporting pipelines, and security and identity engineering. Research area: AI-assisted commissioning QA for electrical systems (data centers, energy), not yet a commercial offering. Based in Toronto and Austin.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home]({SITE}/index.md): What Leyoxa Verify does, the evidence for why it matters, where it works and how a pilot runs.
+- [Home]({SITE}/index.md): What Leyoxa builds, current research, and the founder.
 {links}
 
 ## Optional
@@ -182,7 +182,7 @@ Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: 
 - [Everything in one file]({SITE}/llms-full.txt)
 """)
     (ROOT / "llms-full.txt").write_text("\n\n---\n\n".join(full))
-    urls = [("/", "2026-10-06")] + [(m["path"], m["updated"]) for m, _ in pages]
+    urls = [("/", "2026-10-13")] + [(m["path"], m["updated"]) for m, _ in pages]
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE}{p}</loc><lastmod>{d}</lastmod></url>\n" for p, d in urls) + "</urlset>\n")
     print("built", [s for _, s in pages])

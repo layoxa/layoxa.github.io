@@ -3,10 +3,12 @@ title: Questions
 seo_title: "Leyoxa Verify: questions from commissioning leads"
 description: Answers about Leyoxa Verify, robotic and AI commissioning QA — technicians, safety around energized equipment, robots, data, standards, pilots and where Leyoxa works.
 path: /faq/
-updated: 2026-10-06
+updated: 2026-10-13
 faq: true
 ---
 # Questions
+
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
 
 ### What is Leyoxa Verify?
 AI commissioning QA for data center electrical systems. It reads every test result, checks every termination and label against the design, catches hot joints under first load, and writes the handover package, so there is evidence for every connection before energization.

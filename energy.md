@@ -1,5 +1,7 @@
 # Energy commissioning QA
 
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
+
 *Leyoxa Verify starts with AI data centers. The same checks apply here, and this is where we go next.*
 
 Solar, battery storage, substations and on-site power all end the same way: thousands of connections that have to be right before the system is energized. Leyoxa Verify checks them, reads the test results, and writes the handover.
@@ -21,4 +23,4 @@ In EPRI’s database of battery storage failures, 72% of failures with a known s
 - **Safe by design.** Per NFPA 70E, with thermal under load through IR windows or with qualified staff.
 - **Built for big yards.** On a cart or in a technician’s hand first; a robot for repeated sweeps across large outdoor sites.
 
-We work in the United States, Canada and the Middle East. [Book a pilot on one yard or substation](mailto:contact@leyoxa.com?subject=Energy%20pilot).
+If you build or commission electrical systems and want to compare notes, write to [contact@leyoxa.com](mailto:contact@leyoxa.com?subject=Commissioning%20QA%20research).

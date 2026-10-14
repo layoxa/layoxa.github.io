@@ -3,9 +3,11 @@ title: How it works
 seo_title: How Leyoxa Verify works — robotic and AI commissioning QA pilot
 description: How Leyoxa Verify inspects terminations, reads test results and writes the handover package, and how an 8–12 week pilot runs alongside your commissioning crew.
 path: /how-it-works/
-updated: 2026-10-06
+updated: 2026-10-13
 ---
 # How it works
+
+Research notes. Leyoxa is exploring AI-assisted commissioning QA; it is not yet a commercial offering. The pages below describe the approach being researched.
 
 Leyoxa Verify produces evidence for every electrical connection before an AI data center is energized: it reads every test result, checks what was installed against the design, and writes the handover. **Verify supplies evidence and flags anomalies. Qualified engineers make every acceptance decision.**
 
