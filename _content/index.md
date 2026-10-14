@@ -1,13 +1,13 @@
 # Leyoxa
 
-> Leyoxa designs, builds and runs production AI systems for real-world operations, where mistakes cost money: agents that work inside the software a business already uses, live, every day.
+> Leyoxa builds AI for robots and the real world: perception and autonomy, the fleet and data software that keeps robots running, and AI agents in production, by engineers who have built them.
 
 ## What we build
 
-- **Production AI agents.** Voice and workflow agents that answer live calls, book, follow up and hand off to a person when it matters, judged by what they actually did.
-- **Integrations.** Agents that read and write the software a business already depends on, including old and messy systems.
-- **Data and reporting.** Pipelines that turn operational data into numbers people trust.
-- **Security and privacy.** Identity, access and data handling designed in from the start, including regulated and sensitive information.
+- **Perception and autonomy.** Computer vision, sensor fusion and edge inference for robots working in cluttered, GPS-less, real places.
+- **Fleet and data software.** Telemetry, data pipelines, monitoring and the human hand-off that let a fleet run unattended.
+- **AI agents in production.** Voice and workflow agents that work inside the software a business already runs, judged by what they actually did.
+- **Security and safety.** Identity, access and data handling designed in from day one.
 
 ## Research
 

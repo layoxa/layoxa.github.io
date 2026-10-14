@@ -168,7 +168,7 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC designs, builds and runs production AI systems for real-world operations: voice and workflow agents that work inside the software a business already uses, integrations with legacy systems, data and reporting pipelines, and security and identity engineering. Research area: AI-assisted commissioning QA for electrical systems (data centers, energy), not yet a commercial offering. Based in Toronto and Austin.
+> Leyoxa LLC builds AI for robots and real-world operations: robot perception and autonomy (computer vision, sensor fusion, edge inference), robot fleet and data software (telemetry, pipelines, monitoring, human hand-off), AI agents in production, and security engineering. Research area: AI-assisted commissioning QA for electrical systems (data centers, energy), not yet a commercial offering. Based in Toronto and Austin.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
