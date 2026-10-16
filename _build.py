@@ -79,15 +79,15 @@ def render(body):
 
 NAV = """<header class="nav solid">
   <a class="brand" href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="134" height="32"></a>
-  <nav aria-label="Main"><a href="/#build">What we build</a><a href="/#research">Research</a><a href="/#team">About</a><a class="pill" href="/#start">Get in touch</a></nav>
+  <nav aria-label="Main"><a href="/#approach">Approach</a><a href="/#industries">Industries</a><a href="/#work">Work</a><a href="/#about">About</a><a class="pill" href="/#start">Start a project</a></nav>
   <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
-<div class="sheet" id="sheet"><a href="/#build">What we build</a><a href="/#research">Research</a><a href="/#team">About</a><a href="/#start">Get in touch</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
+<div class="sheet" id="sheet"><a href="/#approach">Approach</a><a href="/#industries">Industries</a><a href="/#work">Work</a><a href="/#about">About</a><a href="/#start">Start a project</a><a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a></div>"""
 
 FOOT = """<footer>
   <div class="foot">
     <img src="/assets/logo.svg" alt="Leyoxa" width="100" height="24">
-    <nav aria-label="Footer"><a href="/#build">What we build</a><a href="/#research">Research</a><a href="/how-it-works/">Commissioning QA research</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
+    <nav aria-label="Footer"><a href="/#approach">Approach</a><a href="/#industries">Industries</a><a href="/how-it-works/">Research</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></nav>
     <div class="legal"><span>© <span class="yr">2026</span> Leyoxa LLC · A Texas company</span><span>Toronto · Austin</span></div>
   </div>
 </footer>"""
@@ -132,6 +132,7 @@ def page(meta, htm, faq, slug):
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">{ld}</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "247444ad8ea74118a80e97a2e4eeebf5"}}'></script>
 </head>
 <body class="sub">
 {NAV}
@@ -168,13 +169,13 @@ def main():
     links = "\n".join(f"- [{m['title']}]({SITE}/{s}.md): {m['description']}" for m, s in pages)
     (ROOT / "llms.txt").write_text(f"""# Leyoxa
 
-> Leyoxa LLC builds AI for robots and real-world operations: robot perception and autonomy (computer vision, sensor fusion, edge inference), robot fleet and data software (telemetry, pipelines, monitoring, human hand-off), AI agents in production, and security engineering. Research area: AI-assisted commissioning QA for electrical systems (data centers, energy), not yet a commercial offering. Based in Toronto and Austin.
+> Leyoxa LLC is an applied AI and robotics consulting firm. It designs, builds and runs AI agents and robotic systems inside real operations: manufacturing, logistics, construction, energy, data centers and field service. Systems are integrated with the business and plant software a company already runs, measured on real outcomes in production, and built with security and identity from day one. Research area: robotic inspection for electrical commissioning (not yet a commercial offering). Based in Toronto and Austin.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home]({SITE}/index.md): What Leyoxa builds, current research, and the founder.
+- [Home]({SITE}/index.md): Applied AI and robotics consulting: approach, industries, work and the founder.
 {links}
 
 ## Optional
@@ -182,7 +183,7 @@ Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: 
 - [Everything in one file]({SITE}/llms-full.txt)
 """)
     (ROOT / "llms-full.txt").write_text("\n\n---\n\n".join(full))
-    urls = [("/", "2026-10-13")] + [(m["path"], m["updated"]) for m, _ in pages]
+    urls = [("/", "2026-10-16")] + [(m["path"], m["updated"]) for m, _ in pages]
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE}{p}</loc><lastmod>{d}</lastmod></url>\n" for p, d in urls) + "</urlset>\n")
     print("built", [s for _, s in pages])

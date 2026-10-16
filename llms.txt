@@ -1,12 +1,12 @@
 # Leyoxa
 
-> Leyoxa LLC builds AI for robots and real-world operations: robot perception and autonomy (computer vision, sensor fusion, edge inference), robot fleet and data software (telemetry, pipelines, monitoring, human hand-off), AI agents in production, and security engineering. Research area: AI-assisted commissioning QA for electrical systems (data centers, energy), not yet a commercial offering. Based in Toronto and Austin.
+> Leyoxa LLC is an applied AI and robotics consulting firm. It designs, builds and runs AI agents and robotic systems inside real operations: manufacturing, logistics, construction, energy, data centers and field service. Systems are integrated with the business and plant software a company already runs, measured on real outcomes in production, and built with security and identity from day one. Research area: robotic inspection for electrical commissioning (not yet a commercial offering). Based in Toronto and Austin.
 
 Every page is also published as markdown. Contact: contact@leyoxa.com. Founder: Sepehr Aflatounian (https://sepehrafla.github.io).
 
 ## Pages
 
-- [Home](https://leyoxa.com/index.md): What Leyoxa builds, current research, and the founder.
+- [Home](https://leyoxa.com/index.md): Applied AI and robotics consulting: approach, industries, work and the founder.
 - [Data centers](https://leyoxa.com/data-centers.md): Leyoxa Verify checks switchgear, busway, UPS and PDU terminations against the design before IST, catches hot joints under load-bank testing, and writes the handover package.
 - [Energy](https://leyoxa.com/energy.md): Leyoxa Verify checks solar strings, battery storage, substations and on-site power before energization — terminations, labels and test results against the design — and catches hot joints under first load.
 - [Questions](https://leyoxa.com/faq.md): Answers about Leyoxa Verify, robotic and AI commissioning QA — technicians, safety around energized equipment, robots, data, standards, pilots and where Leyoxa works.
