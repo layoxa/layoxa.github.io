@@ -154,3 +154,13 @@ footer a{text-decoration:none;margin-left:18px}
   .num:nth-child(3){padding-left:0}
   .final{padding:110px 0}
 }
+
+/* simulate first: sim vs real pairs */
+.sim .lede{margin-top:-28px;margin-bottom:48px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pair + .pair{margin-top:20px}
+.clip{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:var(--dark)}
+.clip video{width:100%;height:100%;object-fit:cover}
+.clip figcaption{position:absolute;left:12px;bottom:10px;color:#e9e7e1;background:rgba(15,17,16,.55);padding:4px 8px;border-radius:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);font-size:11px}
+.clip figcaption b{color:#7fd6c2;font-weight:500}
+@media (max-width:700px){.pair{grid-template-columns:1fr;gap:14px}.pair + .pair{margin-top:14px}.sim .lede{margin-top:-20px;margin-bottom:32px}}

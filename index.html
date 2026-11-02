@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/v2.css?v=2">
+<link rel="stylesheet" href="/assets/v2.css?v=3">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"ProfessionalService","@id":"https://leyoxa.com/#org","name":"Leyoxa","legalName":"Leyoxa LLC","url":"https://leyoxa.com/","logo":"https://leyoxa.com/favicon.svg","image":"https://leyoxa.com/assets/og.jpg","description":"Applied AI and robotics consulting: AI agents and robotic systems designed, built and run inside real operations, integrated with existing business and plant systems.","foundingDate":"2023","address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"areaServed":["United States","Canada"],"founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io","alumniOf":"University of Waterloo"},"email":"contact@leyoxa.com","knowsAbout":["applied AI","AI agents","robotics integration","computer vision","autonomous mobile robots","industrial automation","systems integration","identity and access management","manufacturing","logistics","construction","energy","data centers","field service"]},
@@ -46,8 +46,8 @@
     <p class="lede rv">We design, build and run AI agents and robotic systems inside real plants, sites and fleets: connected to the systems you depend on, measured in production, secure from day one.</p>
     <div class="cta rv"><a class="btn" href="#start">Start a project</a><a class="btn ghost" href="#approach">How we work</a></div>
     <div class="film rv">
-      <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/poster-factory.jpg" aria-label="A collaborative robot arm making a precise pick on an assembly line">
-        <source src="/assets/media/web-factory.webm" type="video/webm"><source src="/assets/media/web-factory.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/poster-v3-hero.jpg" aria-label="A robot materializes from its digital-twin simulation, then robots adapt across varied tasks: assembly, grasping different objects, and picking from warehouse shelves">
+        <source src="/assets/media/v3-hero.webm" type="video/webm"><source src="/assets/media/v3-hero.mp4" type="video/mp4">
       </video>
       <span class="cap">AI-generated footage</span>
     </div>
@@ -82,10 +82,23 @@
     </div>
   </div></section>
 
-  <div class="wrap"><div class="film rv" style="margin:0 0 0">
-    <video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-warehouse.jpg" aria-label="An autonomous mobile robot moving down a warehouse aisle"><source src="/assets/media/web-warehouse.webm" type="video/webm"><source src="/assets/media/web-warehouse.mp4" type="video/mp4"></video>
-    <span class="cap">AI-generated footage</span>
-  </div></div>
+  <section class="sim" id="simulate"><div class="wrap">
+    <div class="head"><p class="label">Simulate first</p><h2 class="rv">Prove it in simulation. <em>Then run it on the floor.</em></h2></div>
+    <p class="lede rv">We model the cell, the aisle or the site before hardware moves, so plans, paths and failure cases are tested where mistakes are free.</p>
+    <div class="pair">
+      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-sim-arm.jpg" aria-label="A digital-twin simulation of a robot arm planning a pick-and-place"><source src="/assets/media/v2-sim-arm.webm" type="video/webm"><source src="/assets/media/v2-sim-arm.mp4" type="video/mp4"></video><figcaption class="label"><b>Simulation</b> · pick-and-place path</figcaption></figure>
+      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-real-arm.jpg" aria-label="A robot arm picking boxes from a conveyor onto a pallet"><source src="/assets/media/v2-real-arm.webm" type="video/webm"><source src="/assets/media/v2-real-arm.mp4" type="video/mp4"></video><figcaption class="label"><b>On the floor</b> · the same task</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-sim-warehouse.jpg" aria-label="A digital twin of a warehouse with mobile robots re-planning routes"><source src="/assets/media/v2-sim-warehouse.webm" type="video/webm"><source src="/assets/media/v2-sim-warehouse.mp4" type="video/mp4"></video><figcaption class="label"><b>Simulation</b> · fleet routing</figcaption></figure>
+      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-real-warehouse.jpg" aria-label="Autonomous mobile robots moving through a warehouse aisle"><source src="/assets/media/v2-real-warehouse.webm" type="video/webm"><source src="/assets/media/v2-real-warehouse.mp4" type="video/mp4"></video><figcaption class="label"><b>On the floor</b> · mobile robots in the aisle</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-datacenter.jpg" aria-label="An inspection robot with a thermal overlay rolling past data center switchgear"><source src="/assets/media/v2-datacenter.webm" type="video/webm"><source src="/assets/media/v2-datacenter.mp4" type="video/mp4"></video><figcaption class="label"><b>Data centers</b> · thermal inspection</figcaption></figure>
+      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-construction.jpg" aria-label="A legged robot with a laser scanner walking a construction site"><source src="/assets/media/v2-construction.webm" type="video/webm"><source src="/assets/media/v2-construction.mp4" type="video/mp4"></video><figcaption class="label"><b>Construction</b> · site scanning</figcaption></figure>
+    </div>
+    <p class="note">All footage in this section is AI-generated concept video, not client work.</p>
+  </div></section>
 
   <section id="industries"><div class="wrap">
     <div class="head"><p class="label">Industries</p><h2 class="rv">Built for operations <em>with real-world stakes.</em></h2></div>
