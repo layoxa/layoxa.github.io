@@ -3,179 +3,183 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leyoxa — Applied AI and robotics consulting</title>
-<meta name="description" content="Leyoxa designs, builds and runs AI agents and robotic systems inside real operations: manufacturing, logistics, construction, energy, data centers and field service. Connected to the systems you already run, measured in production, secure from day one.">
-<meta name="theme-color" content="#f6f4ef">
+<title>Leyoxa — Autonomy is cheap. Trust isn't.</title>
+<meta name="description" content="Leyoxa is a simulation lab for machines and AI agents that have to run on their own. Break them in simulation, prove them with evidence, then let them work alone.">
+<meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://leyoxa.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="text/markdown" href="/index.md" title="Markdown version">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Leyoxa — Applied AI and robotics consulting">
-<meta property="og:description" content="AI agents and robots that work in the operation you already run.">
+<meta property="og:title" content="Leyoxa — Autonomy is cheap. Trust isn't.">
+<meta property="og:description" content="A simulation lab for machines and AI agents that have to run on their own.">
 <meta property="og:url" content="https://leyoxa.com/">
 <meta property="og:image" content="https://leyoxa.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/v2.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/lx.css?v=1">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"ProfessionalService","@id":"https://leyoxa.com/#org","name":"Leyoxa","legalName":"Leyoxa LLC","url":"https://leyoxa.com/","logo":"https://leyoxa.com/favicon.svg","image":"https://leyoxa.com/assets/og.jpg","description":"Applied AI and robotics consulting: AI agents and robotic systems designed, built and run inside real operations, integrated with existing business and plant systems.","foundingDate":"2023","address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"areaServed":["United States","Canada"],"founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io","alumniOf":"University of Waterloo"},"email":"contact@leyoxa.com","knowsAbout":["applied AI","AI agents","robotics integration","computer vision","autonomous mobile robots","industrial automation","systems integration","identity and access management","manufacturing","logistics","construction","energy","data centers","field service"]},
+ {"@type":"Organization","@id":"https://leyoxa.com/#org","name":"Leyoxa","legalName":"Leyoxa LLC","url":"https://leyoxa.com/","logo":"https://leyoxa.com/favicon.svg","image":"https://leyoxa.com/assets/og.jpg","description":"A simulation lab for machines and AI agents that have to run on their own.","foundingDate":"2023","address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"founder":{"@type":"Person","name":"Sepehr Aflatounian","url":"https://sepehrafla.github.io","alumniOf":"University of Waterloo"},"email":"contact@leyoxa.com","knowsAbout":["simulation","autonomous systems","robotics","AI agents","verification","identity and access management"]},
  {"@type":"WebSite","@id":"https://leyoxa.com/#site","url":"https://leyoxa.com/","name":"Leyoxa","publisher":{"@id":"https://leyoxa.com/#org"}}
 ]}
 </script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "247444ad8ea74118a80e97a2e4eeebf5"}'></script>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
+<script src="/assets/lx.js?v=1" defer></script>
 </head>
 <body>
 
-<header class="nav"><div class="wrap">
-  <a href="/" aria-label="Leyoxa home"><img src="/assets/logo.svg" alt="Leyoxa" width="120" height="29"></a>
-  <nav class="links" aria-label="Main">
-    <a href="#approach">Approach</a><a href="#industries">Industries</a><a href="#work">Work</a><a href="#about">About</a>
-    <a class="btn" href="#start">Start a project</a>
+<header class="top">
+  <a class="mark" href="/" aria-label="Leyoxa home">LEYOXA</a>
+  <nav>
+    <button class="ghost" data-film>Watch the film</button>
+    <a class="solid" href="#contact">Contact</a>
   </nav>
-</div></header>
+</header>
 
 <main>
-  <section class="hero"><div class="wrap">
-    <p class="label rv"><b>●</b> Applied AI &amp; robotics consulting</p>
-    <h1 class="rv">AI and robots that work in the operation <em>you already run.</em></h1>
-    <p class="lede rv">We design, build and run AI agents and robotic systems inside real plants, sites and fleets: connected to the systems you depend on, measured in production, secure from day one.</p>
-    <div class="cta rv"><a class="btn" href="#start">Start a project</a><a class="btn ghost" href="#approach">How we work</a></div>
-    <div class="film rv">
-      <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/poster-v3-hero.jpg" aria-label="A robot materializes from its digital-twin simulation, then robots adapt across varied tasks: assembly, grasping different objects, and picking from warehouse shelves">
-        <source src="/assets/media/v3-hero.webm" type="video/webm"><source src="/assets/media/v3-hero.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div></section>
 
-  <section class="rule" id="why"><div class="wrap">
-    <div class="head"><p class="label">The gap</p><h2 class="rv">The model is rarely the problem. <em>The last mile is.</em></h2></div>
-    <div class="nums">
-      <div class="num rv"><b>37%</b><p>of organisations attribute any profit impact to AI.</p><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">McKinsey, State of AI, 2026 ↗</a></div>
-      <div class="num rv"><b>40%+</b><p>of agentic AI projects will be cancelled by the end of 2027, Gartner predicts.</p><a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027" target="_blank" rel="noopener">Gartner, June 2025 ↗</a></div>
-      <div class="num rv"><b>5M</b><p>industrial robots now work in factories worldwide, a record.</p><a href="https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally" target="_blank" rel="noopener">IFR, World Robotics 2026 ↗</a></div>
-      <div class="num rv"><b>1.9M</b><p>US manufacturing jobs could go unfilled through 2033.</p><a href="https://themanufacturinginstitute.org/manufacturers-need-as-many-as-3-8-million-new-employees-by-2033/" target="_blank" rel="noopener">Deloitte &amp; The Manufacturing Institute ↗</a></div>
+<section class="hero">
+  <video class="bg" autoplay muted loop playsinline preload="auto" poster="/assets/media/hero.jpg">
+    <source src="/assets/media/hero.mp4" type="video/mp4">
+  </video>
+  <div class="shade"></div>
+  <div class="hero-in">
+    <p class="kicker">A simulation lab for machines that run alone</p>
+    <h1>Autonomy is cheap.<br><span>Trust isn’t.</span></h1>
+    <p class="lede">Robots and AI agents can already do the work. What they can’t do yet is earn the right to do it with nobody watching. Leyoxa breaks them in simulation, proves them with evidence, and only then lets them run.</p>
+    <div class="cta">
+      <button class="play" data-film><i></i>Watch the film <small>1 min</small></button>
+      <a class="line" href="#ladder">How it works</a>
     </div>
-    <p class="kicker-line rv">Robots and AI are ready. Making them work with your ERP, your plant network, your people and your safety rules is where projects stall. <em>That is the work we do.</em></p>
-  </div></section>
+  </div>
+  <p class="tag">Rendered simulation</p>
+  <a class="scroll" href="#fail" aria-label="Scroll down"></a>
+</section>
 
-  <section class="scan" aria-label="A plant floor mapped as a point cloud">
-    <canvas id="scan" aria-hidden="true"></canvas>
-    <div class="inner"><div class="wrap">
-      <p class="label rv">Software and robots, one team</p>
-      <h2 class="rv">We map the whole system <em>before anything moves.</em></h2>
-      <p class="lede rv">The agent in your dispatch software and the robot on your floor are one problem. We treat them as one.</p>
-    </div></div>
-  </section>
+<section class="statement" id="fail">
+  <video class="bg" muted loop playsinline preload="none" poster="/assets/media/humanoid.jpg" data-auto>
+    <source src="/assets/media/humanoid.mp4" type="video/mp4">
+  </video>
+  <div class="shade low"></div>
+  <div class="wrap rv">
+    <h2>Every machine that will one day work on its own has to fail first.</h2>
+    <p class="big">Thousands of times. Somewhere failure is free.</p>
+  </div>
+</section>
 
-  <section id="approach"><div class="wrap">
-    <div class="head"><p class="label">Approach</p><h2 class="rv">From a real problem <em>to a system that runs.</em></h2></div>
-    <div class="steps">
-      <div class="step rv"><span class="label">01 · Find</span><h3>Find the work worth automating.</h3><p>We go to the floor, the site and the back office, and find where AI or a robot pays back, and where it doesn't.</p><p class="t">Output: a short list, with the numbers</p></div>
-      <div class="step rv"><span class="label">02 · Build</span><h3>Pilot in production, not a sandbox.</h3><p>We build inside your real systems and measure against your baseline, with your team beside us.</p><p class="t">Output: a working system, measured</p></div>
-      <div class="step rv"><span class="label">03 · Run</span><h3>Run it, then hand it over.</h3><p>Monitoring, incident response and documentation, until your team owns it or we keep running it for you.</p><p class="t">Output: a system your people trust</p></div>
+<section class="ladder" id="ladder">
+  <div class="wrap">
+    <p class="kicker rv">The ladder of autonomy</p>
+    <h2 class="rv">Most of today’s autonomy<br>still needs a person nearby.</h2>
+    <ol class="rungs rv">
+      <li><b>0</b><h3>Demo</h3><p>Works on stage.</p></li>
+      <li class="now"><b>1</b><h3>Assisted</h3><p>A person does the hard part.</p></li>
+      <li class="now"><b>2</b><h3>Supervised</h3><p>A person watches every run.</p></li>
+      <li class="us"><b>3</b><h3>Unattended</h3><p>Runs alone. A person reads the evidence.</p></li>
+      <li class="us"><b>4</b><h3>Trusted</h3><p>Runs alone, and proves it every time.</p></li>
+    </ol>
+    <div class="bands rv" aria-hidden="true"><span class="b-now">Most machines and agents today</span><span class="b-us">Where Leyoxa works</span></div>
+    <figure class="note rv">
+      <blockquote>“Two weeks of robotics demos across China. Machines that make coffee and move parcels, most of the time. Nothing I saw ran end to end with nobody watching.”</blockquote>
+      <figcaption>Field note · China, October 2026 · Sepehr Aflatounian</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="live" id="live">
+  <div class="wrap">
+    <p class="kicker rv">Live</p>
+    <h2 class="rv">This page is running a simulation right now.</h2>
+    <p class="sub rv">Dozens of robots in a warehouse, planning their own routes in your browser. Every near-miss is caught, logged and re-planned. Tap the floor to drop an obstacle in their way.</p>
+  </div>
+  <div class="simbox rv">
+    <canvas id="sim" aria-label="A live warehouse simulation of robots planning their own routes"></canvas>
+    <div class="stats">
+      <div><b id="s-runs">0</b><span>deliveries completed</span></div>
+      <div><b id="s-caught">0</b><span>near-misses caught</span></div>
+      <div><b id="s-replan">0</b><span>routes re-planned</span></div>
+      <div><b id="s-steps">0</b><span>moves simulated</span></div>
     </div>
-  </div></section>
+  </div>
+</section>
 
-  <section class="sim" id="simulate"><div class="wrap">
-    <div class="head"><p class="label">Simulate first</p><h2 class="rv">Prove it in simulation. <em>Then run it on the floor.</em></h2></div>
-    <p class="lede rv">We model the cell, the aisle or the site before hardware moves, so plans, paths and failure cases are tested where mistakes are free.</p>
-    <div class="pair">
-      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-sim-arm.jpg" aria-label="A digital-twin simulation of a robot arm planning a pick-and-place"><source src="/assets/media/v2-sim-arm.webm" type="video/webm"><source src="/assets/media/v2-sim-arm.mp4" type="video/mp4"></video><figcaption class="label"><b>Simulation</b> · pick-and-place path</figcaption></figure>
-      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-real-arm.jpg" aria-label="A robot arm picking boxes from a conveyor onto a pallet"><source src="/assets/media/v2-real-arm.webm" type="video/webm"><source src="/assets/media/v2-real-arm.mp4" type="video/mp4"></video><figcaption class="label"><b>On the floor</b> · the same task</figcaption></figure>
-    </div>
-    <div class="pair">
-      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-sim-warehouse.jpg" aria-label="A digital twin of a warehouse with mobile robots re-planning routes"><source src="/assets/media/v2-sim-warehouse.webm" type="video/webm"><source src="/assets/media/v2-sim-warehouse.mp4" type="video/mp4"></video><figcaption class="label"><b>Simulation</b> · fleet routing</figcaption></figure>
-      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-real-warehouse.jpg" aria-label="Autonomous mobile robots moving through a warehouse aisle"><source src="/assets/media/v2-real-warehouse.webm" type="video/webm"><source src="/assets/media/v2-real-warehouse.mp4" type="video/mp4"></video><figcaption class="label"><b>On the floor</b> · mobile robots in the aisle</figcaption></figure>
-    </div>
-    <div class="pair">
-      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-datacenter.jpg" aria-label="An inspection robot with a thermal overlay rolling past data center switchgear"><source src="/assets/media/v2-datacenter.webm" type="video/webm"><source src="/assets/media/v2-datacenter.mp4" type="video/mp4"></video><figcaption class="label"><b>Data centers</b> · thermal inspection</figcaption></figure>
-      <figure class="clip rv"><video autoplay muted loop playsinline preload="none" poster="/assets/media/poster-v2-construction.jpg" aria-label="A legged robot with a laser scanner walking a construction site"><source src="/assets/media/v2-construction.webm" type="video/webm"><source src="/assets/media/v2-construction.mp4" type="video/mp4"></video><figcaption class="label"><b>Construction</b> · site scanning</figcaption></figure>
-    </div>
-  </div></section>
+<section class="rehearse">
+  <div class="wrap">
+    <p class="kicker rv">Simulate first</p>
+    <h2 class="rv">Rehearse everything<br>before anything moves.</h2>
+  </div>
+  <div class="tiles">
+    <figure class="tile wide rv"><video muted loop playsinline preload="none" poster="/assets/media/humanoid.jpg" data-auto><source src="/assets/media/humanoid.mp4" type="video/mp4"></video><figcaption><b>Walk</b>Thousands of falls before a single step.</figcaption></figure>
+    <figure class="tile rv"><video muted loop playsinline preload="none" poster="/assets/media/arm.jpg" data-auto><source src="/assets/media/arm.mp4" type="video/mp4"></video><figcaption><b>Grasp</b>Every path tried before one is chosen.</figcaption></figure>
+    <figure class="tile rv"><video muted loop playsinline preload="none" poster="/assets/media/drone.jpg" data-auto><source src="/assets/media/drone.mp4" type="video/mp4"></video><figcaption><b>Fly</b>Storms that haven’t happened yet.</figcaption></figure>
+    <figure class="tile rv"><video muted loop playsinline preload="none" poster="/assets/media/fleet.jpg" data-auto><source src="/assets/media/fleet.mp4" type="video/mp4"></video><figcaption><b>Fleet</b>A whole warehouse, rehearsed overnight.</figcaption></figure>
+    <figure class="tile rv"><video muted loop playsinline preload="none" poster="/assets/media/agents.jpg" data-auto><source src="/assets/media/agents.mp4" type="video/mp4"></video><figcaption><b>Agents</b>Every action checked before it counts.</figcaption></figure>
+    <figure class="tile wide rv"><video muted loop playsinline preload="none" poster="/assets/media/city.jpg" data-auto><source src="/assets/media/city.mp4" type="video/mp4"></video><figcaption><b>Drive</b>A city that plans every route, all night.</figcaption></figure>
+  </div>
+</section>
 
-  <section id="industries"><div class="wrap">
-    <div class="head"><p class="label">Industries</p><h2 class="rv">Built for operations <em>with real-world stakes.</em></h2></div>
-    <div class="inds">
-      <a class="ind rv" href="/manufacturing/"><figure><img src="/assets/media/factory.jpg" alt="A white robot arm at an assembly station" loading="lazy" width="1600" height="1067"></figure><h3>Manufacturing</h3><p>Cells, inspection and the planning around them.</p></a>
-      <div class="ind rv"><figure><img src="/assets/media/warehouse.jpg" alt="An autonomous mobile robot in a warehouse aisle" loading="lazy" width="1600" height="1067"></figure><h3>Logistics</h3><p>Mobile robots, yards and the systems that dispatch them.</p></div>
-      <div class="ind rv"><figure><img src="/assets/media/engineer.jpg" alt="An engineer at a laptop beside a robot arm" loading="lazy" width="1600" height="1067"></figure><h3>Construction</h3><p>Progress tracking, inspection and site documentation.</p></div>
-      <a class="ind rv" href="/energy/"><figure><img src="/assets/media/energy.jpg" alt="A battery storage yard with an inspection robot" loading="lazy" width="1600" height="1067"></figure><h3>Energy</h3><p>Solar, storage and substations, inspected and documented.</p></a>
-      <a class="ind rv" href="/data-centers/"><figure><img src="/assets/media/datacenter.jpg" alt="An inspection robot in a data center electrical room" loading="lazy" width="1600" height="1067"></figure><h3>Data centers</h3><p>Commissioning evidence and operations, at build speed.</p></a>
-      <div class="ind rv"><figure><img src="/assets/media/field.jpg" alt="A technician with a tablet at a wind turbine" loading="lazy" width="1600" height="1067"></figure><h3>Field service</h3><p>Agents that schedule, brief and close the job.</p></div>
+<section class="method">
+  <div class="wrap">
+    <p class="kicker rv">Method</p>
+    <h2 class="rv">Four steps.<br>No shortcuts.</h2>
+    <ol class="steps">
+      <li class="rv"><b>01</b><h3>Simulate</h3><p>Build the world first: the floor, the weather, the traffic, the edge cases nobody has seen yet.</p></li>
+      <li class="rv"><b>02</b><h3>Break</h3><p>Run it until it fails, on purpose, thousands of times. Keep every failure.</p></li>
+      <li class="rv"><b>03</b><h3>Prove</h3><p>Turn the runs into evidence a person can read: what it did, what it refused, what it never saw.</p></li>
+      <li class="rv"><b>04</b><h3>Release</h3><p>Let it work alone, inside the limits the evidence supports. Keep watching.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="planet">
+  <video class="bg" muted loop playsinline preload="none" poster="/assets/media/planet.jpg" data-auto>
+    <source src="/assets/media/planet.mp4" type="video/mp4">
+  </video>
+  <div class="shade low"></div>
+  <div class="wrap rv">
+    <h2>Rehearse the world<br>before you change it.</h2>
+  </div>
+</section>
+
+<section class="founder" id="about">
+  <div class="wrap two">
+    <div class="rv">
+      <p class="kicker">Founder</p>
+      <h2>Built by an engineer.</h2>
+      <p class="sub">Leyoxa is the lab of <a href="https://sepehrafla.github.io" target="_blank" rel="noopener">Sepehr Aflatounian</a>, a University of Waterloo computer engineer who builds systems people rely on every day.</p>
     </div>
-  </div></section>
-
-  <section id="different"><div class="wrap">
-    <div class="head"><p class="label">Why Leyoxa</p><h2 class="rv">Engineers, <em>not slide decks.</em></h2></div>
-    <div class="why">
-      <div class="rv"><h3>Works with what you run.</h3><p>Old software, plant networks and vendor APIs that fail in strange ways. We have shipped agents inside exactly that.</p></div>
-      <div class="rv"><h3>Software and robots together.</h3><p>Perception, autonomy and the business systems around them, from one team.</p></div>
-      <div class="rv"><h3>Security from day one.</h3><p>Identity and access built the way banks build them, because a robot on your network is a computer on your network.</p></div>
-      <div class="rv"><h3>Judged by what actually happened.</h3><p>We measure systems by their real outcomes in production, not by demos or vendor dashboards.</p></div>
-    </div>
-  </div></section>
-
-  <section class="rule" id="work"><div class="wrap">
-    <div class="head"><p class="label">Work</p><h2 class="rv">What we have <em>built.</em></h2></div>
-
-    <div class="work rv">
-      <div class="media"><img src="/assets/media/agents.jpg" alt="A dispatch desk with a headset and a tablet, trucks outside the window" loading="lazy" width="1600" height="1067"></div>
-      <div><p class="label">Production · AI agents</p><h3>Agents running live inside legacy software.</h3><p>Voice and workflow agents that answer real calls, book and change appointments directly in a multi-location business's existing scheduling systems, and hand off to staff when a person is needed.</p>
-        <ul><li>Live, every day, unattended</li><li>Tool calls into old systems, every write checked</li><li>Judged on completed outcomes, not vendor success flags</li></ul>
-        </div>
-    </div>
-
-    <div class="work flip rv">
-      <div class="media"><img src="/assets/media/datacenter.jpg" alt="An inspection robot in an electrical room" loading="lazy" width="1600" height="1067"></div>
-      <div><p class="label">Research · Robotics</p><h3>Robotic inspection for electrical commissioning.</h3><p>A robot, a cart or a technician's phone that checks terminations against the drawings, reads test results against limits and peers, and catches hot joints under first load.</p>
-        <ul><li>Computer vision and thermal imaging</li><li>Engineers make every acceptance decision</li><li>A research area, not yet a commercial offering</li></ul>
-        <p><a class="u" href="/how-it-works/">Read the research notes →</a></p></div>
-    </div>
-
-    <div class="work rv">
-      <div class="media"><img src="/assets/media/private.jpg" alt="A small private server on a shelf in a quiet room" loading="lazy" width="1600" height="1067"></div>
-      <div><p class="label">Infrastructure · Private AI</p><h3>A private AI platform for sensitive records.</h3><p>Self-hosted models and retrieval, with personal data redacted before any model call, every request logged, and evaluations scored by checks rather than by another model.</p>
-        <ul><li>Privacy gateway and egress logging</li><li>Agent benchmarks with provable constraints</li><li>Held-out test sets for retrieval quality</li></ul></div>
-    </div>
-  </div></section>
-
-  <section id="about"><div class="wrap founder">
-    <div><p class="label">About</p><h2 class="rv" style="margin-top:20px">Founded by <em>an engineer.</em></h2>
-      <p class="lede rv" style="margin-top:20px">Leyoxa was founded by <a href="https://sepehrafla.github.io" target="_blank" rel="noopener">Sepehr Aflatounian</a>, a University of Waterloo computer engineer who builds systems people rely on every day.</p></div>
-    <ul class="creds rv">
-      <li><b>Autonomous systems</b>Led Watonomous, the University of Waterloo's autonomous driving team.</li>
-      <li><b>AI agents in production</b>Voice and workflow agents running live inside businesses' legacy software.</li>
-      <li><b>Security at bank scale</b>Sign-in and identity for millions of banking customers.</li>
-      <li><b>Machine learning</b>Co-founded SeedCI: cyber-attack detection and price prediction models.</li>
-      <li><b>Connected vehicles</b>EV charging features for Ford's connected-vehicle platform.</li>
+    <ul class="facts rv">
+      <li><b>Simulation &amp; path planning</b>Led simulation and path planning on WATonomous, Waterloo’s self-driving car team.</li>
+      <li><b>AI agents in production</b>Has shipped AI agents that answer real phone calls, every day.</li>
+      <li><b>Identity at bank scale</b>Builds sign-in and identity for millions of banking customers.</li>
     </ul>
-  </div></section>
+  </div>
+</section>
 
-  <section class="final rule" id="start"><div class="wrap">
-    <p class="label">Start a project</p>
-    <h2 class="rv" style="margin-top:20px">Have an operation that should <em>run itself?</em></h2>
-    <p class="lede rv">Tell us what you do and where the work piles up. We will tell you honestly whether AI or a robot can take it on.</p>
-    <a class="btn rv" href="mailto:contact@leyoxa.com?subject=Project">contact@leyoxa.com</a>
-  </div></section>
+<section class="contact" id="contact">
+  <div class="wrap rv">
+    <h2>Building something that<br>has to run alone?</h2>
+    <p class="sub">Tell us what it is. We’ll tell you what it would take to trust it.</p>
+    <a class="mail" href="mailto:contact@leyoxa.com">contact@leyoxa.com</a>
+  </div>
+</section>
+
 </main>
 
-<footer><div class="wrap">
-  <span>© <span class="yr">2026</span> Leyoxa LLC · Toronto · Austin</span>
-  <span><a href="/how-it-works/">Research</a><a href="mailto:contact@leyoxa.com">Contact</a><a href="/llms.txt">For AI agents</a></span>
-</div></footer>
+<footer class="foot">
+  <span class="mark">LEYOXA</span>
+  <span>© 2026 Leyoxa LLC · A Texas company</span>
+  <span>All footage on this site is rendered simulation.</span>
+  <span><a href="/llms.txt">For AI agents</a></span>
+</footer>
 
-<script>
-  // reveal on scroll; content is in the HTML, motion is decoration
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
-  document.querySelectorAll('.rv').forEach(el => io.observe(el));
-  const nav = document.querySelector('.nav'); addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), { passive: true });
-  document.querySelectorAll('.yr').forEach(y => y.textContent = new Date().getFullYear());
-</script>
-<script type="module" src="/assets/scan.js"></script>
+<dialog class="film" id="film" aria-label="Leyoxa film">
+  <button class="close" aria-label="Close film">×</button>
+  <video controls playsinline preload="none" poster="/assets/media/city.jpg"><source src="/assets/media/film.mp4" type="video/mp4"></video>
+</dialog>
+
 </body>
 </html>

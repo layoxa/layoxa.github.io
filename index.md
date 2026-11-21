@@ -1,36 +1,30 @@
 # Leyoxa
 
-> Applied AI and robotics consulting. Leyoxa designs, builds and runs AI agents and robotic systems inside real plants, sites and fleets: connected to the systems a business already depends on, measured in production, secure from day one.
+> Autonomy is cheap. Trust isn't. Leyoxa is a simulation lab for machines and AI agents that have to run on their own: break them in simulation, prove them with evidence, and only then let them run.
 
-## The gap
+## The ladder of autonomy
 
-The model is rarely the problem; the last mile is. 37% of organisations attribute any profit impact to AI (McKinsey, The state of AI, 2026). Gartner predicts over 40% of agentic AI projects will be cancelled by the end of 2027 (June 2025). A record 5 million industrial robots now work in factories (IFR, World Robotics 2026), and up to 1.9 million US manufacturing jobs could go unfilled through 2033 (Deloitte and The Manufacturing Institute, 2024).
+0. Demo: works on stage.
+1. Assisted: a person does the hard part.
+2. Supervised: a person watches every run.
+3. Unattended: runs alone; a person reads the evidence.
+4. Trusted: runs alone, and proves it every time.
 
-## Approach
+Most machines and AI agents today sit at levels 1 and 2. Leyoxa works on 3 and 4.
 
-1. **Find** the work worth automating, on the floor, on site and in the back office.
-2. **Build** a pilot in production, inside real systems, measured against the baseline.
-3. **Run** it, then hand it over: monitoring, incident response and documentation.
+Field note, China, October 2026 (Sepehr Aflatounian): "Two weeks of robotics demos across China. Machines that make coffee and move parcels, most of the time. Nothing I saw ran end to end with nobody watching."
 
-## Industries
+## Method
 
-Manufacturing, logistics, construction, energy, data centers and field service.
+1. **Simulate:** build the world first, including the edge cases nobody has seen yet.
+2. **Break:** run it until it fails, on purpose, thousands of times. Keep every failure.
+3. **Prove:** turn the runs into evidence a person can read: what it did, what it refused, what it never saw.
+4. **Release:** let it work alone, inside the limits the evidence supports. Keep watching.
 
-## Why Leyoxa
+## Founder
 
-- Works with what you run: legacy software, plant networks and unreliable vendor APIs.
-- Software and robots together: perception, autonomy and the business systems around them.
-- Security from day one: identity and access built the way banks build them.
-- Judged by what actually happened in production, not by demos.
+Leyoxa is the lab of Sepehr Aflatounian (https://sepehrafla.github.io), a University of Waterloo computer engineer. He led simulation and path planning on WATonomous, Waterloo's self-driving car team; has shipped AI agents that answer real phone calls in production; and builds sign-in and identity for millions of banking customers.
 
-## Work
+All footage on leyoxa.com is rendered simulation.
 
-- **Production AI agents:** voice and workflow agents running live inside a multi-location business's existing scheduling systems.
-- **Research:** robotic inspection for electrical commissioning. [Research notes](https://leyoxa.com/how-it-works.md).
-- **Private AI platform:** self-hosted models and retrieval with a privacy gateway and assertion-scored evaluations.
-
-## About
-
-Founded by Sepehr Aflatounian (https://sepehrafla.github.io), a University of Waterloo computer engineer: led the Watonomous autonomous driving team, AI agents in production, sign-in and identity for millions of banking customers, co-founded SeedCI (machine learning), EV charging for Ford's connected-vehicle platform.
-
-Contact: contact@leyoxa.com · Toronto · Austin
+Contact: contact@leyoxa.com. Leyoxa LLC is a Texas company.
